@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="1.1" data-basepath=".." data-revision="Mon May 11 2015 22:18:44 GMT+0900 (JST)">
+    <div class="book" data-level="1.1" data-basepath=".." data-revision="Tue May 12 2015 04:49:53 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -251,7 +251,15 @@
     
         <li class="chapter " data-level="4" data-path="statistics/index.html">
             
-            <span><b>4.</b> Statistics</span>
+                
+                    <a href="../statistics/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Statistics
+                    </a>
+                
             
             
             <ul class="articles">
@@ -338,13 +346,58 @@
             
         </li>
     
-        <li class="chapter " data-level="5.4" data-path="utility/Rgitbook.html">
+        <li class="chapter " data-level="5.4" data-path="utility/Nippon.html">
+            
+                
+                    <a href="../utility/Nippon.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Nippon
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="utility/readr.html">
+            
+                
+                    <a href="../utility/readr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        readr
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="utility/readxl.html">
+            
+                
+                    <a href="../utility/readxl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        readxl
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="utility/Rgitbook.html">
             
                 
                     <a href="../utility/Rgitbook.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>5.4.</b>
+                            <b>5.7.</b>
                         
                         Rgitbook
                     </a>
@@ -353,13 +406,13 @@
             
         </li>
     
-        <li class="chapter " data-level="5.5" data-path="utility/tidyr.html">
+        <li class="chapter " data-level="5.8" data-path="utility/tidyr.html">
             
                 
                     <a href="../utility/tidyr.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>5.5.</b>
+                            <b>5.8.</b>
                         
                         tidyr
                     </a>
@@ -476,8 +529,312 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="devtools">devtools</h1>
-
+                        <h1 id="devtools-tools-to-make-developing-r-code-easier">devtools: Tools to make developing R code easier</h1>
+<p>R&#x3067;&#x306E;&#x958B;&#x767A;&#x3092;&#x4FC3;&#x9032;&#x3059;&#x308B;&#x30C4;&#x30FC;&#x30EB;&#x7FA4;</p>
+<p><a href="http://cran.rstudio.com/web/packages/devtools/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/devtools" alt=""></a></p>
+<ul>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/devtools/index.html" target="_blank">http://cran.r-project.org/web/packages/devtools/index.html</a></li>
+<li>GitHub: <a href="http://github.com/hadley/devtools" target="_blank">http://github.com/hadley/devtools</a></li>
+</ul>
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(devtools)
+</code></pre>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.8.0.9000</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>&#x95A2;&#x6570;&#x540D;</th>
+<th>&#x6982;&#x7565;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>RCMD</code></td>
+<td>Run R CMD xxx from within R</td>
+</tr>
+<tr>
+<td><code>bash</code></td>
+<td>Open bash shell in package directory.</td>
+</tr>
+<tr>
+<td><code>build</code></td>
+<td>Build package.</td>
+</tr>
+<tr>
+<td><code>build_github_devtools</code></td>
+<td>Build the development version of devtools from GitHub.</td>
+</tr>
+<tr>
+<td><code>build_vignettes</code></td>
+<td>Build package vignettes.</td>
+</tr>
+<tr>
+<td><code>build_win</code></td>
+<td>Build windows binary package.</td>
+</tr>
+<tr>
+<td><code>check</code></td>
+<td>Build and check a package, cleaning up automatically on success.</td>
+</tr>
+<tr>
+<td><code>check_doc</code></td>
+<td>Check documentation, as &apos;R CMD check&apos; does.</td>
+</tr>
+<tr>
+<td><code>clean_dll</code></td>
+<td>Remove compiled objects from /src/ directory</td>
+</tr>
+<tr>
+<td><code>clean_source</code></td>
+<td>Sources an R file in a clean environment.</td>
+</tr>
+<tr>
+<td><code>clean_vignettes</code></td>
+<td>Clean built vignettes.</td>
+</tr>
+<tr>
+<td><code>compile_dll</code></td>
+<td>Compile a .dll/.so from source.</td>
+</tr>
+<tr>
+<td><code>compiler_flags</code></td>
+<td>Default compiler flags used by devtools.</td>
+</tr>
+<tr>
+<td><code>create</code></td>
+<td>Creates a new package, following all devtools package conventions.</td>
+</tr>
+<tr>
+<td><code>create_description</code></td>
+<td>Create a default DESCRIPTION file for a package.</td>
+</tr>
+<tr>
+<td><code>dev_example</code></td>
+<td>Run a examples for an in-development function.</td>
+</tr>
+<tr>
+<td><code>dev_help</code></td>
+<td>Read the in-development help for a package loaded with devtools.</td>
+</tr>
+<tr>
+<td><code>dev_mode</code></td>
+<td>Activate and deactivate development mode.</td>
+</tr>
+<tr>
+<td><code>devtools</code></td>
+<td>Package development tools for R.</td>
+</tr>
+<tr>
+<td><code>document</code></td>
+<td>Use roxygen to document a package.</td>
+</tr>
+<tr>
+<td><code>dr_devtools</code></td>
+<td>Diagnose potential devtools issues</td>
+</tr>
+<tr>
+<td><code>dr_github</code></td>
+<td>Diagnose potential github issues</td>
+</tr>
+<tr>
+<td><code>eval_clean</code></td>
+<td>Evaluate code in a clean R session.</td>
+</tr>
+<tr>
+<td><code>github_pull</code></td>
+<td>GitHub references</td>
+</tr>
+<tr>
+<td><code>has_devel</code></td>
+<td>Check if you have a development environment installed.</td>
+</tr>
+<tr>
+<td><code>help</code></td>
+<td>Drop-in replacements for help and ? functions</td>
+</tr>
+<tr>
+<td><code>infrastructure</code></td>
+<td>Add useful infrastructure to a package.</td>
+</tr>
+<tr>
+<td><code>inst</code></td>
+<td>Get the installation path of a package</td>
+</tr>
+<tr>
+<td><code>install</code></td>
+<td>Install a local development package.</td>
+</tr>
+<tr>
+<td><code>install_bitbucket</code></td>
+<td>Install a package directly from bitbucket</td>
+</tr>
+<tr>
+<td><code>install_deps</code></td>
+<td>Install package dependencies if needed.</td>
+</tr>
+<tr>
+<td><code>install_git</code></td>
+<td>Install a package from a git repository</td>
+</tr>
+<tr>
+<td><code>install_github</code></td>
+<td>Attempts to install a package directly from GitHub.</td>
+</tr>
+<tr>
+<td><code>install_gitorious</code></td>
+<td>Attempts to install a package directly from gitorious.</td>
+</tr>
+<tr>
+<td><code>install_local</code></td>
+<td>Install a package from a local file</td>
+</tr>
+<tr>
+<td><code>install_svn</code></td>
+<td>Install a package from a SVN repository</td>
+</tr>
+<tr>
+<td><code>install_url</code></td>
+<td>Install a package from a url</td>
+</tr>
+<tr>
+<td><code>install_version</code></td>
+<td>Install specified version of a CRAN package.</td>
+</tr>
+<tr>
+<td><code>lint</code></td>
+<td>Lint all source files in a package.</td>
+</tr>
+<tr>
+<td><code>load_all</code></td>
+<td>Load complete package.</td>
+</tr>
+<tr>
+<td><code>load_code</code></td>
+<td>Load R code.</td>
+</tr>
+<tr>
+<td><code>load_data</code></td>
+<td>Load data.</td>
+</tr>
+<tr>
+<td><code>load_dll</code></td>
+<td>Load a compiled DLL</td>
+</tr>
+<tr>
+<td><code>missing_s3</code></td>
+<td>Find missing s3 exports.</td>
+</tr>
+<tr>
+<td><code>package_deps</code></td>
+<td>Find all dependencies of a CRAN or dev package.</td>
+</tr>
+<tr>
+<td><code>path</code></td>
+<td>Get/set the PATH variable.</td>
+</tr>
+<tr>
+<td><code>release</code></td>
+<td>Release package to CRAN.</td>
+</tr>
+<tr>
+<td><code>reload</code></td>
+<td>Unload and reload package.</td>
+</tr>
+<tr>
+<td><code>revdep</code></td>
+<td>Reverse dependency tools.</td>
+</tr>
+<tr>
+<td><code>revdep_check_save_logs</code></td>
+<td>Run R CMD check on all downstream dependencies.</td>
+</tr>
+<tr>
+<td><code>run_examples</code></td>
+<td>Run all examples in a package.</td>
+</tr>
+<tr>
+<td><code>session_info</code></td>
+<td>Print session information</td>
+</tr>
+<tr>
+<td><code>show_news</code></td>
+<td>Show package news</td>
+</tr>
+<tr>
+<td><code>source_gist</code></td>
+<td>Run a script on gist</td>
+</tr>
+<tr>
+<td><code>source_url</code></td>
+<td>Run a script through some protocols such as http, https, ftp, etc.</td>
+</tr>
+<tr>
+<td><code>system.file</code></td>
+<td>Replacement version of system.file</td>
+</tr>
+<tr>
+<td><code>system_check</code></td>
+<td>Run a system command and check if it succeeds.</td>
+</tr>
+<tr>
+<td><code>test</code></td>
+<td>Execute all &apos;test_that&apos; tests in a package.</td>
+</tr>
+<tr>
+<td><code>unload</code></td>
+<td>Unload a package</td>
+</tr>
+<tr>
+<td><code>update_packages</code></td>
+<td>Update packages that are missing or out-of-date.</td>
+</tr>
+<tr>
+<td><code>use_data</code></td>
+<td>Use data in a package.</td>
+</tr>
+<tr>
+<td><code>use_data_raw</code></td>
+<td>Use &apos;data-raw&apos; to compute package datasets.</td>
+</tr>
+<tr>
+<td><code>use_git</code></td>
+<td>Initialise a git repository.</td>
+</tr>
+<tr>
+<td><code>use_package</code></td>
+<td>Use specified package.</td>
+</tr>
+<tr>
+<td><code>wd</code></td>
+<td>Set working directory.</td>
+</tr>
+<tr>
+<td><code>with_debug</code></td>
+<td>Temporarily set debugging compilation flags.</td>
+</tr>
+<tr>
+<td><code>with_something</code></td>
+<td>Execute code in temporarily altered environment.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dev-mode">dev_mode</h2>
+<p>&#x958B;&#x767A;&#x30E2;&#x30FC;&#x30C9;&#x3078;&#x306E;&#x5207;&#x308A;&#x66FF;&#x3048;</p>
+<pre><code class="lang-r">&gt; dev_mode() <span class="hljs-comment"># on</span>
+&gt; dev_mode() <span class="hljs-comment"># off</span>
+</code></pre>
+<blockquote>
+<p>&#x958B;&#x767A;&#x30E2;&#x30FC;&#x30C9;&#x3068;&#x306F;&#xFF1F;</p>
+</blockquote>
+<h2 id="document">document</h2>
+<h2 id="has-devel">has_devel</h2>
+<p>&#x958B;&#x767A;&#x74B0;&#x5883;&#x304C;&#x6574;&#x5099;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x304B;&#x78BA;&#x8A8D;</p>
+<pre><code class="lang-r">&gt; has_devel()
+</code></pre>
+<pre><code>&apos;/Library/Frameworks/R.framework/Resources/bin/R&apos; --no-site-file  \
+  --no-environ --no-save --no-restore CMD SHLIB foo.c
+</code></pre><pre><code>[1] TRUE
+</code></pre>
                     
                     </section>
                 

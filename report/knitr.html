@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.2" data-basepath=".." data-revision="Mon May 11 2015 22:18:44 GMT+0900 (JST)">
+    <div class="book" data-level="3.2" data-basepath=".." data-revision="Tue May 12 2015 04:49:53 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -251,7 +251,15 @@
     
         <li class="chapter " data-level="4" data-path="statistics/index.html">
             
-            <span><b>4.</b> Statistics</span>
+                
+                    <a href="../statistics/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Statistics
+                    </a>
+                
             
             
             <ul class="articles">
@@ -338,13 +346,58 @@
             
         </li>
     
-        <li class="chapter " data-level="5.4" data-path="utility/Rgitbook.html">
+        <li class="chapter " data-level="5.4" data-path="utility/Nippon.html">
+            
+                
+                    <a href="../utility/Nippon.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Nippon
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="utility/readr.html">
+            
+                
+                    <a href="../utility/readr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        readr
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="utility/readxl.html">
+            
+                
+                    <a href="../utility/readxl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        readxl
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="utility/Rgitbook.html">
             
                 
                     <a href="../utility/Rgitbook.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>5.4.</b>
+                            <b>5.7.</b>
                         
                         Rgitbook
                     </a>
@@ -353,13 +406,13 @@
             
         </li>
     
-        <li class="chapter " data-level="5.5" data-path="utility/tidyr.html">
+        <li class="chapter " data-level="5.8" data-path="utility/tidyr.html">
             
                 
                     <a href="../utility/tidyr.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>5.5.</b>
+                            <b>5.8.</b>
                         
                         tidyr
                     </a>
@@ -476,7 +529,268 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="knitr">knitr</h1>
+                        <h1 id="knitr-a-general-purpose-package-for-dynamic-report-generation-in-r">knitr: A General-Purpose Package for Dynamic Report Generation in R</h1>
+<p>R&#x4E0A;&#x3067;&#x52D5;&#x7684;&#x30EC;&#x30DD;&#x30FC;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;</p>
+<p><a href="http://cran.rstudio.com/web/packages/knitr/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/knitr" alt=""></a></p>
+<ul>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/knitr/index.html" target="_blank">http://cran.r-project.org/web/packages/knitr/index.html</a></li>
+<li>GitHub: <a href="https://github.com/yihui/knitr" target="_blank">https://github.com/yihui/knitr</a></li>
+<li>URL: <a href="http://yihui.name/knitr/" target="_blank">http://yihui.name/knitr/</a></li>
+</ul>
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(knitr)
+</code></pre>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.10.5</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>&#x95A2;&#x6570;&#x540D;</th>
+<th>&#x6982;&#x7565;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Sweave2knitr</code></td>
+<td>Convert Sweave to knitr documents</td>
+</tr>
+<tr>
+<td><code>all_labels</code></td>
+<td>Get all chunk labels in a document</td>
+</tr>
+<tr>
+<td><code>all_patterns</code></td>
+<td>All built-in patterns</td>
+</tr>
+<tr>
+<td><code>asis_output</code></td>
+<td>Mark an R object with a special class</td>
+</tr>
+<tr>
+<td><code>clean_cache</code></td>
+<td>Clean cache files that are probably no longer needed</td>
+</tr>
+<tr>
+<td><code>current_input</code></td>
+<td>Query the current input filename</td>
+</tr>
+<tr>
+<td><code>dep_auto</code></td>
+<td>Build automatic dependencies among chunks</td>
+</tr>
+<tr>
+<td><code>dep_prev</code></td>
+<td>Make later chunks depend on previous chunks</td>
+</tr>
+<tr>
+<td><code>eclipse_theme</code></td>
+<td>Download and convert a theme from eclipsecolorthemes.org to CSS</td>
+</tr>
+<tr>
+<td><code>engine_output</code></td>
+<td>An output wrapper for language engine output</td>
+</tr>
+<tr>
+<td><code>fig_chunk</code></td>
+<td>Obtain the figure filenames for a chunk</td>
+</tr>
+<tr>
+<td><code>fig_path</code></td>
+<td>Path for figure files</td>
+</tr>
+<tr>
+<td><code>hook_ffmpeg_html</code></td>
+<td>Hooks to create animations in HTML output</td>
+</tr>
+<tr>
+<td><code>hook_movecode</code></td>
+<td>Some potentially useful document hooks</td>
+</tr>
+<tr>
+<td><code>hook_plot_asciidoc</code></td>
+<td>Default plot hooks for different output formats</td>
+</tr>
+<tr>
+<td><code>hook_rgl</code></td>
+<td>Built-in chunk hooks to extend knitr</td>
+</tr>
+<tr>
+<td><code>image_uri</code></td>
+<td>Encode an image file to a data URI</td>
+</tr>
+<tr>
+<td><code>imgur_upload</code></td>
+<td>Upload an image to imgur.com</td>
+</tr>
+<tr>
+<td><code>inline_expr</code></td>
+<td>Wrap code using the inline R expression syntax</td>
+</tr>
+<tr>
+<td><code>kable</code></td>
+<td>Create tables in LaTeX, HTML, Markdown and reStructuredText</td>
+</tr>
+<tr>
+<td><code>knit</code></td>
+<td>Knit a document</td>
+</tr>
+<tr>
+<td><code>knit2html</code></td>
+<td>Convert markdown to HTML using knit() and markdownToHTML()</td>
+</tr>
+<tr>
+<td><code>knit2pdf</code></td>
+<td>Convert Rnw or Rrst files to PDF using knit() and texi2pdf() or rst2pdf()</td>
+</tr>
+<tr>
+<td><code>knit2wp</code></td>
+<td>Knit an R Markdown document and post it to WordPress</td>
+</tr>
+<tr>
+<td><code>knit_child</code></td>
+<td>Knit a child document</td>
+</tr>
+<tr>
+<td><code>knit_engines</code></td>
+<td>Engines of other languages</td>
+</tr>
+<tr>
+<td><code>knit_exit</code></td>
+<td>Exit knitting early</td>
+</tr>
+<tr>
+<td><code>knit_expand</code></td>
+<td>A simple macro preprocessor for templating purposes</td>
+</tr>
+<tr>
+<td><code>knit_filter</code></td>
+<td>Spell check filter for source documents</td>
+</tr>
+<tr>
+<td><code>knit_global</code></td>
+<td>The global environment in which code chunks are evaluated</td>
+</tr>
+<tr>
+<td><code>knit_hooks</code></td>
+<td>Hooks for R code chunks, inline R code and output</td>
+</tr>
+<tr>
+<td><code>knit_meta</code></td>
+<td>Metadata about objects to be printed</td>
+</tr>
+<tr>
+<td><code>knit_params</code></td>
+<td>Extract knit parameters from a document</td>
+</tr>
+<tr>
+<td><code>knit_patterns</code></td>
+<td>Patterns to match and extract R code in a document</td>
+</tr>
+<tr>
+<td><code>knit_print</code></td>
+<td>A custom printing function</td>
+</tr>
+<tr>
+<td><code>knit_rd</code></td>
+<td>Knit package documentation</td>
+</tr>
+<tr>
+<td><code>knit_theme</code></td>
+<td>Syntax highlighting themes</td>
+</tr>
+<tr>
+<td><code>knitr-package</code></td>
+<td>A general-purpose tool for dynamic report generation in R</td>
+</tr>
+<tr>
+<td><code>load_cache</code></td>
+<td>Load the cache database of a code chunk</td>
+</tr>
+<tr>
+<td><code>opts_chunk</code></td>
+<td>Default and current chunk options</td>
+</tr>
+<tr>
+<td><code>opts_knit</code></td>
+<td>Options for the knitr package</td>
+</tr>
+<tr>
+<td><code>opts_template</code></td>
+<td>Template for creating reusable chunk options</td>
+</tr>
+<tr>
+<td><code>pandoc</code></td>
+<td>A Pandoc wrapper to convert Markdown documents to other formats</td>
+</tr>
+<tr>
+<td><code>pat_rnw</code></td>
+<td>Set regular expressions to read input documents</td>
+</tr>
+<tr>
+<td><code>plot_crop</code></td>
+<td>Crop a plot (remove the edges) using PDFCrop or ImageMagick</td>
+</tr>
+<tr>
+<td><code>rand_seed</code></td>
+<td>An unevaluated expression to return ImageMagick</td>
+</tr>
+<tr>
+<td><code>read_chunk</code></td>
+<td>Read chunks from an external script</td>
+</tr>
+<tr>
+<td><code>read_rforge</code></td>
+<td>Read source code from R-Forge</td>
+</tr>
+<tr>
+<td><code>render_asciidoc</code></td>
+<td>Set output hooks for different output formats</td>
+</tr>
+<tr>
+<td><code>rocco</code></td>
+<td>Knit R Markdown using the classic Docco style</td>
+</tr>
+<tr>
+<td><code>rst2pdf</code></td>
+<td>A wrapper for rst2pdf</td>
+</tr>
+<tr>
+<td><code>set_alias</code></td>
+<td>Set aliases for chunk options</td>
+</tr>
+<tr>
+<td><code>set_header</code></td>
+<td>Set the header information</td>
+</tr>
+<tr>
+<td><code>set_parent</code></td>
+<td>Specify the parent document of child documents</td>
+</tr>
+<tr>
+<td><code>spin</code></td>
+<td>Spin goat&apos;s hair into wool</td>
+</tr>
+<tr>
+<td><code>spin_child</code></td>
+<td>Spin a child R script</td>
+</tr>
+<tr>
+<td><code>stitch</code></td>
+<td>Automatically create a report based on an R script and a template</td>
+</tr>
+<tr>
+<td><code>vignette_engines</code></td>
+<td>Package vignette engines</td>
+</tr>
+<tr>
+<td><code>wrap_rmd</code></td>
+<td>Wrap long lines in Rmd files</td>
+</tr>
+<tr>
+<td><code>write_bib</code></td>
+<td>Generate BibTeX bibliography databases for R packages</td>
+</tr>
+</tbody>
+</table>
 
                     
                     </section>

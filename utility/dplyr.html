@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="5.2" data-basepath=".." data-revision="Mon May 11 2015 22:18:44 GMT+0900 (JST)">
+    <div class="book" data-level="5.2" data-basepath=".." data-revision="Tue May 12 2015 04:49:53 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -251,7 +251,15 @@
     
         <li class="chapter " data-level="4" data-path="statistics/index.html">
             
-            <span><b>4.</b> Statistics</span>
+                
+                    <a href="../statistics/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Statistics
+                    </a>
+                
             
             
             <ul class="articles">
@@ -338,13 +346,58 @@
             
         </li>
     
-        <li class="chapter " data-level="5.4" data-path="utility/Rgitbook.html">
+        <li class="chapter " data-level="5.4" data-path="utility/Nippon.html">
+            
+                
+                    <a href="../utility/Nippon.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Nippon
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="utility/readr.html">
+            
+                
+                    <a href="../utility/readr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        readr
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="utility/readxl.html">
+            
+                
+                    <a href="../utility/readxl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        readxl
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="utility/Rgitbook.html">
             
                 
                     <a href="../utility/Rgitbook.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>5.4.</b>
+                            <b>5.7.</b>
                         
                         Rgitbook
                     </a>
@@ -353,13 +406,13 @@
             
         </li>
     
-        <li class="chapter " data-level="5.5" data-path="utility/tidyr.html">
+        <li class="chapter " data-level="5.8" data-path="utility/tidyr.html">
             
                 
                     <a href="../utility/tidyr.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>5.5.</b>
+                            <b>5.8.</b>
                         
                         tidyr
                     </a>
@@ -476,7 +529,271 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="dplyr">dplyr</h1>
+                        <h1 id="dplyr-a-grammar-of-data-manipulation">dplyr: A Grammar of Data Manipulation</h1>
+<p>&#x30C7;&#x30FC;&#x30BF;&#x64CD;&#x4F5C;&#x306E;&#x305F;&#x3081;&#x306E;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;</p>
+<p><a href="http://cran.rstudio.com/web/packages/dplyr/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/dplyr" alt=""></a></p>
+<ul>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/dplyr/index.html" target="_blank">http://cran.r-project.org/web/packages/dplyr/index.html</a></li>
+<li>GitHub: <a href="http://github.com/hadley/dplyr" target="_blank">http://github.com/hadley/dplyr</a></li>
+</ul>
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(dplyr)
+</code></pre>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.4.1.9000</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>&#x95A2;&#x6570;&#x540D;</th>
+<th>&#x6982;&#x7565;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>add_rownames</code></td>
+<td>Convert row names to an explicit variable.</td>
+</tr>
+<tr>
+<td><code>all.equal.tbl_df</code></td>
+<td>Provide a useful implementation of all.equal for data.frames.</td>
+</tr>
+<tr>
+<td><code>arrange</code></td>
+<td>Arrange rows by variables.</td>
+</tr>
+<tr>
+<td><code>as.tbl_cube</code></td>
+<td>Coerce an existing data structure into a &apos;tbl_cube&apos;</td>
+</tr>
+<tr>
+<td><code>as_data_frame</code></td>
+<td>Coerce a list to a data frame.</td>
+</tr>
+<tr>
+<td><code>bench_compare</code></td>
+<td>Evaluate, compare, benchmark operations of a set of srcs.</td>
+</tr>
+<tr>
+<td><code>between</code></td>
+<td>Do values in a numeric vector fall in specified range?</td>
+</tr>
+<tr>
+<td><code>build_sql</code></td>
+<td>Build a SQL string.</td>
+</tr>
+<tr>
+<td><code>chain</code></td>
+<td>Chain together multiple operations.</td>
+</tr>
+<tr>
+<td><code>compute</code></td>
+<td>Compute a lazy tbl.</td>
+</tr>
+<tr>
+<td><code>copy_to</code></td>
+<td>Copy a local data frame to a remote src.</td>
+</tr>
+<tr>
+<td><code>copy_to.src_sql</code></td>
+<td>Copy a local data frame to a sqlite src.</td>
+</tr>
+<tr>
+<td><code>cumall</code></td>
+<td>Cumulativate versions of any, all, and mean</td>
+</tr>
+<tr>
+<td><code>data_frame</code></td>
+<td>Build a data frame.</td>
+</tr>
+<tr>
+<td><code>desc</code></td>
+<td>Descending order.</td>
+</tr>
+<tr>
+<td><code>distinct</code></td>
+<td>Select distinct/unique rows.</td>
+</tr>
+<tr>
+<td><code>do</code></td>
+<td>Do arbitrary operations on a tbl.</td>
+</tr>
+<tr>
+<td><code>dplyr</code></td>
+<td>dplyr: a grammar of data manipulation</td>
+</tr>
+<tr>
+<td><code>explain</code></td>
+<td>Explain details of an tbl.</td>
+</tr>
+<tr>
+<td><code>failwith</code></td>
+<td>Fail with specified value.</td>
+</tr>
+<tr>
+<td><code>filter</code></td>
+<td>Return rows with matching conditions.</td>
+</tr>
+<tr>
+<td><code>funs</code></td>
+<td>Create a list of functions calls.</td>
+</tr>
+<tr>
+<td><code>glimpse</code></td>
+<td>Get a glimpse of your data.</td>
+</tr>
+<tr>
+<td><code>group_by</code></td>
+<td>Group a tbl by one or more variables.</td>
+</tr>
+<tr>
+<td><code>group_indices</code></td>
+<td>Group id.</td>
+</tr>
+<tr>
+<td><code>group_size</code></td>
+<td>Calculate group sizes.</td>
+</tr>
+<tr>
+<td><code>grouped_dt</code></td>
+<td>A grouped data table.</td>
+</tr>
+<tr>
+<td><code>groups</code></td>
+<td>Get/set the grouping variables for tbl.</td>
+</tr>
+<tr>
+<td><code>join</code></td>
+<td>Join two tbls together.</td>
+</tr>
+<tr>
+<td><code>join.tbl_df</code></td>
+<td>Join data frame tbls.</td>
+</tr>
+<tr>
+<td><code>join.tbl_dt</code></td>
+<td>Join data table tbls.</td>
+</tr>
+<tr>
+<td><code>join.tbl_sql</code></td>
+<td>Join sql tbls.</td>
+</tr>
+<tr>
+<td><code>lead-lag</code></td>
+<td>Lead and lag.</td>
+</tr>
+<tr>
+<td><code>location</code></td>
+<td>Print the location in memory of a data frame</td>
+</tr>
+<tr>
+<td><code>mutate</code></td>
+<td>Add new variables.</td>
+</tr>
+<tr>
+<td><code>n</code></td>
+<td>The number of observations in the current group.</td>
+</tr>
+<tr>
+<td><code>n_distinct</code></td>
+<td>Efficiently count the number of unique values in a vector.</td>
+</tr>
+<tr>
+<td><code>nasa</code></td>
+<td>NASA spatio-temporal data</td>
+</tr>
+<tr>
+<td><code>nth</code></td>
+<td>Extract the first, last or nth value from a vector.</td>
+</tr>
+<tr>
+<td><code>order_by</code></td>
+<td>A helper function for ordering window function output.</td>
+</tr>
+<tr>
+<td><code>ranking</code></td>
+<td>Windowed rank functions.</td>
+</tr>
+<tr>
+<td><code>rbind_all</code></td>
+<td>Efficiently bind multiple data frames by row and column.</td>
+</tr>
+<tr>
+<td><code>rowwise</code></td>
+<td>Group input by rows</td>
+</tr>
+<tr>
+<td><code>sample</code></td>
+<td>Sample n rows from a table.</td>
+</tr>
+<tr>
+<td><code>select</code></td>
+<td>Select/rename variables by name.</td>
+</tr>
+<tr>
+<td><code>setops</code></td>
+<td>Set operations.</td>
+</tr>
+<tr>
+<td><code>slice</code></td>
+<td>Select rows by position.</td>
+</tr>
+<tr>
+<td><code>src_mysql</code></td>
+<td>Connect to mysql/mariadb.</td>
+</tr>
+<tr>
+<td><code>src_postgres</code></td>
+<td>Connect to postgresql.</td>
+</tr>
+<tr>
+<td><code>src_sqlite</code></td>
+<td>Connect to a sqlite database.</td>
+</tr>
+<tr>
+<td><code>src_tbls</code></td>
+<td>List all tbls provided by a source.</td>
+</tr>
+<tr>
+<td><code>summarise</code></td>
+<td>Summarise multiple values to a single value.</td>
+</tr>
+<tr>
+<td><code>summarise_each</code></td>
+<td>Summarise and mutate multiple columns.</td>
+</tr>
+<tr>
+<td><code>tally</code></td>
+<td>Counts/tally observations by group.</td>
+</tr>
+<tr>
+<td><code>tbl</code></td>
+<td>Create a table from a data source</td>
+</tr>
+<tr>
+<td><code>tbl_cube</code></td>
+<td>A data cube tbl.</td>
+</tr>
+<tr>
+<td><code>tbl_df</code></td>
+<td>Create a data frame tbl.</td>
+</tr>
+<tr>
+<td><code>tbl_dt</code></td>
+<td>Create a data table tbl.</td>
+</tr>
+<tr>
+<td><code>tbl_vars</code></td>
+<td>List variables provided by a tbl.</td>
+</tr>
+<tr>
+<td><code>top_n</code></td>
+<td>Select top n rows (by value).</td>
+</tr>
+<tr>
+<td><code>translate_sql</code></td>
+<td>Translate an expression to sql.</td>
+</tr>
+</tbody>
+</table>
 
                     
                     </section>

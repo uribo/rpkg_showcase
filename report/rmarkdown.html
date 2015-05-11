@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.3" data-basepath=".." data-revision="Mon May 11 2015 22:18:44 GMT+0900 (JST)">
+    <div class="book" data-level="3.3" data-basepath=".." data-revision="Tue May 12 2015 04:49:53 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -251,7 +251,15 @@
     
         <li class="chapter " data-level="4" data-path="statistics/index.html">
             
-            <span><b>4.</b> Statistics</span>
+                
+                    <a href="../statistics/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Statistics
+                    </a>
+                
             
             
             <ul class="articles">
@@ -338,13 +346,58 @@
             
         </li>
     
-        <li class="chapter " data-level="5.4" data-path="utility/Rgitbook.html">
+        <li class="chapter " data-level="5.4" data-path="utility/Nippon.html">
+            
+                
+                    <a href="../utility/Nippon.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Nippon
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="utility/readr.html">
+            
+                
+                    <a href="../utility/readr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        readr
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="utility/readxl.html">
+            
+                
+                    <a href="../utility/readxl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        readxl
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="utility/Rgitbook.html">
             
                 
                     <a href="../utility/Rgitbook.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>5.4.</b>
+                            <b>5.7.</b>
                         
                         Rgitbook
                     </a>
@@ -353,13 +406,13 @@
             
         </li>
     
-        <li class="chapter " data-level="5.5" data-path="utility/tidyr.html">
+        <li class="chapter " data-level="5.8" data-path="utility/tidyr.html">
             
                 
                     <a href="../utility/tidyr.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>5.5.</b>
+                            <b>5.8.</b>
                         
                         tidyr
                     </a>
@@ -476,7 +529,172 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="rmarkdown">rmarkdown</h1>
+                        <h1 id="rmarkdown-dynamic-documents-for-r">rmarkdown: Dynamic Documents for R</h1>
+<p>R&#x4E0A;&#x3067;&#x52D5;&#x7684;&#x6587;&#x66F8;&#x4F5C;&#x6210;</p>
+<p><a href="http://cran.rstudio.com/web/packages/rmarkdown/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/rmarkdown" alt=""></a></p>
+<ul>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/rmarkdown/index.html" target="_blank">http://cran.r-project.org/web/packages/rmarkdown/index.html</a></li>
+<li>GitHub: <a href="https://github.com/rstudio/rmarkdown" target="_blank">https://github.com/rstudio/rmarkdown</a></li>
+<li>URL: <a href="http://rmarkdown.rstudio.com/" target="_blank">http://rmarkdown.rstudio.com/</a></li>
+</ul>
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(rmarkdown)
+</code></pre>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.6.1</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>&#x95A2;&#x6570;&#x540D;</th>
+<th>&#x6982;&#x7565;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>beamer_presentation</code></td>
+<td>Convert to a Beamer presentation</td>
+</tr>
+<tr>
+<td><code>compile_notebook</code></td>
+<td>Compiling R scripts to a notebook</td>
+</tr>
+<tr>
+<td><code>default_output_format</code></td>
+<td>Determine the default output format for an R Markdown document</td>
+</tr>
+<tr>
+<td><code>draft</code></td>
+<td>Create a new document based on a template</td>
+</tr>
+<tr>
+<td><code>find_external_resources</code></td>
+<td>Find External Resource References</td>
+</tr>
+<tr>
+<td><code>html_document</code></td>
+<td>Convert to an HTML document</td>
+</tr>
+<tr>
+<td><code>html_document_base</code></td>
+<td>Base output format for HTML-based output formats</td>
+</tr>
+<tr>
+<td><code>html_fragment</code></td>
+<td>Convert to an HTML fragment.</td>
+</tr>
+<tr>
+<td><code>html_vignette</code></td>
+<td>Convert to an HTML vignette.</td>
+</tr>
+<tr>
+<td><code>includes</code></td>
+<td>Include content within output</td>
+</tr>
+<tr>
+<td><code>ioslides_presentation</code></td>
+<td>Convert to an ioslides Presentation</td>
+</tr>
+<tr>
+<td><code>knitr_options</code></td>
+<td>Knitr options for an output format</td>
+</tr>
+<tr>
+<td><code>knitr_options_html</code></td>
+<td>Knitr options for an HTML output format</td>
+</tr>
+<tr>
+<td><code>knitr_options_pdf</code></td>
+<td>Knitr options for a PDF output format</td>
+</tr>
+<tr>
+<td><code>md_document</code></td>
+<td>Convert to a markdown document</td>
+</tr>
+<tr>
+<td><code>metadata</code></td>
+<td>The YAML metadata of the current R Markdown document</td>
+</tr>
+<tr>
+<td><code>output_format</code></td>
+<td>Define an R Markdown output format</td>
+</tr>
+<tr>
+<td><code>pandoc_args</code></td>
+<td>Functions for generating pandoc command line arguments</td>
+</tr>
+<tr>
+<td><code>pandoc_available</code></td>
+<td>Check pandoc availabilty and version</td>
+</tr>
+<tr>
+<td><code>pandoc_convert</code></td>
+<td>Convert a document with pandoc</td>
+</tr>
+<tr>
+<td><code>pandoc_options</code></td>
+<td>Pandoc options for an output format</td>
+</tr>
+<tr>
+<td><code>pandoc_path_arg</code></td>
+<td>Transform path for passing to pandoc</td>
+</tr>
+<tr>
+<td><code>pandoc_self_contained_html</code></td>
+<td>Create a self-contained HTML document using pandoc.</td>
+</tr>
+<tr>
+<td><code>pandoc_template</code></td>
+<td>Render a pandoc template.</td>
+</tr>
+<tr>
+<td><code>pdf_document</code></td>
+<td>Convert to a PDF document</td>
+</tr>
+<tr>
+<td><code>relative_to</code></td>
+<td>Relative path utility function Given a directory and a file, return a relative path from the directory to the file, or the unmodified file path if the file does not appear to be in the directory.</td>
+</tr>
+<tr>
+<td><code>render</code></td>
+<td>Render R Markdown</td>
+</tr>
+<tr>
+<td><code>render_delayed</code></td>
+<td>Delay Rendering for an Expression</td>
+</tr>
+<tr>
+<td><code>render_supporting_files</code></td>
+<td>Render supporting files for an input document</td>
+</tr>
+<tr>
+<td><code>rmarkdown-package</code></td>
+<td>R Markdown Document Conversion</td>
+</tr>
+<tr>
+<td><code>rmarkdown_format</code></td>
+<td>R Markdown input format definition</td>
+</tr>
+<tr>
+<td><code>rmd_metadata</code></td>
+<td>R Markdown Metadata</td>
+</tr>
+<tr>
+<td><code>run</code></td>
+<td>Run a Shiny document</td>
+</tr>
+<tr>
+<td><code>slidy_presentation</code></td>
+<td>Convert to a slidy presentation</td>
+</tr>
+<tr>
+<td><code>tufte_handout</code></td>
+<td>Tufte handout format (PDF)</td>
+</tr>
+<tr>
+<td><code>word_document</code></td>
+<td>Convert to an MS Word document</td>
+</tr>
+</tbody>
+</table>
 
                     
                     </section>

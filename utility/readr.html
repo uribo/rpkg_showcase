@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>broom | R Package Showcase</title>
+        <title>readr | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../utility/dplyr.html" />
+    <link rel="next" href="../utility/readxl.html" />
     
     
-    <link rel="prev" href="../utility/index.html" />
+    <link rel="prev" href="../utility/Nippon.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="5.1" data-basepath=".." data-revision="Tue May 12 2015 04:49:53 GMT+0900 (JST)">
+    <div class="book" data-level="5.5" data-basepath=".." data-revision="Tue May 12 2015 04:49:53 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -301,7 +301,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="5.1" data-path="utility/broom.html">
+        <li class="chapter " data-level="5.1" data-path="utility/broom.html">
             
                 
                     <a href="../utility/broom.html">
@@ -361,7 +361,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.5" data-path="utility/readr.html">
+        <li class="chapter active" data-level="5.5" data-path="utility/readr.html">
             
                 
                     <a href="../utility/readr.html">
@@ -529,16 +529,16 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="broom-convert-statistical-analysis-objects-into-tidy-data-frames">broom: Convert Statistical Analysis Objects into Tidy Data Frames</h1>
-<p>&#x7D71;&#x8A08;&#x89E3;&#x6790;&#x306E;&#x51FA;&#x529B;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x6574;&#x5F62;&#x3055;&#x308C;&#x305F;&#x5F62;&#x306B;&#x3059;&#x308B;</p>
-<p><a href="http://cran.rstudio.com/web/packages/broom/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/broom" alt=""></a></p>
+                        <h1 id="readr-read-tabular-data">readr: Read Tabular Data</h1>
+<p>&#x8868;&#x5F62;&#x5F0F;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x305F;&#x3081;&#x306E;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;</p>
+<p><a href="http://cran.rstudio.com/web/packages/readr/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/readr" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/broom/index.html" target="_blank">http://cran.r-project.org/web/packages/broom/index.html</a></li>
-<li>GitHub: <a href="http://github.com/dgrtwo/broom" target="_blank">http://github.com/dgrtwo/broom</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/readr/index.html" target="_blank">http://cran.r-project.org/web/packages/readr/index.html</a></li>
+<li>GitHub: <a href="http://github.com/hadley/readr" target="_blank">http://github.com/hadley/readr</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(broom)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(readr)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.3.7</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.1.0</p>
 <hr>
 <table>
 <thead>
@@ -549,259 +549,66 @@
 </thead>
 <tbody>
 <tr>
-<td><code>Arima_tidiers</code></td>
-<td>Tidying methods for ARIMA modeling of time series</td>
+<td><code>collector</code></td>
+<td>Parse character vectors into typed columns.</td>
 </tr>
 <tr>
-<td><code>aareg_tidiers</code></td>
-<td>Tidiers for aareg objects</td>
+<td><code>count_fields</code></td>
+<td>Count the number of fields in each line of a file.</td>
 </tr>
 <tr>
-<td><code>anova_tidiers</code></td>
-<td>Tidying methods for anova and AOV objects</td>
+<td><code>parse_datetime</code></td>
+<td>Parse a character vector of dates or date times.</td>
 </tr>
 <tr>
-<td><code>augment</code></td>
-<td>Augment data according to a tidied model</td>
+<td><code>problems</code></td>
+<td>Retrieve parsing problems.</td>
 </tr>
 <tr>
-<td><code>augment_columns</code></td>
-<td>add fitted values, residuals, and other common outputs to an augment call</td>
+<td><code>read_delim</code></td>
+<td>Read a delimited file into a data frame.</td>
 </tr>
 <tr>
-<td><code>biglm_tidiers</code></td>
-<td>Tidiers for biglm and bigglm object</td>
+<td><code>read_file</code></td>
+<td>Read a file into a string.</td>
 </tr>
 <tr>
-<td><code>bootstrap</code></td>
-<td>Set up bootstrap replicates of a dplyr operation</td>
+<td><code>read_fwf</code></td>
+<td>Read a fixed width file.</td>
 </tr>
 <tr>
-<td><code>broom</code></td>
-<td>Convert Statistical Analysis Objects into Tidy Data Frames</td>
+<td><code>read_lines</code></td>
+<td>Read lines from a file or string.</td>
 </tr>
 <tr>
-<td><code>cch_tidiers</code></td>
-<td>tidiers for case-cohort data</td>
+<td><code>read_log</code></td>
+<td>Read common/combined log file.</td>
 </tr>
 <tr>
-<td><code>compact</code></td>
-<td>Remove NULL items in a vector or list</td>
+<td><code>read_table</code></td>
+<td>Read text file where columns are separated by whitespace.</td>
 </tr>
 <tr>
-<td><code>confint_tidy</code></td>
-<td>Calculate confidence interval as a tidy data frame</td>
+<td><code>type_convert</code></td>
+<td>Re-convert character columns in existing data frame.</td>
 </tr>
 <tr>
-<td><code>coxph_tidiers</code></td>
-<td>Tidiers for coxph object</td>
-</tr>
-<tr>
-<td><code>cv.glmnet_tidiers</code></td>
-<td>Tidiers for glmnet cross-validation objects</td>
-</tr>
-<tr>
-<td><code>data.frame_tidiers</code></td>
-<td>Tidiers for data.frame objects</td>
-</tr>
-<tr>
-<td><code>felm_tidiers</code></td>
-<td>Tidying methods for models with multiple group fixed effects</td>
-</tr>
-<tr>
-<td><code>finish_glance</code></td>
-<td>Add logLik, AIC, BIC, and other common measurements to a glance of a prediction</td>
-</tr>
-<tr>
-<td><code>fix_data_frame</code></td>
-<td>Ensure an object is a data frame, with rownames moved into a column</td>
-</tr>
-<tr>
-<td><code>gam_tidiers</code></td>
-<td>Tidying methods for a generalized additive model (gam)</td>
-</tr>
-<tr>
-<td><code>glance</code></td>
-<td>Construct a single row summary &quot;glance&quot; of a model, fit, or other object</td>
-</tr>
-<tr>
-<td><code>glm_tidiers</code></td>
-<td>Tidying methods for a glm object</td>
-</tr>
-<tr>
-<td><code>glmnet_tidiers</code></td>
-<td>Tidiers for LASSO or elasticnet regularized fits</td>
-</tr>
-<tr>
-<td><code>htest_tidiers</code></td>
-<td>Tidying methods for an htest object</td>
-</tr>
-<tr>
-<td><code>inflate</code></td>
-<td>Expand a dataset to include all factorial combinations of one or more variables</td>
-</tr>
-<tr>
-<td><code>insert_NAs</code></td>
-<td>insert a row of NAs into a data frame wherever another data frame has NAs</td>
-</tr>
-<tr>
-<td><code>kmeans_tidiers</code></td>
-<td>Tidying methods for kmeans objects</td>
-</tr>
-<tr>
-<td><code>list_tidiers</code></td>
-<td>Tidiers for return values from functions that aren&apos;t S3 objects</td>
-</tr>
-<tr>
-<td><code>lm_tidiers</code></td>
-<td>Tidying methods for a linear model</td>
-</tr>
-<tr>
-<td><code>lme4_tidiers</code></td>
-<td>Tidying methods for mixed effects models</td>
-</tr>
-<tr>
-<td><code>loess_tidiers</code></td>
-<td>Augmenting methods for loess models</td>
-</tr>
-<tr>
-<td><code>matrix_tidiers</code></td>
-<td>Tidiers for matrix objects</td>
-</tr>
-<tr>
-<td><code>multcomp_tidiers</code></td>
-<td>tidying methods for objects produced by &apos;multcomp&apos;</td>
-</tr>
-<tr>
-<td><code>multinom_tidiers</code></td>
-<td>Tidying methods for multinomial logistic regression models</td>
-</tr>
-<tr>
-<td><code>nlme_tidiers</code></td>
-<td>Tidying methods for mixed effects models</td>
-</tr>
-<tr>
-<td><code>nls_tidiers</code></td>
-<td>Tidying methods for a nonlinear model</td>
-</tr>
-<tr>
-<td><code>optim_tidiers</code></td>
-<td>Tidiers for lists returned from optim</td>
-</tr>
-<tr>
-<td><code>plm_tidiers</code></td>
-<td>Tidiers for panel regression linear models</td>
-</tr>
-<tr>
-<td><code>process_lm</code></td>
-<td>helper function to process a tidied lm object</td>
-</tr>
-<tr>
-<td><code>pyears_tidiers</code></td>
-<td>Tidy person-year summaries</td>
-</tr>
-<tr>
-<td><code>ridgelm_tidiers</code></td>
-<td>Tidying methods for ridgelm objects from the MASS package</td>
-</tr>
-<tr>
-<td><code>rlm_tidiers</code></td>
-<td>Tidying methods for an rlm (robust linear model) object</td>
-</tr>
-<tr>
-<td><code>rowwise_df_tidiers</code></td>
-<td>Tidying methods for rowwise_dfs from dplyr, for tidying each row and recombining the results</td>
-</tr>
-<tr>
-<td><code>sexpfit_tidiers</code></td>
-<td>Tidy an expected survival curve</td>
-</tr>
-<tr>
-<td><code>smooth.spline_tidiers</code></td>
-<td>tidying methods for smooth.spline objects</td>
-</tr>
-<tr>
-<td><code>sp_tidiers</code></td>
-<td>tidying methods for classes from the sp package.</td>
-</tr>
-<tr>
-<td><code>summary_tidiers</code></td>
-<td>Tidiers for summaryDefault objects</td>
-</tr>
-<tr>
-<td><code>survfit_tidiers</code></td>
-<td>tidy survival curve fits</td>
-</tr>
-<tr>
-<td><code>survreg_tidiers</code></td>
-<td>Tidiers for a parametric regression survival model</td>
-</tr>
-<tr>
-<td><code>tidy</code></td>
-<td>Tidy the result of a test into a summary data.frame</td>
-</tr>
-<tr>
-<td><code>tidy.NULL</code></td>
-<td>tidy on a NULL input</td>
-</tr>
-<tr>
-<td><code>tidy.TukeyHSD</code></td>
-<td>tidy a TukeyHSD object</td>
-</tr>
-<tr>
-<td><code>tidy.coeftest</code></td>
-<td>Tidying methods for coeftest objects</td>
-</tr>
-<tr>
-<td><code>tidy.default</code></td>
-<td>Default tidying method</td>
-</tr>
-<tr>
-<td><code>tidy.density</code></td>
-<td>tidy a density objet</td>
-</tr>
-<tr>
-<td><code>tidy.ftable</code></td>
-<td>tidy an ftable object</td>
-</tr>
-<tr>
-<td><code>tidy.manova</code></td>
-<td>tidy a MANOVA object</td>
-</tr>
-<tr>
-<td><code>tidy.map</code></td>
-<td>Tidy method for map objects.</td>
-</tr>
-<tr>
-<td><code>tidy.pairwise.htest</code></td>
-<td>tidy a pairwise hypothesis test</td>
-</tr>
-<tr>
-<td><code>tidy.power.htest</code></td>
-<td>tidy a power.htest</td>
-</tr>
-<tr>
-<td><code>tidy.spec</code></td>
-<td>tidy a spec objet</td>
-</tr>
-<tr>
-<td><code>tidy.table</code></td>
-<td>tidy a table object</td>
-</tr>
-<tr>
-<td><code>tidy.ts</code></td>
-<td>tidy a ts timeseries object</td>
-</tr>
-<tr>
-<td><code>unrowname</code></td>
-<td>strip rownames from an object</td>
-</tr>
-<tr>
-<td><code>zoo_tidiers</code></td>
-<td>Tidying methods for a zoo object</td>
+<td><code>write_csv</code></td>
+<td>Save a data frame to a csv file.</td>
 </tr>
 </tbody>
 </table>
+<h2 id="read-delim">read_delim</h2>
+<p>&#x30AB;&#x30F3;&#x30DE;&#x533A;&#x5207;&#x308A;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#xFF08;<code>.csv</code>&#xFF09;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;</p>
+<pre><code class="lang-r">&gt; read_csv(file, col_names = <span class="hljs-literal">TRUE</span>, col_types = <span class="hljs-literal">NULL</span>, na = <span class="hljs-string">&quot;NA&quot;</span>, skip = <span class="hljs-number">0</span>, n_max = -<span class="hljs-number">1</span>, progress = interactive())
+</code></pre>
+<blockquote>
+<p>&#x65E5;&#x4ED8;&#x30C7;&#x30FC;&#x30BF;&#x306A;&#x3069;&#x306F;&#x5F62;&#x5F0F;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x3066;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x3053;&#x3068;&#x304C;&#x53EF;&#x80FD;&#xFF08;&#xFF1F;&#xFF09;</p>
+</blockquote>
+<h3 id="%E5%8F%82%E8%80%83">&#x53C2;&#x8003;</h3>
+<ul>
+<li><a href="http://qiita.com/hoxo_m/items/959d141cf7297e2e80d3" target="_blank">R &#x306E; read.csv() &#x3068; read.csv2() &#x306E;&#x9055;&#x3044; #rstatsj - Qiita</a></li>
+</ul>
 
                     
                     </section>
@@ -812,10 +619,10 @@
         </div>
 
         
-        <a href="../utility/index.html" class="navigation navigation-prev " aria-label="Previous page: Utility"><i class="fa fa-angle-left"></i></a>
+        <a href="../utility/Nippon.html" class="navigation navigation-prev " aria-label="Previous page: Nippon"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../utility/dplyr.html" class="navigation navigation-next " aria-label="Next page: dplyr"><i class="fa fa-angle-right"></i></a>
+        <a href="../utility/readxl.html" class="navigation navigation-next " aria-label="Next page: readxl"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

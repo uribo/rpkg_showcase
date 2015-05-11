@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>broom | R Package Showcase</title>
+        <title>Nippon | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../utility/dplyr.html" />
+    <link rel="next" href="../utility/readr.html" />
     
     
-    <link rel="prev" href="../utility/index.html" />
+    <link rel="prev" href="../utility/magrittr.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="5.1" data-basepath=".." data-revision="Tue May 12 2015 04:49:53 GMT+0900 (JST)">
+    <div class="book" data-level="5.4" data-basepath=".." data-revision="Tue May 12 2015 04:49:53 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -301,7 +301,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="5.1" data-path="utility/broom.html">
+        <li class="chapter " data-level="5.1" data-path="utility/broom.html">
             
                 
                     <a href="../utility/broom.html">
@@ -346,7 +346,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.4" data-path="utility/Nippon.html">
+        <li class="chapter active" data-level="5.4" data-path="utility/Nippon.html">
             
                 
                     <a href="../utility/Nippon.html">
@@ -529,16 +529,15 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="broom-convert-statistical-analysis-objects-into-tidy-data-frames">broom: Convert Statistical Analysis Objects into Tidy Data Frames</h1>
-<p>&#x7D71;&#x8A08;&#x89E3;&#x6790;&#x306E;&#x51FA;&#x529B;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x6574;&#x5F62;&#x3055;&#x308C;&#x305F;&#x5F62;&#x306B;&#x3059;&#x308B;</p>
-<p><a href="http://cran.rstudio.com/web/packages/broom/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/broom" alt=""></a></p>
+                        <h1 id="nippon-japanese-utility-functions-and-data">Nippon: Japanese utility functions and data</h1>
+<p>&#x65E5;&#x672C;&#x8A9E;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x305F;&#x3081;&#x306E;&#x4FBF;&#x5229;&#x306A;&#x95A2;&#x6570;&#x3068;&#x30C7;&#x30FC;&#x30BF;&#x30BB;&#x30C3;&#x30C8;</p>
+<p><a href="http://cran.rstudio.com/web/packages/Nippon/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/Nippon" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/broom/index.html" target="_blank">http://cran.r-project.org/web/packages/broom/index.html</a></li>
-<li>GitHub: <a href="http://github.com/dgrtwo/broom" target="_blank">http://github.com/dgrtwo/broom</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/Nippon/index.html" target="_blank">http://cran.r-project.org/web/packages/Nippon/index.html</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(broom)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(Nippon)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.3.7</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.5.3</p>
 <hr>
 <table>
 <thead>
@@ -549,260 +548,87 @@
 </thead>
 <tbody>
 <tr>
-<td><code>Arima_tidiers</code></td>
-<td>Tidying methods for ARIMA modeling of time series</td>
+<td><code>JapanPrefecturesMap</code></td>
+<td>A simple choropleth map of Japan</td>
 </tr>
 <tr>
-<td><code>aareg_tidiers</code></td>
-<td>Tidiers for aareg objects</td>
+<td><code>JapaneseColors</code></td>
+<td>Find RGB by Japanese color names</td>
 </tr>
 <tr>
-<td><code>anova_tidiers</code></td>
-<td>Tidying methods for anova and AOV objects</td>
+<td><code>Nippon-internal</code></td>
+<td>Internal objects in the Nippon package</td>
 </tr>
 <tr>
-<td><code>augment</code></td>
-<td>Augment data according to a tidied model</td>
+<td><code>Nippon-package</code></td>
+<td>Japanese utility functions and data</td>
 </tr>
 <tr>
-<td><code>augment_columns</code></td>
-<td>add fitted values, residuals, and other common outputs to an augment call</td>
+<td><code>jholiday</code></td>
+<td>Calculate public holidays in Japan</td>
 </tr>
 <tr>
-<td><code>biglm_tidiers</code></td>
-<td>Tidiers for biglm and bigglm object</td>
+<td><code>jyear</code></td>
+<td>Conversion to Japanese year style</td>
 </tr>
 <tr>
-<td><code>bootstrap</code></td>
-<td>Set up bootstrap replicates of a dplyr operation</td>
+<td><code>kakasi</code></td>
+<td>Interface to kakasi</td>
 </tr>
 <tr>
-<td><code>broom</code></td>
-<td>Convert Statistical Analysis Objects into Tidy Data Frames</td>
+<td><code>kana2roma</code></td>
+<td>Romanization of Japanese</td>
 </tr>
 <tr>
-<td><code>cch_tidiers</code></td>
-<td>tidiers for case-cohort data</td>
+<td><code>kata2hira</code></td>
+<td>Conversion form Katakana to Hiragana</td>
 </tr>
 <tr>
-<td><code>compact</code></td>
-<td>Remove NULL items in a vector or list</td>
+<td><code>month.name.jp</code></td>
+<td>The Japanese name of months</td>
 </tr>
 <tr>
-<td><code>confint_tidy</code></td>
-<td>Calculate confidence interval as a tidy data frame</td>
+<td><code>nippon.palette</code></td>
+<td>Switch the color palette to JIS colors</td>
 </tr>
 <tr>
-<td><code>coxph_tidiers</code></td>
-<td>Tidiers for coxph object</td>
+<td><code>prefectures</code></td>
+<td>Prefectural names in Japan</td>
 </tr>
 <tr>
-<td><code>cv.glmnet_tidiers</code></td>
-<td>Tidiers for glmnet cross-validation objects</td>
+<td><code>sjis2utf8</code></td>
+<td>Wrapper of iconv for Japanese encoding</td>
 </tr>
 <tr>
-<td><code>data.frame_tidiers</code></td>
-<td>Tidiers for data.frame objects</td>
-</tr>
-<tr>
-<td><code>felm_tidiers</code></td>
-<td>Tidying methods for models with multiple group fixed effects</td>
-</tr>
-<tr>
-<td><code>finish_glance</code></td>
-<td>Add logLik, AIC, BIC, and other common measurements to a glance of a prediction</td>
-</tr>
-<tr>
-<td><code>fix_data_frame</code></td>
-<td>Ensure an object is a data frame, with rownames moved into a column</td>
-</tr>
-<tr>
-<td><code>gam_tidiers</code></td>
-<td>Tidying methods for a generalized additive model (gam)</td>
-</tr>
-<tr>
-<td><code>glance</code></td>
-<td>Construct a single row summary &quot;glance&quot; of a model, fit, or other object</td>
-</tr>
-<tr>
-<td><code>glm_tidiers</code></td>
-<td>Tidying methods for a glm object</td>
-</tr>
-<tr>
-<td><code>glmnet_tidiers</code></td>
-<td>Tidiers for LASSO or elasticnet regularized fits</td>
-</tr>
-<tr>
-<td><code>htest_tidiers</code></td>
-<td>Tidying methods for an htest object</td>
-</tr>
-<tr>
-<td><code>inflate</code></td>
-<td>Expand a dataset to include all factorial combinations of one or more variables</td>
-</tr>
-<tr>
-<td><code>insert_NAs</code></td>
-<td>insert a row of NAs into a data frame wherever another data frame has NAs</td>
-</tr>
-<tr>
-<td><code>kmeans_tidiers</code></td>
-<td>Tidying methods for kmeans objects</td>
-</tr>
-<tr>
-<td><code>list_tidiers</code></td>
-<td>Tidiers for return values from functions that aren&apos;t S3 objects</td>
-</tr>
-<tr>
-<td><code>lm_tidiers</code></td>
-<td>Tidying methods for a linear model</td>
-</tr>
-<tr>
-<td><code>lme4_tidiers</code></td>
-<td>Tidying methods for mixed effects models</td>
-</tr>
-<tr>
-<td><code>loess_tidiers</code></td>
-<td>Augmenting methods for loess models</td>
-</tr>
-<tr>
-<td><code>matrix_tidiers</code></td>
-<td>Tidiers for matrix objects</td>
-</tr>
-<tr>
-<td><code>multcomp_tidiers</code></td>
-<td>tidying methods for objects produced by &apos;multcomp&apos;</td>
-</tr>
-<tr>
-<td><code>multinom_tidiers</code></td>
-<td>Tidying methods for multinomial logistic regression models</td>
-</tr>
-<tr>
-<td><code>nlme_tidiers</code></td>
-<td>Tidying methods for mixed effects models</td>
-</tr>
-<tr>
-<td><code>nls_tidiers</code></td>
-<td>Tidying methods for a nonlinear model</td>
-</tr>
-<tr>
-<td><code>optim_tidiers</code></td>
-<td>Tidiers for lists returned from optim</td>
-</tr>
-<tr>
-<td><code>plm_tidiers</code></td>
-<td>Tidiers for panel regression linear models</td>
-</tr>
-<tr>
-<td><code>process_lm</code></td>
-<td>helper function to process a tidied lm object</td>
-</tr>
-<tr>
-<td><code>pyears_tidiers</code></td>
-<td>Tidy person-year summaries</td>
-</tr>
-<tr>
-<td><code>ridgelm_tidiers</code></td>
-<td>Tidying methods for ridgelm objects from the MASS package</td>
-</tr>
-<tr>
-<td><code>rlm_tidiers</code></td>
-<td>Tidying methods for an rlm (robust linear model) object</td>
-</tr>
-<tr>
-<td><code>rowwise_df_tidiers</code></td>
-<td>Tidying methods for rowwise_dfs from dplyr, for tidying each row and recombining the results</td>
-</tr>
-<tr>
-<td><code>sexpfit_tidiers</code></td>
-<td>Tidy an expected survival curve</td>
-</tr>
-<tr>
-<td><code>smooth.spline_tidiers</code></td>
-<td>tidying methods for smooth.spline objects</td>
-</tr>
-<tr>
-<td><code>sp_tidiers</code></td>
-<td>tidying methods for classes from the sp package.</td>
-</tr>
-<tr>
-<td><code>summary_tidiers</code></td>
-<td>Tidiers for summaryDefault objects</td>
-</tr>
-<tr>
-<td><code>survfit_tidiers</code></td>
-<td>tidy survival curve fits</td>
-</tr>
-<tr>
-<td><code>survreg_tidiers</code></td>
-<td>Tidiers for a parametric regression survival model</td>
-</tr>
-<tr>
-<td><code>tidy</code></td>
-<td>Tidy the result of a test into a summary data.frame</td>
-</tr>
-<tr>
-<td><code>tidy.NULL</code></td>
-<td>tidy on a NULL input</td>
-</tr>
-<tr>
-<td><code>tidy.TukeyHSD</code></td>
-<td>tidy a TukeyHSD object</td>
-</tr>
-<tr>
-<td><code>tidy.coeftest</code></td>
-<td>Tidying methods for coeftest objects</td>
-</tr>
-<tr>
-<td><code>tidy.default</code></td>
-<td>Default tidying method</td>
-</tr>
-<tr>
-<td><code>tidy.density</code></td>
-<td>tidy a density objet</td>
-</tr>
-<tr>
-<td><code>tidy.ftable</code></td>
-<td>tidy an ftable object</td>
-</tr>
-<tr>
-<td><code>tidy.manova</code></td>
-<td>tidy a MANOVA object</td>
-</tr>
-<tr>
-<td><code>tidy.map</code></td>
-<td>Tidy method for map objects.</td>
-</tr>
-<tr>
-<td><code>tidy.pairwise.htest</code></td>
-<td>tidy a pairwise hypothesis test</td>
-</tr>
-<tr>
-<td><code>tidy.power.htest</code></td>
-<td>tidy a power.htest</td>
-</tr>
-<tr>
-<td><code>tidy.spec</code></td>
-<td>tidy a spec objet</td>
-</tr>
-<tr>
-<td><code>tidy.table</code></td>
-<td>tidy a table object</td>
-</tr>
-<tr>
-<td><code>tidy.ts</code></td>
-<td>tidy a ts timeseries object</td>
-</tr>
-<tr>
-<td><code>unrowname</code></td>
-<td>strip rownames from an object</td>
-</tr>
-<tr>
-<td><code>zoo_tidiers</code></td>
-<td>Tidying methods for a zoo object</td>
+<td><code>zen2han</code></td>
+<td>Convert Japanese characters from fullwidth (zenkaku) to halfwidth (hankaku) forms</td>
 </tr>
 </tbody>
 </table>
-
+<h2 id="sjis2utf8">sjis2utf8</h2>
+<pre><code class="lang-r">&gt; iconv(zenkaku$upper, from = <span class="hljs-string">&quot;UTF-8&quot;</span>, to = <span class="hljs-string">&quot;CP932&quot;</span>) %&gt;% sjis2utf8()
+</code></pre>
+<pre><code>[1] &quot;&#xFF21;&#xFF22;&#xFF23;&#xFF24;&#xFF25;&#xFF26;&#xFF27;&#xFF28;&#xFF29;&#xFF2A;&#xFF2B;&#xFF2C;&#xFF2D;&#xFF2E;&#xFF2F;&#xFF30;&#xFF31;&#xFF32;&#xFF33;&#xFF34;&#xFF35;&#xFF36;&#xFF37;&#xFF38;&#xFF39;&#xFF3A;&quot;
+</code></pre><h2 id="kata2hira">kata2hira</h2>
+<p>&#x7247;&#x4EEE;&#x540D;&#x3068;&#x5E73;&#x4EEE;&#x540D;&#x306E;&#x76F8;&#x4E92;&#x5909;&#x63DB;</p>
+<pre><code class="lang-r">&gt; katakana()[<span class="hljs-number">26</span>:<span class="hljs-number">30</span>]
+</code></pre>
+<pre><code>[1] &quot;&#x30BA;&quot; &quot;&#x30BB;&quot; &quot;&#x30BC;&quot; &quot;&#x30BD;&quot; &quot;&#x30BE;&quot;
+</code></pre><pre><code class="lang-r">&gt; kata2hira(katakana()[<span class="hljs-number">26</span>:<span class="hljs-number">30</span>])
+</code></pre>
+<pre><code>[1] &quot;&#x305A;&quot; &quot;&#x305B;&quot; &quot;&#x305C;&quot; &quot;&#x305D;&quot; &quot;&#x305E;&quot;
+</code></pre><pre><code class="lang-r">&gt; hiragana()[<span class="hljs-number">21</span>:<span class="hljs-number">25</span>]
+</code></pre>
+<pre><code>[1] &quot;&#x3055;&quot; &quot;&#x3056;&quot; &quot;&#x3057;&quot; &quot;&#x3058;&quot; &quot;&#x3059;&quot;
+</code></pre><pre><code class="lang-r">&gt; hira2kata(hiragana()[<span class="hljs-number">21</span>:<span class="hljs-number">25</span>])
+</code></pre>
+<pre><code>[1] &quot;&#x30B5;&quot; &quot;&#x30B6;&quot; &quot;&#x30B7;&quot; &quot;&#x30B8;&quot; &quot;&#x30B9;&quot;
+</code></pre><h2 id="zen2han">zen2han</h2>
+<p>&#x5168;&#x89D2;&#x82F1;&#x6570;&#x5B57;&#x3092;&#x534A;&#x89D2;&#x82F1;&#x6570;&#x5B57;&#x306B;&#x5909;&#x63DB;&#x3059;&#x308B;</p>
+<pre><code class="lang-r">&gt; c(<span class="hljs-string">&quot;&#xFF10;&quot;</span>, <span class="hljs-string">&quot;&#xFF26;&quot;</span>) %&gt;% zen2han()
+</code></pre>
+<pre><code>[1] &quot;0&quot; &quot;F&quot;
+</code></pre>
                     
                     </section>
                 
@@ -812,10 +638,10 @@
         </div>
 
         
-        <a href="../utility/index.html" class="navigation navigation-prev " aria-label="Previous page: Utility"><i class="fa fa-angle-left"></i></a>
+        <a href="../utility/magrittr.html" class="navigation navigation-prev " aria-label="Previous page: magrittr"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../utility/dplyr.html" class="navigation navigation-next " aria-label="Next page: dplyr"><i class="fa fa-angle-right"></i></a>
+        <a href="../utility/readr.html" class="navigation navigation-next " aria-label="Next page: readr"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
