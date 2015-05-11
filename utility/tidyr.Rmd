@@ -1,0 +1,53 @@
+```{r knitsetup, echo = FALSE, results = 'hide', warning = FALSE, message = FALSE, cache = FALSE}
+opts_knit$set(base.dir = './', fig.path = '', out.format = 'md')
+opts_chunk$set(prompt = TRUE, comment = '', results = 'markup', fig.path = '../Figure/')
+# See yihui.name/knitr/options for more Knitr options.
+##### Put other setup R code here
+# end setup chunk
+```
+# tidyr: Easily Tidy Data with spread() and gather() Functions
+
+データ解析を容易にするデータ整形のためのパッケージ
+
+[![](http://www.r-pkg.org/badges/version/tidyr)](http://cran.rstudio.com/web/packages/tidyr/index.html)
+
+* CRAN: http://cran.r-project.org/web/packages/tidyr/index.html
+* GitHub: http://github.com/hadley/tidyr
+
+```{r}
+library(tidyr)
+```
+
+バージョン: `r packageVersion("tidyr")`
+
+-----
+
+```{r, echo = FALSE, results = "asis", eval = FALSE}
+library(help = "tidyr")$info[[2]] %>% data.frame() %>% kable()
+```
+
+| 関数名 | 概略 |
+|--------|------|
+| `expand` | Expand data frame to include all combinations of levels. |
+| `extract` | Extract one column into multiple columns. |
+| `extract_numeric` | Extract numeric component of variable. |
+| `gather` | Gather columns into key-value pairs. |
+| `separate` | Separate one column into multiple columns. |
+| `seq_range` | Create an evenly spaced sequence of values from highest to lowest. |
+| `spread` | Spread a key-value pair across multiple columns. |
+| `spread_` | Standard-evaluation version of 'spread'. |
+| `unite` | Unite multiple columns into one. |
+| `unnest` | Unnest a list column. |
+| `unnest_` | Standard-evaluation version of 'unnest'. |
+
+## extract
+
+１つの行を複数の行に分割する
+
+## extract_numeric
+
+データから数値だけを抜き出す
+
+## gather
+
+複数の変数に分かれている**共通の変数**を１つの変数としてまとめる

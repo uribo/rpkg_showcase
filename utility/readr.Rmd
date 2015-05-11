@@ -1,0 +1,56 @@
+```{r knitsetup, echo = FALSE, results = 'hide', warning = FALSE, message = FALSE, cache = FALSE}
+opts_knit$set(base.dir = './', fig.path = '', out.format = 'md')
+opts_chunk$set(prompt = TRUE, comment = '', results = 'markup', fig.path = '../Figure/')
+# See yihui.name/knitr/options for more Knitr options.
+##### Put other setup R code here
+# end setup chunk
+```
+# readr: Read Tabular Data
+
+表形式のデータを読み込むためのパッケージ
+
+[![](http://www.r-pkg.org/badges/version/readr)](http://cran.rstudio.com/web/packages/readr/index.html)
+
+* CRAN: http://cran.r-project.org/web/packages/readr/index.html
+* GitHub: http://github.com/hadley/readr
+
+```{r}
+library(readr)
+```
+
+バージョン: `r packageVersion("readr")`
+
+-----
+
+```{r, echo = FALSE, results = "asis", eval = FALSE}
+library(help = "readr")$info[[2]] %>% data.frame() %>% kable()
+```
+
+| 関数名 | 概略 |
+|--------|------|
+| `collector` | Parse character vectors into typed columns.   |
+| `count_fields` | Count the number of fields in each line of a file. |
+| `parse_datetime` | Parse a character vector of dates or date times. |
+| `problems` | Retrieve parsing problems. |
+| `read_delim` | Read a delimited file into a data frame. |
+| `read_file` | Read a file into a string. |
+| `read_fwf` | Read a fixed width file. |
+| `read_lines` | Read lines from a file or string. |
+| `read_log` | Read common/combined log file. |
+| `read_table` | Read text file where columns are separated by whitespace. |
+| `type_convert` | Re-convert character columns in existing data frame. |
+| `write_csv` | Save a data frame to a csv file. |
+
+## read_delim
+
+カンマ区切りのファイル（`.csv`）を読み込む
+
+```{r, eval = FALSE}
+read_csv(file, col_names = TRUE, col_types = NULL, na = "NA", skip = 0, n_max = -1, progress = interactive())
+```
+
+> 日付データなどは形式を指定して読み込むことが可能（？）
+
+### 参考
+
+* [R の read.csv() と read.csv2() の違い #rstatsj - Qiita](http://qiita.com/hoxo_m/items/959d141cf7297e2e80d3)

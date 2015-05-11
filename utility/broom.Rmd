@@ -1,0 +1,93 @@
+```{r knitsetup, echo = FALSE, results = 'hide', warning = FALSE, message = FALSE, cache = FALSE}
+opts_knit$set(base.dir = './', fig.path = '', out.format = 'md')
+opts_chunk$set(prompt = TRUE, comment = '', results = 'markup', fig.path = '../Figure/')
+# See yihui.name/knitr/options for more Knitr options.
+##### Put other setup R code here
+# end setup chunk
+```
+# broom: Convert Statistical Analysis Objects into Tidy Data Frames
+
+統計解析の出力オブジェクトを整形された形にする
+
+[![](http://www.r-pkg.org/badges/version/broom)](http://cran.rstudio.com/web/packages/broom/index.html)
+
+* CRAN: http://cran.r-project.org/web/packages/broom/index.html
+* GitHub: http://github.com/dgrtwo/broom
+
+```{r}
+library(broom)
+```
+
+バージョン: `r packageVersion("broom")`
+
+-----
+
+```{r, echo = FALSE, results = "asis", eval = FALSE}
+library(help = "broom")$info[[2]] %>% data.frame() %>% kable()
+```
+
+| 関数名 | 概略 |
+|--------|------|
+| `Arima_tidiers` | Tidying methods for ARIMA modeling of time series |
+| `aareg_tidiers` | Tidiers for aareg objects |
+| `anova_tidiers` | Tidying methods for anova and AOV objects |
+| `augment` | Augment data according to a tidied model |
+| `augment_columns` | add fitted values, residuals, and other common outputs to an augment call  |
+| `biglm_tidiers` | Tidiers for biglm and bigglm object |
+| `bootstrap` | Set up bootstrap replicates of a dplyr operation |
+| `broom` | Convert Statistical Analysis Objects into Tidy Data Frames |
+| `cch_tidiers` | tidiers for case-cohort data |
+| `compact` | Remove NULL items in a vector or list |
+| `confint_tidy` | Calculate confidence interval as a tidy data frame |
+| `coxph_tidiers` | Tidiers for coxph object |
+| `cv.glmnet_tidiers` | Tidiers for glmnet cross-validation objects |
+| `data.frame_tidiers` | Tidiers for data.frame objects |
+| `felm_tidiers` | Tidying methods for models with multiple group fixed effects |
+| `finish_glance` | Add logLik, AIC, BIC, and other common measurements to a glance of a prediction |
+| `fix_data_frame` | Ensure an object is a data frame, with rownames moved into a column |
+| `gam_tidiers` | Tidying methods for a generalized additive model (gam) |
+| `glance` | Construct a single row summary "glance" of a model, fit, or other object |
+| `glm_tidiers` | Tidying methods for a glm object |
+| `glmnet_tidiers` | Tidiers for LASSO or elasticnet regularized fits |
+| `htest_tidiers` | Tidying methods for an htest object |
+| `inflate` | Expand a dataset to include all factorial combinations of one or more variables |
+| `insert_NAs` | insert a row of NAs into a data frame wherever another data frame has NAs |
+| `kmeans_tidiers` | Tidying methods for kmeans objects |
+| `list_tidiers` | Tidiers for return values from functions that aren't S3 objects |
+| `lm_tidiers` | Tidying methods for a linear model |
+| `lme4_tidiers` | Tidying methods for mixed effects models |
+| `loess_tidiers` | Augmenting methods for loess models |
+| `matrix_tidiers` | Tidiers for matrix objects |
+| `multcomp_tidiers` | tidying methods for objects produced by 'multcomp' |
+| `multinom_tidiers` | Tidying methods for multinomial logistic regression models |
+| `nlme_tidiers` | Tidying methods for mixed effects models |
+| `nls_tidiers` | Tidying methods for a nonlinear model |
+| `optim_tidiers` | Tidiers for lists returned from optim |
+| `plm_tidiers` | Tidiers for panel regression linear models |
+| `process_lm` | helper function to process a tidied lm object |
+| `pyears_tidiers` | Tidy person-year summaries |
+| `ridgelm_tidiers` | Tidying methods for ridgelm objects from the MASS package |
+| `rlm_tidiers` | Tidying methods for an rlm (robust linear model) object |
+| `rowwise_df_tidiers` | Tidying methods for rowwise_dfs from dplyr, for tidying each row and recombining the results |
+| `sexpfit_tidiers` | Tidy an expected survival curve |
+| `smooth.spline_tidiers` | tidying methods for smooth.spline objects |
+| `sp_tidiers` | tidying methods for classes from the sp package. |
+| `summary_tidiers` | Tidiers for summaryDefault objects |
+| `survfit_tidiers` | tidy survival curve fits |
+| `survreg_tidiers` | Tidiers for a parametric regression survival model|
+| `tidy` | Tidy the result of a test into a summary data.frame |
+| `tidy.NULL` | tidy on a NULL input |
+| `tidy.TukeyHSD` | tidy a TukeyHSD object |
+| `tidy.coeftest` | Tidying methods for coeftest objects |
+| `tidy.default` | Default tidying method |
+| `tidy.density` | tidy a density objet |
+| `tidy.ftable` | tidy an ftable object |
+| `tidy.manova` | tidy a MANOVA object |
+| `tidy.map` | Tidy method for map objects. |
+| `tidy.pairwise.htest` | tidy a pairwise hypothesis test |
+| `tidy.power.htest` | tidy a power.htest |
+| `tidy.spec` | tidy a spec objet |
+| `tidy.table` | tidy a table object |
+| `tidy.ts` | tidy a ts timeseries object |
+| `unrowname` | strip rownames from an object |
+| `zoo_tidiers` | Tidying methods for a zoo object |

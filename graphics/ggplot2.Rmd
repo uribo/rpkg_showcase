@@ -1,0 +1,28 @@
+```{r knitsetup, echo = FALSE, results = 'hide', warning = FALSE, message = FALSE, cache = FALSE}
+opts_knit$set(base.dir = './', fig.path = '', out.format = 'md')
+opts_chunk$set(prompt = TRUE, comment = '', results = 'markup', fig.path = '../Figure/')
+# See yihui.name/knitr/options for more Knitr options.
+##### Put other setup R code here
+# end setup chunk
+```
+# ggplot2: An Implementation of the Grammar of Graphics
+
+作図のための文法
+
+[![](http://www.r-pkg.org/badges/version/ggplot2)](http://cran.rstudio.com/web/packages/ggplot2/index.html)
+
+* CRAN: http://cran.r-project.org/web/packages/ggplot2/index.html
+* GitHub: https://github.com/hadley/ggplot2
+
+```{r}
+library(ggplot2)
+```
+
+バージョン: `r packageVersion("ggplot2")`
+
+-----
+
+```{r, echo = FALSE, results = "asis"}
+library(help = "ggplot2")$info[[2]] %>% data.frame() %>% kable(format = "markdown")
+```
+

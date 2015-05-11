@@ -1,0 +1,94 @@
+```{r knitsetup, echo = FALSE, results = 'hide', warning = FALSE, message = FALSE, cache = FALSE}
+opts_knit$set(base.dir = './', fig.path = '', out.format = 'md')
+opts_chunk$set(prompt = TRUE, comment = '', results = 'markup', fig.path = '../Figure/')
+# See yihui.name/knitr/options for more Knitr options.
+##### Put other setup R code here
+# end setup chunk
+```
+# Rgitbook: Gitbook for R Markdown
+
+R MarkdownでGitbookを編集する
+
+`.Rmd`から`.md`に変換し、gitbookとして構築できる
+
+[![](http://www.r-pkg.org/badges/version/Rgitbook)](http://cran.rstudio.com/web/packages/Rgitbook/index.html)
+
+* CRAN: ---
+* GitHub: https://github.com/jbryer/Rgitbook
+
+```{r}
+library(Rgitbook)
+```
+
+バージョン: `r packageVersion("Rgitbook")`
+
+一連の手順...
+
+1. checkForGitbook() # Gitbookがインストールされているかを確認
+2. newGitbook() # 新規gitbook用のディレクトリを用意
+3. SUMMARY.mdを編集
+3. initGitbook() # `.Rmd`ファイルを自動生成
+4. 各`.Rmd`ファイルを編集
+5. buildRmd() # `.Rmd` -> `.md`
+6. buildGitbook()
+7. openGitbook()
+8. publishGitbook()
+
+-----
+
+```{r, echo = FALSE, results = "asis", eval = FALSE}
+library(help = "Rgitbook")$info[[2]] %>% data.frame() %>% kable(format = "markdown")
+```
+
+| 関数名 | 概略 |
+|--------|------|
+| `Rgitbook-package` | Gitbook Projects with R Markdown |
+| `buildGitbook` | This will build a gitbook from the source markdown files. |
+| `buildRmd` | Builds markdown files from all Rmarkdown files in the given directories. |
+| `checkForGitbook` | Check if Gitbook is installed. |
+| `gitbookInfo` | Returns the version information about the currently installed gitbook and what is avaialble from <URL: https://www.npmjs.org/>. |
+| `initGitbook` | Create files and folders based on contents of SUMMARY.md. |
+| `installGitbook` | This will install Gitbook.io. |
+| `newGitbook` | Initializes a new Gitbook. |
+| `openGitbook` | Open a built gitbook. |
+| `publishGitbook` | Publish the built gitbook to Github. |
+
+## buildGitbook
+
+`.md`からgitbookのためのファイルをビルド
+
+```{r, eval=FALSE}
+buildGitbook()
+```
+
+## buildRmd
+
+対象ディレクトリ中の`.Rmd`ファイルを`.md`に変換する
+
+```{r, eval=FALSE}
+buildRmd(dir = getwd(), clean = FALSE, log.dir, log.ext = ".txt", ...)
+```
+
+## checkForGitbook
+
+Gitbookがインストールされているかを確認する。
+
+```{r}
+checkForGitbook()
+```
+
+## gitbookInfo
+
+## initGitbook
+
+`SUMMARY.md`の内容をもとに`.Rmd`を自動生成する。**上書きする使用なので一度実行したら二度と実行しないほうがよい...**
+
+```{r, eval=FALSE}
+# initGitbook()
+```
+
+## openGitbook
+
+```{r, eval=FALSE}
+openGitbook()
+```

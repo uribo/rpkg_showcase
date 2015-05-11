@@ -1,0 +1,25 @@
+```{r knitsetup, echo = FALSE, results = 'hide', warning = FALSE, message = FALSE, cache = FALSE}
+opts_knit$set(base.dir = './', fig.path = '', out.format = 'md')
+opts_chunk$set(prompt = TRUE, comment = '', results = 'markup', fig.path = '../Figure/')
+# See yihui.name/knitr/options for more Knitr options.
+##### Put other setup R code here
+# end setup chunk
+```
+# ggvis: Interactive Grammar of Graphics
+
+[![](http://www.r-pkg.org/badges/version/ggvis)](http://cran.rstudio.com/web/packages/ggvis/index.html)
+
+* CRAN: http://cran.r-project.org/web/packages/ggvis/index.html
+* URL: http://ggvis.rstudio.com/
+
+```{r}
+library(ggvis)
+```
+
+バージョン: `r packageVersion("ggvis")`
+
+-----
+
+```{r, results = 'hold'}
+library(help = "ggvis")$info[[2]] %>% data.frame() %>% kable()
+```

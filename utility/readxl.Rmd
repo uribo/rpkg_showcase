@@ -1,0 +1,50 @@
+```{r knitsetup, echo = FALSE, results = 'hide', warning = FALSE, message = FALSE, cache = FALSE}
+opts_knit$set(base.dir = './', fig.path = '', out.format = 'md')
+opts_chunk$set(prompt = TRUE, comment = '', results = 'markup', fig.path = '../Figure/')
+# See yihui.name/knitr/options for more Knitr options.
+##### Put other setup R code here
+# end setup chunk
+```
+# readxl: Read Excel Files
+
+エクセルファイルを読み込む
+
+[![](http://www.r-pkg.org/badges/version/readxl)](http://cran.rstudio.com/web/packages/readxl/index.html)
+
+* CRAN: http://cran.r-project.org/web/packages/readxl/index.html
+* GitHub: http://github.com/hadley/readxl
+
+```{r}
+library(readxl)
+```
+
+バージョン: `r packageVersion("readxl")`
+
+-----
+
+```{r, echo = FALSE, results = "asis", eval = FALSE}
+library(help = "readxl")$info[[2]] %>% data.frame() %>% kable()
+```
+
+| 関数名 | 概略 |
+|--------|------|
+| `excel_sheets` | List all sheets in an excel spreadsheet. |
+| `read_excel` | Read xls and xlsx files. |
+
+## read_excel
+
+`.xls`, `.xlsx`形式のファイルを読み込む。特定のシートを読み込む（初期値は１）場合は`sheet`引数で指定する
+
+```{r, eval = FALSE}
+read_excel(path, sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+```
+
+```{r}
+datasets <- system.file("extdata/datasets.xlsx", package = "readxl")
+# readxlパッケージ内付属のxlsxファイルのディレクトリを与える
+read_excel(datasets) %>% head()
+
+read_excel(datasets, sheet = 2) %>% head()
+```
+
+
