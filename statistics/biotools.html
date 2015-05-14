@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>xtable | R Package Showcase</title>
+        <title>biotools | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../statistics/index.html" />
+    <link rel="next" href="../statistics/MCMCpack.html" />
     
     
-    <link rel="prev" href="../report/rmarkdown.html" />
+    <link rel="prev" href="../statistics/index.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.4" data-basepath=".." data-revision="Thu May 14 2015 22:41:48 GMT+0900 (JST)">
+    <div class="book" data-level="4.1" data-basepath=".." data-revision="Thu May 14 2015 22:41:48 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -259,7 +259,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.4" data-path="report/xtable.html">
+        <li class="chapter " data-level="3.4" data-path="report/xtable.html">
             
                 
                     <a href="../report/xtable.html">
@@ -295,7 +295,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="4.1" data-path="statistics/biotools.html">
+        <li class="chapter active" data-level="4.1" data-path="statistics/biotools.html">
             
                 
                     <a href="../statistics/biotools.html">
@@ -589,22 +589,15 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="xtable-export-tables-to-latex-or-html">xtable: Export tables to LaTeX or HTML</h1>
-<p>&#x8868;&#x5F62;&#x5F0F;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;LaTeX&#x3084;HTML&#x3068;&#x3057;&#x3066;&#x51FA;&#x529B;</p>
-<p><a href="http://cran.rstudio.com/web/packages/xtable/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/xtable" alt=""></a></p>
+                        <h1 id="biotools-tools-for-biometry-and-applied-statistics-in-agricultural-science">biotools: Tools for Biometry and Applied Statistics in Agricultural Science</h1>
+<p>&#x8FB2;&#x5B66;&#x30FB;&#x751F;&#x7269;&#x7D71;&#x8A08;&#x5B66;&#x306E;&#x30C4;&#x30FC;&#x30EB;</p>
+<p><a href="http://cran.rstudio.com/web/packages/biotools/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/biotools" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/xtable/index.html" target="_blank">http://cran.r-project.org/web/packages/xtable/index.html</a></li>
-<li>URL: <a href="http://xtable.r-forge.r-project.org/" target="_blank">http://xtable.r-forge.r-project.org/</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/biotools/index.html" target="_blank">http://cran.r-project.org/web/packages/biotools/index.html</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(xtable)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(biotools) <span class="hljs-comment"># &#x30D0;&#x30B0;&#x304C;&#x3042;&#x308B;&#x3063;&#x307D;&#x3044;</span>
 </code></pre>
-<pre><code>
-Attaching package: &apos;xtable&apos;
-
-The following object is masked from &apos;package:maptools&apos;:
-
-    label
-</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.7.4</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 2.1</p>
 <hr>
 <table>
 <thead>
@@ -615,28 +608,99 @@ The following object is masked from &apos;package:maptools&apos;:
 </thead>
 <tbody>
 <tr>
-<td><code>caption</code></td>
-<td>Retrieve and Set Options for Export Tables</td>
+<td>`D2.disc``</td>
+<td>Discriminant Analysis Based on Mahalanobis Distance</td>
 </tr>
 <tr>
-<td><code>print.xtable</code></td>
-<td>Print Export Tables</td>
+<td>`D2.dist``</td>
+<td>Pairwise Squared Generalized Mahalanobis Distances</td>
 </tr>
 <tr>
-<td><code>string</code></td>
-<td>String handling functions</td>
+<td>`aer Apparent Error Rate</td>
 </tr>
 <tr>
-<td><code>tli</code></td>
-<td>Math scores from Texas Assessment of Academic Skills (TAAS)</td>
+<td>`biotools-package``</td>
+<td>Tools for Biometry and Applied Statistics in Agricultural Science</td>
 </tr>
 <tr>
-<td><code>toLatex.xtable</code></td>
-<td>Convert Table to Latex</td>
+<td>`boxM``</td>
+<td>Box&apos;s M-test</td>
 </tr>
 <tr>
-<td><code>xtable</code></td>
-<td>Create Export Tables</td>
+<td>`confusionmatrix``</td>
+<td>Confusion Matrix</td>
+</tr>
+<tr>
+<td><code>coph.tocher</code></td>
+<td>Cophenetic Distances for Tocher&apos;s Clustering</td>
+</tr>
+<tr>
+<td><code>cov2pcov</code></td>
+<td>Partial Covariance Matrix</td>
+</tr>
+<tr>
+<td><code>creategroups</code></td>
+<td>Creating Homogeneous Groups</td>
+</tr>
+<tr>
+<td><code>distClust</code></td>
+<td>Cluster Distance Matrix</td>
+</tr>
+<tr>
+<td><code>findSubsample</code></td>
+<td>Finding an Optimized Subsample</td>
+</tr>
+<tr>
+<td><code>fitplotsize</code></td>
+<td>Parameter Estimation of the Plot Size Model</td>
+</tr>
+<tr>
+<td><code>garlicdist</code></td>
+<td>Distances Between Garlic Cultivars</td>
+</tr>
+<tr>
+<td><code>mantelPower</code></td>
+<td>Power of Mantel&apos;s Test</td>
+</tr>
+<tr>
+<td><code>mantelTest</code></td>
+<td>Mantel&apos;s Permutation Test</td>
+</tr>
+<tr>
+<td><code>multcor.test</code></td>
+<td>Pairwise Correlation t-Test</td>
+</tr>
+<tr>
+<td><code>optimumplotsize</code></td>
+<td>Maximum Curvature Point for Optimum Plot Size</td>
+</tr>
+<tr>
+<td><code>pathanalysis</code></td>
+<td>Path Analysis, Simple and Under Collinearity</td>
+</tr>
+<tr>
+<td><code>peppercorr</code></td>
+<td>Correlations Between Pepper Variables</td>
+</tr>
+<tr>
+<td><code>predict.D2.disc</code></td>
+<td>Classify Multivariate Observations by Mahalanobis Distance</td>
+</tr>
+<tr>
+<td><code>raise.matrix</code></td>
+<td>Raising a Square Matrix to a Power</td>
+</tr>
+<tr>
+<td><code>samplesize</code></td>
+<td>Minimum Sample Size</td>
+</tr>
+<tr>
+<td><code>singh</code></td>
+<td>Importance of Variables According to the Singh (1981) Criterion</td>
+</tr>
+<tr>
+<td><code>tocher</code></td>
+<td>Tocher&apos;s Clustering</td>
 </tr>
 </tbody>
 </table>
@@ -650,10 +714,10 @@ The following object is masked from &apos;package:maptools&apos;:
         </div>
 
         
-        <a href="../report/rmarkdown.html" class="navigation navigation-prev " aria-label="Previous page: rmarkdown"><i class="fa fa-angle-left"></i></a>
+        <a href="../statistics/index.html" class="navigation navigation-prev " aria-label="Previous page: Statistics and Modeling"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../statistics/index.html" class="navigation navigation-next " aria-label="Next page: Statistics and Modeling"><i class="fa fa-angle-right"></i></a>
+        <a href="../statistics/MCMCpack.html" class="navigation navigation-next " aria-label="Next page: MCMCpack"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

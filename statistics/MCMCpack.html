@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>xtable | R Package Showcase</title>
+        <title>MCMCpack | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../statistics/index.html" />
+    <link rel="next" href="../statistics/smatr.html" />
     
     
-    <link rel="prev" href="../report/rmarkdown.html" />
+    <link rel="prev" href="../statistics/biotools.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.4" data-basepath=".." data-revision="Thu May 14 2015 22:41:48 GMT+0900 (JST)">
+    <div class="book" data-level="4.2" data-basepath=".." data-revision="Thu May 14 2015 22:41:48 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -259,7 +259,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.4" data-path="report/xtable.html">
+        <li class="chapter " data-level="3.4" data-path="report/xtable.html">
             
                 
                     <a href="../report/xtable.html">
@@ -310,7 +310,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="statistics/MCMCpack.html">
+        <li class="chapter active" data-level="4.2" data-path="statistics/MCMCpack.html">
             
                 
                     <a href="../statistics/MCMCpack.html">
@@ -589,22 +589,32 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="xtable-export-tables-to-latex-or-html">xtable: Export tables to LaTeX or HTML</h1>
-<p>&#x8868;&#x5F62;&#x5F0F;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;LaTeX&#x3084;HTML&#x3068;&#x3057;&#x3066;&#x51FA;&#x529B;</p>
-<p><a href="http://cran.rstudio.com/web/packages/xtable/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/xtable" alt=""></a></p>
+                        <h1 id="mcmcpack-markov-chain-monte-carlo-mcmc-package">MCMCpack: Markov chain Monte Carlo (MCMC) Package</h1>
+<p>CRAN&#x30BF;&#x30B9;&#x30AF;&#x30D3;&#x30E5;&#x30FC;</p>
+<p><a href="http://cran.rstudio.com/web/packages/MCMCpack/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/MCMCpack" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/xtable/index.html" target="_blank">http://cran.r-project.org/web/packages/xtable/index.html</a></li>
-<li>URL: <a href="http://xtable.r-forge.r-project.org/" target="_blank">http://xtable.r-forge.r-project.org/</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/MCMCpack/index.html" target="_blank">http://cran.r-project.org/web/packages/MCMCpack/index.html</a></li>
+<li>URL: <a href="http://mcmcpack.wustl.edu/" target="_blank">http://mcmcpack.wustl.edu/</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(xtable)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(MCMCpack)
 </code></pre>
-<pre><code>
-Attaching package: &apos;xtable&apos;
+<pre><code>Loading required package: coda
+Loading required package: MASS
 
-The following object is masked from &apos;package:maptools&apos;:
+Attaching package: &apos;MASS&apos;
 
-    label
-</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.7.4</p>
+The following object is masked from &apos;package:dplyr&apos;:
+
+    select
+
+##
+## Markov Chain Monte Carlo Package (MCMCpack)
+## Copyright (C) 2003-2015 Andrew D. Martin, Kevin M. Quinn, and Jong Hee Park
+##
+## Support provided by the U.S. National Science Foundation
+## (Grants SES-0350646 and SES-0350613)
+##
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.3.3</p>
 <hr>
 <table>
 <thead>
@@ -615,28 +625,281 @@ The following object is masked from &apos;package:maptools&apos;:
 </thead>
 <tbody>
 <tr>
-<td><code>caption</code></td>
-<td>Retrieve and Set Options for Export Tables</td>
+<td><code>BayesFactor</code></td>
+<td>Create an object of class BayesFactor from MCMCpack output</td>
 </tr>
 <tr>
-<td><code>print.xtable</code></td>
-<td>Print Export Tables</td>
+<td><code>Dirichlet</code></td>
+<td>The Dirichlet Distribution</td>
 </tr>
 <tr>
-<td><code>string</code></td>
-<td>String handling functions</td>
+<td><code>HMMpanelFE</code></td>
+<td>Markov Chain Monte Carlo for the Hidden Markov Fixed-effects Model</td>
 </tr>
 <tr>
-<td><code>tli</code></td>
-<td>Math scores from Texas Assessment of Academic Skills (TAAS)</td>
+<td><code>HMMpanelRE</code></td>
+<td>Markov Chain Monte Carlo for the Hidden Markov Random-effects Model</td>
 </tr>
 <tr>
-<td><code>toLatex.xtable</code></td>
-<td>Convert Table to Latex</td>
+<td><code>InvGamma</code></td>
+<td>The Inverse Gamma Distribution</td>
 </tr>
 <tr>
-<td><code>xtable</code></td>
-<td>Create Export Tables</td>
+<td><code>InvWishart</code></td>
+<td>The Inverse Wishart Distribution</td>
+</tr>
+<tr>
+<td><code>MCMCSVDreg</code></td>
+<td>Markov Chain Monte Carlo for SVD Regression</td>
+</tr>
+<tr>
+<td><code>MCMCbinaryChange</code></td>
+<td>Markov Chain Monte Carlo for a Binary Multiple Changepoint Model</td>
+</tr>
+<tr>
+<td><code>MCMCdynamicEI</code></td>
+<td>Markov Chain Monte Carlo for Quinn&apos;s Dynamic Ecological Inference Model</td>
+</tr>
+<tr>
+<td><code>MCMCdynamicIRT1d</code></td>
+<td>Markov Chain Monte Carlo for Dynamic One Dimensional Item Response Theory Model</td>
+</tr>
+<tr>
+<td><code>MCMCfactanal</code></td>
+<td>Markov Chain Monte Carlo for Normal Theory Factor Analysis Model</td>
+</tr>
+<tr>
+<td><code>MCMChierEI</code></td>
+<td>Markov Chain Monte Carlo for Wakefield&apos;s Hierarchial Ecological Inference Model</td>
+</tr>
+<tr>
+<td><code>MCMChlogit</code></td>
+<td>Markov Chain Monte Carlo for the Hierarchical Binomial Linear Regression Model using the logit link function</td>
+</tr>
+<tr>
+<td><code>MCMChpoisson</code></td>
+<td>Markov Chain Monte Carlo for the Hierarchical Poisson Linear Regression Model using the log link function</td>
+</tr>
+<tr>
+<td><code>MCMChregress</code></td>
+<td>Markov Chain Monte Carlo for the Hierarchical Gaussian Linear Regression Model</td>
+</tr>
+<tr>
+<td><code>MCMCintervention</code></td>
+<td>Markov Chain Monte Carlo for a linear Gaussian Multiple Changepoint Model</td>
+</tr>
+<tr>
+<td><code>MCMCirt1d</code></td>
+<td>Markov Chain Monte Carlo for One Dimensional Dimensional Item Response Theory Model, Covariates Predicting Latent Ideal Point (Ability)</td>
+</tr>
+<tr>
+<td><code>MCMCirtHier1d</code></td>
+<td>Markov Chain Monte Carlo for Hierarchical One Dimensional Item Response Theory Model, Covariates Predicting Latent Ideal Point (Ability)</td>
+</tr>
+<tr>
+<td><code>MCMCirtKd</code></td>
+<td>Markov Chain Monte Carlo for K-Dimensional Item Response Theory Model</td>
+</tr>
+<tr>
+<td><code>MCMCirtKdHet</code></td>
+<td>Markov Chain Monte Carlo for Heteroskedastic K-Dimensional Item Response Theory Model</td>
+</tr>
+<tr>
+<td><code>MCMCirtKdRob</code></td>
+<td>Markov Chain Monte Carlo for Robust K-Dimensional Item Response Theory Model</td>
+</tr>
+<tr>
+<td><code>MCMClogit</code></td>
+<td>Markov Chain Monte Carlo for Logistic Regression</td>
+</tr>
+<tr>
+<td><code>MCMCmetrop1R</code></td>
+<td>Metropolis Sampling from User-Written R function</td>
+</tr>
+<tr>
+<td><code>MCMCmixfactanal</code></td>
+<td>Markov Chain Monte Carlo for Mixed Data Factor Analysis Model</td>
+</tr>
+<tr>
+<td><code>MCMCmnl</code></td>
+<td>Markov Chain Monte Carlo for Multinomial Logistic Regression</td>
+</tr>
+<tr>
+<td><code>MCMCoprobit</code></td>
+<td>Markov Chain Monte Carlo for Ordered Probit Regression</td>
+</tr>
+<tr>
+<td><code>MCMCoprobitChange</code></td>
+<td>Markov Chain Monte Carlo for Ordered Probit Changepoint Regression Model</td>
+</tr>
+<tr>
+<td><code>MCMCordfactanal</code></td>
+<td>Markov Chain Monte Carlo for Ordinal Data Factor Analysis Model</td>
+</tr>
+<tr>
+<td><code>MCMCpoisson</code></td>
+<td>Markov Chain Monte Carlo for Poisson Regression</td>
+</tr>
+<tr>
+<td><code>MCMCpoissonChange</code></td>
+<td>Markov Chain Monte Carlo for a Poisson Regression Changepoint Model</td>
+</tr>
+<tr>
+<td><code>MCMCprobit</code></td>
+<td>Markov Chain Monte Carlo for Probit Regression</td>
+</tr>
+<tr>
+<td><code>MCMCprobitChange</code></td>
+<td>Markov Chain Monte Carlo for a linear Gaussian Multiple Changepoint Model</td>
+</tr>
+<tr>
+<td><code>MCMCquantreg</code></td>
+<td>Bayesian quantile regression using Gibbs sampling</td>
+</tr>
+<tr>
+<td><code>MCMCregress</code></td>
+<td>Markov Chain Monte Carlo for Gaussian Linear Regression</td>
+</tr>
+<tr>
+<td><code>MCMCregressChange</code></td>
+<td>Markov Chain Monte Carlo for a linear Gaussian Multiple Changepoint Model</td>
+</tr>
+<tr>
+<td><code>MCMCresidualBreakAnalysis</code></td>
+<td>Break Analysis of Univariate Time Series using Markov Chain Monte Carlo</td>
+</tr>
+<tr>
+<td><code>MCMCtobit</code></td>
+<td>Markov Chain Monte Carlo for Gaussian Linear Regression with a Censored Dependent Variable</td>
+</tr>
+<tr>
+<td><code>MCbinomialbeta</code></td>
+<td>Monte Carlo Simulation from a Binomial Likelihood with a Beta Prior</td>
+</tr>
+<tr>
+<td><code>MCmultinomdirichlet</code></td>
+<td>Monte Carlo Simulation from a Multinomial (with known variance) with a Normal Prior</td>
+</tr>
+<tr>
+<td><code>MCnormalnormal</code></td>
+<td>Monte Carlo Simulation from a Normal Likelihood (with known variance) with a Normal Prior</td>
+</tr>
+<tr>
+<td><code>MCpoissongamma</code></td>
+<td>Monte Carlo Simulation from a Poisson Likelihood with a Gamma Prior Nethvote</td>
+</tr>
+<tr>
+<td><code>mptable</code></td>
+<td>Calculate the marginal posterior probabilities of predictors being included in a quantile regression model.</td>
+</tr>
+<tr>
+<td><code>Nethvote</code></td>
+<td>Dutch Voting Behavior in 1989</td>
+</tr>
+<tr>
+<td><code>NoncenHypergeom</code></td>
+<td>The Noncentral Hypergeometric Distribution</td>
+</tr>
+<tr>
+<td><code>PErisk</code></td>
+<td>Political Economic Risk Data from 62 Countries in 1987</td>
+</tr>
+<tr>
+<td><code>PostProbMod</code></td>
+<td>Calculate Posterior Probability of Model</td>
+</tr>
+<tr>
+<td><code>Rehnquist</code></td>
+<td>U.S. Supreme Court Vote Matrix, Rehnquist Court (1994-2004)</td>
+</tr>
+<tr>
+<td><code>SSVSquantreg</code></td>
+<td>Stochastic search variable selection for quantile regression</td>
+</tr>
+<tr>
+<td><code>Senate</code></td>
+<td>106th U.S. Senate Roll Call Vote Matrix</td>
+</tr>
+<tr>
+<td><code>SupremeCourt</code></td>
+<td>U.S. Supreme Court Vote Matrix</td>
+</tr>
+<tr>
+<td><code>Wishart</code></td>
+<td>The Wishart Distribution</td>
+</tr>
+<tr>
+<td><code>choicevar</code></td>
+<td>Handle Choice-Specific Covariates in Multinomial Choice Models</td>
+</tr>
+<tr>
+<td><code>dtomogplot</code></td>
+<td>Dynamic Tomography Plot</td>
+</tr>
+<tr>
+<td><code>make.breaklist</code></td>
+<td>Vector of break numbers</td>
+</tr>
+<tr>
+<td><code>mptable</code></td>
+<td>Calculate the marginal posterior probabilities of predictors being included in a quantile regression model.</td>
+</tr>
+<tr>
+<td><code>plot.qrssvs</code></td>
+<td>Plot output from quantile regression stochastic search variable selection (QR-SSVS).</td>
+</tr>
+<tr>
+<td><code>plotChangepoint</code></td>
+<td>Posterior Density of Regime Change Plot</td>
+</tr>
+<tr>
+<td><code>plotIntervention</code></td>
+<td>Plot of intervention analysis</td>
+</tr>
+<tr>
+<td><code>plotState</code></td>
+<td>Changepoint State Plot</td>
+</tr>
+<tr>
+<td><code>procrustes</code></td>
+<td>Procrustes Transformation</td>
+</tr>
+<tr>
+<td><code>read.Scythe</code></td>
+<td>Read a Matrix from a File written by Scythe</td>
+</tr>
+<tr>
+<td><code>summary.qrssvs</code></td>
+<td>Summarising the results of quantile regression stochastic search variable selection (QR-SSVS).</td>
+</tr>
+<tr>
+<td><code>testpanelGroupBreak</code></td>
+<td>A Test for the Group-level Break using a Multivariate Linear Regression Model with Breaks</td>
+</tr>
+<tr>
+<td><code>testpanelSubjectBreak</code></td>
+<td>A Test for the Subject-level Break using a Unitivariate Linear Regression Model with Breaks</td>
+</tr>
+<tr>
+<td><code>tomogplot</code></td>
+<td>Tomography Plot</td>
+</tr>
+<tr>
+<td><code>topmodels</code></td>
+<td>Shows an ordered list of the most frequently visited models sampled during quantile regression stochastic search variable selection (QR-SSVS).`</td>
+<td></td>
+</tr>
+<tr>
+<td><code>vech</code></td>
+<td>Extract Lower Triangular Elements from a Symmetric Matrix</td>
+</tr>
+<tr>
+<td><code>write.Scythe</code></td>
+<td>Write a Matrix to a File to be Read by Scythe</td>
+</tr>
+<tr>
+<td><code>xpnd</code></td>
+<td>Expand a Vector into a Symmetric Matrix</td>
 </tr>
 </tbody>
 </table>
@@ -650,10 +913,10 @@ The following object is masked from &apos;package:maptools&apos;:
         </div>
 
         
-        <a href="../report/rmarkdown.html" class="navigation navigation-prev " aria-label="Previous page: rmarkdown"><i class="fa fa-angle-left"></i></a>
+        <a href="../statistics/biotools.html" class="navigation navigation-prev " aria-label="Previous page: biotools"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../statistics/index.html" class="navigation navigation-next " aria-label="Next page: Statistics and Modeling"><i class="fa fa-angle-right"></i></a>
+        <a href="../statistics/smatr.html" class="navigation navigation-next " aria-label="Next page: smatr"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

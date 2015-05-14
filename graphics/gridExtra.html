@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>xtable | R Package Showcase</title>
+        <title>gridExtra | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../statistics/index.html" />
+    <link rel="next" href="../report/index.html" />
     
     
-    <link rel="prev" href="../report/rmarkdown.html" />
+    <link rel="prev" href="../graphics/ggvis.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.4" data-basepath=".." data-revision="Thu May 14 2015 22:41:48 GMT+0900 (JST)">
+    <div class="book" data-level="2.4" data-basepath=".." data-revision="Thu May 14 2015 22:41:48 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -178,7 +178,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="graphics/gridExtra.html">
+        <li class="chapter active" data-level="2.4" data-path="graphics/gridExtra.html">
             
                 
                     <a href="../graphics/gridExtra.html">
@@ -259,7 +259,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.4" data-path="report/xtable.html">
+        <li class="chapter " data-level="3.4" data-path="report/xtable.html">
             
                 
                     <a href="../report/xtable.html">
@@ -589,22 +589,17 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="xtable-export-tables-to-latex-or-html">xtable: Export tables to LaTeX or HTML</h1>
-<p>&#x8868;&#x5F62;&#x5F0F;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;LaTeX&#x3084;HTML&#x3068;&#x3057;&#x3066;&#x51FA;&#x529B;</p>
-<p><a href="http://cran.rstudio.com/web/packages/xtable/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/xtable" alt=""></a></p>
+                        <h1 id="gridextra-functions-in-grid-graphics">gridExtra: functions in Grid graphics</h1>
+<p>&#x4F5C;&#x56F3;&#x95A2;&#x6570;&#x306E;&#x62E1;&#x5F35;</p>
+<p><a href="http://cran.rstudio.com/web/packages/gridExtra/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/gridExtra" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/xtable/index.html" target="_blank">http://cran.r-project.org/web/packages/xtable/index.html</a></li>
-<li>URL: <a href="http://xtable.r-forge.r-project.org/" target="_blank">http://xtable.r-forge.r-project.org/</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/gridExtra/index.html" target="_blank">http://cran.r-project.org/web/packages/gridExtra/index.html</a></li>
+<li>GitHub: <a href="https://github.com/baptiste/gridextra" target="_blank">https://github.com/baptiste/gridextra</a></li>
+<li>URL: <a href="http://code.google.com/p/gridextra/" target="_blank">http://code.google.com/p/gridextra/</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(xtable)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(gridExtra)
 </code></pre>
-<pre><code>
-Attaching package: &apos;xtable&apos;
-
-The following object is masked from &apos;package:maptools&apos;:
-
-    label
-</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.7.4</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.9.1</p>
 <hr>
 <table>
 <thead>
@@ -615,31 +610,110 @@ The following object is masked from &apos;package:maptools&apos;:
 </thead>
 <tbody>
 <tr>
-<td><code>caption</code></td>
-<td>Retrieve and Set Options for Export Tables</td>
+<td><code>arcTextGrob</code></td>
+<td>place text labels on a circle and display relations with arcs</td>
 </tr>
 <tr>
-<td><code>print.xtable</code></td>
-<td>Print Export Tables</td>
+<td><code>arrangeGrob</code></td>
+<td>arrangeGrob</td>
 </tr>
 <tr>
-<td><code>string</code></td>
-<td>String handling functions</td>
+<td><code>barbedGrob</code></td>
+<td>barbedGrob</td>
 </tr>
 <tr>
-<td><code>tli</code></td>
-<td>Math scores from Texas Assessment of Academic Skills (TAAS)</td>
+<td><code>borderGrob</code></td>
+<td>borderGrob</td>
 </tr>
 <tr>
-<td><code>toLatex.xtable</code></td>
-<td>Convert Table to Latex</td>
+<td><code>colorstripGrob</code></td>
+<td>colorstrip</td>
 </tr>
 <tr>
-<td><code>xtable</code></td>
-<td>Create Export Tables</td>
+<td><code>ebimageGrob</code></td>
+<td>create a grob from EBImage object</td>
+</tr>
+<tr>
+<td><code>ellipseGrob</code></td>
+<td>ellipseGrob</td>
+</tr>
+<tr>
+<td><code>expand.arguments</code></td>
+<td>expand.arguments</td>
+</tr>
+<tr>
+<td><code>gridExtra-package</code></td>
+<td>misc. high-level functions for Grid graphics</td>
+</tr>
+<tr>
+<td><code>interleaven</code></td>
+<td>interleaven</td>
+</tr>
+<tr>
+<td><code>marrangeGrob</code></td>
+<td>marrangeGrob</td>
+</tr>
+<tr>
+<td><code>ngonGrob</code></td>
+<td>ngonGrob</td>
+</tr>
+<tr>
+<td><code>patternGrob</code></td>
+<td>patternGrob</td>
+</tr>
+<tr>
+<td><code>pixmapGrob</code></td>
+<td>create a grob from pixmap object</td>
+</tr>
+<tr>
+<td><code>polygon.regular</code></td>
+<td>polygon.regular</td>
+</tr>
+<tr>
+<td><code>polygon.star</code></td>
+<td>polygon.star</td>
+</tr>
+<tr>
+<td><code>polygon1</code></td>
+<td>polygon1</td>
+</tr>
+<tr>
+<td><code>read.tiff</code></td>
+<td>read tiff files with pixmap</td>
+</tr>
+<tr>
+<td><code>rowMax.units</code></td>
+<td>rowMax.units</td>
+</tr>
+<tr>
+<td><code>rpatternGrob</code></td>
+<td>rpatternGrob</td>
+</tr>
+<tr>
+<td><code>stextGrob</code></td>
+<td>stextGrob</td>
+</tr>
+<tr>
+<td><code>tableGrob</code></td>
+<td>tableGrob</td>
+</tr>
+<tr>
+<td><code>theme.default</code></td>
+<td>theme</td>
+</tr>
+<tr>
+<td><code>virtualGrob</code></td>
+<td>virtualGrob</td>
 </tr>
 </tbody>
 </table>
+<h2 id="arctextgrob">arcTextGrob</h2>
+<p>&#x6587;&#x5B57;&#x5217;&#x3092;&#x5186;&#x5F27;&#x4E0A;&#x306B;&#x914D;&#x7F6E;</p>
+<h2 id="colorstripgrob">colorstripGrob</h2>
+<p>&#x30AB;&#x30E9;&#x30FC;&#x30B3;&#x30FC;&#x30C9;&#x304B;&#x3089;&#x8272;&#x898B;&#x672C;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</p>
+<pre><code class="lang-r">&gt; colorstripGrob(c(<span class="hljs-string">&quot;#E41A1C&quot;</span>, <span class="hljs-string">&quot;#377EB8&quot;</span>, <span class="hljs-string">&quot;#4DAF4A&quot;</span>))
+</code></pre>
+<p><img src="../Figure/usage_colorstripGrob-1.png" alt=""></p>
 
                     
                     </section>
@@ -650,10 +724,10 @@ The following object is masked from &apos;package:maptools&apos;:
         </div>
 
         
-        <a href="../report/rmarkdown.html" class="navigation navigation-prev " aria-label="Previous page: rmarkdown"><i class="fa fa-angle-left"></i></a>
+        <a href="../graphics/ggvis.html" class="navigation navigation-prev " aria-label="Previous page: ggvis"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../statistics/index.html" class="navigation navigation-next " aria-label="Next page: Statistics and Modeling"><i class="fa fa-angle-right"></i></a>
+        <a href="../report/index.html" class="navigation navigation-next " aria-label="Next page: Report"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

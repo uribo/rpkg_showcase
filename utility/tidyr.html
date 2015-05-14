@@ -34,7 +34,7 @@
     
 
         
-    <div class="book" data-level="5.8" data-basepath=".." data-revision="Tue May 12 2015 04:49:53 GMT+0900 (JST)">
+    <div class="book" data-level="5.8" data-basepath=".." data-revision="Thu May 14 2015 22:41:48 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -80,13 +80,28 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1" data-path="development/devtools.html">
+        <li class="chapter " data-level="1.1" data-path="development/ctv.html">
+            
+                
+                    <a href="../development/ctv.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        ctv
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="development/devtools.html">
             
                 
                     <a href="../development/devtools.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>1.1.</b>
+                            <b>1.2.</b>
                         
                         devtools
                     </a>
@@ -155,6 +170,21 @@
                             <b>2.3.</b>
                         
                         ggvis
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="graphics/gridExtra.html">
+            
+                
+                    <a href="../graphics/gridExtra.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        gridExtra
                     </a>
                 
             
@@ -255,7 +285,7 @@
                         
                             <b>4.</b>
                         
-                        Statistics
+                        Statistics and Modeling
                     </a>
                 
             
@@ -263,13 +293,43 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="4.1" data-path="statistics/smatr.html">
+        <li class="chapter " data-level="4.1" data-path="statistics/biotools.html">
+            
+                
+                    <a href="../statistics/biotools.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        biotools
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="statistics/MCMCpack.html">
+            
+                
+                    <a href="../statistics/MCMCpack.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        MCMCpack
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="statistics/smatr.html">
             
                 
                     <a href="../statistics/smatr.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>4.1.</b>
+                            <b>4.3.</b>
                         
                         smatr
                     </a>
@@ -597,7 +657,173 @@
 <h2 id="extract-numeric">extract_numeric</h2>
 <p>&#x30C7;&#x30FC;&#x30BF;&#x304B;&#x3089;&#x6570;&#x5024;&#x3060;&#x3051;&#x3092;&#x629C;&#x304D;&#x51FA;&#x3059;</p>
 <h2 id="gather">gather</h2>
-<p>&#x8907;&#x6570;&#x306E;&#x5909;&#x6570;&#x306B;&#x5206;&#x304B;&#x308C;&#x3066;&#x3044;&#x308B;<strong>&#x5171;&#x901A;&#x306E;&#x5909;&#x6570;</strong>&#x3092;&#xFF11;&#x3064;&#x306E;&#x5909;&#x6570;&#x3068;&#x3057;&#x3066;&#x307E;&#x3068;&#x3081;&#x308B;</p>
+<p>&#x8907;&#x6570;&#x306E;&#x5909;&#x6570;&#x306B;&#x5206;&#x304B;&#x308C;&#x3066;&#x3044;&#x308B;<strong>&#x5171;&#x901A;&#x306E;&#x5909;&#x6570;</strong>&#x3092;&#xFF11;&#x3064;&#x306E;&#x5909;&#x6570;&#x5185;&#x306E;&#x89B3;&#x6E2C;&#x5024;&#x3068;&#x3057;&#x3066;&#x307E;&#x3068;&#x3081;&#x308B;</p>
+<pre><code class="lang-r">&gt; df &lt;- data.frame(Species  = c(<span class="hljs-string">&quot;&#x30A2;&#x30AA;&#x30AD;&quot;</span>, <span class="hljs-string">&quot;&#x30A2;&#x30AA;&#x30CF;&#x30C0;&quot;</span>),
++                  CPI1.SSI = c(<span class="hljs-number">1.0000000</span>, <span class="hljs-number">1.0000000</span>),
++                  CPI2.SSI = c(<span class="hljs-number">0.9916116</span>, <span class="hljs-number">0.8772300</span>),
++                  CPI3.SSI = c(<span class="hljs-literal">NA</span>, <span class="hljs-number">0.9831741</span>),
++                  CPI4.SSI = c(<span class="hljs-literal">NA</span>, <span class="hljs-number">0.8938364</span>))
+&gt; df %&gt;% kable(format = <span class="hljs-string">&quot;markdown&quot;</span>)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Species</th>
+<th style="text-align:right">CPI1.SSI</th>
+<th style="text-align:right">CPI2.SSI</th>
+<th style="text-align:right">CPI3.SSI</th>
+<th style="text-align:right">CPI4.SSI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30AD;</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">0.9916116</td>
+<td style="text-align:right">NA</td>
+<td style="text-align:right">NA</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30CF;&#x30C0;</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">0.8772300</td>
+<td style="text-align:right">0.9831741</td>
+<td style="text-align:right">0.8938364</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-r">&gt; gather(data = df, key = CPI, value = SSI, select = -Species) %&gt;% kable(format = <span class="hljs-string">&quot;markdown&quot;</span>)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Species</th>
+<th style="text-align:left">CPI</th>
+<th style="text-align:right">SSI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30AD;</td>
+<td style="text-align:left">CPI1.SSI</td>
+<td style="text-align:right">1.0000000</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30CF;&#x30C0;</td>
+<td style="text-align:left">CPI1.SSI</td>
+<td style="text-align:right">1.0000000</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30AD;</td>
+<td style="text-align:left">CPI2.SSI</td>
+<td style="text-align:right">0.9916116</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30CF;&#x30C0;</td>
+<td style="text-align:left">CPI2.SSI</td>
+<td style="text-align:right">0.8772300</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30AD;</td>
+<td style="text-align:left">CPI3.SSI</td>
+<td style="text-align:right">NA</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30CF;&#x30C0;</td>
+<td style="text-align:left">CPI3.SSI</td>
+<td style="text-align:right">0.9831741</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30AD;</td>
+<td style="text-align:left">CPI4.SSI</td>
+<td style="text-align:right">NA</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30CF;&#x30C0;</td>
+<td style="text-align:left">CPI4.SSI</td>
+<td style="text-align:right">0.8938364</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-r">&gt; <span class="hljs-comment"># key... &#x65B0;&#x305F;&#x306B;&#x4ED8;&#x3051;&#x308B;&#x5909;&#x6570;&#x540D; # value = &#x5909;&#x6570;&#x306B;&#x5165;&#x308C;&#x308B;&#x89B3;&#x6E2C;&#x5024;&#x306E;&#x5909;&#x6570;&#x540D;</span>
+</code></pre>
+<h2 id="spread">spread</h2>
+<p>&#x7E26;&#x9577;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x6A2A;&#x9577;&#x306B;</p>
+<pre><code class="lang-r">&gt; df &lt;- data.frame(Species = c(<span class="hljs-string">&quot;&#x30A2;&#x30AA;&#x30AD;&quot;</span>, <span class="hljs-string">&quot;&#x30A2;&#x30AA;&#x30AD;&quot;</span>, <span class="hljs-string">&quot;&#x30A2;&#x30AA;&#x30CF;&#x30C0;&quot;</span>, <span class="hljs-string">&quot;&#x30A2;&#x30AA;&#x30CF;&#x30C0;&quot;</span>, <span class="hljs-string">&quot;&#x30A2;&#x30AA;&#x30CF;&#x30C0;&quot;</span>, <span class="hljs-string">&quot;&#x30A2;&#x30AA;&#x30CF;&#x30C0;&quot;</span>),
++                  CPI        = c(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>),
++                  SSI        = c(<span class="hljs-number">1.0000000</span>, <span class="hljs-number">0.9916116</span>, <span class="hljs-number">1.0000000</span>, <span class="hljs-number">0.8772300</span>, <span class="hljs-number">0.9831741</span>, <span class="hljs-number">0.8938364</span>))
+&gt; df %&gt;% kable(format = <span class="hljs-string">&quot;markdown&quot;</span>)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Species</th>
+<th style="text-align:right">CPI</th>
+<th style="text-align:right">SSI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30AD;</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">1.0000000</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30AD;</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">0.9916116</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30CF;&#x30C0;</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">1.0000000</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30CF;&#x30C0;</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">0.8772300</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30CF;&#x30C0;</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">0.9831741</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30CF;&#x30C0;</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">0.8938364</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-r">&gt; spread(data = df, key = CPI, value = SSI) %&gt;% kable(format = <span class="hljs-string">&quot;markdown&quot;</span>)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Species</th>
+<th style="text-align:right">1</th>
+<th style="text-align:right">2</th>
+<th style="text-align:right">3</th>
+<th style="text-align:right">4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30AD;</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">0.9916116</td>
+<td style="text-align:right">NA</td>
+<td style="text-align:right">NA</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A2;&#x30AA;&#x30CF;&#x30C0;</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">0.8772300</td>
+<td style="text-align:right">0.9831741</td>
+<td style="text-align:right">0.8938364</td>
+</tr>
+</tbody>
+</table>
 
                     
                     </section>
