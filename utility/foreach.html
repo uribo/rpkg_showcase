@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>gridExtra | R Package Showcase</title>
+        <title>foreach | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../graphics/jpeg.html" />
+    <link rel="next" href="../utility/magrittr.html" />
     
     
-    <link rel="prev" href="../graphics/ggvis.html" />
+    <link rel="prev" href="../utility/dplyr.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.6" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
+    <div class="book" data-level="6.3" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -259,7 +259,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.6" data-path="graphics/gridExtra.html">
+        <li class="chapter " data-level="3.6" data-path="graphics/gridExtra.html">
             
                 
                     <a href="../graphics/gridExtra.html">
@@ -517,7 +517,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.3" data-path="utility/foreach.html">
+        <li class="chapter active" data-level="6.3" data-path="utility/foreach.html">
             
                 
                     <a href="../utility/foreach.html">
@@ -745,17 +745,15 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="gridextra-functions-in-grid-graphics">gridExtra: functions in Grid graphics</h1>
-<p>&#x4F5C;&#x56F3;&#x95A2;&#x6570;&#x306E;&#x62E1;&#x5F35;</p>
-<p><a href="http://cran.rstudio.com/web/packages/gridExtra/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/gridExtra" alt=""></a></p>
+                        <h1 id="foreach-foreach-looping-construct-for-r">foreach: Foreach looping construct for R</h1>
+<p>&#x4E26;&#x5217;&#x51E6;&#x7406;</p>
+<p><a href="http://cran.rstudio.com/web/packages/foreach/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/foreach" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/gridExtra/index.html" target="_blank">http://cran.r-project.org/web/packages/gridExtra/index.html</a></li>
-<li>GitHub: <a href="https://github.com/baptiste/gridextra" target="_blank">https://github.com/baptiste/gridextra</a></li>
-<li>URL: <a href="http://code.google.com/p/gridextra/" target="_blank">http://code.google.com/p/gridextra/</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/foreach/index.html" target="_blank">http://cran.r-project.org/web/packages/foreach/index.html</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(gridExtra)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(foreach)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.9.1</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.4.2</p>
 <hr>
 <table>
 <thead>
@@ -766,110 +764,69 @@
 </thead>
 <tbody>
 <tr>
-<td><code>arcTextGrob</code></td>
-<td>place text labels on a circle and display relations with arcs</td>
+<td><code>foreach</code></td>
+<td>foreach</td>
 </tr>
 <tr>
-<td><code>arrangeGrob</code></td>
-<td>arrangeGrob</td>
+<td><code>foreach-ext</code></td>
+<td>Foreach Extension Functions</td>
 </tr>
 <tr>
-<td><code>barbedGrob</code></td>
-<td>barbedGrob</td>
+<td><code>foreach-package</code></td>
+<td>The Foreach Package</td>
 </tr>
 <tr>
-<td><code>borderGrob</code></td>
-<td>borderGrob</td>
+<td><code>getDoParWorkers</code></td>
+<td>Functions Providing Information on the doPar Backend</td>
 </tr>
 <tr>
-<td><code>colorstripGrob</code></td>
-<td>colorstrip</td>
+<td><code>getDoSeqWorkers</code></td>
+<td>Functions Providing Information on the doSeq Backend</td>
 </tr>
 <tr>
-<td><code>ebimageGrob</code></td>
-<td>create a grob from EBImage object</td>
+<td><code>registerDoSEQ</code></td>
+<td>registerDoSEQ</td>
 </tr>
 <tr>
-<td><code>ellipseGrob</code></td>
-<td>ellipseGrob</td>
+<td><code>setDoPar</code></td>
+<td>setDoPar</td>
 </tr>
 <tr>
-<td><code>expand.arguments</code></td>
-<td>expand.arguments</td>
-</tr>
-<tr>
-<td><code>gridExtra-package</code></td>
-<td>misc. high-level functions for Grid graphics</td>
-</tr>
-<tr>
-<td><code>interleaven</code></td>
-<td>interleaven</td>
-</tr>
-<tr>
-<td><code>marrangeGrob</code></td>
-<td>marrangeGrob</td>
-</tr>
-<tr>
-<td><code>ngonGrob</code></td>
-<td>ngonGrob</td>
-</tr>
-<tr>
-<td><code>patternGrob</code></td>
-<td>patternGrob</td>
-</tr>
-<tr>
-<td><code>pixmapGrob</code></td>
-<td>create a grob from pixmap object</td>
-</tr>
-<tr>
-<td><code>polygon.regular</code></td>
-<td>polygon.regular</td>
-</tr>
-<tr>
-<td><code>polygon.star</code></td>
-<td>polygon.star</td>
-</tr>
-<tr>
-<td><code>polygon1</code></td>
-<td>polygon1</td>
-</tr>
-<tr>
-<td><code>read.tiff</code></td>
-<td>read tiff files with pixmap</td>
-</tr>
-<tr>
-<td><code>rowMax.units</code></td>
-<td>rowMax.units</td>
-</tr>
-<tr>
-<td><code>rpatternGrob</code></td>
-<td>rpatternGrob</td>
-</tr>
-<tr>
-<td><code>stextGrob</code></td>
-<td>stextGrob</td>
-</tr>
-<tr>
-<td><code>tableGrob</code></td>
-<td>tableGrob</td>
-</tr>
-<tr>
-<td><code>theme.default</code></td>
-<td>theme</td>
-</tr>
-<tr>
-<td><code>virtualGrob</code></td>
-<td>virtualGrob</td>
+<td><code>setDoSeq</code></td>
+<td>setDoSeq</td>
 </tr>
 </tbody>
 </table>
-<h2 id="arctextgrob">arcTextGrob</h2>
-<p>&#x6587;&#x5B57;&#x5217;&#x3092;&#x5186;&#x5F27;&#x4E0A;&#x306B;&#x914D;&#x7F6E;</p>
-<h2 id="colorstripgrob">colorstripGrob</h2>
-<p>&#x30AB;&#x30E9;&#x30FC;&#x30B3;&#x30FC;&#x30C9;&#x304B;&#x3089;&#x8272;&#x898B;&#x672C;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; colorstripGrob(c(<span class="hljs-string">&quot;#E41A1C&quot;</span>, <span class="hljs-string">&quot;#377EB8&quot;</span>, <span class="hljs-string">&quot;#4DAF4A&quot;</span>))
+<h2 id="foreach">foreach</h2>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>...</li>
+<li>.combine... <code>cbind</code>, <code>rbind</code>, <code>list</code> &#x8FD4;&#x308A;&#x5024;&#x306E;&#x6271;&#x3044;&#x3092;&#x6307;&#x5B9A;</li>
+<li>.init</li>
+<li>.final</li>
+<li>.inorder</li>
+<li>.multicombine</li>
+<li>.maxcombine</li>
+<li>.errorhandling</li>
+<li>.packages</li>
+<li>.noexport</li>
+<li>.verbose</li>
+<li>obj</li>
+<li>e1</li>
+<li>e2</li>
+<li>ex</li>
+<li>cond</li>
+<li>n</li>
+</ul>
+<pre><code class="lang-r">&gt; times(<span class="hljs-number">3</span>) %do% rnorm(<span class="hljs-number">1</span>)
 </code></pre>
-<p><img src="../Figure/usage_colorstripGrob-1.png" alt=""></p>
+<pre><code>[1] -0.2975983 -0.1767456  1.1674177
+</code></pre><h2 id="%E5%8F%82%E8%80%83">&#x53C2;&#x8003;</h2>
+<ul>
+<li><a href="http://d.hatena.ne.jp/teramonagi/20140923/1411427677" target="_blank">foreach&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3067;&#x3001;&#x4E26;&#x5217;&#x5316;&#x3059;&#x308B;/&#x3057;&#x306A;&#x3044;&#x3092;&#x7DBA;&#x9E97;&#x306B;&#x66F8;&#x304D;&#x5206;&#x3051;&#x308B; - My Life as a Mock Quant</a></li>
+<li><a href="http://d.hatena.ne.jp/teramonagi/20140920/1411195147" target="_blank">foreach&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3067;&#x4E26;&#x5217;&#x5316;&#x3059;&#x308B;&#x6642;&#x3001;&#x73FE;&#x5728;&#x306E;&quot;&#x74B0;&#x5883;&quot;&#x306B;&#x306A;&#x3044;&#x5909;&#x6570;&#x30FB;&#x95A2;&#x6570;&#x306F;&#x3001;&#x660E;&#x793A;&#x7684;&#x306B;.export&#x5F15;&#x6570;&#x306B;&#x3066;&#x6307;&#x5B9A;&#x3057;&#x306A;&#x3051;&#x308C;&#x3070;&#x306A;&#x3089;&#x306A;&#x3044; - My Life as a Mock Quant</a></li>
+<li><a href="http://jundoll.hatenablog.com/entry/2015/01/01/235918" target="_blank">foreach&#x306B;&#x3064;&#x3044;&#x3066;&#x307E;&#x3068;&#x3081;&#x305F;&#x3044; - J&apos;s blog</a></li>
+</ul>
 
                     
                     </section>
@@ -880,10 +837,10 @@
         </div>
 
         
-        <a href="../graphics/ggvis.html" class="navigation navigation-prev " aria-label="Previous page: ggvis"><i class="fa fa-angle-left"></i></a>
+        <a href="../utility/dplyr.html" class="navigation navigation-prev " aria-label="Previous page: dplyr"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../graphics/jpeg.html" class="navigation navigation-next " aria-label="Next page: jpeg"><i class="fa fa-angle-right"></i></a>
+        <a href="../utility/magrittr.html" class="navigation navigation-next " aria-label="Next page: magrittr"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

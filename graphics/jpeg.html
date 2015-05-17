@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>gridExtra | R Package Showcase</title>
+        <title>jpeg | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../graphics/jpeg.html" />
+    <link rel="next" href="../report/index.html" />
     
     
-    <link rel="prev" href="../graphics/ggvis.html" />
+    <link rel="prev" href="../graphics/gridExtra.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.6" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
+    <div class="book" data-level="3.7" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -259,7 +259,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.6" data-path="graphics/gridExtra.html">
+        <li class="chapter " data-level="3.6" data-path="graphics/gridExtra.html">
             
                 
                     <a href="../graphics/gridExtra.html">
@@ -274,7 +274,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.7" data-path="graphics/jpeg.html">
+        <li class="chapter active" data-level="3.7" data-path="graphics/jpeg.html">
             
                 
                     <a href="../graphics/jpeg.html">
@@ -745,17 +745,17 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="gridextra-functions-in-grid-graphics">gridExtra: functions in Grid graphics</h1>
-<p>&#x4F5C;&#x56F3;&#x95A2;&#x6570;&#x306E;&#x62E1;&#x5F35;</p>
-<p><a href="http://cran.rstudio.com/web/packages/gridExtra/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/gridExtra" alt=""></a></p>
+                        <h1 id="jpeg-read-and-write-jpeg-images">jpeg: Read and write JPEG images</h1>
+<p>JPEG&#x5F62;&#x5F0F;&#x306E;&#x753B;&#x50CF;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3093;&#x3060;&#x308A;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x3057;&#x305F;&#x308A;</p>
+<p><a href="http://cran.rstudio.com/web/packages/jpeg/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/jpeg" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/gridExtra/index.html" target="_blank">http://cran.r-project.org/web/packages/gridExtra/index.html</a></li>
-<li>GitHub: <a href="https://github.com/baptiste/gridextra" target="_blank">https://github.com/baptiste/gridextra</a></li>
-<li>URL: <a href="http://code.google.com/p/gridextra/" target="_blank">http://code.google.com/p/gridextra/</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/jpeg/index.html" target="_blank">http://cran.r-project.org/web/packages/jpeg/index.html</a></li>
+<li>GitHub: <a href="https://github.com/s-u/jpeg" target="_blank">https://github.com/s-u/jpeg</a></li>
+<li>URL: <a href="http://www.rforge.net/jpeg/" target="_blank">http://www.rforge.net/jpeg/</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(gridExtra)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(jpeg)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.9.1</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.1.8</p>
 <hr>
 <table>
 <thead>
@@ -766,110 +766,25 @@
 </thead>
 <tbody>
 <tr>
-<td><code>arcTextGrob</code></td>
-<td>place text labels on a circle and display relations with arcs</td>
+<td><code>readJPEG</code></td>
+<td>Read a bitmap image stored in the JPEG format</td>
 </tr>
 <tr>
-<td><code>arrangeGrob</code></td>
-<td>arrangeGrob</td>
-</tr>
-<tr>
-<td><code>barbedGrob</code></td>
-<td>barbedGrob</td>
-</tr>
-<tr>
-<td><code>borderGrob</code></td>
-<td>borderGrob</td>
-</tr>
-<tr>
-<td><code>colorstripGrob</code></td>
-<td>colorstrip</td>
-</tr>
-<tr>
-<td><code>ebimageGrob</code></td>
-<td>create a grob from EBImage object</td>
-</tr>
-<tr>
-<td><code>ellipseGrob</code></td>
-<td>ellipseGrob</td>
-</tr>
-<tr>
-<td><code>expand.arguments</code></td>
-<td>expand.arguments</td>
-</tr>
-<tr>
-<td><code>gridExtra-package</code></td>
-<td>misc. high-level functions for Grid graphics</td>
-</tr>
-<tr>
-<td><code>interleaven</code></td>
-<td>interleaven</td>
-</tr>
-<tr>
-<td><code>marrangeGrob</code></td>
-<td>marrangeGrob</td>
-</tr>
-<tr>
-<td><code>ngonGrob</code></td>
-<td>ngonGrob</td>
-</tr>
-<tr>
-<td><code>patternGrob</code></td>
-<td>patternGrob</td>
-</tr>
-<tr>
-<td><code>pixmapGrob</code></td>
-<td>create a grob from pixmap object</td>
-</tr>
-<tr>
-<td><code>polygon.regular</code></td>
-<td>polygon.regular</td>
-</tr>
-<tr>
-<td><code>polygon.star</code></td>
-<td>polygon.star</td>
-</tr>
-<tr>
-<td><code>polygon1</code></td>
-<td>polygon1</td>
-</tr>
-<tr>
-<td><code>read.tiff</code></td>
-<td>read tiff files with pixmap</td>
-</tr>
-<tr>
-<td><code>rowMax.units</code></td>
-<td>rowMax.units</td>
-</tr>
-<tr>
-<td><code>rpatternGrob</code></td>
-<td>rpatternGrob</td>
-</tr>
-<tr>
-<td><code>stextGrob</code></td>
-<td>stextGrob</td>
-</tr>
-<tr>
-<td><code>tableGrob</code></td>
-<td>tableGrob</td>
-</tr>
-<tr>
-<td><code>theme.default</code></td>
-<td>theme</td>
-</tr>
-<tr>
-<td><code>virtualGrob</code></td>
-<td>virtualGrob</td>
+<td><code>writeJPEG</code></td>
+<td>Write a bitmap image in JPEG format</td>
 </tr>
 </tbody>
 </table>
-<h2 id="arctextgrob">arcTextGrob</h2>
-<p>&#x6587;&#x5B57;&#x5217;&#x3092;&#x5186;&#x5F27;&#x4E0A;&#x306B;&#x914D;&#x7F6E;</p>
-<h2 id="colorstripgrob">colorstripGrob</h2>
-<p>&#x30AB;&#x30E9;&#x30FC;&#x30B3;&#x30FC;&#x30C9;&#x304B;&#x3089;&#x8272;&#x898B;&#x672C;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; colorstripGrob(c(<span class="hljs-string">&quot;#E41A1C&quot;</span>, <span class="hljs-string">&quot;#377EB8&quot;</span>, <span class="hljs-string">&quot;#4DAF4A&quot;</span>))
+<h2 id="readjpeg">readJPEG</h2>
+<p>&#x753B;&#x50CF;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;</p>
+<pre><code class="lang-r">&gt; img &lt;- readJPEG(system.file(<span class="hljs-string">&quot;img&quot;</span>, <span class="hljs-string">&quot;Rlogo.jpg&quot;</span>, package = <span class="hljs-string">&quot;jpeg&quot;</span>))
 </code></pre>
-<p><img src="../Figure/usage_colorstripGrob-1.png" alt=""></p>
+<h2 id="writejpeg">writeJPEG</h2>
+<p>&#x914D;&#x5217;&#x307E;&#x305F;&#x306F;&#x884C;&#x5217;&#x304B;&#x3089;Jpeg&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x751F;&#x6210;</p>
+<pre><code class="lang-r">&gt; img &lt;- readJPEG(system.file(<span class="hljs-string">&quot;img&quot;</span>,<span class="hljs-string">&quot;Rlogo.jpg&quot;</span>,package = <span class="hljs-string">&quot;jpeg&quot;</span>))
+&gt; r &lt;- writeJPEG(img, raw(), quality = <span class="hljs-number">0.3</span>)
+&gt; readJPEG(r)
+</code></pre>
 
                     
                     </section>
@@ -880,10 +795,10 @@
         </div>
 
         
-        <a href="../graphics/ggvis.html" class="navigation navigation-prev " aria-label="Previous page: ggvis"><i class="fa fa-angle-left"></i></a>
+        <a href="../graphics/gridExtra.html" class="navigation navigation-prev " aria-label="Previous page: gridExtra"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../graphics/jpeg.html" class="navigation navigation-next " aria-label="Next page: jpeg"><i class="fa fa-angle-right"></i></a>
+        <a href="../report/index.html" class="navigation navigation-next " aria-label="Next page: Report"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

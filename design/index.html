@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>gridExtra | R Package Showcase</title>
+        <title>Design | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../graphics/jpeg.html" />
+    <link rel="next" href="../design/rPlotter.html" />
     
     
-    <link rel="prev" href="../graphics/ggvis.html" />
+    <link rel="prev" href="../development/devtools.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.6" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
+    <div class="book" data-level="2" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -117,7 +117,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2" data-path="design/index.html">
+        <li class="chapter active" data-level="2" data-path="design/index.html">
             
                 
                     <a href="../design/index.html">
@@ -259,7 +259,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.6" data-path="graphics/gridExtra.html">
+        <li class="chapter " data-level="3.6" data-path="graphics/gridExtra.html">
             
                 
                     <a href="../graphics/gridExtra.html">
@@ -745,131 +745,11 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="gridextra-functions-in-grid-graphics">gridExtra: functions in Grid graphics</h1>
-<p>&#x4F5C;&#x56F3;&#x95A2;&#x6570;&#x306E;&#x62E1;&#x5F35;</p>
-<p><a href="http://cran.rstudio.com/web/packages/gridExtra/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/gridExtra" alt=""></a></p>
+                        <h1 id="design">design</h1>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/gridExtra/index.html" target="_blank">http://cran.r-project.org/web/packages/gridExtra/index.html</a></li>
-<li>GitHub: <a href="https://github.com/baptiste/gridextra" target="_blank">https://github.com/baptiste/gridextra</a></li>
-<li>URL: <a href="http://code.google.com/p/gridextra/" target="_blank">http://code.google.com/p/gridextra/</a></li>
+<li><a href="rPlotter.html"><code>rPlotter</code></a>: Easy Plotting in R</li>
+<li><a href="wesanderson.html"><code>wesanderson</code></a>: A Wes Anderson Palette Generator</li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(gridExtra)
-</code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.9.1</p>
-<hr>
-<table>
-<thead>
-<tr>
-<th>&#x95A2;&#x6570;&#x540D;</th>
-<th>&#x6982;&#x7565;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>arcTextGrob</code></td>
-<td>place text labels on a circle and display relations with arcs</td>
-</tr>
-<tr>
-<td><code>arrangeGrob</code></td>
-<td>arrangeGrob</td>
-</tr>
-<tr>
-<td><code>barbedGrob</code></td>
-<td>barbedGrob</td>
-</tr>
-<tr>
-<td><code>borderGrob</code></td>
-<td>borderGrob</td>
-</tr>
-<tr>
-<td><code>colorstripGrob</code></td>
-<td>colorstrip</td>
-</tr>
-<tr>
-<td><code>ebimageGrob</code></td>
-<td>create a grob from EBImage object</td>
-</tr>
-<tr>
-<td><code>ellipseGrob</code></td>
-<td>ellipseGrob</td>
-</tr>
-<tr>
-<td><code>expand.arguments</code></td>
-<td>expand.arguments</td>
-</tr>
-<tr>
-<td><code>gridExtra-package</code></td>
-<td>misc. high-level functions for Grid graphics</td>
-</tr>
-<tr>
-<td><code>interleaven</code></td>
-<td>interleaven</td>
-</tr>
-<tr>
-<td><code>marrangeGrob</code></td>
-<td>marrangeGrob</td>
-</tr>
-<tr>
-<td><code>ngonGrob</code></td>
-<td>ngonGrob</td>
-</tr>
-<tr>
-<td><code>patternGrob</code></td>
-<td>patternGrob</td>
-</tr>
-<tr>
-<td><code>pixmapGrob</code></td>
-<td>create a grob from pixmap object</td>
-</tr>
-<tr>
-<td><code>polygon.regular</code></td>
-<td>polygon.regular</td>
-</tr>
-<tr>
-<td><code>polygon.star</code></td>
-<td>polygon.star</td>
-</tr>
-<tr>
-<td><code>polygon1</code></td>
-<td>polygon1</td>
-</tr>
-<tr>
-<td><code>read.tiff</code></td>
-<td>read tiff files with pixmap</td>
-</tr>
-<tr>
-<td><code>rowMax.units</code></td>
-<td>rowMax.units</td>
-</tr>
-<tr>
-<td><code>rpatternGrob</code></td>
-<td>rpatternGrob</td>
-</tr>
-<tr>
-<td><code>stextGrob</code></td>
-<td>stextGrob</td>
-</tr>
-<tr>
-<td><code>tableGrob</code></td>
-<td>tableGrob</td>
-</tr>
-<tr>
-<td><code>theme.default</code></td>
-<td>theme</td>
-</tr>
-<tr>
-<td><code>virtualGrob</code></td>
-<td>virtualGrob</td>
-</tr>
-</tbody>
-</table>
-<h2 id="arctextgrob">arcTextGrob</h2>
-<p>&#x6587;&#x5B57;&#x5217;&#x3092;&#x5186;&#x5F27;&#x4E0A;&#x306B;&#x914D;&#x7F6E;</p>
-<h2 id="colorstripgrob">colorstripGrob</h2>
-<p>&#x30AB;&#x30E9;&#x30FC;&#x30B3;&#x30FC;&#x30C9;&#x304B;&#x3089;&#x8272;&#x898B;&#x672C;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; colorstripGrob(c(<span class="hljs-string">&quot;#E41A1C&quot;</span>, <span class="hljs-string">&quot;#377EB8&quot;</span>, <span class="hljs-string">&quot;#4DAF4A&quot;</span>))
-</code></pre>
-<p><img src="../Figure/usage_colorstripGrob-1.png" alt=""></p>
 
                     
                     </section>
@@ -880,10 +760,10 @@
         </div>
 
         
-        <a href="../graphics/ggvis.html" class="navigation navigation-prev " aria-label="Previous page: ggvis"><i class="fa fa-angle-left"></i></a>
+        <a href="../development/devtools.html" class="navigation navigation-prev " aria-label="Previous page: devtools"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../graphics/jpeg.html" class="navigation navigation-next " aria-label="Next page: jpeg"><i class="fa fa-angle-right"></i></a>
+        <a href="../design/rPlotter.html" class="navigation navigation-next " aria-label="Next page: rPlotter"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

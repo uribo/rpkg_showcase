@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>gridExtra | R Package Showcase</title>
+        <title>wesanderson | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../graphics/jpeg.html" />
+    <link rel="next" href="../graphics/index.html" />
     
     
-    <link rel="prev" href="../graphics/ggvis.html" />
+    <link rel="prev" href="../design/rPlotter.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.6" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
+    <div class="book" data-level="2.2" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -148,7 +148,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="design/wesanderson.html">
+        <li class="chapter active" data-level="2.2" data-path="design/wesanderson.html">
             
                 
                     <a href="../design/wesanderson.html">
@@ -259,7 +259,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.6" data-path="graphics/gridExtra.html">
+        <li class="chapter " data-level="3.6" data-path="graphics/gridExtra.html">
             
                 
                     <a href="../graphics/gridExtra.html">
@@ -745,17 +745,16 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="gridextra-functions-in-grid-graphics">gridExtra: functions in Grid graphics</h1>
-<p>&#x4F5C;&#x56F3;&#x95A2;&#x6570;&#x306E;&#x62E1;&#x5F35;</p>
-<p><a href="http://cran.rstudio.com/web/packages/gridExtra/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/gridExtra" alt=""></a></p>
+                        <h1 id="wesanderson-a-wes-anderson-palette-generator">wesanderson: A Wes Anderson Palette Generator</h1>
+<p>Wes Anderson&#x306E;&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x3092;&#x751F;&#x6210;</p>
+<p><a href="http://cran.rstudio.com/web/packages/wesanderson/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/wesanderson" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/gridExtra/index.html" target="_blank">http://cran.r-project.org/web/packages/gridExtra/index.html</a></li>
-<li>GitHub: <a href="https://github.com/baptiste/gridextra" target="_blank">https://github.com/baptiste/gridextra</a></li>
-<li>URL: <a href="http://code.google.com/p/gridextra/" target="_blank">http://code.google.com/p/gridextra/</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/wesanderson/index.html" target="_blank">http://cran.r-project.org/web/packages/wesanderson/index.html</a></li>
+<li>GitHub: <a href="https://github.com/karthik/wesanderson" target="_blank">https://github.com/karthik/wesanderson</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(gridExtra)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(wesanderson)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.9.1</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.3.2</p>
 <hr>
 <table>
 <thead>
@@ -766,111 +765,77 @@
 </thead>
 <tbody>
 <tr>
-<td><code>arcTextGrob</code></td>
-<td>place text labels on a circle and display relations with arcs</td>
+<td><code>heatmap</code></td>
+<td>heatmap</td>
 </tr>
 <tr>
-<td><code>arrangeGrob</code></td>
-<td>arrangeGrob</td>
+<td><code>wes_palette</code></td>
+<td>A Wes Anderson palette generator</td>
 </tr>
 <tr>
-<td><code>barbedGrob</code></td>
-<td>barbedGrob</td>
+<td><code>wes_palettes</code></td>
+<td>Complete list of palettes</td>
 </tr>
 <tr>
-<td><code>borderGrob</code></td>
-<td>borderGrob</td>
-</tr>
-<tr>
-<td><code>colorstripGrob</code></td>
-<td>colorstrip</td>
-</tr>
-<tr>
-<td><code>ebimageGrob</code></td>
-<td>create a grob from EBImage object</td>
-</tr>
-<tr>
-<td><code>ellipseGrob</code></td>
-<td>ellipseGrob</td>
-</tr>
-<tr>
-<td><code>expand.arguments</code></td>
-<td>expand.arguments</td>
-</tr>
-<tr>
-<td><code>gridExtra-package</code></td>
-<td>misc. high-level functions for Grid graphics</td>
-</tr>
-<tr>
-<td><code>interleaven</code></td>
-<td>interleaven</td>
-</tr>
-<tr>
-<td><code>marrangeGrob</code></td>
-<td>marrangeGrob</td>
-</tr>
-<tr>
-<td><code>ngonGrob</code></td>
-<td>ngonGrob</td>
-</tr>
-<tr>
-<td><code>patternGrob</code></td>
-<td>patternGrob</td>
-</tr>
-<tr>
-<td><code>pixmapGrob</code></td>
-<td>create a grob from pixmap object</td>
-</tr>
-<tr>
-<td><code>polygon.regular</code></td>
-<td>polygon.regular</td>
-</tr>
-<tr>
-<td><code>polygon.star</code></td>
-<td>polygon.star</td>
-</tr>
-<tr>
-<td><code>polygon1</code></td>
-<td>polygon1</td>
-</tr>
-<tr>
-<td><code>read.tiff</code></td>
-<td>read tiff files with pixmap</td>
-</tr>
-<tr>
-<td><code>rowMax.units</code></td>
-<td>rowMax.units</td>
-</tr>
-<tr>
-<td><code>rpatternGrob</code></td>
-<td>rpatternGrob</td>
-</tr>
-<tr>
-<td><code>stextGrob</code></td>
-<td>stextGrob</td>
-</tr>
-<tr>
-<td><code>tableGrob</code></td>
-<td>tableGrob</td>
-</tr>
-<tr>
-<td><code>theme.default</code></td>
-<td>theme</td>
-</tr>
-<tr>
-<td><code>virtualGrob</code></td>
-<td>virtualGrob</td>
+<td><code>wesanderson</code></td>
+<td>wesanderson</td>
 </tr>
 </tbody>
 </table>
-<h2 id="arctextgrob">arcTextGrob</h2>
-<p>&#x6587;&#x5B57;&#x5217;&#x3092;&#x5186;&#x5F27;&#x4E0A;&#x306B;&#x914D;&#x7F6E;</p>
-<h2 id="colorstripgrob">colorstripGrob</h2>
-<p>&#x30AB;&#x30E9;&#x30FC;&#x30B3;&#x30FC;&#x30C9;&#x304B;&#x3089;&#x8272;&#x898B;&#x672C;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; colorstripGrob(c(<span class="hljs-string">&quot;#E41A1C&quot;</span>, <span class="hljs-string">&quot;#377EB8&quot;</span>, <span class="hljs-string">&quot;#4DAF4A&quot;</span>))
+<h2 id="wes-palette">wes_palette</h2>
+<p>Wes Anderson&#x306E;&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x3092;&#x751F;&#x6210;</p>
+<pre><code class="lang-r">&gt; wes_palette(name = <span class="hljs-string">&quot;GrandBudapest&quot;</span>, n = <span class="hljs-number">3</span>, type = <span class="hljs-string">&quot;continuous&quot;</span>)
 </code></pre>
-<p><img src="../Figure/usage_colorstripGrob-1.png" alt=""></p>
+<p><img src="../Figure/usage_wes_palette-1.png" alt=""></p>
+<h2 id="wes-palettes">wes_palettes</h2>
+<p>&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x306E;&#x4E00;&#x89A7;&#xFF08;&#x30EA;&#x30B9;&#x30C8;&#xFF09;</p>
+<pre><code class="lang-r">&gt; wes_palettes
+</code></pre>
+<pre><code>$GrandBudapest
+[1] &quot;#F1BB7B&quot; &quot;#FD6467&quot; &quot;#5B1A18&quot; &quot;#D67236&quot;
 
+$Moonrise1
+[1] &quot;#F3DF6C&quot; &quot;#CEAB07&quot; &quot;#D5D5D3&quot; &quot;#24281A&quot;
+
+$Royal1
+[1] &quot;#899DA4&quot; &quot;#C93312&quot; &quot;#FAEFD1&quot; &quot;#DC863B&quot;
+
+$Moonrise2
+[1] &quot;#798E87&quot; &quot;#C27D38&quot; &quot;#CCC591&quot; &quot;#29211F&quot;
+
+$Cavalcanti
+[1] &quot;#D8B70A&quot; &quot;#02401B&quot; &quot;#A2A475&quot; &quot;#81A88D&quot; &quot;#972D15&quot;
+
+$Royal2
+[1] &quot;#9A8822&quot; &quot;#F5CDB4&quot; &quot;#F8AFA8&quot; &quot;#FDDDA0&quot; &quot;#74A089&quot;
+
+$GrandBudapest2
+[1] &quot;#E6A0C4&quot; &quot;#C6CDF7&quot; &quot;#D8A499&quot; &quot;#7294D4&quot;
+
+$Moonrise3
+[1] &quot;#85D4E3&quot; &quot;#F4B5BD&quot; &quot;#9C964A&quot; &quot;#CDC08C&quot; &quot;#FAD77B&quot;
+
+$Chevalier
+[1] &quot;#446455&quot; &quot;#FDD262&quot; &quot;#D3DDDC&quot; &quot;#C7B19C&quot;
+
+$Zissou
+[1] &quot;#3B9AB2&quot; &quot;#78B7C5&quot; &quot;#EBCC2A&quot; &quot;#E1AF00&quot; &quot;#F21A00&quot;
+
+$FantasticFox
+[1] &quot;#DD8D29&quot; &quot;#E2D200&quot; &quot;#46ACC8&quot; &quot;#E58601&quot; &quot;#B40F20&quot;
+
+$Darjeeling
+[1] &quot;#FF0000&quot; &quot;#00A08A&quot; &quot;#F2AD00&quot; &quot;#F98400&quot; &quot;#5BBCD6&quot;
+
+$Rushmore
+[1] &quot;#E1BD6D&quot; &quot;#EABE94&quot; &quot;#0B775E&quot; &quot;#35274A&quot; &quot;#F2300F&quot;
+
+$BottleRocket
+[1] &quot;#A42820&quot; &quot;#5F5647&quot; &quot;#9B110E&quot; &quot;#3F5151&quot; &quot;#4E2A1E&quot; &quot;#550307&quot; &quot;#0C1707&quot;
+
+$Darjeeling2
+[1] &quot;#ECCBAE&quot; &quot;#046C9A&quot; &quot;#D69C4E&quot; &quot;#ABDDDE&quot; &quot;#000000&quot;
+</code></pre>
                     
                     </section>
                 
@@ -880,10 +845,10 @@
         </div>
 
         
-        <a href="../graphics/ggvis.html" class="navigation navigation-prev " aria-label="Previous page: ggvis"><i class="fa fa-angle-left"></i></a>
+        <a href="../design/rPlotter.html" class="navigation navigation-prev " aria-label="Previous page: rPlotter"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../graphics/jpeg.html" class="navigation navigation-next " aria-label="Next page: jpeg"><i class="fa fa-angle-right"></i></a>
+        <a href="../graphics/index.html" class="navigation navigation-next " aria-label="Next page: Graphics"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

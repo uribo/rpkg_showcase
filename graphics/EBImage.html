@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>gridExtra | R Package Showcase</title>
+        <title>EBImage | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../graphics/jpeg.html" />
+    <link rel="next" href="../graphics/ggthemes.html" />
     
     
-    <link rel="prev" href="../graphics/ggvis.html" />
+    <link rel="prev" href="../graphics/colorspace.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.6" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
+    <div class="book" data-level="3.2" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -199,7 +199,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="graphics/EBImage.html">
+        <li class="chapter active" data-level="3.2" data-path="graphics/EBImage.html">
             
                 
                     <a href="../graphics/EBImage.html">
@@ -259,7 +259,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.6" data-path="graphics/gridExtra.html">
+        <li class="chapter " data-level="3.6" data-path="graphics/gridExtra.html">
             
                 
                     <a href="../graphics/gridExtra.html">
@@ -745,17 +745,15 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="gridextra-functions-in-grid-graphics">gridExtra: functions in Grid graphics</h1>
-<p>&#x4F5C;&#x56F3;&#x95A2;&#x6570;&#x306E;&#x62E1;&#x5F35;</p>
-<p><a href="http://cran.rstudio.com/web/packages/gridExtra/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/gridExtra" alt=""></a></p>
+                        <h1 id="ebimage-md-image-processing-and-analysis-toolbox-for-r">EBImage.md: Image processing and analysis toolbox for R</h1>
+<p>&#x753B;&#x50CF;&#x51E6;&#x7406;&#x304A;&#x3088;&#x3073;&#x753B;&#x50CF;&#x89E3;&#x6790;</p>
+<p><a href="http://cran.rstudio.com/web/packages/EBImage/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/EBImage" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/gridExtra/index.html" target="_blank">http://cran.r-project.org/web/packages/gridExtra/index.html</a></li>
-<li>GitHub: <a href="https://github.com/baptiste/gridextra" target="_blank">https://github.com/baptiste/gridextra</a></li>
-<li>URL: <a href="http://code.google.com/p/gridextra/" target="_blank">http://code.google.com/p/gridextra/</a></li>
+<li>Bioconductor: <a href="http://www.bioconductor.org/packages/devel/bioc/html/EBImage.html" target="_blank">http://www.bioconductor.org/packages/devel/bioc/html/EBImage.html</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(gridExtra)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(EBImage)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.9.1</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 4.8.3</p>
 <hr>
 <table>
 <thead>
@@ -766,110 +764,177 @@
 </thead>
 <tbody>
 <tr>
-<td><code>arcTextGrob</code></td>
-<td>place text labels on a circle and display relations with arcs</td>
+<td><code>EBImage</code></td>
+<td>Package overview</td>
 </tr>
 <tr>
-<td><code>arrangeGrob</code></td>
-<td>arrangeGrob</td>
+<td><code>EBImage-defunct</code></td>
+<td>EBImage defunct functions</td>
 </tr>
 <tr>
-<td><code>barbedGrob</code></td>
-<td>barbedGrob</td>
+<td><code>Image</code></td>
+<td>Image class</td>
 </tr>
 <tr>
-<td><code>borderGrob</code></td>
-<td>borderGrob</td>
+<td><code>bwlabel</code></td>
+<td>Binary segmentation</td>
 </tr>
 <tr>
-<td><code>colorstripGrob</code></td>
-<td>colorstrip</td>
+<td><code>channel</code></td>
+<td>Color and image color mode conversions</td>
 </tr>
 <tr>
-<td><code>ebimageGrob</code></td>
-<td>create a grob from EBImage object</td>
+<td><code>colorLabels</code></td>
+<td>Color Code Labels</td>
 </tr>
 <tr>
-<td><code>ellipseGrob</code></td>
-<td>ellipseGrob</td>
+<td><code>combine</code></td>
+<td>Combining images</td>
 </tr>
 <tr>
-<td><code>expand.arguments</code></td>
-<td>expand.arguments</td>
+<td><code>computeFeatures</code></td>
+<td>Compute object features</td>
 </tr>
 <tr>
-<td><code>gridExtra-package</code></td>
-<td>misc. high-level functions for Grid graphics</td>
+<td><code>dilate</code></td>
+<td>Perform morphological operations on images</td>
 </tr>
 <tr>
-<td><code>interleaven</code></td>
-<td>interleaven</td>
+<td><code>display</code></td>
+<td>Image Display</td>
 </tr>
 <tr>
-<td><code>marrangeGrob</code></td>
-<td>marrangeGrob</td>
+<td><code>distmap</code></td>
+<td>Distance map transform</td>
 </tr>
 <tr>
-<td><code>ngonGrob</code></td>
-<td>ngonGrob</td>
+<td><code>drawCircle</code></td>
+<td>Draw a circle on an image.</td>
 </tr>
 <tr>
-<td><code>patternGrob</code></td>
-<td>patternGrob</td>
+<td><code>equalize</code></td>
+<td>Histogram Equalization</td>
 </tr>
 <tr>
-<td><code>pixmapGrob</code></td>
-<td>create a grob from pixmap object</td>
+<td><code>fillHull</code></td>
+<td>Fill holes in objects</td>
 </tr>
 <tr>
-<td><code>polygon.regular</code></td>
-<td>polygon.regular</td>
+<td><code>filter2</code></td>
+<td>2D Convolution Filter</td>
 </tr>
 <tr>
-<td><code>polygon.star</code></td>
-<td>polygon.star</td>
+<td><code>floodFill</code></td>
+<td>Region filling</td>
 </tr>
 <tr>
-<td><code>polygon1</code></td>
-<td>polygon1</td>
+<td><code>gblur</code></td>
+<td>Low-pass Gaussian filter</td>
 </tr>
 <tr>
-<td><code>read.tiff</code></td>
-<td>read tiff files with pixmap</td>
+<td><code>localCurvature</code></td>
+<td>Local Curvature</td>
 </tr>
 <tr>
-<td><code>rowMax.units</code></td>
-<td>rowMax.units</td>
+<td><code>medianFilter</code></td>
+<td>2D constant time median filtering</td>
 </tr>
 <tr>
-<td><code>rpatternGrob</code></td>
-<td>rpatternGrob</td>
+<td><code>normalize</code></td>
+<td>Intensity values linear scaling</td>
 </tr>
 <tr>
-<td><code>stextGrob</code></td>
-<td>stextGrob</td>
+<td><code>ocontour</code></td>
+<td>Oriented contours</td>
 </tr>
 <tr>
-<td><code>tableGrob</code></td>
-<td>tableGrob</td>
+<td><code>otsu</code></td>
+<td>Calculate Otsu&apos;s threshold</td>
 </tr>
 <tr>
-<td><code>theme.default</code></td>
-<td>theme</td>
+<td><code>paintObjects</code></td>
+<td>Marks objects in images</td>
 </tr>
 <tr>
-<td><code>virtualGrob</code></td>
-<td>virtualGrob</td>
+<td><code>propagate</code></td>
+<td>Voronoi-based segmentation on image manifolds</td>
+</tr>
+<tr>
+<td><code>readImage</code></td>
+<td>Image I/O</td>
+</tr>
+<tr>
+<td><code>resize</code></td>
+<td>Spatial linear transformations</td>
+</tr>
+<tr>
+<td><code>rmObjects</code></td>
+<td>Object removal and re-indexation</td>
+</tr>
+<tr>
+<td><code>stackObjects</code></td>
+<td>Places detected objects into an image stack</td>
+</tr>
+<tr>
+<td><code>thresh</code></td>
+<td>Adaptive thresholding</td>
+</tr>
+<tr>
+<td><code>tile</code></td>
+<td>Tiling/untiling images</td>
+</tr>
+<tr>
+<td><code>transpose</code></td>
+<td>Image Transposition</td>
+</tr>
+<tr>
+<td><code>watershed</code></td>
+<td>Watershed transformation and watershed based object detection</td>
 </tr>
 </tbody>
 </table>
-<h2 id="arctextgrob">arcTextGrob</h2>
-<p>&#x6587;&#x5B57;&#x5217;&#x3092;&#x5186;&#x5F27;&#x4E0A;&#x306B;&#x914D;&#x7F6E;</p>
-<h2 id="colorstripgrob">colorstripGrob</h2>
-<p>&#x30AB;&#x30E9;&#x30FC;&#x30B3;&#x30FC;&#x30C9;&#x304B;&#x3089;&#x8272;&#x898B;&#x672C;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; colorstripGrob(c(<span class="hljs-string">&quot;#E41A1C&quot;</span>, <span class="hljs-string">&quot;#377EB8&quot;</span>, <span class="hljs-string">&quot;#4DAF4A&quot;</span>))
+<h2 id="display">display</h2>
+<p>&#x753B;&#x50CF;&#x306E;&#x8868;&#x793A;</p>
+<pre><code class="lang-r">&gt; readImage(system.file(<span class="hljs-string">&quot;images&quot;</span>, <span class="hljs-string">&quot;sample-color.png&quot;</span>, package = <span class="hljs-string">&quot;EBImage&quot;</span>)) %&gt;% display()
 </code></pre>
-<p><img src="../Figure/usage_colorstripGrob-1.png" alt=""></p>
+<h2 id="readimage">readImage</h2>
+<p>&#x753B;&#x50CF;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x3068;&#x66F8;&#x304D;&#x8FBC;&#x307F;</p>
+<h3 id="%E5%BC%95%E6%95%B0">&#x5F15;&#x6570;</h3>
+<ul>
+<li>files</li>
+<li>type... jpeg, png &#x304A;&#x3088;&#x3073;tiff&#x306B;&#x5BFE;&#x5FDC;</li>
+<li>all</li>
+<li>names</li>
+<li>x</li>
+<li>bits.per.sample</li>
+<li>compression</li>
+<li>quality</li>
+<li>...</li>
+</ul>
+<pre><code class="lang-r">&gt; img &lt;- readImage(files = system.file(<span class="hljs-string">&quot;images&quot;</span>, <span class="hljs-string">&quot;sample-color.png&quot;</span>, package = <span class="hljs-string">&quot;EBImage&quot;</span>))
+&gt; str(img)
+&gt; print(img)
+</code></pre>
+<pre><code>Image 
+  colorMode    : Color 
+  storage.mode : double 
+  dim          : 768 512 3 
+  frames.total : 3 
+  frames.render: 1 
+
+imageData(object)[1:5,1:6,1]
+          [,1]      [,2]      [,3]      [,4]      [,5]      [,6]
+[1,] 0.4549020 0.4784314 0.4941176 0.5137255 0.5294118 0.5529412
+[2,] 0.4588235 0.4784314 0.4941176 0.4980392 0.5215686 0.5490196
+[3,] 0.4705882 0.4823529 0.4980392 0.5137255 0.5294118 0.5372549
+[4,] 0.4666667 0.4745098 0.5058824 0.5137255 0.5450980 0.5647059
+[5,] 0.4705882 0.4705882 0.4901961 0.5137255 0.5372549 0.5647059
+</code></pre><p>&#x8868;&#x793A;&#x306B;&#x306F;<code>display()</code>&#x3092;&#x4F7F;&#x3046;</p>
+<h2 id="%E5%8F%82%E8%80%83">&#x53C2;&#x8003;</h2>
+<ul>
+<li><a href="http://d.hatena.ne.jp/Rion778/20091210/1260414280" target="_blank">EBImage&#x3092;&#x4F7F;&#x3063;&#x305F;&#x753B;&#x50CF;&#x51E6;&#x7406; - &#x3082;&#x3046;&#x30AB;&#x30C4;&#x4E3C;&#x3067;&#x3044;&#x3044;&#x3088;&#x306A;</a></li>
+<li><a href="http://alstatr.blogspot.jp/2014/09/r-image-analysis-using-ebimage.html" target="_blank">Analysis with Programming: R: Image Analysis using EBImage</a></li>
+</ul>
 
                     
                     </section>
@@ -880,10 +945,10 @@
         </div>
 
         
-        <a href="../graphics/ggvis.html" class="navigation navigation-prev " aria-label="Previous page: ggvis"><i class="fa fa-angle-left"></i></a>
+        <a href="../graphics/colorspace.html" class="navigation navigation-prev " aria-label="Previous page: colorspace"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../graphics/jpeg.html" class="navigation navigation-next " aria-label="Next page: jpeg"><i class="fa fa-angle-right"></i></a>
+        <a href="../graphics/ggthemes.html" class="navigation navigation-next " aria-label="Next page: ggthemes"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

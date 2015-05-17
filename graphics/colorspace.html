@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>gridExtra | R Package Showcase</title>
+        <title>colorspace | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../graphics/jpeg.html" />
+    <link rel="next" href="../graphics/EBImage.html" />
     
     
-    <link rel="prev" href="../graphics/ggvis.html" />
+    <link rel="prev" href="../graphics/index.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.6" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
+    <div class="book" data-level="3.1" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -184,7 +184,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1" data-path="graphics/colorspace.html">
+        <li class="chapter active" data-level="3.1" data-path="graphics/colorspace.html">
             
                 
                     <a href="../graphics/colorspace.html">
@@ -259,7 +259,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.6" data-path="graphics/gridExtra.html">
+        <li class="chapter " data-level="3.6" data-path="graphics/gridExtra.html">
             
                 
                     <a href="../graphics/gridExtra.html">
@@ -745,17 +745,15 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="gridextra-functions-in-grid-graphics">gridExtra: functions in Grid graphics</h1>
-<p>&#x4F5C;&#x56F3;&#x95A2;&#x6570;&#x306E;&#x62E1;&#x5F35;</p>
-<p><a href="http://cran.rstudio.com/web/packages/gridExtra/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/gridExtra" alt=""></a></p>
+                        <h1 id="colorspace-color-space-manipulation">colorspace: Color Space Manipulation</h1>
+<p>&#x8272;&#x7A7A;&#x9593;&#x64CD;&#x4F5C;</p>
+<p><a href="http://cran.rstudio.com/web/packages/colorspace/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/colorspace" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/gridExtra/index.html" target="_blank">http://cran.r-project.org/web/packages/gridExtra/index.html</a></li>
-<li>GitHub: <a href="https://github.com/baptiste/gridextra" target="_blank">https://github.com/baptiste/gridextra</a></li>
-<li>URL: <a href="http://code.google.com/p/gridextra/" target="_blank">http://code.google.com/p/gridextra/</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/colorspace/index.html" target="_blank">http://cran.r-project.org/web/packages/colorspace/index.html</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(gridExtra)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(colorspace)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.9.1</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.2.6</p>
 <hr>
 <table>
 <thead>
@@ -766,111 +764,123 @@
 </thead>
 <tbody>
 <tr>
-<td><code>arcTextGrob</code></td>
-<td>place text labels on a circle and display relations with arcs</td>
+<td><code>HLS</code></td>
+<td>Create HLS Colors</td>
 </tr>
 <tr>
-<td><code>arrangeGrob</code></td>
-<td>arrangeGrob</td>
+<td><code>HSV</code></td>
+<td>Create HSV Colors</td>
 </tr>
 <tr>
-<td><code>barbedGrob</code></td>
-<td>barbedGrob</td>
+<td><code>LAB</code></td>
+<td>Create LAB Colors</td>
 </tr>
 <tr>
-<td><code>borderGrob</code></td>
-<td>borderGrob</td>
+<td><code>LUV</code></td>
+<td>Create LUV Colors</td>
 </tr>
 <tr>
-<td><code>colorstripGrob</code></td>
-<td>colorstrip</td>
+<td><code>RGB</code></td>
+<td>Create RGB Colors</td>
 </tr>
 <tr>
-<td><code>ebimageGrob</code></td>
-<td>create a grob from EBImage object</td>
+<td><code>USSouthPolygon</code></td>
+<td>Polygon for County Map of US South States: Alabama, Georgia, and South Carolina</td>
 </tr>
 <tr>
-<td><code>ellipseGrob</code></td>
-<td>ellipseGrob</td>
+<td><code>XYZ</code></td>
+<td>Create XYZ Colors</td>
 </tr>
 <tr>
-<td><code>expand.arguments</code></td>
-<td>expand.arguments</td>
+<td><code>choose_palette</code></td>
+<td>Graphical User Interface for Choosing HCL Color Palettes</td>
 </tr>
 <tr>
-<td><code>gridExtra-package</code></td>
-<td>misc. high-level functions for Grid graphics</td>
+<td><code>color-class</code></td>
+<td>Class &quot;color&quot;</td>
 </tr>
 <tr>
-<td><code>interleaven</code></td>
-<td>interleaven</td>
+<td><code>coords</code></td>
+<td>Extract the numerical coordinates of a color</td>
 </tr>
 <tr>
-<td><code>marrangeGrob</code></td>
-<td>marrangeGrob</td>
+<td><code>desaturate</code></td>
+<td>Desaturate Colors by Chroma Removal in HCL Space</td>
 </tr>
 <tr>
-<td><code>ngonGrob</code></td>
-<td>ngonGrob</td>
+<td><code>hex</code></td>
+<td>Convert Colors To Hexadecimal Strings</td>
 </tr>
 <tr>
-<td><code>patternGrob</code></td>
-<td>patternGrob</td>
+<td><code>hex2RGB</code></td>
+<td>Convert Hexadecimal Color Specifications To RGB Objects</td>
 </tr>
 <tr>
-<td><code>pixmapGrob</code></td>
-<td>create a grob from pixmap object</td>
+<td><code>mixcolor</code></td>
+<td>Compute the convex combination of two colors</td>
 </tr>
 <tr>
-<td><code>polygon.regular</code></td>
-<td>polygon.regular</td>
+<td><code>polarLAB</code></td>
+<td>Create polarLAB Colors</td>
 </tr>
 <tr>
-<td><code>polygon.star</code></td>
-<td>polygon.star</td>
+<td><code>polarLUV</code></td>
+<td>Create polarLUV Colors</td>
 </tr>
 <tr>
-<td><code>polygon1</code></td>
-<td>polygon1</td>
+<td><code>rainbow_hcl</code></td>
+<td>HCL and HSV Color Palettes</td>
 </tr>
 <tr>
-<td><code>read.tiff</code></td>
-<td>read tiff files with pixmap</td>
+<td><code>readRGB</code></td>
+<td>Read RGB Color Descriptions</td>
 </tr>
 <tr>
-<td><code>rowMax.units</code></td>
-<td>rowMax.units</td>
+<td><code>readhex</code></td>
+<td>Read Hexadecimal Color Descriptions</td>
 </tr>
 <tr>
-<td><code>rpatternGrob</code></td>
-<td>rpatternGrob</td>
+<td><code>sRGB</code></td>
+<td>Create sRGB Colors</td>
 </tr>
 <tr>
-<td><code>stextGrob</code></td>
-<td>stextGrob</td>
-</tr>
-<tr>
-<td><code>tableGrob</code></td>
-<td>tableGrob</td>
-</tr>
-<tr>
-<td><code>theme.default</code></td>
-<td>theme</td>
-</tr>
-<tr>
-<td><code>virtualGrob</code></td>
-<td>virtualGrob</td>
+<td><code>writehex</code></td>
+<td>Write Hexadecimal Color Descriptions</td>
 </tr>
 </tbody>
 </table>
-<h2 id="arctextgrob">arcTextGrob</h2>
-<p>&#x6587;&#x5B57;&#x5217;&#x3092;&#x5186;&#x5F27;&#x4E0A;&#x306B;&#x914D;&#x7F6E;</p>
-<h2 id="colorstripgrob">colorstripGrob</h2>
-<p>&#x30AB;&#x30E9;&#x30FC;&#x30B3;&#x30FC;&#x30C9;&#x304B;&#x3089;&#x8272;&#x898B;&#x672C;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; colorstripGrob(c(<span class="hljs-string">&quot;#E41A1C&quot;</span>, <span class="hljs-string">&quot;#377EB8&quot;</span>, <span class="hljs-string">&quot;#4DAF4A&quot;</span>))
+<h2 id="hls">HLS</h2>
+<p>HLS&#x30AB;&#x30E9;&#x30FC;&#x306E;&#x751F;&#x6210;</p>
+<blockquote>
+<p>CSS3&#x3067;&#x306F;16&#x9032;&#x6570;&#x3067;&#x8868;&#x73FE;&#x3059;&#x308B;RGB&#x3088;&#x308A;&#x3082;&#x76F4;&#x611F;&#x7684;&#x306A;&#x6570;&#x5024;&#x3092;&#x6307;&#x5B9A;&#x3067;&#x304D;&#x308B;HSL&#x30AB;&#x30E9;&#x30FC; <a href="http://howtohp.com/2012/02/02/hsl-color/" target="_blank">http://howtohp.com/2012/02/02/hsl-color/</a></p>
+</blockquote>
+<pre><code class="lang-r">&gt; HLS(H, L, S, names)
 </code></pre>
-<p><img src="../Figure/usage_colorstripGrob-1.png" alt=""></p>
-
+<h2 id="hsv">HSV</h2>
+<p>HSV&#x30AB;&#x30E9;&#x30FC;&#x306E;&#x751F;&#x6210;</p>
+<pre><code class="lang-r">&gt; HSV(H, S, V, names)
+</code></pre>
+<h2 id="rgb">RGB</h2>
+<pre><code class="lang-r">&gt; RGB(R, G, B, names)
+</code></pre>
+<h2 id="choose-palette">choose_palette</h2>
+<p>&#x30A4;&#x30F3;&#x30BF;&#x30E9;&#x30AF;&#x30C6;&#x30A3;&#x30D6;&#x306B;HCL&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;</p>
+<pre><code class="lang-r">&gt; choose_palette
+</code></pre>
+<h2 id="hex">hex</h2>
+<p>&#x8272;&#x7A7A;&#x9593;&#x3092;16&#x9032;&#x6570;&#x8868;&#x8A18;&#x306B;&#x5909;&#x63DB;</p>
+<pre><code class="lang-r">&gt; HSV(seq(<span class="hljs-number">0</span>, <span class="hljs-number">360</span>, length = <span class="hljs-number">7</span>)[-<span class="hljs-number">7</span>], <span class="hljs-number">1</span>, <span class="hljs-number">1</span>) %&gt;% hex(.)
+</code></pre>
+<pre><code>[1] &quot;#FF0000&quot; &quot;#FFFF00&quot; &quot;#00FF00&quot; &quot;#00FFFF&quot; &quot;#0000FF&quot; &quot;#FF00FF&quot;
+</code></pre><h2 id="hex2rgb">hex2RGB</h2>
+<p>16&#x9032;&#x6570;&#x8868;&#x8A18;&#x306E;&#x8272;&#x7A7A;&#x9593;&#x3092;RGB&#x5024;&#x306B;&#x5909;&#x63DB;</p>
+<pre><code class="lang-r">&gt; hex2RGB(c(<span class="hljs-string">&quot;#FF0000&quot;</span>, <span class="hljs-string">&quot;#00FF00&quot;</span>, <span class="hljs-string">&quot;#0000FF&quot;</span>))
+</code></pre>
+<pre><code>     R G B
+[1,] 1 0 0
+[2,] 0 1 0
+[3,] 0 0 1
+</code></pre>
                     
                     </section>
                 
@@ -880,10 +890,10 @@
         </div>
 
         
-        <a href="../graphics/ggvis.html" class="navigation navigation-prev " aria-label="Previous page: ggvis"><i class="fa fa-angle-left"></i></a>
+        <a href="../graphics/index.html" class="navigation navigation-prev " aria-label="Previous page: Graphics"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../graphics/jpeg.html" class="navigation navigation-next " aria-label="Next page: jpeg"><i class="fa fa-angle-right"></i></a>
+        <a href="../graphics/EBImage.html" class="navigation navigation-next " aria-label="Next page: EBImage"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

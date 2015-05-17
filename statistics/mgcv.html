@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>gridExtra | R Package Showcase</title>
+        <title>mgcv | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../graphics/jpeg.html" />
+    <link rel="next" href="../statistics/MCMCpack.html" />
     
     
-    <link rel="prev" href="../graphics/ggvis.html" />
+    <link rel="prev" href="../statistics/gam.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.6" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
+    <div class="book" data-level="5.3" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -259,7 +259,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.6" data-path="graphics/gridExtra.html">
+        <li class="chapter " data-level="3.6" data-path="graphics/gridExtra.html">
             
                 
                     <a href="../graphics/gridExtra.html">
@@ -421,7 +421,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.3" data-path="statistics/mgcv.html">
+        <li class="chapter active" data-level="5.3" data-path="statistics/mgcv.html">
             
                 
                     <a href="../statistics/mgcv.html">
@@ -745,17 +745,24 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="gridextra-functions-in-grid-graphics">gridExtra: functions in Grid graphics</h1>
-<p>&#x4F5C;&#x56F3;&#x95A2;&#x6570;&#x306E;&#x62E1;&#x5F35;</p>
-<p><a href="http://cran.rstudio.com/web/packages/gridExtra/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/gridExtra" alt=""></a></p>
+                        <h1 id="mgcv-mixed-gam-computation-vehicle-with-gcv-aic-reml-smoothness-estimation">mgcv: Mixed GAM Computation Vehicle with GCV/AIC/REML Smoothness Estimation</h1>
+<p>&#x4E00;&#x822C;&#x5316;&#x52A0;&#x6CD5;&#x30E2;&#x30C7;&#x30EB;</p>
+<p><a href="http://cran.rstudio.com/web/packages/mgcv/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/mgcv" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/gridExtra/index.html" target="_blank">http://cran.r-project.org/web/packages/gridExtra/index.html</a></li>
-<li>GitHub: <a href="https://github.com/baptiste/gridextra" target="_blank">https://github.com/baptiste/gridextra</a></li>
-<li>URL: <a href="http://code.google.com/p/gridextra/" target="_blank">http://code.google.com/p/gridextra/</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/mgcv/index.html" target="_blank">http://cran.r-project.org/web/packages/mgcv/index.html</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(gridExtra)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(mgcv)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.9.1</p>
+<pre><code>Loading required package: nlme
+
+Attaching package: &apos;nlme&apos;
+
+The following object is masked from &apos;package:dplyr&apos;:
+
+    collapse
+
+This is mgcv 1.8-6. For overview type &apos;help(&quot;mgcv-package&quot;)&apos;.
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.8.6</p>
 <hr>
 <table>
 <thead>
@@ -766,110 +773,467 @@
 </thead>
 <tbody>
 <tr>
-<td><code>arcTextGrob</code></td>
-<td>place text labels on a circle and display relations with arcs</td>
+<td><code>Predict.matrix</code></td>
+<td>Prediction methods for smooth terms in a GAM</td>
 </tr>
 <tr>
-<td><code>arrangeGrob</code></td>
-<td>arrangeGrob</td>
+<td><code>Predict.matrix.cr.smooth</code></td>
+<td>Predict matrix method functions</td>
 </tr>
 <tr>
-<td><code>barbedGrob</code></td>
-<td>barbedGrob</td>
+<td><code>Predict.matrix.soap.film</code></td>
+<td>Prediction matrix for soap film smooth</td>
 </tr>
 <tr>
-<td><code>borderGrob</code></td>
-<td>borderGrob</td>
+<td><code>Rrank</code></td>
+<td>Find rank of upper triangular matrix</td>
 </tr>
 <tr>
-<td><code>colorstripGrob</code></td>
-<td>colorstrip</td>
+<td><code>Tweedie</code></td>
+<td>GAM Tweedie families</td>
 </tr>
 <tr>
-<td><code>ebimageGrob</code></td>
-<td>create a grob from EBImage object</td>
+<td><code>anova.gam</code></td>
+<td>Approximate hypothesis tests related to GAM fits</td>
 </tr>
 <tr>
-<td><code>ellipseGrob</code></td>
-<td>ellipseGrob</td>
+<td><code>bam</code></td>
+<td>Generalized additive models for very large datasets</td>
 </tr>
 <tr>
-<td><code>expand.arguments</code></td>
-<td>expand.arguments</td>
+<td><code>bam.update</code></td>
+<td>Update a strictly additive bam model for new data.</td>
 </tr>
 <tr>
-<td><code>gridExtra-package</code></td>
-<td>misc. high-level functions for Grid graphics</td>
+<td><code>betar</code></td>
+<td>GAM beta regression family</td>
 </tr>
 <tr>
-<td><code>interleaven</code></td>
-<td>interleaven</td>
+<td><code>cSplineDes</code></td>
+<td>Evaluate cyclic B spline basis</td>
 </tr>
 <tr>
-<td><code>marrangeGrob</code></td>
-<td>marrangeGrob</td>
+<td><code>choose.k</code></td>
+<td>Basis dimension choice for smooths</td>
 </tr>
 <tr>
-<td><code>ngonGrob</code></td>
-<td>ngonGrob</td>
+<td><code>columb</code></td>
+<td>Reduced version of Columbus OH crime data</td>
 </tr>
 <tr>
-<td><code>patternGrob</code></td>
-<td>patternGrob</td>
+<td><code>concurvity</code></td>
+<td>GAM concurvity measures</td>
 </tr>
 <tr>
-<td><code>pixmapGrob</code></td>
-<td>create a grob from pixmap object</td>
+<td><code>cox.ph</code></td>
+<td>Additive Cox Proportional Hazard Model</td>
 </tr>
 <tr>
-<td><code>polygon.regular</code></td>
-<td>polygon.regular</td>
+<td><code>exclude.too.far</code></td>
+<td>Exclude prediction grid points too far from data</td>
 </tr>
 <tr>
-<td><code>polygon.star</code></td>
-<td>polygon.star</td>
+<td><code>extract.lme.cov</code></td>
+<td>Extract the data covariance matrix from an lme object</td>
 </tr>
 <tr>
-<td><code>polygon1</code></td>
-<td>polygon1</td>
+<td><code>family.mgcv</code></td>
+<td>Distribution families in mgcv</td>
 </tr>
 <tr>
-<td><code>read.tiff</code></td>
-<td>read tiff files with pixmap</td>
+<td><code>fix.family.link</code></td>
+<td>Modify families for use in GAM fitting and checking</td>
 </tr>
 <tr>
-<td><code>rowMax.units</code></td>
-<td>rowMax.units</td>
+<td><code>fixDependence</code></td>
+<td>Detect linear dependencies of one matrix on another</td>
 </tr>
 <tr>
-<td><code>rpatternGrob</code></td>
-<td>rpatternGrob</td>
+<td><code>formXtViX</code></td>
+<td>Form component of GAMM covariance matrix</td>
 </tr>
 <tr>
-<td><code>stextGrob</code></td>
-<td>stextGrob</td>
+<td><code>formula.gam</code></td>
+<td>GAM formula</td>
 </tr>
 <tr>
-<td><code>tableGrob</code></td>
-<td>tableGrob</td>
+<td><code>fs.test</code></td>
+<td>FELSPLINE test function</td>
 </tr>
 <tr>
-<td><code>theme.default</code></td>
-<td>theme</td>
+<td><code>full.score</code></td>
+<td>GCV/UBRE score for use within nlm</td>
 </tr>
 <tr>
-<td><code>virtualGrob</code></td>
-<td>virtualGrob</td>
+<td><code>gam</code></td>
+<td>Generalized additive models with integrated smoothness estimation</td>
+</tr>
+<tr>
+<td><code>gam.check</code></td>
+<td>Some diagnostics for a fitted gam model</td>
+</tr>
+<tr>
+<td><code>gam.control</code></td>
+<td>Setting GAM fitting defaults</td>
+</tr>
+<tr>
+<td><code>gam.convergence</code></td>
+<td>GAM convergence and performance issues</td>
+</tr>
+<tr>
+<td><code>gam.fit</code></td>
+<td>GAM P-IRLS estimation with GCV/UBRE smoothness estimation</td>
+</tr>
+<tr>
+<td><code>gam.fit3</code></td>
+<td>P-IRLS GAM estimation with GCV &amp; UBRE/AIC or RE/ML derivative calculation</td>
+</tr>
+<tr>
+<td><code>gam.models</code></td>
+<td>Specifying generalized additive models</td>
+</tr>
+<tr>
+<td><code>gam.outer</code></td>
+<td>Minimize GCV or UBRE score of a GAM using &apos;outer&apos; iteration</td>
+</tr>
+<tr>
+<td><code>gam.scale</code></td>
+<td>Scale parameter estimation in GAMs</td>
+</tr>
+<tr>
+<td><code>gam.selection</code></td>
+<td>Generalized Additive Model Selection</td>
+</tr>
+<tr>
+<td><code>gam.side</code></td>
+<td>Identifiability side conditions for a GAM</td>
+</tr>
+<tr>
+<td><code>gam.vcomp</code></td>
+<td>Report gam smoothness estimates as variance components</td>
+</tr>
+<tr>
+<td><code>gam2objective</code></td>
+<td>Objective functions for GAM smoothing parameter estimation</td>
+</tr>
+<tr>
+<td><code>gamObject</code></td>
+<td>Fitted gam object</td>
+</tr>
+<tr>
+<td><code>gamSim</code></td>
+<td>Simulate example data for GAMs</td>
+</tr>
+<tr>
+<td><code>gamm</code></td>
+<td>Generalized Additive Mixed Models</td>
+</tr>
+<tr>
+<td><code>gaulss</code></td>
+<td>Gaussian location-scale model family</td>
+</tr>
+<tr>
+<td><code>get.var</code></td>
+<td>Get named variable or evaluate expression from list or data.frame</td>
+</tr>
+<tr>
+<td><code>in.out</code></td>
+<td>Which of a set of points lie within a polygon defined region</td>
+</tr>
+<tr>
+<td><code>inSide</code></td>
+<td>Are points inside boundary?</td>
+</tr>
+<tr>
+<td><code>influence.gam</code></td>
+<td>Extract the diagonal of the influence/hat matrix for a GAM</td>
+</tr>
+<tr>
+<td><code>initial.sp</code></td>
+<td>Starting values for multiple smoothing parameter estimation</td>
+</tr>
+<tr>
+<td><code>interpret.gam</code></td>
+<td>Interpret a GAM formula</td>
+</tr>
+<tr>
+<td><code>jaga</code></td>
+<td>m Just Another Gibbs Additive Modeller: JAGS support for mgcv.</td>
+</tr>
+<tr>
+<td><code>ldTweedie</code></td>
+<td>Log Tweedie density evaluation</td>
+</tr>
+<tr>
+<td><code>linear.functional.terms</code></td>
+<td>Linear functionals of a smooth in GAMs</td>
+</tr>
+<tr>
+<td><code>logLik.gam</code></td>
+<td>Log likelihood for a fitted GAM, for AIC</td>
+</tr>
+<tr>
+<td><code>ls.size</code></td>
+<td>Size of list elements</td>
+</tr>
+<tr>
+<td><code>magic</code></td>
+<td>Stable Multiple Smoothing Parameter Estimation by GCV or UBRE</td>
+</tr>
+<tr>
+<td><code>magic.post.proc</code></td>
+<td>Auxilliary information from magic fit</td>
+</tr>
+<tr>
+<td><code>mgcv.FAQ</code></td>
+<td>Frequently Asked Questions for package mgcv</td>
+</tr>
+<tr>
+<td><code>mgcv.package</code></td>
+<td>Mixed GAM Computation Vehicle with GCV/AIC/REML</td>
+</tr>
+<tr>
+<td><code>smoothness</code></td>
+<td>estimation and GAMMs by REML/PQL</td>
+</tr>
+<tr>
+<td><code>mgcv.parallel</code></td>
+<td>Parallel computation in mgcv.</td>
+</tr>
+<tr>
+<td><code>model.matrix.gam</code></td>
+<td>Extract model matrix from GAM fit</td>
+</tr>
+<tr>
+<td><code>mono.con</code></td>
+<td>Monotonicity constraints for a cubic regression spline</td>
+</tr>
+<tr>
+<td><code>mroot</code></td>
+<td>Smallest square root of matrix</td>
+</tr>
+<tr>
+<td><code>mvn</code></td>
+<td>Multivariate normal additive models</td>
+</tr>
+<tr>
+<td><code>negbin</code></td>
+<td>GAM negative binomial families</td>
+</tr>
+<tr>
+<td><code>new.name</code></td>
+<td>Obtain a name for a new variable that is not already in use</td>
+</tr>
+<tr>
+<td><code>notExp</code></td>
+<td>Functions for better-than-log positive parameterization</td>
+</tr>
+<tr>
+<td><code>notExp2</code></td>
+<td>Alternative to log parameterization for variance components</td>
+</tr>
+<tr>
+<td><code>null.space.dimension</code></td>
+<td>The basis of the space of un-penalized functions for a TPRS</td>
+</tr>
+<tr>
+<td><code>ocat</code></td>
+<td>GAM ordered categorical family</td>
+</tr>
+<tr>
+<td><code>pcls</code></td>
+<td>Penalized Constrained Least Squares Fitting</td>
+</tr>
+<tr>
+<td><code>pdIdnot</code></td>
+<td>Overflow proof pdMat class for multiples of the identity matrix</td>
+</tr>
+<tr>
+<td><code>pdTens</code></td>
+<td>Functions implementing a pdMat class for tensor product smooths</td>
+</tr>
+<tr>
+<td><code>pen.edf</code></td>
+<td>Extract the effective degrees of freedom associated with each penalty in a gam fit</td>
+</tr>
+<tr>
+<td><code>place.knots</code></td>
+<td>Automatically place a set of knots evenly through covariate values</td>
+</tr>
+<tr>
+<td><code>plot.gam</code></td>
+<td>Default GAM plotting</td>
+</tr>
+<tr>
+<td><code>polys.plot</code></td>
+<td>Plot geographic regions defined as polygons</td>
+</tr>
+<tr>
+<td><code>predict.bam</code></td>
+<td>Prediction from fitted Big Additive Model model</td>
+</tr>
+<tr>
+<td><code>predict.gam</code></td>
+<td>Prediction from fitted GAM model</td>
+</tr>
+<tr>
+<td><code>print.gam</code></td>
+<td>Print a Generalized Additive Model object.</td>
+</tr>
+<tr>
+<td><code>qq.gam</code></td>
+<td>QQ plots for gam model residuals</td>
+</tr>
+<tr>
+<td><code>rTweedie</code></td>
+<td>Generate Tweedie random deviates</td>
+</tr>
+<tr>
+<td><code>random.effects</code></td>
+<td>Random effects in GAMs</td>
+</tr>
+<tr>
+<td><code>residuals.gam</code></td>
+<td>Generalized Additive Model residuals</td>
+</tr>
+<tr>
+<td><code>rig</code></td>
+<td>Generate inverse Gaussian random deviates</td>
+</tr>
+<tr>
+<td><code>rmvn</code></td>
+<td>Generate multivariate normal deviates</td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td>Defining smooths in GAM formulae</td>
+</tr>
+<tr>
+<td><code>scat</code></td>
+<td>GAM scaled t family for heavy tailed data</td>
+</tr>
+<tr>
+<td><code>single.index</code></td>
+<td>Single index models with mgcv</td>
+</tr>
+<tr>
+<td><code>slanczos</code></td>
+<td>Compute truncated eigen decomposition of a symmetric matrix</td>
+</tr>
+<tr>
+<td><code>smooth.construct</code></td>
+<td>Constructor functions for smooth terms in a GAM</td>
+</tr>
+<tr>
+<td><code>smooth.construct.ad.smooth.spec</code></td>
+<td>Adaptive smooths in GAMs</td>
+</tr>
+<tr>
+<td><code>smooth.construct.cr.smooth.spec</code></td>
+<td>Penalized Cubic regression splines in GAMs</td>
+</tr>
+<tr>
+<td><code>smooth.construct.ds.smooth.spec</code></td>
+<td>Low rank Duchon 1977 splines</td>
+</tr>
+<tr>
+<td><code>smooth.construct.fs.smooth.spec</code></td>
+<td>Factor smooth interactions in GAMs</td>
+</tr>
+<tr>
+<td><code>smooth.construct.mrf.smooth.spec</code></td>
+<td>Markov Random Field Smooths</td>
+</tr>
+<tr>
+<td><code>smooth.construct.ps.smooth.spec</code></td>
+<td>P-splines in GAMs</td>
+</tr>
+<tr>
+<td><code>smooth.construct.re.smooth.spec</code></td>
+<td>Simple random effects in GAMs</td>
+</tr>
+<tr>
+<td><code>smooth.construct.so.smooth.spec</code></td>
+<td>Soap film smoother constructer</td>
+</tr>
+<tr>
+<td><code>smooth.construct.sos.smooth.spec</code></td>
+<td>Splines on the sphere</td>
+</tr>
+<tr>
+<td><code>smooth.construct.t2.smooth.spec</code></td>
+<td>Tensor product smoothing constructor</td>
+</tr>
+<tr>
+<td><code>smooth.construct.tensor.smooth.spec</code></td>
+<td>Tensor product smoothing constructor</td>
+</tr>
+<tr>
+<td><code>smooth.construct.tp.smooth.spec</code></td>
+<td>Penalized thin plate regression splines in GAMs</td>
+</tr>
+<tr>
+<td><code>smooth.terms</code></td>
+<td>Smooth terms in GAM</td>
+</tr>
+<tr>
+<td><code>smoothCon</code></td>
+<td>Prediction/Construction wrapper functions for GAM smooth terms</td>
+</tr>
+<tr>
+<td><code>sp.vcov</code></td>
+<td>Extract smoothing parameter estimator</td>
+</tr>
+<tr>
+<td><code>covariance</code></td>
+<td>matrix from (RE)ML GAM fit</td>
+</tr>
+<tr>
+<td><code>spasm.construct</code></td>
+<td>Experimental sparse smoothers</td>
+</tr>
+<tr>
+<td><code>step.gam</code></td>
+<td>Alternatives to step.gam</td>
+</tr>
+<tr>
+<td><code>summary.gam</code></td>
+<td>Summary for a GAM fit</td>
+</tr>
+<tr>
+<td><code>t2</code></td>
+<td>Define alternative tensor product smooths in GAM formulae</td>
+</tr>
+<tr>
+<td><code>te</code></td>
+<td>Define tensor product smooths or tensor product interactions in GAM formulae</td>
+</tr>
+<tr>
+<td><code>tensor.prod.model.matrix</code></td>
+<td>Utility functions for constructing tensor product smooths</td>
+</tr>
+<tr>
+<td><code>uniquecombs</code></td>
+<td>find the unique rows in a matrix</td>
+</tr>
+<tr>
+<td><code>vcov.gam</code></td>
+<td>Extract parameter (estimator) covariance matrix from GAM fit</td>
+</tr>
+<tr>
+<td><code>vis.gam</code></td>
+<td>Visualization of GAM objects</td>
+</tr>
+<tr>
+<td><code>ziP</code></td>
+<td>GAM zero-inflated Poisson regression family</td>
+</tr>
+<tr>
+<td><code>ziplss</code></td>
+<td>Zero inflated Poisson location-scale model family</td>
 </tr>
 </tbody>
 </table>
-<h2 id="arctextgrob">arcTextGrob</h2>
-<p>&#x6587;&#x5B57;&#x5217;&#x3092;&#x5186;&#x5F27;&#x4E0A;&#x306B;&#x914D;&#x7F6E;</p>
-<h2 id="colorstripgrob">colorstripGrob</h2>
-<p>&#x30AB;&#x30E9;&#x30FC;&#x30B3;&#x30FC;&#x30C9;&#x304B;&#x3089;&#x8272;&#x898B;&#x672C;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; colorstripGrob(c(<span class="hljs-string">&quot;#E41A1C&quot;</span>, <span class="hljs-string">&quot;#377EB8&quot;</span>, <span class="hljs-string">&quot;#4DAF4A&quot;</span>))
-</code></pre>
-<p><img src="../Figure/usage_colorstripGrob-1.png" alt=""></p>
 
                     
                     </section>
@@ -880,10 +1244,10 @@
         </div>
 
         
-        <a href="../graphics/ggvis.html" class="navigation navigation-prev " aria-label="Previous page: ggvis"><i class="fa fa-angle-left"></i></a>
+        <a href="../statistics/gam.html" class="navigation navigation-prev " aria-label="Previous page: gam"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../graphics/jpeg.html" class="navigation navigation-next " aria-label="Next page: jpeg"><i class="fa fa-angle-right"></i></a>
+        <a href="../statistics/MCMCpack.html" class="navigation navigation-next " aria-label="Next page: MCMCpack"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

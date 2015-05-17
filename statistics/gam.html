@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>gridExtra | R Package Showcase</title>
+        <title>gam | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../graphics/jpeg.html" />
+    <link rel="next" href="../statistics/mgcv.html" />
     
     
-    <link rel="prev" href="../graphics/ggvis.html" />
+    <link rel="prev" href="../statistics/biotools.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.6" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
+    <div class="book" data-level="5.2" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -259,7 +259,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.6" data-path="graphics/gridExtra.html">
+        <li class="chapter " data-level="3.6" data-path="graphics/gridExtra.html">
             
                 
                     <a href="../graphics/gridExtra.html">
@@ -406,7 +406,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.2" data-path="statistics/gam.html">
+        <li class="chapter active" data-level="5.2" data-path="statistics/gam.html">
             
                 
                     <a href="../statistics/gam.html">
@@ -745,17 +745,15 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="gridextra-functions-in-grid-graphics">gridExtra: functions in Grid graphics</h1>
-<p>&#x4F5C;&#x56F3;&#x95A2;&#x6570;&#x306E;&#x62E1;&#x5F35;</p>
-<p><a href="http://cran.rstudio.com/web/packages/gridExtra/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/gridExtra" alt=""></a></p>
+                        <h1 id="gam-generalized-additive-models">gam: Generalized Additive Models</h1>
+<p>&#x4E00;&#x822C;&#x5316;&#x52A0;&#x6CD5;&#x30E2;&#x30C7;&#x30EB;</p>
+<p><a href="http://cran.rstudio.com/web/packages/gam/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/gam" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/gridExtra/index.html" target="_blank">http://cran.r-project.org/web/packages/gridExtra/index.html</a></li>
-<li>GitHub: <a href="https://github.com/baptiste/gridextra" target="_blank">https://github.com/baptiste/gridextra</a></li>
-<li>URL: <a href="http://code.google.com/p/gridextra/" target="_blank">http://code.google.com/p/gridextra/</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/gam/index.html" target="_blank">http://cran.r-project.org/web/packages/gam/index.html</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(gridExtra)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(gam)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.9.1</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.12</p>
 <hr>
 <table>
 <thead>
@@ -766,110 +764,63 @@
 </thead>
 <tbody>
 <tr>
-<td><code>arcTextGrob</code></td>
-<td>place text labels on a circle and display relations with arcs</td>
+<td><code>gam</code></td>
+<td>Fit a generalized additive model</td>
 </tr>
 <tr>
-<td><code>arrangeGrob</code></td>
-<td>arrangeGrob</td>
+<td><code>lo</code></td>
+<td>local regression wrapper to be used in a gam formula</td>
 </tr>
 <tr>
-<td><code>barbedGrob</code></td>
-<td>barbedGrob</td>
+<td><code>s</code></td>
+<td>smoothing spline wrapper to be used in a gam formula</td>
 </tr>
 <tr>
-<td><code>borderGrob</code></td>
-<td>borderGrob</td>
+<td><code>plot.gam</code></td>
+<td>an interactive plotting function for gams</td>
 </tr>
 <tr>
-<td><code>colorstripGrob</code></td>
-<td>colorstrip</td>
+<td><code>predict.gam</code></td>
+<td>make predictions from a gam object</td>
 </tr>
 <tr>
-<td><code>ebimageGrob</code></td>
-<td>create a grob from EBImage object</td>
+<td><code>step.gam</code></td>
+<td>stepwise model search with gam</td>
 </tr>
 <tr>
-<td><code>ellipseGrob</code></td>
-<td>ellipseGrob</td>
+<td><code>anova.gam</code></td>
+<td>compare the fits of a number of gam models</td>
 </tr>
 <tr>
-<td><code>expand.arguments</code></td>
-<td>expand.arguments</td>
+<td><code>summary.gam</code></td>
+<td>summary method for gam</td>
 </tr>
 <tr>
-<td><code>gridExtra-package</code></td>
-<td>misc. high-level functions for Grid graphics</td>
+<td><code>preplot.gam</code></td>
+<td>extracts the components from a gam in a plot-ready form</td>
 </tr>
 <tr>
-<td><code>interleaven</code></td>
-<td>interleaven</td>
+<td><code>gam.lo</code></td>
+<td>local regression smoother for gam, used by all.wam</td>
 </tr>
 <tr>
-<td><code>marrangeGrob</code></td>
-<td>marrangeGrob</td>
+<td><code>gam.s</code></td>
+<td>smoothing spline smoother for gam,used by all.wam</td>
 </tr>
 <tr>
-<td><code>ngonGrob</code></td>
-<td>ngonGrob</td>
+<td><code>na.gam.replace</code></td>
+<td>a missing value method that is helpful with gams</td>
 </tr>
 <tr>
-<td><code>patternGrob</code></td>
-<td>patternGrob</td>
+<td><code>gam.exact</code></td>
+<td>a wrapper for semiparametric gams producing exact standard errors</td>
 </tr>
 <tr>
-<td><code>pixmapGrob</code></td>
-<td>create a grob from pixmap object</td>
-</tr>
-<tr>
-<td><code>polygon.regular</code></td>
-<td>polygon.regular</td>
-</tr>
-<tr>
-<td><code>polygon.star</code></td>
-<td>polygon.star</td>
-</tr>
-<tr>
-<td><code>polygon1</code></td>
-<td>polygon1</td>
-</tr>
-<tr>
-<td><code>read.tiff</code></td>
-<td>read tiff files with pixmap</td>
-</tr>
-<tr>
-<td><code>rowMax.units</code></td>
-<td>rowMax.units</td>
-</tr>
-<tr>
-<td><code>rpatternGrob</code></td>
-<td>rpatternGrob</td>
-</tr>
-<tr>
-<td><code>stextGrob</code></td>
-<td>stextGrob</td>
-</tr>
-<tr>
-<td><code>tableGrob</code></td>
-<td>tableGrob</td>
-</tr>
-<tr>
-<td><code>theme.default</code></td>
-<td>theme</td>
-</tr>
-<tr>
-<td><code>virtualGrob</code></td>
-<td>virtualGrob</td>
+<td><code>gam.control</code></td>
+<td>control parameters for fitting gam models</td>
 </tr>
 </tbody>
 </table>
-<h2 id="arctextgrob">arcTextGrob</h2>
-<p>&#x6587;&#x5B57;&#x5217;&#x3092;&#x5186;&#x5F27;&#x4E0A;&#x306B;&#x914D;&#x7F6E;</p>
-<h2 id="colorstripgrob">colorstripGrob</h2>
-<p>&#x30AB;&#x30E9;&#x30FC;&#x30B3;&#x30FC;&#x30C9;&#x304B;&#x3089;&#x8272;&#x898B;&#x672C;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; colorstripGrob(c(<span class="hljs-string">&quot;#E41A1C&quot;</span>, <span class="hljs-string">&quot;#377EB8&quot;</span>, <span class="hljs-string">&quot;#4DAF4A&quot;</span>))
-</code></pre>
-<p><img src="../Figure/usage_colorstripGrob-1.png" alt=""></p>
 
                     
                     </section>
@@ -880,10 +831,10 @@
         </div>
 
         
-        <a href="../graphics/ggvis.html" class="navigation navigation-prev " aria-label="Previous page: ggvis"><i class="fa fa-angle-left"></i></a>
+        <a href="../statistics/biotools.html" class="navigation navigation-prev " aria-label="Previous page: biotools"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../graphics/jpeg.html" class="navigation navigation-next " aria-label="Next page: jpeg"><i class="fa fa-angle-right"></i></a>
+        <a href="../statistics/mgcv.html" class="navigation navigation-next " aria-label="Next page: mgcv"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

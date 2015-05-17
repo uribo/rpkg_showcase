@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>gridExtra | R Package Showcase</title>
+        <title>rPlotter | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../graphics/jpeg.html" />
+    <link rel="next" href="../design/wesanderson.html" />
     
     
-    <link rel="prev" href="../graphics/ggvis.html" />
+    <link rel="prev" href="../design/index.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.6" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
+    <div class="book" data-level="2.1" data-basepath=".." data-revision="Sun May 17 2015 22:50:14 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -133,7 +133,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1" data-path="design/rPlotter.html">
+        <li class="chapter active" data-level="2.1" data-path="design/rPlotter.html">
             
                 
                     <a href="../design/rPlotter.html">
@@ -259,7 +259,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.6" data-path="graphics/gridExtra.html">
+        <li class="chapter " data-level="3.6" data-path="graphics/gridExtra.html">
             
                 
                     <a href="../graphics/gridExtra.html">
@@ -745,17 +745,15 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="gridextra-functions-in-grid-graphics">gridExtra: functions in Grid graphics</h1>
-<p>&#x4F5C;&#x56F3;&#x95A2;&#x6570;&#x306E;&#x62E1;&#x5F35;</p>
-<p><a href="http://cran.rstudio.com/web/packages/gridExtra/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/gridExtra" alt=""></a></p>
+                        <h1 id="rplotter-easy-plotting-in-r">rPlotter: Easy Plotting in R</h1>
+<p>R&#x3067;&#x306E;&#x30D7;&#x30ED;&#x30C3;&#x30C8;&#x3092;&#x5BB9;&#x6613;&#x306B;&#x3059;&#x308B;</p>
+<p><a href="http://cran.rstudio.com/web/packages/rPlotter/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/rPlotter" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/gridExtra/index.html" target="_blank">http://cran.r-project.org/web/packages/gridExtra/index.html</a></li>
-<li>GitHub: <a href="https://github.com/baptiste/gridextra" target="_blank">https://github.com/baptiste/gridextra</a></li>
-<li>URL: <a href="http://code.google.com/p/gridextra/" target="_blank">http://code.google.com/p/gridextra/</a></li>
+<li>GitHub: <a href="https://github.com/woobe/rPlotter" target="_blank">https://github.com/woobe/rPlotter</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(gridExtra)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(rPlotter)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.9.1</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.0.8</p>
 <hr>
 <table>
 <thead>
@@ -766,111 +764,55 @@
 </thead>
 <tbody>
 <tr>
-<td><code>arcTextGrob</code></td>
-<td>place text labels on a circle and display relations with arcs</td>
+<td><code>create_ggtheme</code></td>
+<td>Create customised themes for ggplot2 object</td>
 </tr>
 <tr>
-<td><code>arrangeGrob</code></td>
-<td>arrangeGrob</td>
+<td><code>display_colours</code></td>
+<td>Display colour using rblocks</td>
 </tr>
 <tr>
-<td><code>barbedGrob</code></td>
-<td>barbedGrob</td>
+<td><code>extract_colours</code></td>
+<td>Detect and extract dominant colours from an image</td>
 </tr>
 <tr>
-<td><code>borderGrob</code></td>
-<td>borderGrob</td>
+<td><code>interpolate_colours</code></td>
+<td>Interpolate colour palette to render more colours within the input range</td>
 </tr>
 <tr>
-<td><code>colorstripGrob</code></td>
-<td>colorstrip</td>
+<td><code>mpd_select_colours</code></td>
+<td>Select colours from a palette to maximize</td>
 </tr>
 <tr>
-<td><code>ebimageGrob</code></td>
-<td>create a grob from EBImage object</td>
+<td><code>perceptual</code></td>
+<td>distance between the colours</td>
 </tr>
 <tr>
-<td><code>ellipseGrob</code></td>
-<td>ellipseGrob</td>
+<td><code>palette_reduce</code></td>
+<td>Reduce palette by removing colours with low saturation, or low or high luminance</td>
 </tr>
 <tr>
-<td><code>expand.arguments</code></td>
-<td>expand.arguments</td>
+<td><code>plot_radar</code></td>
+<td>Create radar (spider) charts from a data frame</td>
 </tr>
 <tr>
-<td><code>gridExtra-package</code></td>
-<td>misc. high-level functions for Grid graphics</td>
-</tr>
-<tr>
-<td><code>interleaven</code></td>
-<td>interleaven</td>
-</tr>
-<tr>
-<td><code>marrangeGrob</code></td>
-<td>marrangeGrob</td>
-</tr>
-<tr>
-<td><code>ngonGrob</code></td>
-<td>ngonGrob</td>
-</tr>
-<tr>
-<td><code>patternGrob</code></td>
-<td>patternGrob</td>
-</tr>
-<tr>
-<td><code>pixmapGrob</code></td>
-<td>create a grob from pixmap object</td>
-</tr>
-<tr>
-<td><code>polygon.regular</code></td>
-<td>polygon.regular</td>
-</tr>
-<tr>
-<td><code>polygon.star</code></td>
-<td>polygon.star</td>
-</tr>
-<tr>
-<td><code>polygon1</code></td>
-<td>polygon1</td>
-</tr>
-<tr>
-<td><code>read.tiff</code></td>
-<td>read tiff files with pixmap</td>
-</tr>
-<tr>
-<td><code>rowMax.units</code></td>
-<td>rowMax.units</td>
-</tr>
-<tr>
-<td><code>rpatternGrob</code></td>
-<td>rpatternGrob</td>
-</tr>
-<tr>
-<td><code>stextGrob</code></td>
-<td>stextGrob</td>
-</tr>
-<tr>
-<td><code>tableGrob</code></td>
-<td>tableGrob</td>
-</tr>
-<tr>
-<td><code>theme.default</code></td>
-<td>theme</td>
-</tr>
-<tr>
-<td><code>virtualGrob</code></td>
-<td>virtualGrob</td>
+<td><code>simulate_colours</code></td>
+<td>Simulate Three Different Types of Colour Blindness (Deuteranopia, Protanopia &amp; Tritanopia)</td>
 </tr>
 </tbody>
 </table>
-<h2 id="arctextgrob">arcTextGrob</h2>
-<p>&#x6587;&#x5B57;&#x5217;&#x3092;&#x5186;&#x5F27;&#x4E0A;&#x306B;&#x914D;&#x7F6E;</p>
-<h2 id="colorstripgrob">colorstripGrob</h2>
-<p>&#x30AB;&#x30E9;&#x30FC;&#x30B3;&#x30FC;&#x30C9;&#x304B;&#x3089;&#x8272;&#x898B;&#x672C;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; colorstripGrob(c(<span class="hljs-string">&quot;#E41A1C&quot;</span>, <span class="hljs-string">&quot;#377EB8&quot;</span>, <span class="hljs-string">&quot;#4DAF4A&quot;</span>))
+<h2 id="display-colours">display_colours</h2>
+<p>&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x72B6;&#x306B;16&#x9032;&#x6570;&#x8272;&#x3067;&#x306E;&#x8272;&#x3092;&#x8868;&#x793A;</p>
+<pre><code class="lang-r">&gt; extract_colours(system.file(<span class="hljs-string">&quot;img&quot;</span>, <span class="hljs-string">&quot;Rlogo.jpg&quot;</span>, package = <span class="hljs-string">&quot;jpeg&quot;</span>)) %&gt;% display_colours(.)
 </code></pre>
-<p><img src="../Figure/usage_colorstripGrob-1.png" alt=""></p>
-
+<p>&#x8272;&#x540D;&#x306E;&#x53D6;&#x5F97;&#x306F;<code>extract_colours()</code>&#x3067;&#x304A;&#x3053;&#x306A;&#x3046;</p>
+<p><img src="../Figure/usage_display_colours-1.png" alt=""></p>
+<h2 id="extract-colours">extract_colours</h2>
+<p>&#x753B;&#x50CF;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x5185;&#x3067;&#x306E;&#x4E3B;&#x8981;&#x306A;&#x8272;&#x7A7A;&#x9593;&#x3092;&#x691C;&#x51FA;&#x3059;&#x308B;</p>
+<pre><code class="lang-r">&gt; extract_colours(system.file(<span class="hljs-string">&quot;img&quot;</span>, <span class="hljs-string">&quot;Rlogo.jpg&quot;</span>, package = <span class="hljs-string">&quot;jpeg&quot;</span>))
+</code></pre>
+<pre><code>[1] &quot;#2F3439&quot; &quot;#676D71&quot; &quot;#8B95A6&quot; &quot;#BDC4CF&quot; &quot;#FDFEFD&quot;
+</code></pre>
                     
                     </section>
                 
@@ -880,10 +822,10 @@
         </div>
 
         
-        <a href="../graphics/ggvis.html" class="navigation navigation-prev " aria-label="Previous page: ggvis"><i class="fa fa-angle-left"></i></a>
+        <a href="../design/index.html" class="navigation navigation-prev " aria-label="Previous page: Design"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../graphics/jpeg.html" class="navigation navigation-next " aria-label="Next page: jpeg"><i class="fa fa-angle-right"></i></a>
+        <a href="../design/wesanderson.html" class="navigation navigation-next " aria-label="Next page: wesanderson"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
