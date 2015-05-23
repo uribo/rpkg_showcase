@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>knitcitations | R Package Showcase</title>
+        <title>ggtree | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../report/knitr.html" />
+    <link rel="next" href="../graphics/ggvis.html" />
     
     
-    <link rel="prev" href="../report/index.html" />
+    <link rel="prev" href="../graphics/ggplot2.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="5.1" data-basepath=".." data-revision="Sat May 23 2015 23:42:33 GMT+0900 (JST)">
+    <div class="book" data-level="4.5" data-basepath=".." data-revision="Sat May 23 2015 23:42:33 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -340,7 +340,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.5" data-path="graphics/ggtree.html">
+        <li class="chapter active" data-level="4.5" data-path="graphics/ggtree.html">
             
                 
                     <a href="../graphics/ggtree.html">
@@ -421,7 +421,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="5.1" data-path="report/knitcitations.html">
+        <li class="chapter " data-level="5.1" data-path="report/knitcitations.html">
             
                 
                     <a href="../report/knitcitations.html">
@@ -886,16 +886,30 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="knitcitations-citations-for-knitr-markdown-files">knitcitations: Citations for knitr markdown files</h1>
-<p>RMarkdown&#x3067;&#x306E;&#x6587;&#x732E;&#x7BA1;&#x7406;</p>
-<p><a href="http://cran.rstudio.com/web/packages/knitcitations/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/knitcitations" alt=""></a></p>
+                        <h1 id="ggtree-a-phylogenetic-tree-viewer-for-different-types-of-tree-annotations">ggtree: a phylogenetic tree viewer for different types of tree annotations</h1>
+<p>&#x7CFB;&#x7D71;&#x6A39;&#x3092;&#x63CF;&#x753B;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;</p>
+<p><a href="http://www.bioconductor.org/packages/release/bioc/html/ggtree.html" target="_blank"><img src="http://bioconductor.org/shields/build/release/bioc/ggtree.svg" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/knitcitations/index.html" target="_blank">http://cran.r-project.org/web/packages/knitcitations/index.html</a></li>
-<li>GitHub: <a href="https://github.com/cboettig/knitcitations" target="_blank">https://github.com/cboettig/knitcitations</a></li>
+<li>Bioconductor: <a href="http://www.bioconductor.org/packages/release/bioc/html/ggtree.html" target="_blank">http://www.bioconductor.org/packages/release/bioc/html/ggtree.html</a></li>
+<li>GitHub: <a href="https://github.com/GuangchuangYu/ggtree" target="_blank">https://github.com/GuangchuangYu/ggtree</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(knitcitations)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(ggtree)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.0.5</p>
+<pre><code>
+Attaching package: &apos;ggtree&apos;
+
+The following object is masked from &apos;package:tidyr&apos;:
+
+    expand
+
+The following object is masked from &apos;package:dplyr&apos;:
+
+    collapse
+
+The following object is masked from &apos;package:ggvis&apos;:
+
+    add_legend
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.1.7</p>
 <hr>
 <table>
 <thead>
@@ -906,48 +920,246 @@
 </thead>
 <tbody>
 <tr>
-<td><code>bib_metadata</code></td>
-<td>get the full metadata for a citation / bibliographic object</td>
+<td><code>%&lt;%</code></td>
+<td>%&lt;%</td>
 </tr>
 <tr>
-<td><code>bibliography</code></td>
-<td>Generate the bibliography</td>
+<td><code>%&lt;+%</code></td>
+<td>%&lt;+%</td>
 </tr>
 <tr>
-<td><code>cite_options</code></td>
-<td>Toggles for various citation options</td>
+<td><code>.</code></td>
+<td>.</td>
 </tr>
 <tr>
-<td><code>citep</code></td>
-<td>citep - inline parenthetical citation</td>
+<td><code>NJ</code></td>
+<td>NJ</td>
 </tr>
 <tr>
-<td><code>citet</code></td>
-<td>citet - inline parenthetical citation</td>
+<td><code>aes</code></td>
+<td>creates a lists of unevaluated expressions</td>
 </tr>
 <tr>
-<td><code>cleanbib</code></td>
-<td>cleanbib</td>
+<td><code>as.binary</code></td>
+<td>as.binary</td>
 </tr>
 <tr>
-<td><code>greycite</code></td>
-<td>greycite citation method</td>
+<td><code>as.data.frame.phylo</code></td>
+<td>as.data.frame</td>
 </tr>
 <tr>
-<td><code>read.bibtex</code></td>
-<td>read.bibtex</td>
+<td><code>beast-class</code></td>
+<td>Class &quot;beast&quot; This class stores information of beast output</td>
 </tr>
 <tr>
-<td><code>record_as_cited</code></td>
-<td>record as cited</td>
+<td><code>codeml-class</code></td>
+<td>Class &quot;codeml&quot; This class stores information of output from codeml</td>
 </tr>
 <tr>
-<td><code>write.bibtex</code></td>
-<td>write a bibtex file</td>
+<td><code>codeml_mlc-class</code></td>
+<td>Class &quot;codeml_mlc&quot; This class stores information of mlc file frm codeml output</td>
+</tr>
+<tr>
+<td><code>fortify.phylo</code></td>
+<td>fortify</td>
+</tr>
+<tr>
+<td><code>geom_aline</code></td>
+<td>geom_aline</td>
+</tr>
+<tr>
+<td><code>geom_text</code></td>
+<td>text annotations</td>
+</tr>
+<tr>
+<td><code>geom_tiplab</code></td>
+<td>geom_tiplab</td>
+</tr>
+<tr>
+<td><code>geom_tippoint</code></td>
+<td>geom_tippoint</td>
+</tr>
+<tr>
+<td><code>geom_tree</code></td>
+<td>geom_tree</td>
+</tr>
+<tr>
+<td><code>get.fields</code></td>
+<td>get.fields method</td>
+</tr>
+<tr>
+<td><code>get.offspring.tip</code></td>
+<td>get.offspring.tip</td>
+</tr>
+<tr>
+<td><code>get.placements</code></td>
+<td>get.placements method</td>
+</tr>
+<tr>
+<td><code>get.subs</code></td>
+<td>get.subs method</td>
+</tr>
+<tr>
+<td><code>get.tipseq</code></td>
+<td>get.tipseq method</td>
+</tr>
+<tr>
+<td><code>get.tree</code></td>
+<td>get.tree method</td>
+</tr>
+<tr>
+<td><code>get.treeinfo</code></td>
+<td>get.treeinfo method</td>
+</tr>
+<tr>
+<td><code>get.treetext</code></td>
+<td>get.treetext method</td>
+</tr>
+<tr>
+<td><code>ggplotGrob</code></td>
+<td>generate a ggplot2 plot grob</td>
+</tr>
+<tr>
+<td><code>ggtree</code></td>
+<td>visualizing phylogenetic tree and heterogenous associated data based on grammar of graphics &apos;ggtree&apos; provides functions for visualizing</td>
+</tr>
+<tr>
+<td><code>phylogenetic</code></td>
+<td>tree and its associated data in R.</td>
+</tr>
+<tr>
+<td><code>gplot</code></td>
+<td>gplot</td>
+</tr>
+<tr>
+<td><code>groupOTU</code></td>
+<td>groupOTU method</td>
+</tr>
+<tr>
+<td><code>groupOTU.phylo</code></td>
+<td>groupOTU.phylo</td>
+</tr>
+<tr>
+<td><code>gzoom</code></td>
+<td>gzoom</td>
+</tr>
+<tr>
+<td><code>hyphy-class</code></td>
+<td>Class &quot;hyphy&quot; This class stores information of HYPHY output</td>
+</tr>
+<tr>
+<td><code>jplace-class</code></td>
+<td>Class &quot;jplace&quot; This class stores information of jplace file.</td>
+</tr>
+<tr>
+<td><code>paml_rst-class</code></td>
+<td>Class &quot;paml_rst&quot; This class stores information of rst file from PAML output</td>
+</tr>
+<tr>
+<td><code>plot</code></td>
+<td>plot method</td>
+</tr>
+<tr>
+<td><code>read.baseml</code></td>
+<td>read.baseml</td>
+</tr>
+<tr>
+<td><code>read.beast</code></td>
+<td>read.beast</td>
+</tr>
+<tr>
+<td><code>read.codeml</code></td>
+<td>read.codeml</td>
+</tr>
+<tr>
+<td><code>read.codeml_mlc</code></td>
+<td>read.codeml_mlc</td>
+</tr>
+<tr>
+<td><code>read.hyphy</code></td>
+<td>read.hyphy</td>
+</tr>
+<tr>
+<td><code>read.jplace</code></td>
+<td>read.jplace</td>
+</tr>
+<tr>
+<td><code>read.paml_rst</code></td>
+<td>read.paml_rst</td>
+</tr>
+<tr>
+<td><code>read.tree</code></td>
+<td>read newick tree</td>
+</tr>
+<tr>
+<td><code>rm.singleton.newick</code></td>
+<td>rm.singleton.newick</td>
+</tr>
+<tr>
+<td><code>rtree generate</code></td>
+<td>random tree</td>
+</tr>
+<tr>
+<td><code>show,beast-method</code></td>
+<td>show method</td>
+</tr>
+<tr>
+<td><code>theme_tree</code></td>
+<td>theme_tree</td>
+</tr>
+<tr>
+<td><code>theme_tree2</code></td>
+<td>theme_tree2</td>
+</tr>
+<tr>
+<td><code>write.jplace</code></td>
+<td>write.jplace</td>
 </tr>
 </tbody>
 </table>
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(ape)
+</code></pre>
+<h2 id="geom-tree">geom_tree</h2>
+<p>ggplot2&#x7528;&#x306E;&#x7CFB;&#x7D71;&#x6A39;&#x30EC;&#x30A4;&#x30E4;&#x30FC;&#x3002;<code>ggplot()</code>&#x306B;&#x306F;phylo&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x6E21;&#x3059;</p>
+<pre><code class="lang-r">&gt; rtree(n = <span class="hljs-number">10</span>) %$% ggplot(data = .) + geom_tree()
+</code></pre>
+<p><img src="../Figure/usage_geom_tree-1.png" alt=""></p>
+<h2 id="ggtree">ggtree</h2>
+<p>ggplot2&#x98A8;&#x306B;&#x7CFB;&#x7D71;&#x6A39;&#x3092;&#x63CF;&#x753B;</p>
+<pre><code class="lang-r">&gt; rtree(<span class="hljs-number">10</span>) %&gt;% ggtree(.)
+</code></pre>
+<p><img src="../Figure/usage_ggtree-1.png" alt=""></p>
+<h2 id="theme-tree">theme_tree</h2>
+<p>&#x63CF;&#x753B;&#x7528;&#x30C6;&#x30FC;&#x30DE;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>bgcolor</li>
+<li>fgcolor</li>
+</ul>
+<pre><code class="lang-r">&gt; rtree(<span class="hljs-number">10</span>) %&gt;% ggtree(.) + theme_tree(bgcolor = <span class="hljs-string">&quot;white&quot;</span>, fgcolor = <span class="hljs-string">&quot;black&quot;</span>)
+</code></pre>
+<p><img src="../Figure/usage_theme_tree-1.png" alt=""></p>
+<h2 id="rtee">rtee</h2>
+<p>&#x30E9;&#x30F3;&#x30C0;&#x30E0;&#x306A;&#x7CFB;&#x7D71;&#x6A39;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</p>
+<p><code>ape::rtree</code>&#x3082;&#x3042;&#x308B;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>n: &#x7CFB;&#x7D71;&#x6A39;&#x306E;&#x5148;&#x7AEF;&#x3068;&#x306A;&#x308B;&#x8449;&#x306E;&#x6570;</li>
+<li>rooted: logical</li>
+<li>tip.label: &#x8449;&#x306B;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x30E9;&#x30D9;&#x30EB;</li>
+<li>br</li>
+<li>...</li>
+</ul>
+<pre><code class="lang-r">&gt; rtree(n = <span class="hljs-number">10</span>, rooted = <span class="hljs-literal">TRUE</span>, tip.label = <span class="hljs-literal">NULL</span>, br = runif)
+</code></pre>
+<pre><code>
+Phylogenetic tree with 10 tips and 9 internal nodes.
 
+Tip labels:
+    t2, t5, t7, t3, t1, t6, ...
+
+Rooted; includes branch lengths.
+</code></pre>
                     
                     </section>
                 
@@ -957,10 +1169,10 @@
         </div>
 
         
-        <a href="../report/index.html" class="navigation navigation-prev " aria-label="Previous page: Report"><i class="fa fa-angle-left"></i></a>
+        <a href="../graphics/ggplot2.html" class="navigation navigation-prev " aria-label="Previous page: ggplot2"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../report/knitr.html" class="navigation navigation-next " aria-label="Next page: knitr"><i class="fa fa-angle-right"></i></a>
+        <a href="../graphics/ggvis.html" class="navigation navigation-next " aria-label="Next page: ggvis"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>knitcitations | R Package Showcase</title>
+        <title>data.table | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../report/knitr.html" />
+    <link rel="next" href="../utility/dplyr.html" />
     
     
-    <link rel="prev" href="../report/index.html" />
+    <link rel="prev" href="../utility/broom.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="5.1" data-basepath=".." data-revision="Sat May 23 2015 23:42:33 GMT+0900 (JST)">
+    <div class="book" data-level="7.2" data-basepath=".." data-revision="Sat May 23 2015 23:42:33 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -421,7 +421,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="5.1" data-path="report/knitcitations.html">
+        <li class="chapter " data-level="5.1" data-path="report/knitcitations.html">
             
                 
                     <a href="../report/knitcitations.html">
@@ -628,7 +628,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" data-path="utility/data.table.html">
+        <li class="chapter active" data-level="7.2" data-path="utility/data.table.html">
             
                 
                     <a href="../utility/data.table.html">
@@ -886,16 +886,28 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="knitcitations-citations-for-knitr-markdown-files">knitcitations: Citations for knitr markdown files</h1>
-<p>RMarkdown&#x3067;&#x306E;&#x6587;&#x732E;&#x7BA1;&#x7406;</p>
-<p><a href="http://cran.rstudio.com/web/packages/knitcitations/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/knitcitations" alt=""></a></p>
+                        <h1 id="data-table-extension-of-data-frame">data.table: Extension of data.frame</h1>
+<p>&#x30C7;&#x30FC;&#x30BF;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x306E;&#x6A5F;&#x80FD;&#x3092;&#x62E1;&#x5F35;&#x3059;&#x308B;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;</p>
+<p><a href="http://cran.rstudio.com/web/packages/data.table/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/data.table" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/knitcitations/index.html" target="_blank">http://cran.r-project.org/web/packages/knitcitations/index.html</a></li>
-<li>GitHub: <a href="https://github.com/cboettig/knitcitations" target="_blank">https://github.com/cboettig/knitcitations</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/data.table/index.html" target="_blank">http://cran.r-project.org/web/packages/data.table/index.html</a></li>
+<li>GitHub: <a href="https://github.com/Rdatatable/data.table" target="_blank">https://github.com/Rdatatable/data.table</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(knitcitations)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(data.table)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.0.5</p>
+<pre><code>data.table 1.9.4  For help type: ?data.table
+*** NB: by=.EACHI is now explicit. See README to restore previous behaviour.
+
+Attaching package: &apos;data.table&apos;
+
+The following object is masked from &apos;package:DescTools&apos;:
+
+    %like%
+
+The following objects are masked from &apos;package:dplyr&apos;:
+
+    between, last
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.9.4</p>
 <hr>
 <table>
 <thead>
@@ -906,44 +918,128 @@
 </thead>
 <tbody>
 <tr>
-<td><code>bib_metadata</code></td>
-<td>get the full metadata for a citation / bibliographic object</td>
+<td><code>:=</code></td>
+<td>Assignment by reference</td>
 </tr>
 <tr>
-<td><code>bibliography</code></td>
-<td>Generate the bibliography</td>
+<td><code>IDateTime</code></td>
+<td>Integer based date class</td>
 </tr>
 <tr>
-<td><code>cite_options</code></td>
-<td>Toggles for various citation options</td>
+<td><code>J</code></td>
+<td>Creates a Join data table</td>
 </tr>
 <tr>
-<td><code>citep</code></td>
-<td>citep - inline parenthetical citation</td>
+<td><code>address</code></td>
+<td>Address in RAM of a variable</td>
 </tr>
 <tr>
-<td><code>citet</code></td>
-<td>citet - inline parenthetical citation</td>
+<td><code>all.equal</code></td>
+<td>Equality Test Between Two Data Tables</td>
 </tr>
 <tr>
-<td><code>cleanbib</code></td>
-<td>cleanbib</td>
+<td><code>between</code></td>
+<td>Convenience function for range subset logic.</td>
 </tr>
 <tr>
-<td><code>greycite</code></td>
-<td>greycite citation method</td>
+<td><code>chmatch</code></td>
+<td>Faster match of character vectors</td>
 </tr>
 <tr>
-<td><code>read.bibtex</code></td>
-<td>read.bibtex</td>
+<td><code>copy</code></td>
+<td>Copy an entire object</td>
 </tr>
 <tr>
-<td><code>record_as_cited</code></td>
-<td>record as cited</td>
+<td><code>data.table-class</code></td>
+<td>S4 Definition for data.table</td>
 </tr>
 <tr>
-<td><code>write.bibtex</code></td>
-<td>write a bibtex file</td>
+<td><code>data.table-package</code></td>
+<td>Enhanced data.frame</td>
+</tr>
+<tr>
+<td><code>dcast.data.table</code></td>
+<td>Fast dcast for data.table</td>
+</tr>
+<tr>
+<td><code>duplicated</code></td>
+<td>Determine Duplicate Rows</td>
+</tr>
+<tr>
+<td><code>foverlaps</code></td>
+<td>Fast overlap joins</td>
+</tr>
+<tr>
+<td><code>fread</code></td>
+<td>Fast and friendly file finagler</td>
+</tr>
+<tr>
+<td><code>last</code></td>
+<td>Last item of an object</td>
+</tr>
+<tr>
+<td><code>like</code></td>
+<td>Convenience function for calling regexpr.</td>
+</tr>
+<tr>
+<td><code>melt.data.table</code></td>
+<td>Fast melt for data.table</td>
+</tr>
+<tr>
+<td><code>merge</code></td>
+<td>Merge Two Data Tables</td>
+</tr>
+<tr>
+<td><code>rbindlist</code></td>
+<td>Makes one data.table from a list of many</td>
+</tr>
+<tr>
+<td><code>setDF</code></td>
+<td>Convert a data.table to data.frame by reference</td>
+</tr>
+<tr>
+<td><code>setDT</code></td>
+<td>Convert lists and data.frames to data.table by reference</td>
+</tr>
+<tr>
+<td><code>setNumericRounding</code></td>
+<td>Change or turn off numeric rounding</td>
+</tr>
+<tr>
+<td><code>setattr</code></td>
+<td>Set attributes to objects by reference</td>
+</tr>
+<tr>
+<td><code>setkey</code></td>
+<td>Create key on a data table</td>
+</tr>
+<tr>
+<td><code>setorder</code></td>
+<td>Fast reordering of a data.table by reference</td>
+</tr>
+<tr>
+<td><code>subset.data.table</code></td>
+<td>Subsetting data.tables</td>
+</tr>
+<tr>
+<td><code>tables</code></td>
+<td>Display all objects of class &apos;data.table&apos;</td>
+</tr>
+<tr>
+<td><code>test.data.table</code></td>
+<td>Runs a set of tests.</td>
+</tr>
+<tr>
+<td><code>timetaken</code></td>
+<td>Pretty print of time taken</td>
+</tr>
+<tr>
+<td><code>transform.data.table</code></td>
+<td>Data table utilities</td>
+</tr>
+<tr>
+<td><code>truelength</code></td>
+<td>Over-allocation access</td>
 </tr>
 </tbody>
 </table>
@@ -957,10 +1053,10 @@
         </div>
 
         
-        <a href="../report/index.html" class="navigation navigation-prev " aria-label="Previous page: Report"><i class="fa fa-angle-left"></i></a>
+        <a href="../utility/broom.html" class="navigation navigation-prev " aria-label="Previous page: broom"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../report/knitr.html" class="navigation navigation-next " aria-label="Next page: knitr"><i class="fa fa-angle-right"></i></a>
+        <a href="../utility/dplyr.html" class="navigation navigation-next " aria-label="Next page: dplyr"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

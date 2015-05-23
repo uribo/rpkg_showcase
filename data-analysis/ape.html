@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>knitcitations | R Package Showcase</title>
+        <title>ape | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../report/knitr.html" />
+    <link rel="next" href="../data-analysis/popbio.html" />
     
     
-    <link rel="prev" href="../report/index.html" />
+    <link rel="prev" href="../data-analysis/adephylo.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="5.1" data-basepath=".." data-revision="Sat May 23 2015 23:42:33 GMT+0900 (JST)">
+    <div class="book" data-level="3.2" data-basepath=".." data-revision="Sat May 23 2015 23:42:33 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -199,7 +199,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="data-analysis/ape.html">
+        <li class="chapter active" data-level="3.2" data-path="data-analysis/ape.html">
             
                 
                     <a href="../data-analysis/ape.html">
@@ -421,7 +421,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="5.1" data-path="report/knitcitations.html">
+        <li class="chapter " data-level="5.1" data-path="report/knitcitations.html">
             
                 
                     <a href="../report/knitcitations.html">
@@ -886,16 +886,16 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="knitcitations-citations-for-knitr-markdown-files">knitcitations: Citations for knitr markdown files</h1>
-<p>RMarkdown&#x3067;&#x306E;&#x6587;&#x732E;&#x7BA1;&#x7406;</p>
-<p><a href="http://cran.rstudio.com/web/packages/knitcitations/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/knitcitations" alt=""></a></p>
+                        <h1 id="ape-analyses-of-phylogenetics-and-evolution">ape: Analyses of Phylogenetics and Evolution</h1>
+<p>&#x7CFB;&#x7D71;&#x5B66;&#x3001;&#x9032;&#x5316;&#x5B66;&#x306E;&#x89E3;&#x6790;&#x30C4;&#x30FC;&#x30EB;</p>
+<p><a href="http://cran.rstudio.com/web/packages/ape/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/ape" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/knitcitations/index.html" target="_blank">http://cran.r-project.org/web/packages/knitcitations/index.html</a></li>
-<li>GitHub: <a href="https://github.com/cboettig/knitcitations" target="_blank">https://github.com/cboettig/knitcitations</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/ape/index.html" target="_blank">http://cran.r-project.org/web/packages/ape/index.html</a></li>
+<li>URL: <a href="http://ape-package.ird.fr/" target="_blank">http://ape-package.ird.fr/</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(knitcitations)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(ape)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.0.5</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 3.2</p>
 <hr>
 <table>
 <thead>
@@ -906,48 +906,704 @@
 </thead>
 <tbody>
 <tr>
-<td><code>bib_metadata</code></td>
-<td>get the full metadata for a citation / bibliographic object</td>
+<td><code>CADM.global</code></td>
+<td>Congruence among distance matrices</td>
 </tr>
 <tr>
-<td><code>bibliography</code></td>
-<td>Generate the bibliography</td>
+<td><code>DNAbin</code></td>
+<td>Manipulate DNA Sequences in Bit-Level Format</td>
 </tr>
 <tr>
-<td><code>cite_options</code></td>
-<td>Toggles for various citation options</td>
+<td><code>FastME</code></td>
+<td>Tree Estimation Based on the Minimum Evolution Algorithm</td>
 </tr>
 <tr>
-<td><code>citep</code></td>
-<td>citep - inline parenthetical citation</td>
+<td><code>Initialize.corPhyl</code></td>
+<td>Initialize a &apos;corPhyl&apos; Structure Object</td>
 </tr>
 <tr>
-<td><code>citet</code></td>
-<td>citet - inline parenthetical citation</td>
+<td><code>LTT</code></td>
+<td>Theoretical Lineage-Through Time Plots</td>
 </tr>
 <tr>
-<td><code>cleanbib</code></td>
-<td>cleanbib</td>
+<td><code>MPR</code></td>
+<td>Most Parsimonious Reconstruction</td>
 </tr>
 <tr>
-<td><code>greycite</code></td>
-<td>greycite citation method</td>
+<td><code>Moran.I</code></td>
+<td>Moran&apos;s I Autocorrelation Index</td>
 </tr>
 <tr>
-<td><code>read.bibtex</code></td>
-<td>read.bibtex</td>
+<td><code>SDM</code></td>
+<td>Construction of Consensus Distance Matrix With SDM</td>
 </tr>
 <tr>
-<td><code>record_as_cited</code></td>
-<td>record as cited</td>
+<td><code>ace</code></td>
+<td>Ancestral Character Estimation</td>
 </tr>
 <tr>
-<td><code>write.bibtex</code></td>
-<td>write a bibtex file</td>
+<td><code>add.scale.bar</code></td>
+<td>Add a Scale Bar to a Phylogeny Plot</td>
+</tr>
+<tr>
+<td><code>additive</code></td>
+<td>Incomplete Distance Matrix Filling</td>
+</tr>
+<tr>
+<td><code>alex</code></td>
+<td>Alignment Explorer With Multiple Devices</td>
+</tr>
+<tr>
+<td><code>all.equal.phylo</code></td>
+<td>Global Comparison of two Phylogenies</td>
+</tr>
+<tr>
+<td><code>ape-package</code></td>
+<td>Analyses of Phylogenetics and Evolution</td>
+</tr>
+<tr>
+<td><code>as.alignment</code></td>
+<td>Conversion Among DNA Sequence Internal Formats</td>
+</tr>
+<tr>
+<td><code>as.bitsplits</code></td>
+<td>Split Frequencies and Conversion Among Split Classes</td>
+</tr>
+<tr>
+<td><code>as.matching</code></td>
+<td>Conversion Between Phylo and Matching Objects</td>
+</tr>
+<tr>
+<td><code>as.phylo</code></td>
+<td>Conversion Among Tree and Network Objects</td>
+</tr>
+<tr>
+<td><code>as.phylo.formula</code></td>
+<td>Conversion from Taxonomy Variables to Phylogenetic Trees</td>
+</tr>
+<tr>
+<td><code>axisPhylo</code></td>
+<td>Axis on Side of Phylogeny</td>
+</tr>
+<tr>
+<td><code>balance</code></td>
+<td>Balance of a Dichotomous Phylogenetic Tree</td>
+</tr>
+<tr>
+<td><code>base.freq</code></td>
+<td>Base frequencies from DNA Sequences</td>
+</tr>
+<tr>
+<td><code>bd.ext</code></td>
+<td>Extended Version of the Birth-Death Models to Estimate Speciation and Extinction Rates</td>
+</tr>
+<tr>
+<td><code>bd.time</code></td>
+<td>Time-Dependent Birth-Death Models</td>
+</tr>
+<tr>
+<td><code>bind.tree</code></td>
+<td>Binds Trees</td>
+</tr>
+<tr>
+<td><code>bionj</code></td>
+<td>Tree Estimation Based on an Improved Version of the NJ Algorithm</td>
+</tr>
+<tr>
+<td><code>bird.families</code></td>
+<td>Phylogeny of the Families of Birds From Sibley and Ahlquist</td>
+</tr>
+<tr>
+<td><code>bird.orders</code></td>
+<td>Phylogeny of the Orders of Birds From Sibley and Ahlquist</td>
+</tr>
+<tr>
+<td><code>birthdeath</code></td>
+<td>Estimation of Speciation and Extinction Rates With Birth-Death Models</td>
+</tr>
+<tr>
+<td><code>boot.phylo</code></td>
+<td>Tree Bipartition and Bootstrapping Phylogenies</td>
+</tr>
+<tr>
+<td><code>branching.times</code></td>
+<td>Branching Times of a Phylogenetic Tree</td>
+</tr>
+<tr>
+<td><code>c.phylo</code></td>
+<td>Building Lists of Trees</td>
+</tr>
+<tr>
+<td><code>carnivora</code></td>
+<td>Carnivora body sizes and life history traits</td>
+</tr>
+<tr>
+<td><code>cherry</code></td>
+<td>Number of Cherries and Null Models of Trees chiroptera Bat Phylogeny</td>
+</tr>
+<tr>
+<td><code>chronoMPL</code></td>
+<td>Molecular Dating With Mean Path Lengths</td>
+</tr>
+<tr>
+<td><code>chronopl</code></td>
+<td>Molecular Dating With Penalized Likelihood</td>
+</tr>
+<tr>
+<td><code>chronos</code></td>
+<td>Molecular Dating by Penalised Likelihood and Maximum Likelihood</td>
+</tr>
+<tr>
+<td><code>clustal</code></td>
+<td>Multiple Sequence Alignment with External Applications</td>
+</tr>
+<tr>
+<td><code>coalescent.intervals</code></td>
+<td>Coalescent Intervals</td>
+</tr>
+<tr>
+<td><code>collapse.singles</code></td>
+<td>Collapse Single Nodes</td>
+</tr>
+<tr>
+<td><code>collapsed.intervals</code></td>
+<td>Collapsed Coalescent Intervals</td>
+</tr>
+<tr>
+<td><code>compar.cheverud</code></td>
+<td>Cheverud&apos;s Comparative Method</td>
+</tr>
+<tr>
+<td><code>compar.gee</code></td>
+<td>Comparative Analysis with GEEs</td>
+</tr>
+<tr>
+<td><code>compar.lynch</code></td>
+<td>Lynch&apos;s Comparative Method</td>
+</tr>
+<tr>
+<td><code>compar.ou</code></td>
+<td>Ornstein-Uhlenbeck Model for Continuous Characters</td>
+</tr>
+<tr>
+<td><code>compute.brlen</code></td>
+<td>Branch Lengths Computation</td>
+</tr>
+<tr>
+<td><code>compute.brtime</code></td>
+<td>Compute and Set Branching Times</td>
+</tr>
+<tr>
+<td><code>consensus</code></td>
+<td>Concensus Trees</td>
+</tr>
+<tr>
+<td><code>cophenetic.phylo</code></td>
+<td>Pairwise Distances from a Phylogenetic Tree</td>
+</tr>
+<tr>
+<td><code>cophyloplot Plots</code></td>
+<td>two phylogenetic trees face to face with links between the tips.</td>
+</tr>
+<tr>
+<td><code>corBlomberg</code></td>
+<td>Blomberg et al.&apos;s Correlation Structure</td>
+</tr>
+<tr>
+<td><code>corBrownian</code></td>
+<td>Brownian Correlation Structure</td>
+</tr>
+<tr>
+<td><code>corClasses</code></td>
+<td>Phylogenetic Correlation Structures</td>
+</tr>
+<tr>
+<td><code>corGrafen</code></td>
+<td>Grafen&apos;s (1989) Correlation Structure</td>
+</tr>
+<tr>
+<td><code>corMartins</code></td>
+<td>Martins&apos;s (1997) Correlation Structure</td>
+</tr>
+<tr>
+<td><code>corPagel</code></td>
+<td>Pagel&apos;s &quot;lambda&quot; Correlation Structure</td>
+</tr>
+<tr>
+<td><code>correlogram.formula</code></td>
+<td>Phylogenetic Correlogram</td>
+</tr>
+<tr>
+<td><code>data.nex</code></td>
+<td>NEXUS Data Example</td>
+</tr>
+<tr>
+<td><code>dbd</code></td>
+<td>Probability Density Under Birth-Death Models</td>
+</tr>
+<tr>
+<td><code>def</code></td>
+<td>Definition of Vectors for Plotting or Annotating</td>
+</tr>
+<tr>
+<td><code>del.gaps</code></td>
+<td>Delete Alignment Gaps in DNA Sequences</td>
+</tr>
+<tr>
+<td><code>delta.plot</code></td>
+<td>Delta Plots</td>
+</tr>
+<tr>
+<td><code>dist.dna</code></td>
+<td>Pairwise Distances from DNA Sequences</td>
+</tr>
+<tr>
+<td><code>dist.gene</code></td>
+<td>Pairwise Distances from Genetic Data</td>
+</tr>
+<tr>
+<td><code>dist.topo</code></td>
+<td>Topological Distances Between Two Trees</td>
+</tr>
+<tr>
+<td><code>diversi.gof</code></td>
+<td>Tests of Constant Diversification Rates</td>
+</tr>
+<tr>
+<td><code>diversi.time</code></td>
+<td>Analysis of Diversification with Survival Models</td>
+</tr>
+<tr>
+<td><code>diversity.contrast.test</code></td>
+<td>Diversity Contrast Test</td>
+</tr>
+<tr>
+<td><code>drop.tip</code></td>
+<td>Remove Tips in a Phylogenetic Tree</td>
+</tr>
+<tr>
+<td><code>edges</code></td>
+<td>Draw Additional Edges on a Plotted Tree</td>
+</tr>
+<tr>
+<td><code>evonet</code></td>
+<td>Evolutionary Networks</td>
+</tr>
+<tr>
+<td><code>ewLasso</code></td>
+<td>Incomplete distances and edge weights of unrooted topology</td>
+</tr>
+<tr>
+<td><code>gammaStat</code></td>
+<td>Gamma-Statistic of Pybus and Harvey</td>
+</tr>
+<tr>
+<td><code>hivtree</code></td>
+<td>Phylogenetic Tree of 193 HIV-1 Sequences</td>
+</tr>
+<tr>
+<td><code>howmanytrees</code></td>
+<td>Calculate Numbers of Phylogenetic Trees</td>
+</tr>
+<tr>
+<td><code>identify.phylo</code></td>
+<td>Graphical Identification of Nodes and Tips</td>
+</tr>
+<tr>
+<td><code>image.DNAbin</code></td>
+<td>Plot of DNA Sequence Alignement</td>
+</tr>
+<tr>
+<td><code>is.binary.tree</code></td>
+<td>Test for Binary Tree</td>
+</tr>
+<tr>
+<td><code>is.compatible</code></td>
+<td>Check Compatibility of Splits</td>
+</tr>
+<tr>
+<td><code>is.monophyletic</code></td>
+<td>Is Group Monophyletic</td>
+</tr>
+<tr>
+<td><code>is.ultrametric</code></td>
+<td>Test if a Tree is Ultrametric</td>
+</tr>
+<tr>
+<td><code>kronoviz</code></td>
+<td>Plot Multiple Chronograms on the Same Scale</td>
+</tr>
+<tr>
+<td><code>ladderize</code></td>
+<td>Ladderize a Tree</td>
+</tr>
+<tr>
+<td><code>landplants</code></td>
+<td>Gene Tree of 36 Landplant rbcL Sequences</td>
+</tr>
+<tr>
+<td><code>lmorigin</code></td>
+<td>Multiple regression through the origin</td>
+</tr>
+<tr>
+<td><code>ltt.plot</code></td>
+<td>Lineages Through Time Plot</td>
+</tr>
+<tr>
+<td><code>makeLabel</code></td>
+<td>Label Management</td>
+</tr>
+<tr>
+<td><code>makeNodeLabel</code></td>
+<td>Makes Node Labels</td>
+</tr>
+<tr>
+<td><code>mantel.test</code></td>
+<td>Mantel Test for Similarity of Two Matrices</td>
+</tr>
+<tr>
+<td><code>mat3</code></td>
+<td>Three Matrices</td>
+</tr>
+<tr>
+<td><code>mat5M3ID</code></td>
+<td>Five Trees</td>
+</tr>
+<tr>
+<td><code>mat5Mrand</code></td>
+<td>Five Independent Trees</td>
+</tr>
+<tr>
+<td><code>matexpo</code></td>
+<td>Matrix Exponential</td>
+</tr>
+<tr>
+<td><code>mcconwaysims.test</code></td>
+<td>McConway-Sims Test of Homogeneous Diversification</td>
+</tr>
+<tr>
+<td><code>mcmc.popsize</code></td>
+<td>Reversible Jump MCMC to Infer Demographic History</td>
+</tr>
+<tr>
+<td><code>mixedFontLabel</code></td>
+<td>Mixed Font Labels for Plotting</td>
+</tr>
+<tr>
+<td><code>mrca</code></td>
+<td>Find Most Recent Common Ancestors Between Pairs</td>
+</tr>
+<tr>
+<td><code>mst</code></td>
+<td>Minimum Spanning Tree</td>
+</tr>
+<tr>
+<td><code>multi2di</code></td>
+<td>Collapse and Resolve Multichotomies</td>
+</tr>
+<tr>
+<td><code>multiphylo</code></td>
+<td>Manipulating Lists of Trees</td>
+</tr>
+<tr>
+<td><code>mvr</code></td>
+<td>Minimum Variance Reduction</td>
+</tr>
+<tr>
+<td><code>nj</code></td>
+<td>Neighbor-Joining Tree Estimation</td>
+</tr>
+<tr>
+<td><code>njs</code></td>
+<td>Tree Reconstruction from Incomplete Distances</td>
+</tr>
+<tr>
+<td><code>With</code></td>
+<td>NJ<em> or bio-NJ</em></td>
+</tr>
+<tr>
+<td><code>node.depth</code></td>
+<td>Depth and Heights of Nodes and Tips</td>
+</tr>
+<tr>
+<td><code>nodelabels</code></td>
+<td>Labelling the Nodes, Tips, and Edges of a Tree</td>
+</tr>
+<tr>
+<td><code>nodepath</code></td>
+<td>Find Paths of Nodes</td>
+</tr>
+<tr>
+<td><code>opsin</code></td>
+<td>Gene Tree of 32 opsin Sequences</td>
+</tr>
+<tr>
+<td><code>parafit</code></td>
+<td>Test of host-parasite coevolution</td>
+</tr>
+<tr>
+<td><code>pcoa</code></td>
+<td>Principal Coordinate Analysis</td>
+</tr>
+<tr>
+<td><code>phydataplot</code></td>
+<td>Tree Annotation</td>
+</tr>
+<tr>
+<td><code>phymltest</code></td>
+<td>Fits a Bunch of Models with PhyML</td>
+</tr>
+<tr>
+<td><code>pic</code></td>
+<td>Phylogenetically Independent Contrasts</td>
+</tr>
+<tr>
+<td><code>pic.ortho</code></td>
+<td>Phylogenetically Independent Orthonormal Contrasts</td>
+</tr>
+<tr>
+<td><code>plot.correlogram</code></td>
+<td>Plot a Correlogram</td>
+</tr>
+<tr>
+<td><code>plot.phylo</code></td>
+<td>Plot Phylogenies</td>
+</tr>
+<tr>
+<td><code>plot.varcomp</code></td>
+<td>Plot Variance Components</td>
+</tr>
+<tr>
+<td><code>print.phylo</code></td>
+<td>Compact Display of a Phylogeny</td>
+</tr>
+<tr>
+<td><code>rTraitCont</code></td>
+<td>Continuous Character Simulation</td>
+</tr>
+<tr>
+<td><code>rTraitDisc</code></td>
+<td>Discrete Character Simulation</td>
+</tr>
+<tr>
+<td><code>rTraitMult</code></td>
+<td>Multivariate Character Simulation</td>
+</tr>
+<tr>
+<td><code>read.GenBank</code></td>
+<td>Read DNA Sequences from GenBank via Internet</td>
+</tr>
+<tr>
+<td><code>read.caic</code></td>
+<td>Read Tree File in CAIC Format</td>
+</tr>
+<tr>
+<td><code>read.dna</code></td>
+<td>Read DNA Sequences in a File</td>
+</tr>
+<tr>
+<td><code>read.nexus</code></td>
+<td>Read Tree File in Nexus Format</td>
+</tr>
+<tr>
+<td><code>read.nexus.data</code></td>
+<td>Read Character Data In NEXUS Format</td>
+</tr>
+<tr>
+<td><code>read.tree</code></td>
+<td>Read Tree File in Parenthetic Format</td>
+</tr>
+<tr>
+<td><code>reconstruct</code></td>
+<td>Continuous Ancestral Character Estimation</td>
+</tr>
+<tr>
+<td><code>reorder.phylo</code></td>
+<td>Internal Reordering of Trees</td>
+</tr>
+<tr>
+<td><code>richness.yule.test</code></td>
+<td>Test of Diversification-Shift With the Yule Process</td>
+</tr>
+<tr>
+<td><code>rlineage</code></td>
+<td>Tree Simulation Under the Time-Dependent Birth-Death Models</td>
+</tr>
+<tr>
+<td><code>root</code></td>
+<td>Roots Phylogenetic Trees</td>
+</tr>
+<tr>
+<td><code>rotate</code></td>
+<td>Swapping Sister Clades</td>
+</tr>
+<tr>
+<td><code>rtree</code></td>
+<td>Generates Random Trees</td>
+</tr>
+<tr>
+<td><code>rtt</code></td>
+<td>Root a Tree by Root-to-Tip Regression</td>
+</tr>
+<tr>
+<td><code>seg.sites</code></td>
+<td>Find Segregating Sites in DNA Sequences</td>
+</tr>
+<tr>
+<td><code>skyline</code></td>
+<td>Skyline Plot Estimate of Effective Population Size</td>
+</tr>
+<tr>
+<td><code>skylineplot</code></td>
+<td>Drawing Skyline Plot Graphs</td>
+</tr>
+<tr>
+<td><code>slowinskiguyer.test</code></td>
+<td>Slowinski-Guyer Test of Homogeneous Diversification</td>
+</tr>
+<tr>
+<td><code>speciesTree</code></td>
+<td>Species Tree Estimation</td>
+</tr>
+<tr>
+<td><code>stree</code></td>
+<td>Generates Systematic Regular Trees</td>
+</tr>
+<tr>
+<td><code>subtreeplot</code></td>
+<td>Zoom on a Portion of a Phylogeny by Successive Clicks</td>
+</tr>
+<tr>
+<td><code>subtrees</code></td>
+<td>All subtrees of a Phylogenetic Tree</td>
+</tr>
+<tr>
+<td><code>summary.phylo</code></td>
+<td>Print Summary of a Phylogeny</td>
+</tr>
+<tr>
+<td><code>treePop</code></td>
+<td>Tree Popping</td>
+</tr>
+<tr>
+<td><code>trex</code></td>
+<td>Tree Explorer With Multiple Devices</td>
+</tr>
+<tr>
+<td><code>triangMtd</code></td>
+<td>Tree Reconstruction Based on the Triangles Method</td>
+</tr>
+<tr>
+<td><code>unique.multiPhylo</code></td>
+<td>Revomes Duplicate Trees</td>
+</tr>
+<tr>
+<td><code>varCompPhylip</code></td>
+<td>Variance Components with Orthonormal Contrasts</td>
+</tr>
+<tr>
+<td><code>varcomp</code></td>
+<td>Compute Variance Component Estimates</td>
+</tr>
+<tr>
+<td><code>vcv</code></td>
+<td>Phylogenetic Variance-covariance or Correlation Matrix</td>
+</tr>
+<tr>
+<td><code>vcv2phylo</code></td>
+<td>Variance-Covariance Matrix to Tree</td>
+</tr>
+<tr>
+<td><code>weight.taxo</code></td>
+<td>Define Similarity Matrix</td>
+</tr>
+<tr>
+<td><code>where</code></td>
+<td>Find Patterns in DNA Sequences</td>
+</tr>
+<tr>
+<td><code>which.edge</code></td>
+<td>Identifies Edges of a Tree</td>
+</tr>
+<tr>
+<td><code>woodmouse</code></td>
+<td>Cytochrome b Gene Sequences of Woodmice</td>
+</tr>
+<tr>
+<td><code>write.dna</code></td>
+<td>Write DNA Sequences in a File</td>
+</tr>
+<tr>
+<td><code>write.nexus</code></td>
+<td>Write Tree File in Nexus Format</td>
+</tr>
+<tr>
+<td><code>write.nexus.data</code></td>
+<td>Write Character Data in NEXUS Format</td>
+</tr>
+<tr>
+<td><code>write.tree</code></td>
+<td>Write Tree File in Parenthetic Format</td>
+</tr>
+<tr>
+<td><code>yule</code></td>
+<td>Fits the Yule Model to a Phylogenetic Tree</td>
+</tr>
+<tr>
+<td><code>yule.cov</code></td>
+<td>Fits the Yule Model With Covariates</td>
+</tr>
+<tr>
+<td><code>yule.time</code></td>
+<td>Fits the Time-Dependent Yule Model</td>
+</tr>
+<tr>
+<td><code>zoom</code></td>
+<td>Zoom on a Portion of a Phylogeny</td>
 </tr>
 </tbody>
 </table>
+<h2 id="read-tree">read.tree</h2>
+<p>&#x7CFB;&#x7D71;&#x6A39;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;</p>
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(adephylo)
+&gt; data(<span class="hljs-string">&quot;ungulates&quot;</span>)
+&gt; read.tree(text = ungulates$tre) %&gt;%  {
++   print(.)
++   plot(.)
++ }
+</code></pre>
+<pre><code>
+Phylogenetic tree with 18 tips and 13 internal nodes.
 
+Tip labels:
+    Antilocapra_americana, Gorgon_taurinus, Oryx_leucoryx, Taurotragus_livingstoni, Tautragus_oryx, Gazella_thompsoni, ...
+Node labels:
+    Root, W11, W10, W1, W2, W7, ...
+
+Rooted; no branch lengths.
+</code></pre><p><img src="../Figure/usage_read.tree-1.png" alt="plot of chunk usage_read.tree"> </p>
+<h2 id="rtree">rtree</h2>
+<p>&#x30E9;&#x30F3;&#x30C0;&#x30E0;&#x306A;&#x7CFB;&#x7D71;&#x6A39;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x751F;&#x6210;</p>
+<p><code>rtree</code>, <code>rcoal</code>, <code>rmtree</code></p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>n</li>
+<li>rooted</li>
+<li>tip.label</li>
+<li>br</li>
+<li>...</li>
+<li>N</li>
+</ul>
+<pre><code class="lang-r">&gt; rtree(n = <span class="hljs-number">20</span>)
+</code></pre>
+<pre><code>
+Phylogenetic tree with 20 tips and 19 internal nodes.
+
+Tip labels:
+    t11, t6, t5, t8, t10, t3, ...
+
+Rooted; includes branch lengths.
+</code></pre>
                     
                     </section>
                 
@@ -957,10 +1613,10 @@
         </div>
 
         
-        <a href="../report/index.html" class="navigation navigation-prev " aria-label="Previous page: Report"><i class="fa fa-angle-left"></i></a>
+        <a href="../data-analysis/adephylo.html" class="navigation navigation-prev " aria-label="Previous page: adephylo"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../report/knitr.html" class="navigation navigation-next " aria-label="Next page: knitr"><i class="fa fa-angle-right"></i></a>
+        <a href="../data-analysis/popbio.html" class="navigation navigation-next " aria-label="Next page: popbio"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>knitcitations | R Package Showcase</title>
+        <title>phytools | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../report/knitr.html" />
+    <link rel="next" href="../data-analysis/vegan.html" />
     
     
-    <link rel="prev" href="../report/index.html" />
+    <link rel="prev" href="../data-analysis/popbio.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="5.1" data-basepath=".." data-revision="Sat May 23 2015 23:42:33 GMT+0900 (JST)">
+    <div class="book" data-level="3.4" data-basepath=".." data-revision="Sat May 23 2015 23:42:33 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -229,7 +229,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="data-analysis/phytools.html">
+        <li class="chapter active" data-level="3.4" data-path="data-analysis/phytools.html">
             
                 
                     <a href="../data-analysis/phytools.html">
@@ -421,7 +421,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="5.1" data-path="report/knitcitations.html">
+        <li class="chapter " data-level="5.1" data-path="report/knitcitations.html">
             
                 
                     <a href="../report/knitcitations.html">
@@ -886,16 +886,16 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="knitcitations-citations-for-knitr-markdown-files">knitcitations: Citations for knitr markdown files</h1>
-<p>RMarkdown&#x3067;&#x306E;&#x6587;&#x732E;&#x7BA1;&#x7406;</p>
-<p><a href="http://cran.rstudio.com/web/packages/knitcitations/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/knitcitations" alt=""></a></p>
+                        <h1 id="phytools-phylogenetic-tools-for-comparative-biology-and-other-things">phytools: Phylogenetic Tools for Comparative Biology (and Other Things)</h1>
+<p>&#x7CFB;&#x7D71;&#x6BD4;&#x8F03;&#x6CD5;&#x306E;&#x305F;&#x3081;&#x306E;&#x89E3;&#x6790;&#x30C4;&#x30FC;&#x30EB;</p>
+<p><a href="http://cran.rstudio.com/web/packages/phytools/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/phytools" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/knitcitations/index.html" target="_blank">http://cran.r-project.org/web/packages/knitcitations/index.html</a></li>
-<li>GitHub: <a href="https://github.com/cboettig/knitcitations" target="_blank">https://github.com/cboettig/knitcitations</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/phytools/index.html" target="_blank">http://cran.r-project.org/web/packages/phytools/index.html</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(knitcitations)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(phytools)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.0.5</p>
+<pre><code>Loading required package: maps
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.4.56</p>
 <hr>
 <table>
 <thead>
@@ -906,48 +906,44 @@
 </thead>
 <tbody>
 <tr>
-<td><code>bib_metadata</code></td>
-<td>get the full metadata for a citation / bibliographic object</td>
-</tr>
-<tr>
-<td><code>bibliography</code></td>
-<td>Generate the bibliography</td>
-</tr>
-<tr>
-<td><code>cite_options</code></td>
-<td>Toggles for various citation options</td>
-</tr>
-<tr>
-<td><code>citep</code></td>
-<td>citep - inline parenthetical citation</td>
-</tr>
-<tr>
-<td><code>citet</code></td>
-<td>citet - inline parenthetical citation</td>
-</tr>
-<tr>
-<td><code>cleanbib</code></td>
-<td>cleanbib</td>
-</tr>
-<tr>
-<td><code>greycite</code></td>
-<td>greycite citation method</td>
-</tr>
-<tr>
-<td><code>read.bibtex</code></td>
-<td>read.bibtex</td>
-</tr>
-<tr>
-<td><code>record_as_cited</code></td>
-<td>record as cited</td>
-</tr>
-<tr>
-<td><code>write.bibtex</code></td>
-<td>write a bibtex file</td>
+<td></td>
 </tr>
 </tbody>
 </table>
+<h2 id="phylosig">phylosig</h2>
+<p>&#xFF12;&#x901A;&#x308A;&#x306E;&#x65B9;&#x6CD5;&#x3067;&#x7CFB;&#x7D71;&#x30B7;&#x30B0;&#x30CA;&#x30EB;&#x3092;&#x8A08;&#x7B97;&#x3002;&#x5F15;&#x6570;<code>method</code>&#x3067;&#x8A08;&#x7B97;&#x65B9;&#x6CD5;&#x3092;&#x6307;&#x5B9A;&#x3002;Pagel&#x306E;$\lambda$&#x304B;Blomberg&#x306E;$K$&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3002;&#x9078;&#x629E;&#x3057;&#x305F;&#x65B9;&#x6CD5;&#x306B;&#x3088;&#x308A;&#x3001;&#x7CFB;&#x7D71;&#x30B7;&#x30B0;&#x30CA;&#x30EB;&#x306E;&#x691C;&#x51FA;&#x5024;&#x306E;&#x8A08;&#x7B97;&#x5024;&#x304C;&#x5909;&#x308F;&#x308B;&#x306E;&#x3067;&#x6CE8;&#x610F;&#x3002;</p>
+<ul>
+<li>Pagel... 0&#x306F;&#x7CFB;&#x7D71;&#x30B7;&#x30B0;&#x30CA;&#x30EB;&#x306A;&#x3057;&#x3002;1&#x304C;&#x5B8C;&#x5168;&#x306A;&#x7CFB;&#x7D71;&#x30B7;&#x30B0;&#x30CA;&#x30EB;&#x3092;&#x691C;&#x51FA;</li>
+<li>Blomberg... 0&#x306F;&#x7CFB;&#x7D71;&#x30B7;&#x30B0;&#x30CA;&#x30EB;&#x306A;&#x3057;&#x3002;1&#x306B;&#x8FD1;&#x304F;&#x306A;&#x308C;&#x3070;&#x7CFB;&#x7D71;&#x30B7;&#x30B0;&#x30CA;&#x30EB;&#x3092;&#x691C;&#x51FA;</li>
+</ul>
+<p>$H_0$: &#x7CFB;&#x7D71;&#x30B7;&#x30B0;&#x30CA;&#x30EB;&#x3092;&#x691C;&#x51FA;&#x3057;&#x306A;&#x3044;&#xFF08;&#x30E9;&#x30F3;&#x30C0;&#x30E0;&#x30B5;&#x30F3;&#x30D7;&#x30EA;&#x30F3;&#x30B0;&#x3057;&#x305F;&#x7A2E;&#x7FA4;&#x306E;&#x5F62;&#x8CEA;&#x5024;&#x3068;&#x6BD4;&#x8F03;&#xFF09;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>tree</li>
+<li>x</li>
+<li>method: <code>K</code> or <code>lambda</code></li>
+<li>test</li>
+<li>nsim</li>
+<li>se</li>
+<li>start</li>
+<li>control</li>
+</ul>
+<pre><code class="lang-r">&gt; tree &lt;- pbtree(n = <span class="hljs-number">100</span>)
+&gt; x &lt;- fastBM(tree)
+&gt; phylosig(tree, x, method = <span class="hljs-string">&quot;lambda&quot;</span>, test = <span class="hljs-literal">TRUE</span>)
+</code></pre>
+<pre><code>$lambda
+[1] 1.00231
 
+$logL
+[1] -125.2205
+
+$logL0
+[1] -172.1068
+
+$P
+[1] 3.539293e-22
+</code></pre>
                     
                     </section>
                 
@@ -957,10 +953,10 @@
         </div>
 
         
-        <a href="../report/index.html" class="navigation navigation-prev " aria-label="Previous page: Report"><i class="fa fa-angle-left"></i></a>
+        <a href="../data-analysis/popbio.html" class="navigation navigation-prev " aria-label="Previous page: popbio"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../report/knitr.html" class="navigation navigation-next " aria-label="Next page: knitr"><i class="fa fa-angle-right"></i></a>
+        <a href="../data-analysis/vegan.html" class="navigation navigation-next " aria-label="Next page: vegan"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
