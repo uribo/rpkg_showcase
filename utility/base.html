@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>pforeach | R Package Showcase</title>
+        <title>base | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../utility/readr.html" />
+    <link rel="next" href="../utility/broom.html" />
     
     
-    <link rel="prev" href="../utility/Nippon.html" />
+    <link rel="prev" href="../utility/index.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="7.9" data-basepath=".." data-revision="Sat May 30 2015 22:42:48 GMT+0900 (JST)">
+    <div class="book" data-level="7.1" data-basepath=".." data-revision="Sat May 30 2015 22:42:48 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -658,7 +658,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1" data-path="utility/base.html">
+        <li class="chapter active" data-level="7.1" data-path="utility/base.html">
             
                 
                     <a href="../utility/base.html">
@@ -778,7 +778,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="7.9" data-path="utility/pforeach.html">
+        <li class="chapter " data-level="7.9" data-path="utility/pforeach.html">
             
                 
                     <a href="../utility/pforeach.html">
@@ -1042,62 +1042,92 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="pforeach-an-easy-way-to-parallel-processing-in-r">pforeach: An easy way to parallel processing in R</h1>
-<p>&#x4E26;&#x5217;&#x51E6;&#x7406;</p>
-<p><a href="http://cran.rstudio.com/web/packages/pforeach/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/pforeach" alt=""></a></p>
+                        <h1 id="base-the-r-base-package">base: The R Base Package</h1>
+<p>R&#x57FA;&#x790E;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;</p>
+<p><a href="http://cran.rstudio.com/web/packages/base/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/base" alt=""></a></p>
 <ul>
-<li>GitHub: <a href="https://github.com/hoxo-m/pforeach" target="_blank">https://github.com/hoxo-m/pforeach</a></li>
+<li>CRAN: <a href="https://stat.ethz.ch/R-manual/R-devel/library/base/html/00Index.html" target="_blank">https://stat.ethz.ch/R-manual/R-devel/library/base/html/00Index.html</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(pforeach)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(base)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.0</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 3.1.3</p>
 <hr>
 <table>
 <thead>
 <tr>
-<th>&#x95A2;&#x6570;&#x540D;`</th>
+<th>&#x95A2;&#x6570;&#x540D;</th>
 <th>&#x6982;&#x7565;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>cols</code></td>
-<td>Iterator for data frame by column</td>
-</tr>
-<tr>
-<td><code>icols</code></td>
-<td>Iterator for column number of a data frame</td>
-</tr>
-<tr>
-<td><code>irows</code></td>
-<td>Iterator for row number of a data frame</td>
-</tr>
-<tr>
-<td><code>npforeach</code></td>
-<td>Non-Parallelized pforeach</td>
-</tr>
-<tr>
-<td><code>pforeach</code></td>
-<td>pforeach</td>
-</tr>
-<tr>
-<td><code>rows</code></td>
-<td>Iterator for data frame by row</td>
-</tr>
-<tr>
-<td><code>stopImplicitCluster2</code></td>
-<td>Stop implicit cluster</td>
-</tr>
-<tr>
-<td><code>update</code></td>
-<td>Reinstall pforeach package</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="%E5%8F%82%E8%80%83">&#x53C2;&#x8003;</h2>
+<h2 id="dir-list-dir-list-files">dir, list.dir, list.files</h2>
+<p>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x30FB;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x306E;&#x4E00;&#x89A7;&#x3092;&#x51FA;&#x529B;</p>
+<h3 id="arguments">Arguments</h3>
 <ul>
-<li><a href="http://d.hatena.ne.jp/hoxo_m/20141222/p1" target="_blank">R &#x3067;&#x8D85;&#x7C21;&#x5358;&#x306B;&#x4E26;&#x5217;&#x51E6;&#x7406;&#x3092;&#x66F8;&#x3051;&#x308B;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8; pforeach &#x3092;&#x4F5C;&#x3063;&#x305F; - &#x307B;&#x304F;&#x305D;&#x7B11;&#x3080;</a></li>
+<li>path</li>
+<li>pattern: &#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x30DE;&#x30C3;&#x30C1;&#x30F3;&#x30B0;</li>
+<li>all.files: logical. TRUE&#x306E;&#x5834;&#x5408;&#x3001;&#x96A0;&#x3057;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x542B;&#x3081;&#x3066;&#x8868;&#x793A;&#x3059;&#x308B;&#xFF08;&#x521D;&#x671F;&#x5024;&#x306F;FALSE&#xFF09;</li>
+<li>full.names: logical. TRUE&#x306E;&#x5834;&#x5408;&#x3001;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x307E;&#x3067;&#x306E;&#x30D1;&#x30B9;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#xFF08;&#x521D;&#x671F;&#x5024;&#x306F;FALSE&#xFF09;</li>
+<li>recursive: logical. </li>
+<li>ignore.case: logical. &#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x30DE;&#x30C3;&#x30C1;&#x30F3;&#x30B0;&#x3092;&#x884C;&#x3046;&#x969B;&#x3001;&#x5927;&#x6587;&#x5B57;&#x3068;&#x5C0F;&#x6587;&#x5B57;&#x3092;&#x533A;&#x5225;&#x3059;&#x308B;&#x304B;&#xFF08;FALSE&#x3067;&#x533A;&#x5225;&#x3059;&#x308B;&#xFF09;</li>
+<li>include.dirs</li>
+<li>no..</li>
 </ul>
+<pre><code class="lang-r">&gt; list.files(path = R.home())
+</code></pre>
+<pre><code> [1] &quot;bin&quot;          &quot;COPYING&quot;      &quot;doc&quot;          &quot;etc&quot;         
+ [5] &quot;fontconfig&quot;   &quot;include&quot;      &quot;Info.plist&quot;   &quot;lib&quot;         
+ [9] &quot;library&quot;      &quot;man1&quot;         &quot;modules&quot;      &quot;R&quot;           
+[13] &quot;Rscript&quot;      &quot;share&quot;        &quot;SVN-REVISION&quot; &quot;tests&quot;
+</code></pre><pre><code class="lang-r">&gt; list.dirs(path  = R.home(<span class="hljs-string">&quot;doc&quot;</span>))
+</code></pre>
+<pre><code>[1] &quot;/Library/Frameworks/R.framework/Resources/doc&quot;              
+[2] &quot;/Library/Frameworks/R.framework/Resources/doc/html&quot;         
+[3] &quot;/Library/Frameworks/R.framework/Resources/doc/manual&quot;       
+[4] &quot;/Library/Frameworks/R.framework/Resources/doc/manual/images&quot;
+</code></pre><pre><code class="lang-r">&gt; dir(<span class="hljs-string">&quot;../..&quot;</span>, pattern = <span class="hljs-string">&quot;^[a-lr]&quot;</span>, full.names = <span class="hljs-literal">TRUE</span>, ignore.case = <span class="hljs-literal">TRUE</span>)
+</code></pre>
+<pre><code> [1] &quot;../../bookshelf&quot;                  
+ [2] &quot;../../cheatsheet&quot;                 
+ [3] &quot;../../classic&quot;                    
+ [4] &quot;../../clone&quot;                      
+ [5] &quot;../../ctv-design-of-art&quot;          
+ [6] &quot;../../data_treatment&quot;             
+ [7] &quot;../../draft &#x306E;&#x30A8;&#x30A4;&#x30EA;&#x30A2;&#x30B9;&quot;         
+ [8] &quot;../../ecostatistics&quot;              
+ [9] &quot;../../git_book.md&quot;                
+[10] &quot;../../how_to_write_good_readme.md&quot;
+[11] &quot;../../icon_for_slide&quot;             
+[12] &quot;../../instruction&quot;                
+[13] &quot;../../introduced_to_rstan.md&quot;     
+[14] &quot;../../r_analysis_workflow.md&quot;     
+[15] &quot;../../r_message.md&quot;               
+[16] &quot;../../r_pkg&quot;                      
+[17] &quot;../../re_statistics.html&quot;         
+[18] &quot;../../re_statistics.Rmd&quot;          
+[19] &quot;../../recent_lm_result_io.md&quot;     
+[20] &quot;../../references&quot;                 
+[21] &quot;../../rpkg_showcase&quot;              
+[22] &quot;../../RPubs&quot;                      
+[23] &quot;../../rr_using_git&quot;               
+[24] &quot;../../rstudio_cheat&quot;              
+[25] &quot;../../rstudio_shrotcut_key.md&quot;
+</code></pre><h2 id="tempdir-tempfile">tempdir, tempfile</h2>
+<p>&#x4E00;&#x6642;&#x7684;&#x306A;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x3001;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;&#x4E00;&#x6642;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306F;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x7D42;&#x4E86;&#x6642;&#x306B;&#x524A;&#x9664;&#x3055;&#x308C;&#x308B;&#x3002;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>pattern: &#x4F5C;&#x6210;&#x3059;&#x308B;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#xFF08;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#xFF09;&#x306B;&#x3064;&#x3051;&#x308B;&#x540D;&#x79F0;&#x306E;&#x30D1;&#x30BF;&#x30FC;&#x30F3;</li>
+<li>tmpdir: </li>
+<li>fileext</li>
+</ul>
+<pre><code class="lang-r">&gt; <span class="hljs-comment"># tempfile(pattern = &quot;file&quot;, tmpdir = tempdir(), fileext = &quot;&quot;)</span>
+&gt; tempdir()
+</code></pre>
 
                     
                     </section>
@@ -1108,10 +1138,10 @@
         </div>
 
         
-        <a href="../utility/Nippon.html" class="navigation navigation-prev " aria-label="Previous page: Nippon"><i class="fa fa-angle-left"></i></a>
+        <a href="../utility/index.html" class="navigation navigation-prev " aria-label="Previous page: Utility"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../utility/readr.html" class="navigation navigation-next " aria-label="Next page: readr"><i class="fa fa-angle-right"></i></a>
+        <a href="../utility/broom.html" class="navigation navigation-next " aria-label="Next page: broom"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

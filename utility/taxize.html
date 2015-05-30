@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>pforeach | R Package Showcase</title>
+        <title>taxize | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../utility/readr.html" />
+    <link rel="next" href="../utility/tidyr.html" />
     
     
-    <link rel="prev" href="../utility/Nippon.html" />
+    <link rel="prev" href="../utility/Rgitbook.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="7.9" data-basepath=".." data-revision="Sat May 30 2015 22:42:48 GMT+0900 (JST)">
+    <div class="book" data-level="7.13" data-basepath=".." data-revision="Sat May 30 2015 22:42:48 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -778,7 +778,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="7.9" data-path="utility/pforeach.html">
+        <li class="chapter " data-level="7.9" data-path="utility/pforeach.html">
             
                 
                     <a href="../utility/pforeach.html">
@@ -838,7 +838,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.13" data-path="utility/taxize.html">
+        <li class="chapter active" data-level="7.13" data-path="utility/taxize.html">
             
                 
                     <a href="../utility/taxize.html">
@@ -1042,61 +1042,725 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="pforeach-an-easy-way-to-parallel-processing-in-r">pforeach: An easy way to parallel processing in R</h1>
-<p>&#x4E26;&#x5217;&#x51E6;&#x7406;</p>
-<p><a href="http://cran.rstudio.com/web/packages/pforeach/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/pforeach" alt=""></a></p>
+                        <h1 id="taxize-taxonomic-information-from-around-the-web">taxize: Taxonomic Information from Around the Web</h1>
+<p>&#x7A2E;&#x306E;&#x5206;&#x985E;&#x7FA4;&#x60C5;&#x5831;</p>
+<p><a href="http://cran.rstudio.com/web/packages/taxize/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/taxize" alt=""></a></p>
 <ul>
-<li>GitHub: <a href="https://github.com/hoxo-m/pforeach" target="_blank">https://github.com/hoxo-m/pforeach</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/taxize/index.html" target="_blank">http://cran.r-project.org/web/packages/taxize/index.html</a></li>
+<li>GitHub: <a href="https://github.com/ropensci/taxize" target="_blank">https://github.com/ropensci/taxize</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(pforeach)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(taxize)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.0</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.5.3.941</p>
 <hr>
 <table>
 <thead>
 <tr>
-<th>&#x95A2;&#x6570;&#x540D;`</th>
+<th>&#x95A2;&#x6570;&#x540D;</th>
 <th>&#x6982;&#x7565;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>cols</code></td>
-<td>Iterator for data frame by column</td>
+<td><code>apg_families</code></td>
+<td>Lookup-table for APGIII family names</td>
 </tr>
 <tr>
-<td><code>icols</code></td>
-<td>Iterator for column number of a data frame</td>
+<td><code>apg_genera</code></td>
+<td>Table of APGIII generic names</td>
 </tr>
 <tr>
-<td><code>irows</code></td>
-<td>Iterator for row number of a data frame</td>
+<td><code>apg_lookup</code></td>
+<td>Lookup in the APGII taxonomy and replace family names.</td>
 </tr>
 <tr>
-<td><code>npforeach</code></td>
-<td>Non-Parallelized pforeach</td>
+<td><code>apg_orders</code></td>
+<td>Lookup-table for APGIII order names</td>
 </tr>
 <tr>
-<td><code>pforeach</code></td>
-<td>pforeach</td>
+<td><code>bold_search</code></td>
+<td>Search Barcode of Life for taxonomic IDs</td>
 </tr>
 <tr>
-<td><code>rows</code></td>
-<td>Iterator for data frame by row</td>
+<td><code>children</code></td>
+<td>Retrieve immediate children taxa for a given taxon name or ID.</td>
 </tr>
 <tr>
-<td><code>stopImplicitCluster2</code></td>
-<td>Stop implicit cluster</td>
+<td><code>class2tree</code></td>
+<td>Convert list of classifications to a tree.</td>
 </tr>
 <tr>
-<td><code>update</code></td>
-<td>Reinstall pforeach package</td>
+<td><code>classification</code></td>
+<td>Retrieve the taxonomic hierarchy for a given taxon ID.</td>
+</tr>
+<tr>
+<td><code>col_children</code></td>
+<td>Search Catalogue of Life for for direct children of a particular taxon.</td>
+</tr>
+<tr>
+<td><code>col_downstream</code></td>
+<td>Use Catalogue of Life to get downstream taxa to a given taxonomic level.</td>
+</tr>
+<tr>
+<td><code>col_search</code></td>
+<td>Search Catalogue of Life for taxonomic IDs</td>
+</tr>
+<tr>
+<td><code>comm2sci</code></td>
+<td>Get scientific names from common names.</td>
+</tr>
+<tr>
+<td><code>downstream</code></td>
+<td>Retrieve the downstream taxa for a given taxon name or ID.</td>
+</tr>
+<tr>
+<td><code>eol_dataobjects</code></td>
+<td>Given the identifier for a data object, return all metadata about the object.</td>
+</tr>
+<tr>
+<td><code>eol_invasive</code></td>
+<td>Search for presence of taxonomic names in EOL invasive species databases.</td>
+</tr>
+<tr>
+<td><code>eol_pages</code></td>
+<td>Search for pages in EOL database using a taxonconceptID.</td>
+</tr>
+<tr>
+<td><code>eol_search</code></td>
+<td>Search for terms in EOL database.</td>
+</tr>
+<tr>
+<td><code>gbif_name_usage</code></td>
+<td>Lookup details for specific names in all taxonomies in GBIF.</td>
+</tr>
+<tr>
+<td><code>gbif_parse</code></td>
+<td>Parse taxon names using the GBIF name parser.</td>
+</tr>
+<tr>
+<td><code>genbank2uid</code></td>
+<td>Get NCBI taxonomy UID from GenBankID</td>
+</tr>
+<tr>
+<td><code>get_boldid</code></td>
+<td>Get the BOLD (Barcode of Life) code for a search term.</td>
+</tr>
+<tr>
+<td><code>get_colid</code></td>
+<td>Get the Catalogue of Life ID from taxonomic names.</td>
+</tr>
+<tr>
+<td><code>get_eolid</code></td>
+<td>Get the EOL ID from Encyclopedia of Life from taxonomic names.</td>
+</tr>
+<tr>
+<td><code>get_gbifid</code></td>
+<td>Get the GBIF backbone taxon ID from taxonomic names.</td>
+</tr>
+<tr>
+<td><code>get_ids</code></td>
+<td>Retrieve taxonomic identifiers for a given taxon name.</td>
+</tr>
+<tr>
+<td><code>get_nbnid</code></td>
+<td>Get the UK National Biodiversity Network ID from taxonomic names.</td>
+</tr>
+<tr>
+<td><code>get_tpsid</code></td>
+<td>Get the NameID codes from Tropicos for taxonomic names.</td>
+</tr>
+<tr>
+<td><code>get_tsn</code></td>
+<td>Get the TSN code for a search term.</td>
+</tr>
+<tr>
+<td><code>get_ubioid</code></td>
+<td>Get the uBio id for a search term.</td>
+</tr>
+<tr>
+<td><code>get_uid</code></td>
+<td>Get the UID codes from NCBI for taxonomic names.</td>
+</tr>
+<tr>
+<td><code>gisd_isinvasive</code></td>
+<td>Check invasive species status for a set of species from GISD database</td>
+</tr>
+<tr>
+<td><code>gni_details</code></td>
+<td>Search for taxonomic name details using the Global Names Index.</td>
+</tr>
+<tr>
+<td><code>gni_parse</code></td>
+<td>Parse scientific names using EOL&apos;s name parser.</td>
+</tr>
+<tr>
+<td><code>gni_search</code></td>
+<td>Search for taxonomic names using the Global Names Index.</td>
+</tr>
+<tr>
+<td><code>gnr_datasources</code></td>
+<td>Get data sources for the Global Names Resolver.</td>
+</tr>
+<tr>
+<td><code>gnr_resolve</code></td>
+<td>Resolve names using Global Names Resolver.</td>
+</tr>
+<tr>
+<td><code>iplant_resolve</code></td>
+<td>iPlant name resolution</td>
+</tr>
+<tr>
+<td><code>ipni_search</code></td>
+<td>Search for names in the International Plant Names Index (IPNI).</td>
+</tr>
+<tr>
+<td><code>itis-api</code></td>
+<td>Low level functions for working with the ITIS API.</td>
+</tr>
+<tr>
+<td><code>itis_acceptname</code></td>
+<td>Retrieve accepted TSN (with accepted name).</td>
+</tr>
+<tr>
+<td><code>itis_downstream</code></td>
+<td>Retrieve all taxa names or TSNs downstream in hierarchy from given TSN.</td>
+</tr>
+<tr>
+<td><code>itis_getrecord</code></td>
+<td>Get full ITIS record for one or more ITIS TSN&apos;s or lsid&apos;s.</td>
+</tr>
+<tr>
+<td><code>itis_hierarchy</code></td>
+<td>Get hierarchies from TSN values, full, upstream only, or immediate downstream only</td>
+</tr>
+<tr>
+<td><code>itis_kingdomnames</code></td>
+<td>Get kingdom names.</td>
+</tr>
+<tr>
+<td><code>itis_lsid</code></td>
+<td>Get kingdom names.</td>
+</tr>
+<tr>
+<td><code>itis_name</code></td>
+<td>Get taxonomic names for a given taxonomic name query.</td>
+</tr>
+<tr>
+<td><code>itis_native</code></td>
+<td>Get jurisdiction data, i.e., native or not native in a region.</td>
+</tr>
+<tr>
+<td><code>itis_refs</code></td>
+<td>Get references related to a ITIS TSN.</td>
+</tr>
+<tr>
+<td><code>itis_searchcommon</code></td>
+<td>Searches common name and acts as thin wrapper around &apos;searchbycommonnamebeginswith&apos; and &apos;searchbycommonnameendswith&apos;</td>
+</tr>
+<tr>
+<td><code>itis_taxrank</code></td>
+<td>Retrieve taxonomic rank name from given TSN.</td>
+</tr>
+<tr>
+<td><code>itis_terms</code></td>
+<td>Get ITIS terms, i.e., tsn&apos;s, authors, common names, and scientific names.</td>
+</tr>
+<tr>
+<td><code>iucn_getname</code></td>
+<td>Get any matching IUCN species names</td>
+</tr>
+<tr>
+<td><code>iucn_status</code></td>
+<td>Extractor functions for &apos;iucn&apos;-class.</td>
+</tr>
+<tr>
+<td><code>iucn_summary</code></td>
+<td>Get a summary from the IUCN Red List.</td>
+</tr>
+<tr>
+<td><code>names_list</code></td>
+<td>Get a random vector of species names.</td>
+</tr>
+<tr>
+<td><code>nbn_classifcation</code></td>
+<td>Search UK National Biodiversity Network database for taxonomic classification</td>
+</tr>
+<tr>
+<td><code>nbn_search</code></td>
+<td>Search UK National Biodiversity Network database</td>
+</tr>
+<tr>
+<td><code>nbn_synonyms</code></td>
+<td>Return all synonyms for a taxon name with a given id from NBN</td>
+</tr>
+<tr>
+<td>ncbi_children`</td>
+<td>Search NCBI for children of a taxon</td>
+</tr>
+<tr>
+<td><code>ncbi_get_taxon_summary</code></td>
+<td>NCBI taxon information from uids</td>
+</tr>
+<tr>
+<td><code>ncbi_getbyid</code></td>
+<td>Retrieve gene sequences from NCBI by accession number.</td>
+</tr>
+<tr>
+<td><code>ncbi_getbyname</code></td>
+<td>Retrieve gene sequences from NCBI by taxon name and gene names.</td>
+</tr>
+<tr>
+<td><code>ncbi_search</code></td>
+<td>Search for gene sequences available for taxa from NCBI.</td>
+</tr>
+<tr>
+<td><code>phylomatic_format</code></td>
+<td>Get family names to make Phylomatic input object, and output input string to Phylomatic for use in the function phylomatic_tree.</td>
+</tr>
+<tr>
+<td><code>phylomatic_tree</code></td>
+<td>Query Phylomatic for a phylogenetic tree.</td>
+</tr>
+<tr>
+<td><code>ping</code></td>
+<td>Ping an API used in taxize to see if it&apos;s working.</td>
+</tr>
+<tr>
+<td><code>plantGenusNames</code></td>
+<td>Vector of 793 genus names of plants</td>
+</tr>
+<tr>
+<td><code>plantNames</code></td>
+<td>Vector of 1,182 species names of plants</td>
+</tr>
+<tr>
+<td><code>plantminer</code></td>
+<td>Search for taxonomy data from Plantminer.com</td>
+</tr>
+<tr>
+<td><code>rank_ref</code></td>
+<td>Lookup-table for IDs of taxonomic ranks</td>
+</tr>
+<tr>
+<td><code>rankagg</code></td>
+<td>Aggregate data by given taxonomic rank</td>
+</tr>
+<tr>
+<td><code>resolve</code></td>
+<td>Resolve names from many different sources</td>
+</tr>
+<tr>
+<td><code>sci2comm</code></td>
+<td>Get common names from scientific names.</td>
+</tr>
+<tr>
+<td><code>scrapenames</code></td>
+<td>Resolve names using Global Names Recognition and Discovery.</td>
+</tr>
+<tr>
+<td><code>status_codes</code></td>
+<td>Get HTTP status codes</td>
+</tr>
+<tr>
+<td><code>synonyms</code></td>
+<td>Retrieve synonyms from various sources given</td>
+</tr>
+<tr>
+<td><code>input</code></td>
+<td>taxonomic names or identifiers.</td>
+</tr>
+<tr>
+<td><code>tax_agg</code></td>
+<td>Aggregate species data to given taxonomic rank</td>
+</tr>
+<tr>
+<td><code>tax_name</code></td>
+<td>Get taxonomic names for a given rank.</td>
+</tr>
+<tr>
+<td><code>tax_rank</code></td>
+<td>Get rank for a given taxonomic name.</td>
+</tr>
+<tr>
+<td><code>taxize-defunct</code></td>
+<td>Defunct functions in taxize</td>
+</tr>
+<tr>
+<td><code>taxize-deprecated</code></td>
+<td>Deprecated functions in taxize</td>
+</tr>
+<tr>
+<td><code>taxize-package</code></td>
+<td>Taxonomic information from around the web.</td>
+</tr>
+<tr>
+<td><code>taxize_capwords</code></td>
+<td>Capitalize the first letter of a character string.</td>
+</tr>
+<tr>
+<td><code>taxize_cite</code></td>
+<td>Get citations and licenses for data sources used in taxize</td>
+</tr>
+<tr>
+<td><code>theplantlist</code></td>
+<td>Lookup-table for family, genus, and species names for ThePlantList</td>
+</tr>
+<tr>
+<td><code>tnrs</code></td>
+<td>Search the Phylotastic Taxonomic Name Resolution Service.</td>
+</tr>
+<tr>
+<td><code>tnrs_sources</code></td>
+<td>Get sources for the Phylotastic Taxonomic Name Resolution Service.</td>
+</tr>
+<tr>
+<td><code>tp_accnames</code></td>
+<td>Return all accepted names for a taxon name with a given id.</td>
+</tr>
+<tr>
+<td><code>tp_dist</code></td>
+<td>Return all distribution records for for a taxon name with a given id.</td>
+</tr>
+<tr>
+<td><code>tp_refs</code></td>
+<td>Return all reference records for for a taxon name with a given id.</td>
+</tr>
+<tr>
+<td><code>tp_search</code></td>
+<td>Search Tropicos by scientific name, common name, or Tropicos ID.</td>
+</tr>
+<tr>
+<td><code>tp_summary</code></td>
+<td>Return summary data a taxon name with a given id.</td>
+</tr>
+<tr>
+<td><code>tp_synonyms</code></td>
+<td>Return all synonyms for a taxon name with a given id.</td>
+</tr>
+<tr>
+<td><code>tpl_families</code></td>
+<td>Get The Plant List families.</td>
+</tr>
+<tr>
+<td><code>tpl_get</code></td>
+<td>Get The Plant List csv files.</td>
+</tr>
+<tr>
+<td><code>tpl_search</code></td>
+<td>A light wrapper around the taxonstand fxn to call Theplantlist.org database.</td>
+</tr>
+<tr>
+<td><code>ubio_classification</code></td>
+<td>This function will return all ClassificationBank data pertaining to a particular ClassificationBankID</td>
+</tr>
+<tr>
+<td><code>ubio_classification_search</code></td>
+<td>This function will return ClassificationBankIDs (hierarchiesIDs) that refer to the given NamebankID</td>
+</tr>
+<tr>
+<td><code>ubio_id</code></td>
+<td>Search uBio by namebank ID.</td>
+</tr>
+<tr>
+<td><code>ubio_search</code></td>
+<td>This function will return NameBankIDs that match given search terms</td>
+</tr>
+<tr>
+<td><code>ubio_synonyms</code></td>
+<td>Search uBio for taxonomic synonyms by hierarchiesID.</td>
+</tr>
+<tr>
+<td><code>upstream</code></td>
+<td>Retrieve the upstream taxa for a given taxon name or ID.</td>
+</tr>
+<tr>
+<td><code>vascan_search</code></td>
+<td>Search the CANADENSYS Vascan API.</td>
 </tr>
 </tbody>
 </table>
+<h2 id="apg-families">apg_families</h2>
+<h2 id="apg-orders">apg_orders</h2>
+<h2 id="class2tree">class2tree</h2>
+<h2 id="classification">classification</h2>
+<h2 id="comm2sci">comm2sci</h2>
+<h2 id="gnr-resolve">gnr_resolve</h2>
+<p><a href="http://gni.globalnames.org" target="_blank">Global Names Resolver</a>&#x306B;&#x3088;&#x308B;&#x5B66;&#x540D;&#x306E;&#x4E0D;&#x4E00;&#x81F4;&#x306E;&#x89E3;&#x6D88;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>names</li>
+<li>data_source_ids</li>
+<li>resolve_once</li>
+<li>with_context</li>
+<li>stripauthority</li>
+<li>best_match_only</li>
+<li>preferred_data_sources</li>
+<li>http</li>
+<li>callopts</li>
+</ul>
+<pre><code class="lang-r">&gt; gnr_resolve(names = c(<span class="hljs-string">&quot;Helianthus annuus&quot;</span>, <span class="hljs-string">&quot;Homo sapienss&quot;</span>)) %&gt;% head() <span class="hljs-comment"># Miss spelled to `Homo sapiens`</span>
+</code></pre>
+<pre><code>$results
+      submitted_name
+1  Helianthus annuus
+2  Helianthus annuus
+3  Helianthus annuus
+4  Helianthus annuus
+5  Helianthus annuus
+6  Helianthus annuus
+7  Helianthus annuus
+8  Helianthus annuus
+9  Helianthus annuus
+10 Helianthus annuus
+11 Helianthus annuus
+12 Helianthus annuus
+13 Helianthus annuus
+14 Helianthus annuus
+15 Helianthus annuus
+16 Helianthus annuus
+17 Helianthus annuus
+18 Helianthus annuus
+19 Helianthus annuus
+20 Helianthus annuus
+21 Helianthus annuus
+22 Helianthus annuus
+23 Helianthus annuus
+24 Helianthus annuus
+25 Helianthus annuus
+26 Helianthus annuus
+27 Helianthus annuus
+28 Helianthus annuus
+29 Helianthus annuus
+30 Helianthus annuus
+31 Helianthus annuus
+32     Homo sapienss
+33     Homo sapienss
+34     Homo sapienss
+35     Homo sapienss
+36     Homo sapienss
+37     Homo sapienss
+38     Homo sapienss
+39     Homo sapienss
+40     Homo sapienss
+41     Homo sapienss
+42     Homo sapienss
+43     Homo sapienss
+44     Homo sapienss
+45     Homo sapienss
+46     Homo sapienss
+47     Homo sapienss
+48     Homo sapienss
+49     Homo sapienss
+50     Homo sapienss
+51     Homo sapienss
+52     Homo sapienss
+53     Homo sapienss
+54     Homo sapienss
+55     Homo sapienss
+                                                            matched_name
+1                                                      Helianthus annuus
+2                                                      Helianthus annuus
+3                                                      Helianthus annuus
+4                                                      Helianthus annuus
+5                                                      Helianthus annuus
+6                                                      Helianthus annuus
+7                                                      Helianthus annuus
+8                                                   Helianthus annuus L.
+9                                                   Helianthus annuus L.
+10                                                  Helianthus annuus L.
+11                                                  Helianthus annuus L.
+12                                            Helianthus annuus Linnaeus
+13                                                  Helianthus annuus L.
+14                                            Helianthus annuus agg. mut
+15                                                  Helianthus annuus L.
+16                                            Helianthus annuus Linnaeus
+17                                           Helianthus annuus L. (1753)
+18                                                  Helianthus annuus L.
+19                                                  Helianthus annuus L.
+20                                            Helianthus annuus Linnaeus
+21                                                  Helianthus annuus L.
+22                                                  Helianthus annuus L.
+23                                                  Helianthus annuus L.
+24                                                  Helianthus annuus L.
+25                                                  Helianthus annuus L.
+26                                                  Helianthus annuus L.
+27                                                  Helianthus annuus L.
+28 Helianthus annuus [infrasp.unranked] lenticularis (Douglas) Cockerell
+29                                                  Helianthus annuus L.
+30                                                  Helianthus annuus L.
+31                                                  Helianthus annuus L.
+32                                           Homo sapiens Linnaeus, 1758
+33                                           Homo sapiens Linnaeus, 1758
+34                                                          Homo sapiens
+35                                           Homo sapiens Linnaeus, 1758
+36                                           Homo sapiens Linnaeus, 1758
+37                                                          Homo sapiens
+38                                           Homo sapiens Linnaeus, 1758
+39                                           Homo sapiens Linnaeus, 1758
+40                                                       Homo sapiens L.
+41                                                          Homo sapiens
+42                                                          Homo sapiens
+43                                                          Homo sapiens
+44                                                          Homo sapiens
+45                                           Homo sapiens Linnaeus, 1758
+46                                                          Homo sapiens
+47                                           Homo sapiens Linnaeus, 1758
+48                                           Homo sapiens Linnaeus, 1758
+49                                           Homo sapiens Linnaeus, 1758
+50                                                          Homo sapiens
+51                                           Homo sapiens Linnaeus, 1758
+52                                                          Homo sapiens
+53                                                          Homo sapiens
+54                                            Homo sapiens Linnaeus 1758
+55                                            Homo sapiens Linnaeus 1758
+                                                        data_source_title
+1                                                                    NCBI
+2                                                                Freebase
+3                                                                     EOL
+4                                                    Illinois Wildflowers
+5                                                                 CU*STAR
+6                                                                   nlbif
+7                                                           uBio NameBank
+8                                                       Catalogue of Life
+9                                                                    ITIS
+10                                               GRIN Taxonomy for Plants
+11                                                                Union 4
+12                        Interim Register of Marine and Nonmarine Genera
+13                                                 GBIF Backbone Taxonomy
+14                                                 GBIF Backbone Taxonomy
+15                                                                    EOL
+16                                                                    EOL
+17                                                                    EOL
+18 Catalogue of Vascular Plant Species of Central and Northeastern Brazil
+19                                                       Wikipedia in EOL
+20                         Database of Vascular Plants of Canada (VASCAN)
+21                                              USDA NRCS PLANTS Database
+22                                       The National Checklist of Taiwan
+23                                                                  EUNIS
+24                                                              BioLib.cz
+25                                   Tropicos - Missouri Botanical Garden
+26                                                                  nlbif
+27                                    The International Plant Names Index
+28                                    The International Plant Names Index
+29                                                          uBio NameBank
+30                                                                 Arctos
+31         Checklist da Flora de Portugal (Continental, A&#xE7;ores e Madeira)
+32                                                      Catalogue of Life
+33                                                                   ITIS
+34                                                                   NCBI
+35                                                                Union 4
+36                        Interim Register of Marine and Nonmarine Genera
+37                                                               Freebase
+38                                                 GBIF Backbone Taxonomy
+39                                                                    EOL
+40                                                                    EOL
+41                                                                    EOL
+42                                                              AskNature
+43                                                               BioPedia
+44                                                                  AnAge
+45                                       The National Checklist of Taiwan
+46                                                                CU*STAR
+47                                    IUCN Red List of Threatened Species
+48                                                              BioLib.cz
+49                                                                  nlbif
+50                                                Index to Organism Names
+51                                                          uBio NameBank
+52                                                          uBio NameBank
+53                                                                 Arctos
+54                                              The Paleobiology Database
+55                                        The Mammal Species of The World
+   score
+1  0.988
+2  0.988
+3  0.988
+4  0.988
+5  0.988
+6  0.988
+7  0.988
+8  0.988
+9  0.988
+10 0.988
+11 0.988
+12 0.988
+13 0.988
+14 0.988
+15 0.988
+16 0.988
+17 0.988
+18 0.988
+19 0.988
+20 0.988
+21 0.988
+22 0.988
+23 0.988
+24 0.988
+25 0.988
+26 0.988
+27 0.988
+28 0.988
+29 0.988
+30 0.988
+31 0.988
+32 0.750
+33 0.750
+34 0.750
+35 0.750
+36 0.750
+37 0.750
+38 0.750
+39 0.750
+40 0.750
+41 0.750
+42 0.750
+43 0.750
+44 0.750
+45 0.750
+46 0.750
+47 0.750
+48 0.750
+49 0.750
+50 0.750
+51 0.750
+52 0.750
+53 0.750
+54 0.750
+55 0.750
+
+$preferred
+NULL
+</code></pre><pre><code class="lang-r">&gt; gnr_resolve(names = c(<span class="hljs-string">&quot;Helianthus annuus&quot;</span>, <span class="hljs-string">&quot;Homo sapiens&quot;</span>), best_match_only = <span class="hljs-literal">TRUE</span>)
+</code></pre>
+<pre><code>$results
+     submitted_name      matched_name data_source_title score
+1 Helianthus annuus Helianthus annuus              NCBI 0.988
+2      Homo sapiens      Homo sapiens              NCBI 0.988
+
+$preferred
+NULL
+</code></pre><h2 id="phylomatic-format">phylomatic_format</h2>
+<pre><code class="lang-r">&gt; mynames &lt;- c(<span class="hljs-string">&quot;Poa annua&quot;</span>, <span class="hljs-string">&quot;Salix goodingii&quot;</span>, <span class="hljs-string">&quot;Helianthus annuus&quot;</span>)
+&gt; phylomatic_format(mynames, format = <span class="hljs-string">&apos;rsubmit&apos;</span>)
+</code></pre>
+<pre><code>
+Retrieving data for taxon &apos;Poa&apos;
+
+
+Retrieving data for taxon &apos;Salix&apos;
+
+
+Retrieving data for taxon &apos;Helianthus&apos;
+</code></pre><pre><code>[1] &quot;poaceae%2Fpoa%2Fpoa_annua&quot;                  
+[2] &quot;salicaceae%2Fsalix%2Fsalix_goodingii&quot;       
+[3] &quot;asteraceae%2Fhelianthus%2Fhelianthus_annuus&quot;
+</code></pre><pre><code class="lang-r">&gt; phylomatic_format(mynames, format = <span class="hljs-string">&apos;isubmit&apos;</span>, db = <span class="hljs-string">&quot;apg&quot;</span>)
+</code></pre>
+<pre><code>[1] &quot;poaceae/poa/poa_annua&quot;                  
+[2] &quot;salicaceae/salix/salix_goodingii&quot;       
+[3] &quot;asteraceae/helianthus/helianthus_annuus&quot;
+</code></pre><h2 id="phylomatic-tree">phylomatic_tree</h2>
 <h2 id="%E5%8F%82%E8%80%83">&#x53C2;&#x8003;</h2>
 <ul>
-<li><a href="http://d.hatena.ne.jp/hoxo_m/20141222/p1" target="_blank">R &#x3067;&#x8D85;&#x7C21;&#x5358;&#x306B;&#x4E26;&#x5217;&#x51E6;&#x7406;&#x3092;&#x66F8;&#x3051;&#x308B;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8; pforeach &#x3092;&#x4F5C;&#x3063;&#x305F; - &#x307B;&#x304F;&#x305D;&#x7B11;&#x3080;</a></li>
+<li><a href="https://ropensci.org/tutorials/taxize_tutorial.html" target="_blank">taxize tutorial</a></li>
 </ul>
 
                     
@@ -1108,10 +1772,10 @@
         </div>
 
         
-        <a href="../utility/Nippon.html" class="navigation navigation-prev " aria-label="Previous page: Nippon"><i class="fa fa-angle-left"></i></a>
+        <a href="../utility/Rgitbook.html" class="navigation navigation-prev " aria-label="Previous page: Rgitbook"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../utility/readr.html" class="navigation navigation-next " aria-label="Next page: readr"><i class="fa fa-angle-right"></i></a>
+        <a href="../utility/tidyr.html" class="navigation navigation-next " aria-label="Next page: tidyr"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>pforeach | R Package Showcase</title>
+        <title>flora | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../utility/readr.html" />
+    <link rel="next" href="../utility/magrittr.html" />
     
     
-    <link rel="prev" href="../utility/Nippon.html" />
+    <link rel="prev" href="../utility/foreach.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="7.9" data-basepath=".." data-revision="Sat May 30 2015 22:42:48 GMT+0900 (JST)">
+    <div class="book" data-level="7.6" data-basepath=".." data-revision="Sat May 30 2015 22:42:48 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -733,7 +733,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.6" data-path="utility/flora.html">
+        <li class="chapter active" data-level="7.6" data-path="utility/flora.html">
             
                 
                     <a href="../utility/flora.html">
@@ -778,7 +778,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="7.9" data-path="utility/pforeach.html">
+        <li class="chapter " data-level="7.9" data-path="utility/pforeach.html">
             
                 
                     <a href="../utility/pforeach.html">
@@ -1042,62 +1042,31 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="pforeach-an-easy-way-to-parallel-processing-in-r">pforeach: An easy way to parallel processing in R</h1>
-<p>&#x4E26;&#x5217;&#x51E6;&#x7406;</p>
-<p><a href="http://cran.rstudio.com/web/packages/pforeach/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/pforeach" alt=""></a></p>
+                        <h1 id="flora-tools-for-interacting-with-the-brazilian-flora-checklist">flora: Tools for Interacting with the Brazilian Flora Checklist</h1>
+<p>&#x30D6;&#x30E9;&#x30B8;&#x30EB;&#x7523;&#x690D;&#x7269;&#x76EE;&#x9332;</p>
+<p><a href="http://cran.rstudio.com/web/packages/flora/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/flora" alt=""></a></p>
 <ul>
-<li>GitHub: <a href="https://github.com/hoxo-m/pforeach" target="_blank">https://github.com/hoxo-m/pforeach</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/flora/index.html" target="_blank">http://cran.r-project.org/web/packages/flora/index.html</a></li>
+<li>GitHub: <a href="https://github.com/gustavobio/flora" target="_blank">https://github.com/gustavobio/flora</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(pforeach)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(flora)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.0</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.2.4</p>
 <hr>
 <table>
 <thead>
 <tr>
-<th>&#x95A2;&#x6570;&#x540D;`</th>
+<th>&#x95A2;&#x6570;&#x540D;</th>
 <th>&#x6982;&#x7565;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>cols</code></td>
-<td>Iterator for data frame by column</td>
-</tr>
-<tr>
-<td><code>icols</code></td>
-<td>Iterator for column number of a data frame</td>
-</tr>
-<tr>
-<td><code>irows</code></td>
-<td>Iterator for row number of a data frame</td>
-</tr>
-<tr>
-<td><code>npforeach</code></td>
-<td>Non-Parallelized pforeach</td>
-</tr>
-<tr>
-<td><code>pforeach</code></td>
-<td>pforeach</td>
-</tr>
-<tr>
-<td><code>rows</code></td>
-<td>Iterator for data frame by row</td>
-</tr>
-<tr>
-<td><code>stopImplicitCluster2</code></td>
-<td>Stop implicit cluster</td>
-</tr>
-<tr>
-<td><code>update</code></td>
-<td>Reinstall pforeach package</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="%E5%8F%82%E8%80%83">&#x53C2;&#x8003;</h2>
-<ul>
-<li><a href="http://d.hatena.ne.jp/hoxo_m/20141222/p1" target="_blank">R &#x3067;&#x8D85;&#x7C21;&#x5358;&#x306B;&#x4E26;&#x5217;&#x51E6;&#x7406;&#x3092;&#x66F8;&#x3051;&#x308B;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8; pforeach &#x3092;&#x4F5C;&#x3063;&#x305F; - &#x307B;&#x304F;&#x305D;&#x7B11;&#x3080;</a></li>
-</ul>
+<h2 id="remove-authors">remove.authors</h2>
 
                     
                     </section>
@@ -1108,10 +1077,10 @@
         </div>
 
         
-        <a href="../utility/Nippon.html" class="navigation navigation-prev " aria-label="Previous page: Nippon"><i class="fa fa-angle-left"></i></a>
+        <a href="../utility/foreach.html" class="navigation navigation-prev " aria-label="Previous page: foreach"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../utility/readr.html" class="navigation navigation-next " aria-label="Next page: readr"><i class="fa fa-angle-right"></i></a>
+        <a href="../utility/magrittr.html" class="navigation navigation-next " aria-label="Next page: magrittr"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
