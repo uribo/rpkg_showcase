@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="7.1" data-basepath=".." data-revision="Sat May 30 2015 22:42:48 GMT+0900 (JST)">
+    <div class="book" data-level="7.1" data-basepath=".." data-revision="Sat Jun 06 2015 11:35:52 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -259,13 +259,28 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5" data-path="data-analysis/vegan.html">
+        <li class="chapter " data-level="3.5" data-path="data-analysis/Rphylopars.html">
+            
+                
+                    <a href="../data-analysis/Rphylopars.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Rphylopars
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="data-analysis/vegan.html">
             
                 
                     <a href="../data-analysis/vegan.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>3.5.</b>
+                            <b>3.6.</b>
                         
                         vegan
                     </a>
@@ -838,13 +853,28 @@
             
         </li>
     
-        <li class="chapter " data-level="7.13" data-path="utility/taxize.html">
+        <li class="chapter " data-level="7.13" data-path="utility/rlist.html">
+            
+                
+                    <a href="../utility/rlist.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.13.</b>
+                        
+                        rlist
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="utility/taxize.html">
             
                 
                     <a href="../utility/taxize.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>7.13.</b>
+                            <b>7.14.</b>
                         
                         taxize
                     </a>
@@ -853,13 +883,13 @@
             
         </li>
     
-        <li class="chapter " data-level="7.14" data-path="utility/tidyr.html">
+        <li class="chapter " data-level="7.15" data-path="utility/tidyr.html">
             
                 
                     <a href="../utility/tidyr.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>7.14.</b>
+                            <b>7.15.</b>
                         
                         tidyr
                     </a>
@@ -868,13 +898,13 @@
             
         </li>
     
-        <li class="chapter " data-level="7.15" data-path="utility/utils.html">
+        <li class="chapter " data-level="7.16" data-path="utility/utils.html">
             
                 
                     <a href="../utility/utils.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>7.15.</b>
+                            <b>7.16.</b>
                         
                         utils
                     </a>
@@ -1090,33 +1120,35 @@
 [2] &quot;/Library/Frameworks/R.framework/Resources/doc/html&quot;         
 [3] &quot;/Library/Frameworks/R.framework/Resources/doc/manual&quot;       
 [4] &quot;/Library/Frameworks/R.framework/Resources/doc/manual/images&quot;
-</code></pre><pre><code class="lang-r">&gt; dir(<span class="hljs-string">&quot;../..&quot;</span>, pattern = <span class="hljs-string">&quot;^[a-lr]&quot;</span>, full.names = <span class="hljs-literal">TRUE</span>, ignore.case = <span class="hljs-literal">TRUE</span>)
+</code></pre><pre><code class="lang-r">&gt; dir(path = <span class="hljs-string">&quot;../&quot;</span>, 
++     pattern = <span class="hljs-string">&quot;^[a-lr]&quot;</span>, 
++     full.names = <span class="hljs-literal">TRUE</span>, 
++     ignore.case = <span class="hljs-literal">TRUE</span>)
 </code></pre>
-<pre><code> [1] &quot;../../bookshelf&quot;                  
- [2] &quot;../../cheatsheet&quot;                 
- [3] &quot;../../classic&quot;                    
- [4] &quot;../../clone&quot;                      
- [5] &quot;../../ctv-design-of-art&quot;          
- [6] &quot;../../data_treatment&quot;             
- [7] &quot;../../draft &#x306E;&#x30A8;&#x30A4;&#x30EA;&#x30A2;&#x30B9;&quot;         
- [8] &quot;../../ecostatistics&quot;              
- [9] &quot;../../git_book.md&quot;                
-[10] &quot;../../how_to_write_good_readme.md&quot;
-[11] &quot;../../icon_for_slide&quot;             
-[12] &quot;../../instruction&quot;                
-[13] &quot;../../introduced_to_rstan.md&quot;     
-[14] &quot;../../r_analysis_workflow.md&quot;     
-[15] &quot;../../r_message.md&quot;               
-[16] &quot;../../r_pkg&quot;                      
-[17] &quot;../../re_statistics.html&quot;         
-[18] &quot;../../re_statistics.Rmd&quot;          
-[19] &quot;../../recent_lm_result_io.md&quot;     
-[20] &quot;../../references&quot;                 
-[21] &quot;../../rpkg_showcase&quot;              
-[22] &quot;../../RPubs&quot;                      
-[23] &quot;../../rr_using_git&quot;               
-[24] &quot;../../rstudio_cheat&quot;              
-[25] &quot;../../rstudio_shrotcut_key.md&quot;
+<pre><code> [1] &quot;..//data-analysis&quot;       &quot;..//design&quot;             
+ [3] &quot;..//development&quot;         &quot;..//Figure&quot;             
+ [5] &quot;..//graphics&quot;            &quot;..//inst&quot;               
+ [7] &quot;..//README.md&quot;           &quot;..//README.Rmd&quot;         
+ [9] &quot;..//references.md&quot;       &quot;..//references.Rmd&quot;     
+[11] &quot;..//report&quot;              &quot;..//rpkg_showcase.Rproj&quot;
+</code></pre><h2 id="missing">missing</h2>
+<p>&#x95A2;&#x6570;&#x5185;&#x306E;&#x5F15;&#x6570;&#x306B;&#x5024;&#x304C;&#x4E0E;&#x3048;&#x3089;&#x308C;&#x3066;&#x3044;&#x308B;&#x304B;&#x3092;&#x8A55;&#x4FA1;&#x3059;&#x308B;</p>
+<pre><code class="lang-r">&gt; myplot &lt;- <span class="hljs-keyword">function</span>(x, y) {
++   <span class="hljs-keyword">if</span> (missing(y)) {
++     y &lt;- x
++     x &lt;- <span class="hljs-number">1</span>:length(y)
++   }
++   plot(x, y)
++ }
+&gt; myplot(y = <span class="hljs-number">1</span>)
+</code></pre>
+<pre><code>Error in plot(x, y): argument &quot;x&quot; is missing, with no default
+</code></pre><h2 id="stopinfo">stopinfo</h2>
+<p>&#x5F15;&#x6570;&#x306B;&#x4E0E;&#x3048;&#x305F;&#x5024;&#x304C;&#x7B49;&#x3057;&#x304F;&#x306A;&#x3044;&#x5834;&#x5408;&#x306B;&#x51E6;&#x7406;&#x3092;&#x505C;&#x6B62;&#x3059;&#x308B;</p>
+<pre><code class="lang-r">&gt; stopifnot(<span class="hljs-number">1</span> == <span class="hljs-number">1</span>)
+&gt; stopifnot(<span class="hljs-number">1</span> == <span class="hljs-number">2</span>)
+</code></pre>
+<pre><code>Error: 1 == 2 is not TRUE
 </code></pre><h2 id="tempdir-tempfile">tempdir, tempfile</h2>
 <p>&#x4E00;&#x6642;&#x7684;&#x306A;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x3001;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;&#x4E00;&#x6642;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306F;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x7D42;&#x4E86;&#x6642;&#x306B;&#x524A;&#x9664;&#x3055;&#x308C;&#x308B;&#x3002;</p>
 <h3 id="arguments">Arguments</h3>
