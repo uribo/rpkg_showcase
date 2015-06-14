@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>wesanderson | R Package Showcase</title>
+        <title>geojsonio | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../data-analysis/index.html" />
+    <link rel="next" href="../utility/magrittr.html" />
     
     
-    <link rel="prev" href="../design/rPlotter.html" />
+    <link rel="prev" href="../utility/flora.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="2.3" data-basepath=".." data-revision="Sun Jun 14 2015 21:44:28 GMT+0900 (JST)">
+    <div class="book" data-level="7.7" data-basepath=".." data-revision="Sun Jun 14 2015 21:44:28 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -178,7 +178,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.3" data-path="design/wesanderson.html">
+        <li class="chapter " data-level="2.3" data-path="design/wesanderson.html">
             
                 
                     <a href="../design/wesanderson.html">
@@ -793,7 +793,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.7" data-path="utility/geojsonio.html">
+        <li class="chapter active" data-level="7.7" data-path="utility/geojsonio.html">
             
                 
                     <a href="../utility/geojsonio.html">
@@ -1162,16 +1162,26 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="wesanderson-a-wes-anderson-palette-generator">wesanderson: A Wes Anderson Palette Generator</h1>
-<p>Wes Anderson&#x306E;&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x3092;&#x751F;&#x6210;</p>
-<p><a href="http://cran.rstudio.com/web/packages/wesanderson/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/wesanderson" alt=""></a></p>
+                        <h1 id="geojsonio-convert-data-from-and-to-geojson-or-topojson">geojsonio: Convert Data from and to &apos;geoJSON&apos; or &apos;topoJSON&apos;</h1>
+<p><code>geoJSON</code>&#x3001;<code>topoJSON</code>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x30C7;&#x30FC;&#x30BF;&#x3068;&#x3057;&#x3066;&#x6271;&#x3046;</p>
+<p><a href="http://cran.rstudio.com/web/packages/geojsonio/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/geojsonio" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/wesanderson/index.html" target="_blank">http://cran.r-project.org/web/packages/wesanderson/index.html</a></li>
-<li>GitHub: <a href="https://github.com/karthik/wesanderson" target="_blank">https://github.com/karthik/wesanderson</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/geojsonio/index.html" target="_blank">http://cran.r-project.org/web/packages/geojsonio/index.html</a></li>
+<li>GitHub: <a href="https://github.com/ropensci/geojsonio" target="_blank">https://github.com/ropensci/geojsonio</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(wesanderson)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(geojsonio)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.3.2</p>
+<pre><code>
+Attaching package: &apos;geojsonio&apos;
+
+The following object is masked from &apos;package:devtools&apos;:
+
+    lint
+
+The following object is masked from &apos;package:base&apos;:
+
+    pretty
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.1.0</p>
 <hr>
 <table>
 <thead>
@@ -1182,77 +1192,139 @@
 </thead>
 <tbody>
 <tr>
-<td><code>heatmap</code></td>
-<td>heatmap</td>
+<td><code>as.json</code></td>
+<td>Convert inputs to JSON</td>
 </tr>
 <tr>
-<td><code>wes_palette</code></td>
-<td>A Wes Anderson palette generator</td>
+<td><code>as.location</code></td>
+<td>Convert a path or URL to a location object.</td>
 </tr>
 <tr>
-<td><code>wes_palettes</code></td>
-<td>Complete list of palettes</td>
+<td><code>bounds</code></td>
+<td>Get bounds for a list or geo_list</td>
 </tr>
 <tr>
-<td><code>wesanderson</code></td>
-<td>wesanderson</td>
+<td><code>canada_cities</code></td>
+<td>This is the same data set from the maps library, named differently</td>
+</tr>
+<tr>
+<td><code>centroid</code></td>
+<td>Get centroid for a geo_list</td>
+</tr>
+<tr>
+<td><code>file_to_geojson</code></td>
+<td>Convert spatial data files to GeoJSON from various formats.</td>
+</tr>
+<tr>
+<td><code>geojson-add</code></td>
+<td>Add together geo_list or json objects</td>
+</tr>
+<tr>
+<td><code>geojson_json</code></td>
+<td>Convert many input types with spatial data to</td>
+</tr>
+<tr>
+<td><code>geojson</code></td>
+<td>specified as a json string</td>
+</tr>
+<tr>
+<td><code>geojson_list</code></td>
+<td>Convert many input types with spatial data to</td>
+</tr>
+<tr>
+<td><code>geojson</code></td>
+<td>specified as a list</td>
+</tr>
+<tr>
+<td><code>geojson_read</code></td>
+<td>Read geojson from a local file or a URL</td>
+</tr>
+<tr>
+<td><code>geojson_style</code></td>
+<td>Style a data.frame or list prior to converting to geojson</td>
+</tr>
+<tr>
+<td><code>geojson_write</code></td>
+<td>Convert many input types with spatial data to a geojson file</td>
+</tr>
+<tr>
+<td><code>geojsonio</code></td>
+<td>Convert various data formats to/from GeoJSON or TopoJSON</td>
+</tr>
+<tr>
+<td><code>lint</code></td>
+<td>Lint geojson</td>
+</tr>
+<tr>
+<td><code>map_gist</code></td>
+<td>Publish an interactive map as a GitHub gist</td>
+</tr>
+<tr>
+<td><code>pretty</code></td>
+<td>Convert json input to pretty printed output</td>
+</tr>
+<tr>
+<td><code>projections</code></td>
+<td>topojson projections and extensions</td>
+</tr>
+<tr>
+<td><code>states</code></td>
+<td>This is the same data set from the ggplot2 library</td>
+</tr>
+<tr>
+<td><code>topojson_read</code></td>
+<td>Read topojson from a local file or a URL</td>
+</tr>
+<tr>
+<td><code>us_cities</code></td>
+<td>This is the same data set from the maps library, named differently</td>
+</tr>
+<tr>
+<td><code>validate</code></td>
+<td>Validate a geoJSON file, json object, list, or Spatial class.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="wes-palette">wes_palette</h2>
-<p>Wes Anderson&#x306E;&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x3092;&#x751F;&#x6210;</p>
-<pre><code class="lang-r">&gt; wes_palette(name = <span class="hljs-string">&quot;GrandBudapest&quot;</span>, n = <span class="hljs-number">3</span>, type = <span class="hljs-string">&quot;continuous&quot;</span>)
+<h2 id="geojson-json">geojson_json</h2>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>input</li>
+<li>lat</li>
+<li>lon</li>
+<li>group</li>
+<li>geometry... <code>point</code> or <code>polygon</code></li>
+<li>type</li>
+<li>...</li>
+</ul>
+<pre><code class="lang-r">&gt; geojson_json(input = c(<span class="hljs-number">32.45</span>, -<span class="hljs-number">99.74</span>), geometry = <span class="hljs-string">&quot;polygon&quot;</span>, pretty = <span class="hljs-literal">TRUE</span>)
 </code></pre>
-<p><img src="../Figure/usage_wes_palette-1.png" alt=""></p>
-<h2 id="wes-palettes">wes_palettes</h2>
-<p>&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x306E;&#x4E00;&#x89A7;&#xFF08;&#x30EA;&#x30B9;&#x30C8;&#xFF09;</p>
-<pre><code class="lang-r">&gt; wes_palettes
+<pre><code>{
+  &quot;type&quot;: &quot;FeatureCollection&quot;,
+  &quot;features&quot;: [
+    {
+      &quot;type&quot;: &quot;Feature&quot;,
+      &quot;geometry&quot;: {
+        &quot;type&quot;: &quot;Polygon&quot;,
+        &quot;coordinates&quot;: [
+          [
+            [32.45, -99.74]
+          ]
+        ]
+      },
+      &quot;properties&quot;: {}
+    }
+  ]
+}
+</code></pre><h2 id="geojson-write">geojson_write</h2>
+<pre><code class="lang-r">&gt; head(states)
+&gt; 
+&gt; geojson_write(input = states, 
++               lat = <span class="hljs-string">&apos;lat&apos;</span>, lon = <span class="hljs-string">&apos;long&apos;</span>, 
++               geometry = <span class="hljs-string">&apos;group&apos;</span>, 
++               group = <span class="hljs-string">&quot;group&quot;</span>,
++               file = <span class="hljs-string">&quot;filename.geojson&quot;</span>)
 </code></pre>
-<pre><code>$GrandBudapest
-[1] &quot;#F1BB7B&quot; &quot;#FD6467&quot; &quot;#5B1A18&quot; &quot;#D67236&quot;
 
-$Moonrise1
-[1] &quot;#F3DF6C&quot; &quot;#CEAB07&quot; &quot;#D5D5D3&quot; &quot;#24281A&quot;
-
-$Royal1
-[1] &quot;#899DA4&quot; &quot;#C93312&quot; &quot;#FAEFD1&quot; &quot;#DC863B&quot;
-
-$Moonrise2
-[1] &quot;#798E87&quot; &quot;#C27D38&quot; &quot;#CCC591&quot; &quot;#29211F&quot;
-
-$Cavalcanti
-[1] &quot;#D8B70A&quot; &quot;#02401B&quot; &quot;#A2A475&quot; &quot;#81A88D&quot; &quot;#972D15&quot;
-
-$Royal2
-[1] &quot;#9A8822&quot; &quot;#F5CDB4&quot; &quot;#F8AFA8&quot; &quot;#FDDDA0&quot; &quot;#74A089&quot;
-
-$GrandBudapest2
-[1] &quot;#E6A0C4&quot; &quot;#C6CDF7&quot; &quot;#D8A499&quot; &quot;#7294D4&quot;
-
-$Moonrise3
-[1] &quot;#85D4E3&quot; &quot;#F4B5BD&quot; &quot;#9C964A&quot; &quot;#CDC08C&quot; &quot;#FAD77B&quot;
-
-$Chevalier
-[1] &quot;#446455&quot; &quot;#FDD262&quot; &quot;#D3DDDC&quot; &quot;#C7B19C&quot;
-
-$Zissou
-[1] &quot;#3B9AB2&quot; &quot;#78B7C5&quot; &quot;#EBCC2A&quot; &quot;#E1AF00&quot; &quot;#F21A00&quot;
-
-$FantasticFox
-[1] &quot;#DD8D29&quot; &quot;#E2D200&quot; &quot;#46ACC8&quot; &quot;#E58601&quot; &quot;#B40F20&quot;
-
-$Darjeeling
-[1] &quot;#FF0000&quot; &quot;#00A08A&quot; &quot;#F2AD00&quot; &quot;#F98400&quot; &quot;#5BBCD6&quot;
-
-$Rushmore
-[1] &quot;#E1BD6D&quot; &quot;#EABE94&quot; &quot;#0B775E&quot; &quot;#35274A&quot; &quot;#F2300F&quot;
-
-$BottleRocket
-[1] &quot;#A42820&quot; &quot;#5F5647&quot; &quot;#9B110E&quot; &quot;#3F5151&quot; &quot;#4E2A1E&quot; &quot;#550307&quot; &quot;#0C1707&quot;
-
-$Darjeeling2
-[1] &quot;#ECCBAE&quot; &quot;#046C9A&quot; &quot;#D69C4E&quot; &quot;#ABDDDE&quot; &quot;#000000&quot;
-</code></pre>
                     
                     </section>
                 
@@ -1262,10 +1334,10 @@ $Darjeeling2
         </div>
 
         
-        <a href="../design/rPlotter.html" class="navigation navigation-prev " aria-label="Previous page: rPlotter"><i class="fa fa-angle-left"></i></a>
+        <a href="../utility/flora.html" class="navigation navigation-prev " aria-label="Previous page: flora"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../data-analysis/index.html" class="navigation navigation-next " aria-label="Next page: Data-analysis"><i class="fa fa-angle-right"></i></a>
+        <a href="../utility/magrittr.html" class="navigation navigation-next " aria-label="Next page: magrittr"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

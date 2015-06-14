@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>wesanderson | R Package Showcase</title>
+        <title>packrat | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../data-analysis/index.html" />
+    <link rel="next" href="../utility/pforeach.html" />
     
     
-    <link rel="prev" href="../design/rPlotter.html" />
+    <link rel="prev" href="../utility/Nippon.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="2.3" data-basepath=".." data-revision="Sun Jun 14 2015 21:44:28 GMT+0900 (JST)">
+    <div class="book" data-level="7.10" data-basepath=".." data-revision="Sun Jun 14 2015 21:44:28 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -178,7 +178,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.3" data-path="design/wesanderson.html">
+        <li class="chapter " data-level="2.3" data-path="design/wesanderson.html">
             
                 
                     <a href="../design/wesanderson.html">
@@ -838,7 +838,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.10" data-path="utility/packrat.html">
+        <li class="chapter active" data-level="7.10" data-path="utility/packrat.html">
             
                 
                     <a href="../utility/packrat.html">
@@ -1162,16 +1162,22 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="wesanderson-a-wes-anderson-palette-generator">wesanderson: A Wes Anderson Palette Generator</h1>
-<p>Wes Anderson&#x306E;&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x3092;&#x751F;&#x6210;</p>
-<p><a href="http://cran.rstudio.com/web/packages/wesanderson/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/wesanderson" alt=""></a></p>
+                        <h1 id="packrat-a-dependency-management-system-for-projects-and-their-r-package-dependencies">packrat: A Dependency Management System for Projects and their R Package Dependencies</h1>
+<p>R&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306B;&#x304A;&#x3051;&#x308B;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x7BA1;&#x7406;&#x30B7;&#x30B9;&#x30C6;&#x30E0;</p>
+<p><a href="http://cran.rstudio.com/web/packages/packrat/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/packrat" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/wesanderson/index.html" target="_blank">http://cran.r-project.org/web/packages/wesanderson/index.html</a></li>
-<li>GitHub: <a href="https://github.com/karthik/wesanderson" target="_blank">https://github.com/karthik/wesanderson</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/packrat/index.html" target="_blank">http://cran.r-project.org/web/packages/packrat/index.html</a></li>
+<li>GitHub: <a href="https://github.com/rstudio/packrat" target="_blank">https://github.com/rstudio/packrat</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(wesanderson)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(packrat)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.3.2</p>
+<pre><code>
+Attaching package: &apos;packrat&apos;
+
+The following objects are masked from &apos;package:devtools&apos;:
+
+    install, install_github, install_local
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.4.3.27</p>
 <hr>
 <table>
 <thead>
@@ -1182,77 +1188,102 @@
 </thead>
 <tbody>
 <tr>
-<td><code>heatmap</code></td>
-<td>heatmap</td>
+<td><code>bundle</code></td>
+<td>Bundle a Packrat Project</td>
 </tr>
 <tr>
-<td><code>wes_palette</code></td>
-<td>A Wes Anderson palette generator</td>
+<td><code>clean</code></td>
+<td>Remove Packages from the Library</td>
 </tr>
 <tr>
-<td><code>wes_palettes</code></td>
-<td>Complete list of palettes</td>
+<td><code>create_repo</code></td>
+<td>Create a Local, CRAN-like Repository</td>
 </tr>
 <tr>
-<td><code>wesanderson</code></td>
-<td>wesanderson</td>
+<td><code>disable</code></td>
+<td>Disable the use of Packrat in a Project</td>
+</tr>
+<tr>
+<td><code>init</code></td>
+<td>Initialize Packrat on a new or existing R project</td>
+</tr>
+<tr>
+<td><code>install</code></td>
+<td>Install a local development package.</td>
+</tr>
+<tr>
+<td><code>install_github</code></td>
+<td>Install a package from GitHub</td>
+</tr>
+<tr>
+<td><code>install_local</code></td>
+<td>Install a Package from a Local Repository</td>
+</tr>
+<tr>
+<td><code>migrate</code></td>
+<td>Migrate to Packrat Mode</td>
+</tr>
+<tr>
+<td><code>packify</code></td>
+<td>Automatically Enter Packrat Mode on Startup</td>
+</tr>
+<tr>
+<td><code>packrat</code></td>
+<td>Packrat: Reproducible dependency management</td>
+</tr>
+<tr>
+<td><code>packrat-external</code></td>
+<td>Managing External Libraries</td>
+</tr>
+<tr>
+<td><code>packrat-mode</code></td>
+<td>Packrat Mode</td>
+</tr>
+<tr>
+<td><code>packrat-options</code></td>
+<td>Get/set packrat project options</td>
+</tr>
+<tr>
+<td><code>repository-management</code></td>
+<td>Add a Repository</td>
+</tr>
+<tr>
+<td><code>restore</code></td>
+<td>Apply the most recent snapshot to the library</td>
+</tr>
+<tr>
+<td><code>search_path</code></td>
+<td>Get Packages on the Search Path</td>
+</tr>
+<tr>
+<td><code>snapshot</code></td>
+<td>Capture and store the packages and versions in use</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>Show differences between the last snapshot and the library</td>
+</tr>
+<tr>
+<td><code>unbundle</code></td>
+<td>Unbundle a Packrat Project</td>
+</tr>
+<tr>
+<td><code>unused_packages</code></td>
+<td>Find Unused Packages in a Project</td>
+</tr>
+<tr>
+<td><code>upload_package</code></td>
+<td>Upload a Package to a Local CRAN-like Repository</td>
 </tr>
 </tbody>
 </table>
-<h2 id="wes-palette">wes_palette</h2>
-<p>Wes Anderson&#x306E;&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x3092;&#x751F;&#x6210;</p>
-<pre><code class="lang-r">&gt; wes_palette(name = <span class="hljs-string">&quot;GrandBudapest&quot;</span>, n = <span class="hljs-number">3</span>, type = <span class="hljs-string">&quot;continuous&quot;</span>)
-</code></pre>
-<p><img src="../Figure/usage_wes_palette-1.png" alt=""></p>
-<h2 id="wes-palettes">wes_palettes</h2>
-<p>&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x306E;&#x4E00;&#x89A7;&#xFF08;&#x30EA;&#x30B9;&#x30C8;&#xFF09;</p>
-<pre><code class="lang-r">&gt; wes_palettes
-</code></pre>
-<pre><code>$GrandBudapest
-[1] &quot;#F1BB7B&quot; &quot;#FD6467&quot; &quot;#5B1A18&quot; &quot;#D67236&quot;
+<h2 id="clean">clean</h2>
+<p>&#x30D7;&#x30E9;&#x30A4;&#x30D9;&#x30FC;&#x30C8;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x304B;&#x3089;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3092;&#x524A;&#x9664;&#x3059;&#x308B;</p>
+<h2 id="disable">disable</h2>
+<p>packrat&#x306B;&#x3088;&#x308B;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x7BA1;&#x7406;&#x3092;&#x6B62;&#x3081;&#x308B;</p>
+<h2 id="init">init</h2>
+<p>packrat&#x306B;&#x3088;&#x308B;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x7BA1;&#x7406;&#x3092;&#x59CB;&#x3081;&#x308B;</p>
 
-$Moonrise1
-[1] &quot;#F3DF6C&quot; &quot;#CEAB07&quot; &quot;#D5D5D3&quot; &quot;#24281A&quot;
-
-$Royal1
-[1] &quot;#899DA4&quot; &quot;#C93312&quot; &quot;#FAEFD1&quot; &quot;#DC863B&quot;
-
-$Moonrise2
-[1] &quot;#798E87&quot; &quot;#C27D38&quot; &quot;#CCC591&quot; &quot;#29211F&quot;
-
-$Cavalcanti
-[1] &quot;#D8B70A&quot; &quot;#02401B&quot; &quot;#A2A475&quot; &quot;#81A88D&quot; &quot;#972D15&quot;
-
-$Royal2
-[1] &quot;#9A8822&quot; &quot;#F5CDB4&quot; &quot;#F8AFA8&quot; &quot;#FDDDA0&quot; &quot;#74A089&quot;
-
-$GrandBudapest2
-[1] &quot;#E6A0C4&quot; &quot;#C6CDF7&quot; &quot;#D8A499&quot; &quot;#7294D4&quot;
-
-$Moonrise3
-[1] &quot;#85D4E3&quot; &quot;#F4B5BD&quot; &quot;#9C964A&quot; &quot;#CDC08C&quot; &quot;#FAD77B&quot;
-
-$Chevalier
-[1] &quot;#446455&quot; &quot;#FDD262&quot; &quot;#D3DDDC&quot; &quot;#C7B19C&quot;
-
-$Zissou
-[1] &quot;#3B9AB2&quot; &quot;#78B7C5&quot; &quot;#EBCC2A&quot; &quot;#E1AF00&quot; &quot;#F21A00&quot;
-
-$FantasticFox
-[1] &quot;#DD8D29&quot; &quot;#E2D200&quot; &quot;#46ACC8&quot; &quot;#E58601&quot; &quot;#B40F20&quot;
-
-$Darjeeling
-[1] &quot;#FF0000&quot; &quot;#00A08A&quot; &quot;#F2AD00&quot; &quot;#F98400&quot; &quot;#5BBCD6&quot;
-
-$Rushmore
-[1] &quot;#E1BD6D&quot; &quot;#EABE94&quot; &quot;#0B775E&quot; &quot;#35274A&quot; &quot;#F2300F&quot;
-
-$BottleRocket
-[1] &quot;#A42820&quot; &quot;#5F5647&quot; &quot;#9B110E&quot; &quot;#3F5151&quot; &quot;#4E2A1E&quot; &quot;#550307&quot; &quot;#0C1707&quot;
-
-$Darjeeling2
-[1] &quot;#ECCBAE&quot; &quot;#046C9A&quot; &quot;#D69C4E&quot; &quot;#ABDDDE&quot; &quot;#000000&quot;
-</code></pre>
                     
                     </section>
                 
@@ -1262,10 +1293,10 @@ $Darjeeling2
         </div>
 
         
-        <a href="../design/rPlotter.html" class="navigation navigation-prev " aria-label="Previous page: rPlotter"><i class="fa fa-angle-left"></i></a>
+        <a href="../utility/Nippon.html" class="navigation navigation-prev " aria-label="Previous page: Nippon"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../data-analysis/index.html" class="navigation navigation-next " aria-label="Next page: Data-analysis"><i class="fa fa-angle-right"></i></a>
+        <a href="../utility/pforeach.html" class="navigation navigation-next " aria-label="Next page: pforeach"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

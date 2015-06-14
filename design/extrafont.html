@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>wesanderson | R Package Showcase</title>
+        <title>extrafont | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../data-analysis/index.html" />
+    <link rel="next" href="../design/rPlotter.html" />
     
     
-    <link rel="prev" href="../design/rPlotter.html" />
+    <link rel="prev" href="../design/index.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="2.3" data-basepath=".." data-revision="Sun Jun 14 2015 21:44:28 GMT+0900 (JST)">
+    <div class="book" data-level="2.1" data-basepath=".." data-revision="Sun Jun 14 2015 21:44:28 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -148,7 +148,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1" data-path="design/extrafont.html">
+        <li class="chapter active" data-level="2.1" data-path="design/extrafont.html">
             
                 
                     <a href="../design/extrafont.html">
@@ -178,7 +178,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.3" data-path="design/wesanderson.html">
+        <li class="chapter " data-level="2.3" data-path="design/wesanderson.html">
             
                 
                     <a href="../design/wesanderson.html">
@@ -1162,16 +1162,16 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="wesanderson-a-wes-anderson-palette-generator">wesanderson: A Wes Anderson Palette Generator</h1>
-<p>Wes Anderson&#x306E;&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x3092;&#x751F;&#x6210;</p>
-<p><a href="http://cran.rstudio.com/web/packages/wesanderson/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/wesanderson" alt=""></a></p>
+                        <h1 id="extrafont-tools-for-using-fonts">extrafont: Tools for using fonts</h1>
+<p>&#x6A19;&#x6E96;&#x4EE5;&#x5916;&#x306E;&#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x3092;&#x4F7F;&#x3046;&#x305F;&#x3081;&#x306E;&#x30C4;&#x30FC;&#x30EB;</p>
+<p><a href="http://cran.rstudio.com/web/packages/extrafont/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/extrafont" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/wesanderson/index.html" target="_blank">http://cran.r-project.org/web/packages/wesanderson/index.html</a></li>
-<li>GitHub: <a href="https://github.com/karthik/wesanderson" target="_blank">https://github.com/karthik/wesanderson</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/extrafont/index.html" target="_blank">http://cran.r-project.org/web/packages/extrafont/index.html</a></li>
+<li>GitHub: <a href="https://github.com/wch/extrafont" target="_blank">https://github.com/wch/extrafont</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(wesanderson)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(extrafont)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.3.2</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.17</p>
 <hr>
 <table>
 <thead>
@@ -1182,76 +1182,138 @@
 </thead>
 <tbody>
 <tr>
-<td><code>heatmap</code></td>
-<td>heatmap</td>
+<td><code>choose_font</code></td>
+<td>Choose an installed font from a list</td>
 </tr>
 <tr>
-<td><code>wes_palette</code></td>
-<td>A Wes Anderson palette generator</td>
+<td><code>embed_fonts</code></td>
+<td>Embeds fonts that are listed in the local Fontmap</td>
 </tr>
 <tr>
-<td><code>wes_palettes</code></td>
-<td>Complete list of palettes</td>
+<td><code>extrafont</code></td>
+<td>extrafont package</td>
 </tr>
 <tr>
-<td><code>wesanderson</code></td>
-<td>wesanderson</td>
+<td><code>font_addpackage</code></td>
+<td>Add font from an installed package to fonts database</td>
+</tr>
+<tr>
+<td><code>font_import</code></td>
+<td>Import system fonts</td>
+</tr>
+<tr>
+<td><code>font_install</code></td>
+<td>Install a font package and register it in the fonts database</td>
+</tr>
+<tr>
+<td><code>fonts</code></td>
+<td>Show the fonts that are registered in the font table (and available for embedding)</td>
+</tr>
+<tr>
+<td><code>fonttable</code></td>
+<td>Returns the full font table</td>
+</tr>
+<tr>
+<td><code>loadfonts</code></td>
+<td>Reads the fonttable database and registers those fonts with R</td>
+</tr>
+<tr>
+<td><code>ttf_import</code></td>
+<td>Imports all TrueType fonts in a directory and all subdirectories</td>
 </tr>
 </tbody>
 </table>
-<h2 id="wes-palette">wes_palette</h2>
-<p>Wes Anderson&#x306E;&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x3092;&#x751F;&#x6210;</p>
-<pre><code class="lang-r">&gt; wes_palette(name = <span class="hljs-string">&quot;GrandBudapest&quot;</span>, n = <span class="hljs-number">3</span>, type = <span class="hljs-string">&quot;continuous&quot;</span>)
+<h2 id="font-import">font_import</h2>
+<p>&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x306B;&#x3042;&#x308B;&#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x3092;&#x5C02;&#x7528;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#xFF08;extrafontdb&#xFF09;&#x306B;&#x8FFD;&#x52A0;&#x3059;&#x308B;</p>
+<pre><code class="lang-r">&gt; font_install()
 </code></pre>
-<p><img src="../Figure/usage_wes_palette-1.png" alt=""></p>
-<h2 id="wes-palettes">wes_palettes</h2>
-<p>&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x306E;&#x4E00;&#x89A7;&#xFF08;&#x30EA;&#x30B9;&#x30C8;&#xFF09;</p>
-<pre><code class="lang-r">&gt; wes_palettes
+<h2 id="fonts">fonts</h2>
+<p>&#x57CB;&#x3081;&#x8FBC;&#x307F;&#x53EF;&#x80FD;&#x306A;&#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x4E00;&#x89A7;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;</p>
+<pre><code class="lang-r">&gt; fonts()
 </code></pre>
-<pre><code>$GrandBudapest
-[1] &quot;#F1BB7B&quot; &quot;#FD6467&quot; &quot;#5B1A18&quot; &quot;#D67236&quot;
-
-$Moonrise1
-[1] &quot;#F3DF6C&quot; &quot;#CEAB07&quot; &quot;#D5D5D3&quot; &quot;#24281A&quot;
-
-$Royal1
-[1] &quot;#899DA4&quot; &quot;#C93312&quot; &quot;#FAEFD1&quot; &quot;#DC863B&quot;
-
-$Moonrise2
-[1] &quot;#798E87&quot; &quot;#C27D38&quot; &quot;#CCC591&quot; &quot;#29211F&quot;
-
-$Cavalcanti
-[1] &quot;#D8B70A&quot; &quot;#02401B&quot; &quot;#A2A475&quot; &quot;#81A88D&quot; &quot;#972D15&quot;
-
-$Royal2
-[1] &quot;#9A8822&quot; &quot;#F5CDB4&quot; &quot;#F8AFA8&quot; &quot;#FDDDA0&quot; &quot;#74A089&quot;
-
-$GrandBudapest2
-[1] &quot;#E6A0C4&quot; &quot;#C6CDF7&quot; &quot;#D8A499&quot; &quot;#7294D4&quot;
-
-$Moonrise3
-[1] &quot;#85D4E3&quot; &quot;#F4B5BD&quot; &quot;#9C964A&quot; &quot;#CDC08C&quot; &quot;#FAD77B&quot;
-
-$Chevalier
-[1] &quot;#446455&quot; &quot;#FDD262&quot; &quot;#D3DDDC&quot; &quot;#C7B19C&quot;
-
-$Zissou
-[1] &quot;#3B9AB2&quot; &quot;#78B7C5&quot; &quot;#EBCC2A&quot; &quot;#E1AF00&quot; &quot;#F21A00&quot;
-
-$FantasticFox
-[1] &quot;#DD8D29&quot; &quot;#E2D200&quot; &quot;#46ACC8&quot; &quot;#E58601&quot; &quot;#B40F20&quot;
-
-$Darjeeling
-[1] &quot;#FF0000&quot; &quot;#00A08A&quot; &quot;#F2AD00&quot; &quot;#F98400&quot; &quot;#5BBCD6&quot;
-
-$Rushmore
-[1] &quot;#E1BD6D&quot; &quot;#EABE94&quot; &quot;#0B775E&quot; &quot;#35274A&quot; &quot;#F2300F&quot;
-
-$BottleRocket
-[1] &quot;#A42820&quot; &quot;#5F5647&quot; &quot;#9B110E&quot; &quot;#3F5151&quot; &quot;#4E2A1E&quot; &quot;#550307&quot; &quot;#0C1707&quot;
-
-$Darjeeling2
-[1] &quot;#ECCBAE&quot; &quot;#046C9A&quot; &quot;#D69C4E&quot; &quot;#ABDDDE&quot; &quot;#000000&quot;
+<pre><code>  [1] &quot;.Keyboard&quot;               &quot;Andale Mono&quot;            
+  [3] &quot;Aozora Mincho Heavy&quot;     &quot;Aozora Mincho Light&quot;    
+  [5] &quot;Aozora Mincho Medium&quot;    &quot;Aozora Mincho Regular&quot;  
+  [7] &quot;Apple Braille&quot;           &quot;AppleMyungjo&quot;           
+  [9] &quot;Arial Black&quot;             &quot;Arial&quot;                  
+ [11] &quot;Arial Narrow&quot;            &quot;Arial Rounded MT Bold&quot;  
+ [13] &quot;Arial Unicode MS&quot;        &quot;Batang&quot;                 
+ [15] &quot;Bodoni Ornaments&quot;        &quot;Bodoni 72 Smallcaps&quot;    
+ [17] &quot;Bookshelf Symbol 7&quot;      &quot;&quot;                       
+ [19] &quot;Brush Script MT&quot;         &quot;Calibri&quot;                
+ [21] &quot;Calibri Light&quot;           &quot;Cambria&quot;                
+ [23] &quot;Cambria Math&quot;            &quot;Candara&quot;                
+ [25] &quot;cinecaption&quot;             &quot;Comic Sans MS&quot;          
+ [27] &quot;Consolas&quot;                &quot;Constantia&quot;             
+ [29] &quot;Corbel&quot;                  &quot;Courier New&quot;            
+ [31] &quot;DejaVu Sans&quot;             &quot;DejaVu Sans Light&quot;      
+ [33] &quot;DejaVu Sans Condensed&quot;   &quot;DejaVu Sans Mono&quot;       
+ [35] &quot;DejaVu Serif&quot;            &quot;DejaVu Serif Condensed&quot; 
+ [37] &quot;DIN Alternate&quot;           &quot;DIN Condensed&quot;          
+ [39] &quot;DOCKER ONE&quot;              &quot;DOCKER THREE&quot;           
+ [41] &quot;DOCKER TWO&quot;              &quot;FontAwesome&quot;            
+ [43] &quot;Franklin Gothic Book&quot;    &quot;Franklin Gothic Medium&quot; 
+ [45] &quot;Gabriola&quot;                &quot;Georgia&quot;                
+ [47] &quot;Gill Sans MT&quot;            &quot;Gulim&quot;                  
+ [49] &quot;HGMaruGothicMPRO&quot;        &quot;Impact&quot;                 
+ [51] &quot;IPAexGothic&quot;             &quot;IPAexMincho&quot;            
+ [53] &quot;IPAGothic&quot;               &quot;IPAMonaGothic&quot;          
+ [55] &quot;IPAMonaMincho&quot;           &quot;IPAMonaPGothic&quot;         
+ [57] &quot;IPAMonaUIGothic&quot;         &quot;JNR-SB-Font&quot;            
+ [59] &quot;Khmer Sangam MN&quot;         &quot;Lao Sangam MN&quot;          
+ [61] &quot;Lucida Console&quot;          &quot;Lucida Sans Unicode&quot;    
+ [63] &quot;Luminari&quot;                &quot;mac-icon-standard&quot;      
+ [65] &quot;Marlett&quot;                 &quot;Meiryo&quot;                 
+ [67] &quot;Microsoft Yi Baiti&quot;      &quot;Microsoft Himalaya&quot;     
+ [69] &quot;Microsoft Sans Serif&quot;    &quot;Microsoft Tai Le&quot;       
+ [71] &quot;Migu 1M&quot;                 &quot;MingLiU_HKSCS-ExtB&quot;     
+ [73] &quot;MingLiU_HKSCS&quot;           &quot;MingLiU&quot;                
+ [75] &quot;MingLiU-ExtB&quot;            &quot;Mongolian Baiti&quot;        
+ [77] &quot;MS Gothic&quot;               &quot;MS Mincho&quot;              
+ [79] &quot;MS PGothic&quot;              &quot;MS PMincho&quot;             
+ [81] &quot;MS Reference Sans Serif&quot; &quot;MS Reference Specialty&quot; 
+ [83] &quot;Myanmar Sangam MN&quot;       &quot;octicons&quot;               
+ [85] &quot;Palatino Linotype&quot;       &quot;Perpetua&quot;               
+ [87] &quot;PMingLiU&quot;                &quot;PMingLiU-ExtB&quot;          
+ [89] &quot;Ricty&quot;                   &quot;SimHei&quot;                 
+ [91] &quot;SimSun&quot;                  &quot;SimSun-ExtB&quot;            
+ [93] &quot;Tahoma&quot;                  &quot;Times New Roman&quot;        
+ [95] &quot;TradeGothic&quot;             &quot;Trattatello&quot;            
+ [97] &quot;Trebuchet MS&quot;            &quot;Tw Cen MT&quot;              
+ [99] &quot;Verdana&quot;                 &quot;Webdings&quot;               
+[101] &quot;Wingdings&quot;               &quot;Wingdings 2&quot;            
+[103] &quot;Wingdings 3&quot;             &quot;xkcd&quot;                   
+[105] &quot;github-octicons&quot;
+</code></pre><h2 id="fonttable">fonttable</h2>
+<p>db&#x306B;&#x767B;&#x9332;&#x3055;&#x308C;&#x305F;&#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x306E;&#x60C5;&#x5831;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;</p>
+<pre><code class="lang-r">&gt; fonttable() %&gt;% {
++   str(.)
++   head(., <span class="hljs-number">3</span>)
++ }
+</code></pre>
+<pre><code>&apos;data.frame&apos;:    201 obs. of  10 variables:
+ $ package   : logi  NA NA NA NA NA NA ...
+ $ afmfile   : chr  &quot;Keyboard.afm.gz&quot; &quot;Andale Mono.afm.gz&quot; &quot;AozoraMinchoHeavy.afm.gz&quot; &quot;AozoraMinchoLight.afm.gz&quot; ...
+ $ fontfile  : chr  &quot;/System/Library/Fonts/Keyboard.ttf&quot; &quot;/Library/Fonts/Andale Mono.ttf&quot; &quot;/Users/uri/Library/Fonts/AozoraMinchoHeavy.ttf&quot; &quot;/Users/uri/Library/Fonts/AozoraMinchoLight.ttf&quot; ...
+ $ FullName  : chr  &quot;.Keyboard&quot; &quot;Andale Mono&quot; &quot;Aozora Mincho Heavy&quot; &quot;Aozora Mincho Light&quot; ...
+ $ FamilyName: chr  &quot;.Keyboard&quot; &quot;Andale Mono&quot; &quot;Aozora Mincho Heavy&quot; &quot;Aozora Mincho Light&quot; ...
+ $ FontName  : chr  &quot;-Keyboard&quot; &quot;AndaleMono&quot; &quot;AozoraMinchoHeavy&quot; &quot;AozoraMinchoLight&quot; ...
+ $ Bold      : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
+ $ Italic    : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
+ $ Symbol    : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
+ $ afmsymfile: logi  NA NA NA NA NA NA ...
+</code></pre><pre><code>  package                  afmfile
+1      NA          Keyboard.afm.gz
+2      NA       Andale Mono.afm.gz
+3      NA AozoraMinchoHeavy.afm.gz
+                                        fontfile            FullName
+1             /System/Library/Fonts/Keyboard.ttf           .Keyboard
+2                 /Library/Fonts/Andale Mono.ttf         Andale Mono
+3 /Users/uri/Library/Fonts/AozoraMinchoHeavy.ttf Aozora Mincho Heavy
+           FamilyName          FontName  Bold Italic Symbol afmsymfile
+1           .Keyboard         -Keyboard FALSE  FALSE  FALSE         NA
+2         Andale Mono        AndaleMono FALSE  FALSE  FALSE         NA
+3 Aozora Mincho Heavy AozoraMinchoHeavy FALSE  FALSE  FALSE         NA
 </code></pre>
                     
                     </section>
@@ -1262,10 +1324,10 @@ $Darjeeling2
         </div>
 
         
-        <a href="../design/rPlotter.html" class="navigation navigation-prev " aria-label="Previous page: rPlotter"><i class="fa fa-angle-left"></i></a>
+        <a href="../design/index.html" class="navigation navigation-prev " aria-label="Previous page: Design"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../data-analysis/index.html" class="navigation navigation-next " aria-label="Next page: Data-analysis"><i class="fa fa-angle-right"></i></a>
+        <a href="../design/rPlotter.html" class="navigation navigation-next " aria-label="Next page: rPlotter"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

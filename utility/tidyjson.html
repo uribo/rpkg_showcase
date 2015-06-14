@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>wesanderson | R Package Showcase</title>
+        <title>tidyjson | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../data-analysis/index.html" />
+    <link rel="next" href="../utility/tidyr.html" />
     
     
-    <link rel="prev" href="../design/rPlotter.html" />
+    <link rel="prev" href="../utility/taxize.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="2.3" data-basepath=".." data-revision="Sun Jun 14 2015 21:44:28 GMT+0900 (JST)">
+    <div class="book" data-level="7.17" data-basepath=".." data-revision="Sun Jun 14 2015 21:44:28 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -178,7 +178,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.3" data-path="design/wesanderson.html">
+        <li class="chapter " data-level="2.3" data-path="design/wesanderson.html">
             
                 
                     <a href="../design/wesanderson.html">
@@ -943,7 +943,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.17" data-path="utility/tidyjson.html">
+        <li class="chapter active" data-level="7.17" data-path="utility/tidyjson.html">
             
                 
                     <a href="../utility/tidyjson.html">
@@ -1162,16 +1162,16 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="wesanderson-a-wes-anderson-palette-generator">wesanderson: A Wes Anderson Palette Generator</h1>
-<p>Wes Anderson&#x306E;&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x3092;&#x751F;&#x6210;</p>
-<p><a href="http://cran.rstudio.com/web/packages/wesanderson/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/wesanderson" alt=""></a></p>
+                        <h1 id="tidyjson-a-grammar-for-turning-json-into-tidy-tables">tidyjson: A Grammar for Turning &apos;JSON&apos; into Tidy Tables</h1>
+<p>JSON&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x6574;&#x5F62;&#x3057;&#x3066;&#x6271;&#x3044;&#x3084;&#x3059;&#x304F;&#x3059;&#x308B;</p>
+<p><a href="http://cran.rstudio.com/web/packages/tidyjson/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/tidyjson" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/wesanderson/index.html" target="_blank">http://cran.r-project.org/web/packages/wesanderson/index.html</a></li>
-<li>GitHub: <a href="https://github.com/karthik/wesanderson" target="_blank">https://github.com/karthik/wesanderson</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/tidyjson/index.html" target="_blank">http://cran.r-project.org/web/packages/tidyjson/index.html</a></li>
+<li>GitHub: <a href="https://github.com/sailthru/tidyjson" target="_blank">https://github.com/sailthru/tidyjson</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(wesanderson)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(tidyjson)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.3.2</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.2.1</p>
 <hr>
 <table>
 <thead>
@@ -1182,77 +1182,120 @@
 </thead>
 <tbody>
 <tr>
-<td><code>heatmap</code></td>
-<td>heatmap</td>
+<td><code>[.tbl_json</code></td>
+<td>Extract subsets of a tbl_json object (not replace)</td>
 </tr>
 <tr>
-<td><code>wes_palette</code></td>
-<td>A Wes Anderson palette generator</td>
+<td><code>allowed_json_types</code></td>
+<td>Fundamental JSON types from <a href="http://json.org/" target="_blank">http://json.org/</a>, where I collapse &apos;true&apos; and &apos;false&apos; into &apos;logical&apos;</td>
 </tr>
 <tr>
-<td><code>wes_palettes</code></td>
-<td>Complete list of palettes</td>
+<td><code>append_values</code></td>
+<td>Appends all values with a specified type as a new column</td>
 </tr>
 <tr>
-<td><code>wesanderson</code></td>
-<td>wesanderson</td>
+<td><code>append_values_factory</code></td>
+<td>Creates the append<em>values</em>* functions</td>
+</tr>
+<tr>
+<td><code>append_values_type</code></td>
+<td>get list of values from json</td>
+</tr>
+<tr>
+<td><code>commits</code></td>
+<td>Commit data for the dplyr repo from github API</td>
+</tr>
+<tr>
+<td><code>companies</code></td>
+<td>Startup company information for 1,000 companies</td>
+</tr>
+<tr>
+<td><code>determine_types</code></td>
+<td>Determines the types of a list of parsed JSON</td>
+</tr>
+<tr>
+<td><code>enter_object</code></td>
+<td>Dive into a specific object &quot;key&quot;</td>
+</tr>
+<tr>
+<td><code>gather_array</code></td>
+<td>Stack a JSON array</td>
+</tr>
+<tr>
+<td><code>gather_keys</code></td>
+<td>Stack a JSON &quot;key&quot;: value object</td>
+</tr>
+<tr>
+<td><code>issues</code></td>
+<td>Issue data for the dplyr repo from github API</td>
+</tr>
+<tr>
+<td><code>jfactory</code></td>
+<td>Factory that creates the j* functions below</td>
+</tr>
+<tr>
+<td><code>jfunctions</code></td>
+<td>Navigates nested objects to get at keys of a</td>
+</tr>
+<tr>
+<td><code>specific</code></td>
+<td>type, to be used as arguments to spread_values</td>
+</tr>
+<tr>
+<td><code>json_lengths</code></td>
+<td>Add a column that contains the length of the JSON data</td>
+</tr>
+<tr>
+<td><code>json_types</code></td>
+<td>Add a column that tells the &apos;type&apos; of the data in the root of the JSON</td>
+</tr>
+<tr>
+<td><code>list_path</code></td>
+<td>Recursively access a path</td>
+</tr>
+<tr>
+<td><code>my_unlist</code></td>
+<td>Unlists while preserving NULLs and only</td>
+</tr>
+<tr>
+<td><code>unlisting</code></td>
+<td>lists with one value</td>
+</tr>
+<tr>
+<td><code>prep_path</code></td>
+<td>Prepare a path from ...</td>
+</tr>
+<tr>
+<td><code>read_json</code></td>
+<td>Reads JSON from an input uri (file, url, ...) and returns a tbl_json</td>
+</tr>
+<tr>
+<td><code>replace_nulls</code></td>
+<td>Replace nulls with something else</td>
+</tr>
+<tr>
+<td><code>spread_values</code></td>
+<td>Create new columns with JSON values</td>
+</tr>
+<tr>
+<td><code>tbl_json</code></td>
+<td>Combines structured JSON (as a data.frame) with remaining JSON</td>
+</tr>
+<tr>
+<td><code>tidyjson</code></td>
+<td>tidyjson.</td>
+</tr>
+<tr>
+<td><code>worldbank</code></td>
+<td>Projects funded by the World Bank</td>
+</tr>
+<tr>
+<td><code>wrap_dplyr_verb</code></td>
+<td>Wrapper for extending dplyr verbs to tbl_json objects</td>
 </tr>
 </tbody>
 </table>
-<h2 id="wes-palette">wes_palette</h2>
-<p>Wes Anderson&#x306E;&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x3092;&#x751F;&#x6210;</p>
-<pre><code class="lang-r">&gt; wes_palette(name = <span class="hljs-string">&quot;GrandBudapest&quot;</span>, n = <span class="hljs-number">3</span>, type = <span class="hljs-string">&quot;continuous&quot;</span>)
-</code></pre>
-<p><img src="../Figure/usage_wes_palette-1.png" alt=""></p>
-<h2 id="wes-palettes">wes_palettes</h2>
-<p>&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x306E;&#x4E00;&#x89A7;&#xFF08;&#x30EA;&#x30B9;&#x30C8;&#xFF09;</p>
-<pre><code class="lang-r">&gt; wes_palettes
-</code></pre>
-<pre><code>$GrandBudapest
-[1] &quot;#F1BB7B&quot; &quot;#FD6467&quot; &quot;#5B1A18&quot; &quot;#D67236&quot;
 
-$Moonrise1
-[1] &quot;#F3DF6C&quot; &quot;#CEAB07&quot; &quot;#D5D5D3&quot; &quot;#24281A&quot;
-
-$Royal1
-[1] &quot;#899DA4&quot; &quot;#C93312&quot; &quot;#FAEFD1&quot; &quot;#DC863B&quot;
-
-$Moonrise2
-[1] &quot;#798E87&quot; &quot;#C27D38&quot; &quot;#CCC591&quot; &quot;#29211F&quot;
-
-$Cavalcanti
-[1] &quot;#D8B70A&quot; &quot;#02401B&quot; &quot;#A2A475&quot; &quot;#81A88D&quot; &quot;#972D15&quot;
-
-$Royal2
-[1] &quot;#9A8822&quot; &quot;#F5CDB4&quot; &quot;#F8AFA8&quot; &quot;#FDDDA0&quot; &quot;#74A089&quot;
-
-$GrandBudapest2
-[1] &quot;#E6A0C4&quot; &quot;#C6CDF7&quot; &quot;#D8A499&quot; &quot;#7294D4&quot;
-
-$Moonrise3
-[1] &quot;#85D4E3&quot; &quot;#F4B5BD&quot; &quot;#9C964A&quot; &quot;#CDC08C&quot; &quot;#FAD77B&quot;
-
-$Chevalier
-[1] &quot;#446455&quot; &quot;#FDD262&quot; &quot;#D3DDDC&quot; &quot;#C7B19C&quot;
-
-$Zissou
-[1] &quot;#3B9AB2&quot; &quot;#78B7C5&quot; &quot;#EBCC2A&quot; &quot;#E1AF00&quot; &quot;#F21A00&quot;
-
-$FantasticFox
-[1] &quot;#DD8D29&quot; &quot;#E2D200&quot; &quot;#46ACC8&quot; &quot;#E58601&quot; &quot;#B40F20&quot;
-
-$Darjeeling
-[1] &quot;#FF0000&quot; &quot;#00A08A&quot; &quot;#F2AD00&quot; &quot;#F98400&quot; &quot;#5BBCD6&quot;
-
-$Rushmore
-[1] &quot;#E1BD6D&quot; &quot;#EABE94&quot; &quot;#0B775E&quot; &quot;#35274A&quot; &quot;#F2300F&quot;
-
-$BottleRocket
-[1] &quot;#A42820&quot; &quot;#5F5647&quot; &quot;#9B110E&quot; &quot;#3F5151&quot; &quot;#4E2A1E&quot; &quot;#550307&quot; &quot;#0C1707&quot;
-
-$Darjeeling2
-[1] &quot;#ECCBAE&quot; &quot;#046C9A&quot; &quot;#D69C4E&quot; &quot;#ABDDDE&quot; &quot;#000000&quot;
-</code></pre>
                     
                     </section>
                 
@@ -1262,10 +1305,10 @@ $Darjeeling2
         </div>
 
         
-        <a href="../design/rPlotter.html" class="navigation navigation-prev " aria-label="Previous page: rPlotter"><i class="fa fa-angle-left"></i></a>
+        <a href="../utility/taxize.html" class="navigation navigation-prev " aria-label="Previous page: taxize"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../data-analysis/index.html" class="navigation navigation-next " aria-label="Next page: Data-analysis"><i class="fa fa-angle-right"></i></a>
+        <a href="../utility/tidyr.html" class="navigation navigation-next " aria-label="Next page: tidyr"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

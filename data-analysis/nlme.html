@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>wesanderson | R Package Showcase</title>
+        <title>nlme | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../data-analysis/index.html" />
+    <link rel="next" href="../data-analysis/popbio.html" />
     
     
-    <link rel="prev" href="../design/rPlotter.html" />
+    <link rel="prev" href="../data-analysis/ape.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="2.3" data-basepath=".." data-revision="Sun Jun 14 2015 21:44:28 GMT+0900 (JST)">
+    <div class="book" data-level="3.3" data-basepath=".." data-revision="Sun Jun 14 2015 21:44:28 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -178,7 +178,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.3" data-path="design/wesanderson.html">
+        <li class="chapter " data-level="2.3" data-path="design/wesanderson.html">
             
                 
                     <a href="../design/wesanderson.html">
@@ -244,7 +244,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="data-analysis/nlme.html">
+        <li class="chapter active" data-level="3.3" data-path="data-analysis/nlme.html">
             
                 
                     <a href="../data-analysis/nlme.html">
@@ -1162,16 +1162,21 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="wesanderson-a-wes-anderson-palette-generator">wesanderson: A Wes Anderson Palette Generator</h1>
-<p>Wes Anderson&#x306E;&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x3092;&#x751F;&#x6210;</p>
-<p><a href="http://cran.rstudio.com/web/packages/wesanderson/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/wesanderson" alt=""></a></p>
+                        <h1 id="nlme-linear-and-nonlinear-mixed-effects-models">nlme: Linear and Nonlinear Mixed Effects Models</h1>
+<p>&#x7DDA;&#x5F62;&#x30FB;&#x975E;&#x7DDA;&#x5F62;&#x6DF7;&#x5408;&#x52B9;&#x679C;&#x30E2;&#x30C7;&#x30EB;</p>
+<p><a href="http://cran.rstudio.com/web/packages/nlme/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/nlme" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/wesanderson/index.html" target="_blank">http://cran.r-project.org/web/packages/wesanderson/index.html</a></li>
-<li>GitHub: <a href="https://github.com/karthik/wesanderson" target="_blank">https://github.com/karthik/wesanderson</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/nlme/index.html" target="_blank">http://cran.r-project.org/web/packages/nlme/index.html</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(wesanderson)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(nlme)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.3.2</p>
+<pre><code>
+Attaching package: &apos;nlme&apos;
+
+The following object is masked from &apos;package:dplyr&apos;:
+
+    collapse
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 3.1.120</p>
 <hr>
 <table>
 <thead>
@@ -1182,76 +1187,148 @@
 </thead>
 <tbody>
 <tr>
-<td><code>heatmap</code></td>
-<td>heatmap</td>
-</tr>
-<tr>
-<td><code>wes_palette</code></td>
-<td>A Wes Anderson palette generator</td>
-</tr>
-<tr>
-<td><code>wes_palettes</code></td>
-<td>Complete list of palettes</td>
-</tr>
-<tr>
-<td><code>wesanderson</code></td>
-<td>wesanderson</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="wes-palette">wes_palette</h2>
-<p>Wes Anderson&#x306E;&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x3092;&#x751F;&#x6210;</p>
-<pre><code class="lang-r">&gt; wes_palette(name = <span class="hljs-string">&quot;GrandBudapest&quot;</span>, n = <span class="hljs-number">3</span>, type = <span class="hljs-string">&quot;continuous&quot;</span>)
+<h2 id="gls">gls</h2>
+<p>&#x4E00;&#x822C;&#x5316;&#x6700;&#x5C0F;&#x4E8C;&#x4E57;&#x6CD5;&#x306B;&#x3088;&#x308B;&#x7DDA;&#x5F62;&#x30E2;&#x30C7;&#x30EB;&#x3078;&#x306E;&#x5F53;&#x3066;&#x306F;&#x3081;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>object</li>
+<li>model</li>
+<li>model.</li>
+<li>data</li>
+<li>correlation</li>
+<li>weights</li>
+<li>subset</li>
+<li>method... <code>REML</code> &#x5236;&#x9650;&#x4ED8;&#x304D;&#x6700;&#x5C24;&#x63A8;&#x5B9A;&#x6CD5;, <code>ML</code> &#x6700;&#x5C24;&#x63A8;&#x5B9A;&#x6CD5;</li>
+<li>na.action</li>
+<li>control</li>
+<li>verbose</li>
+<li>...</li>
+<li>evaluate</li>
+</ul>
+<pre><code class="lang-r">&gt; fm1 &lt;- gls(model       = follicles ~ sin(<span class="hljs-number">2</span> * pi * Time) + cos(<span class="hljs-number">2</span> * pi * Time), 
++            data        = Ovary,
++            correlation = corAR1(form = ~<span class="hljs-number">1</span> | Mare))
+&gt; summary(fm1)
 </code></pre>
-<p><img src="../Figure/usage_wes_palette-1.png" alt=""></p>
-<h2 id="wes-palettes">wes_palettes</h2>
-<p>&#x30AB;&#x30E9;&#x30FC;&#x30D1;&#x30EC;&#x30C3;&#x30C8;&#x306E;&#x4E00;&#x89A7;&#xFF08;&#x30EA;&#x30B9;&#x30C8;&#xFF09;</p>
-<pre><code class="lang-r">&gt; wes_palettes
+<pre><code>Generalized least squares fit by REML
+  Model: follicles ~ sin(2 * pi * Time) + cos(2 * pi * Time) 
+  Data: Ovary 
+       AIC      BIC    logLik
+  1571.455 1590.056 -780.7273
+
+Correlation Structure: AR(1)
+ Formula: ~1 | Mare 
+ Parameter estimate(s):
+      Phi 
+0.7532079 
+
+Coefficients:
+                       Value Std.Error   t-value p-value
+(Intercept)        12.216398 0.6646437 18.380373  0.0000
+sin(2 * pi * Time) -2.774712 0.6450478 -4.301561  0.0000
+cos(2 * pi * Time) -0.899605 0.6975383 -1.289685  0.1981
+
+ Correlation: 
+                   (Intr) s(*p*T
+sin(2 * pi * Time)  0.000       
+cos(2 * pi * Time) -0.294  0.000
+
+Standardized residuals:
+        Min          Q1         Med          Q3         Max 
+-2.41180365 -0.75405234 -0.02923628  0.63156880  3.16247697 
+
+Residual standard error: 4.616172 
+Degrees of freedom: 308 total; 305 residual
+</code></pre><pre><code class="lang-r">&gt; update(fm1, weights = varPower())
 </code></pre>
-<pre><code>$GrandBudapest
-[1] &quot;#F1BB7B&quot; &quot;#FD6467&quot; &quot;#5B1A18&quot; &quot;#D67236&quot;
+<pre><code>Generalized least squares fit by REML
+  Model: follicles ~ sin(2 * pi * Time) + cos(2 * pi * Time) 
+  Data: Ovary 
+  Log-restricted-likelihood: -779.4626
 
-$Moonrise1
-[1] &quot;#F3DF6C&quot; &quot;#CEAB07&quot; &quot;#D5D5D3&quot; &quot;#24281A&quot;
+Coefficients:
+       (Intercept) sin(2 * pi * Time) cos(2 * pi * Time) 
+        12.1882442         -2.8125374         -0.8291796 
 
-$Royal1
-[1] &quot;#899DA4&quot; &quot;#C93312&quot; &quot;#FAEFD1&quot; &quot;#DC863B&quot;
+Correlation Structure: AR(1)
+ Formula: ~1 | Mare 
+ Parameter estimate(s):
+      Phi 
+0.7633477 
+Variance function:
+ Structure: Power of variance covariate
+ Formula: ~fitted(.) 
+ Parameter estimates:
+     power 
+-0.3838082 
+Degrees of freedom: 308 total; 305 residual
+Residual standard error: 12.08639
+</code></pre><h2 id="gnls">gnls</h2>
+<p>&#x4E00;&#x822C;&#x5316;&#x6700;&#x5C0F;&#x4E8C;&#x4E57;&#x6CD5;&#x306B;&#x3088;&#x308B;&#x975E;&#x7DDA;&#x5F62;&#x30E2;&#x30C7;&#x30EB;&#x3078;&#x306E;&#x5F53;&#x3066;&#x306F;&#x3081;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>model</li>
+<li>data</li>
+<li>params</li>
+<li>start</li>
+<li>correlation</li>
+<li>weights</li>
+<li>subset</li>
+<li>na.action</li>
+<li>naPattern</li>
+<li>control</li>
+<li>verbose</li>
+<li>...</li>
+</ul>
+<pre><code class="lang-r">&gt; gnls(model   = weight ~ SSlogis(Time, Asym, xmid, scal), 
++      data    = Soybean,
++      weights = varPower())
+</code></pre>
+<pre><code>Generalized nonlinear least squares fit
+  Model: weight ~ SSlogis(Time, Asym, xmid, scal) 
+  Data: Soybean 
+  Log-likelihood: -486.8974
 
-$Moonrise2
-[1] &quot;#798E87&quot; &quot;#C27D38&quot; &quot;#CCC591&quot; &quot;#29211F&quot;
+Coefficients:
+     Asym      xmid      scal 
+17.356822 51.872316  7.620525 
 
-$Cavalcanti
-[1] &quot;#D8B70A&quot; &quot;#02401B&quot; &quot;#A2A475&quot; &quot;#81A88D&quot; &quot;#972D15&quot;
-
-$Royal2
-[1] &quot;#9A8822&quot; &quot;#F5CDB4&quot; &quot;#F8AFA8&quot; &quot;#FDDDA0&quot; &quot;#74A089&quot;
-
-$GrandBudapest2
-[1] &quot;#E6A0C4&quot; &quot;#C6CDF7&quot; &quot;#D8A499&quot; &quot;#7294D4&quot;
-
-$Moonrise3
-[1] &quot;#85D4E3&quot; &quot;#F4B5BD&quot; &quot;#9C964A&quot; &quot;#CDC08C&quot; &quot;#FAD77B&quot;
-
-$Chevalier
-[1] &quot;#446455&quot; &quot;#FDD262&quot; &quot;#D3DDDC&quot; &quot;#C7B19C&quot;
-
-$Zissou
-[1] &quot;#3B9AB2&quot; &quot;#78B7C5&quot; &quot;#EBCC2A&quot; &quot;#E1AF00&quot; &quot;#F21A00&quot;
-
-$FantasticFox
-[1] &quot;#DD8D29&quot; &quot;#E2D200&quot; &quot;#46ACC8&quot; &quot;#E58601&quot; &quot;#B40F20&quot;
-
-$Darjeeling
-[1] &quot;#FF0000&quot; &quot;#00A08A&quot; &quot;#F2AD00&quot; &quot;#F98400&quot; &quot;#5BBCD6&quot;
-
-$Rushmore
-[1] &quot;#E1BD6D&quot; &quot;#EABE94&quot; &quot;#0B775E&quot; &quot;#35274A&quot; &quot;#F2300F&quot;
-
-$BottleRocket
-[1] &quot;#A42820&quot; &quot;#5F5647&quot; &quot;#9B110E&quot; &quot;#3F5151&quot; &quot;#4E2A1E&quot; &quot;#550307&quot; &quot;#0C1707&quot;
-
-$Darjeeling2
-[1] &quot;#ECCBAE&quot; &quot;#046C9A&quot; &quot;#D69C4E&quot; &quot;#ABDDDE&quot; &quot;#000000&quot;
+Variance function:
+ Structure: Power of variance covariate
+ Formula: ~fitted(.) 
+ Parameter estimates:
+    power 
+0.8815436 
+Degrees of freedom: 412 total; 409 residual
+Residual standard error: 0.3662752
+</code></pre><h2 id="ovary">Ovary</h2>
+<p>&#x30C7;&#x30FC;&#x30BF;&#x30BB;&#x30C3;&#x30C8;&#x3002;</p>
+<pre><code class="lang-r">&gt; data(<span class="hljs-string">&quot;Ovary&quot;</span>)
+&gt; str(Ovary)
+</code></pre>
+<pre><code>Classes &apos;nfnGroupedData&apos;, &apos;nfGroupedData&apos;, &apos;groupedData&apos; and &apos;data.frame&apos;:    308 obs. of  3 variables:
+ $ Mare     : Ord.factor w/ 11 levels &quot;4&quot;&lt;&quot;2&quot;&lt;&quot;11&quot;&lt;&quot;7&quot;&lt;..: 7 7 7 7 7 7 7 7 7 7 ...
+ $ Time     : num  -0.1364 -0.0909 -0.0455 0 0.0455 ...
+ $ follicles: num  20 15 19 16 13 10 12 14 13 20 ...
+ - attr(*, &quot;formula&quot;)=Class &apos;formula&apos; length 3 follicles ~ Time | Mare
+  .. ..- attr(*, &quot;.Environment&quot;)=&lt;environment: R_GlobalEnv&gt; 
+ - attr(*, &quot;labels&quot;)=List of 2
+  ..$ x: chr &quot;Time in estrus cycle&quot;
+  ..$ y: chr &quot;Number of ovarian follicles &gt; 10 mm. diameter&quot;
+</code></pre><pre><code class="lang-r">&gt; head(Ovary)
+</code></pre>
+<pre><code>Grouped Data: follicles ~ Time | Mare
+  Mare        Time follicles
+1    1 -0.13636360        20
+2    1 -0.09090910        15
+3    1 -0.04545455        19
+4    1  0.00000000        16
+5    1  0.04545455        13
+6    1  0.09090910        10
 </code></pre>
                     
                     </section>
@@ -1262,10 +1339,10 @@ $Darjeeling2
         </div>
 
         
-        <a href="../design/rPlotter.html" class="navigation navigation-prev " aria-label="Previous page: rPlotter"><i class="fa fa-angle-left"></i></a>
+        <a href="../data-analysis/ape.html" class="navigation navigation-prev " aria-label="Previous page: ape"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../data-analysis/index.html" class="navigation navigation-next " aria-label="Next page: Data-analysis"><i class="fa fa-angle-right"></i></a>
+        <a href="../data-analysis/popbio.html" class="navigation navigation-next " aria-label="Next page: popbio"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
