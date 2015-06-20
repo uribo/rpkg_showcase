@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Statistics and Modeling | R Package Showcase</title>
+        <title>rgeos | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../statistics/biotools.html" />
+    <link rel="next" href="../spatial/sp.html" />
     
     
-    <link rel="prev" href="../report/xtable.html" />
+    <link rel="prev" href="../spatial/fields.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="6" data-basepath=".." data-revision="Sat Jun 20 2015 23:21:07 GMT+0900 (JST)">
+    <div class="book" data-level="7.2" data-basepath=".." data-revision="Sat Jun 20 2015 23:21:07 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -651,7 +651,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6" data-path="statistics/index.html">
+        <li class="chapter " data-level="6" data-path="statistics/index.html">
             
                 
                     <a href="../statistics/index.html">
@@ -793,7 +793,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" data-path="spatial/rgeos.html">
+        <li class="chapter active" data-level="7.2" data-path="spatial/rgeos.html">
             
                 
                     <a href="../spatial/rgeos.html">
@@ -1318,15 +1318,209 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="statistics">statistics</h1>
+                        <h1 id="rgeos-interface-to-geometry-engine-open-source-geos">rgeos: Interface to Geometry Engine - Open Source (GEOS)</h1>
+<p>GEOS&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D5;&#x30A7;&#x30FC;&#x30B9;</p>
+<p><a href="http://cran.rstudio.com/web/packages/rgeos/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/rgeos" alt=""></a></p>
 <ul>
-<li><a href="biotools.html"><code>biotools</code></a>: Tools for Biometry and Applied Statistics in Agricultural Science</li>
-<li><a href="DescTools.html"><code>DescTools</code></a>: Tools for Descriptive Statistics</li>
-<li><a href="gam.html"><code>gam</code></a>: Generalized Additive Models</li>
-<li><a href="MCMCpack.html"><code>MCMCpack</code></a>: Markov chain Monte Carlo (MCMC) Package</li>
-<li><a href="mgcv.html"><code>mgcv</code></a>: Mixed GAM Computation Vehicle with GCV/AIC/REML Smoothness Estimation</li>
-<li><a href="smatr.html"><code>smatr</code></a>: (Standardised) Major Axis Estimation and Testing Routines</li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/rgeos/index.html" target="_blank">http://cran.r-project.org/web/packages/rgeos/index.html</a></li>
+<li>URL: <a href="https://r-forge.r-project.org/projects/rgeos/" target="_blank">https://r-forge.r-project.org/projects/rgeos/</a>, <a href="http://trac.osgeo.org/geos/" target="_blank">http://trac.osgeo.org/geos/</a></li>
 </ul>
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(rgeos)
+</code></pre>
+<pre><code>rgeos version: 0.3-11, (SVN revision 479)
+ GEOS runtime version: 3.4.2-CAPI-1.8.2 r3921 
+ Linking to sp version: 1.1-0 
+ Polygon checking: TRUE
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.3.11</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>&#x95A2;&#x6570;&#x540D;</th>
+<th>&#x6982;&#x7565;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ring-class</code></td>
+<td>Class &quot;Ring&quot;</td>
+</tr>
+<tr>
+<td><code>SpatialCollections</code></td>
+<td>create SpatialCollections</td>
+</tr>
+<tr>
+<td><code>SpatialCollections-class</code></td>
+<td>Class &quot;SpatialCollections&quot;</td>
+</tr>
+<tr>
+<td><code>SpatialRings</code></td>
+<td>create SpatialRings or SpatialRingsDataFrame</td>
+</tr>
+<tr>
+<td><code>SpatialRings-class</code></td>
+<td>Class &quot;SpatialRings&quot;</td>
+</tr>
+<tr>
+<td><code>SpatialRingsDataFrame-class</code></td>
+<td>Class &quot;SpatialRingsDataFrame&quot;</td>
+</tr>
+<tr>
+<td><code>createSPComment</code></td>
+<td>RGEOS Polygon Hole Comment Functions</td>
+</tr>
+<tr>
+<td><code>gArea</code></td>
+<td>Area of Geometry</td>
+</tr>
+<tr>
+<td><code>gBoundary</code></td>
+<td>Boundary of Geometry</td>
+</tr>
+<tr>
+<td><code>gBuffer</code></td>
+<td>Buffer Geometry</td>
+</tr>
+<tr>
+<td><code>gCentroid</code></td>
+<td>Centroid of Geometry</td>
+</tr>
+<tr>
+<td><code>gContains</code></td>
+<td>Geometry Relationships - Contains and Within</td>
+</tr>
+<tr>
+<td><code>gConvexHull</code></td>
+<td>Convex Hull of Geometry</td>
+</tr>
+<tr>
+<td><code>gCrosses</code></td>
+<td>Geometry Relationships - Crosses and Overlaps</td>
+</tr>
+<tr>
+<td><code>gDelaunayTriangulation</code></td>
+<td>Compute Delaunay triangulation between points</td>
+</tr>
+<tr>
+<td><code>gDifference</code></td>
+<td>Geometry Difference</td>
+</tr>
+<tr>
+<td><code>gDistance</code></td>
+<td>Distance between geometries</td>
+</tr>
+<tr>
+<td><code>gEnvelope</code></td>
+<td>Envelope of Geometry</td>
+</tr>
+<tr>
+<td><code>gEquals</code></td>
+<td>Geometry Relationships - Equality</td>
+</tr>
+<tr>
+<td><code>gIntersection</code></td>
+<td>Geometry Intersections</td>
+</tr>
+<tr>
+<td><code>gIntersects</code></td>
+<td>Geometry Relationships - Intersects and Disjoint</td>
+</tr>
+<tr>
+<td><code>gIsEmpty</code></td>
+<td>Is Geometry Empty?</td>
+</tr>
+<tr>
+<td><code>gIsRing</code></td>
+<td>Is Geometry a Ring?</td>
+</tr>
+<tr>
+<td><code>gIsSimple</code></td>
+<td>Is Geometry Simple?</td>
+</tr>
+<tr>
+<td><code>gIsValid</code></td>
+<td>Is Geometry Valid?</td>
+</tr>
+<tr>
+<td><code>gLength</code></td>
+<td>Length of Geometry</td>
+</tr>
+<tr>
+<td><code>gNode</code></td>
+<td>Linestring Noder</td>
+</tr>
+<tr>
+<td><code>gPointOnSurface</code></td>
+<td>Point on Surface of Geometry</td>
+</tr>
+<tr>
+<td><code>gPolygonize</code></td>
+<td>Linestring Polygonizer</td>
+</tr>
+<tr>
+<td><code>gRelate</code></td>
+<td>Geometry Relationships - Intersection Matrix Pattern (DE-9IM)</td>
+</tr>
+<tr>
+<td><code>gSimplify</code></td>
+<td>Simplify Geometry</td>
+</tr>
+<tr>
+<td><code>gSymdifference</code></td>
+<td>Geometry Symmetric Difference</td>
+</tr>
+<tr>
+<td><code>gTouches</code></td>
+<td>Geometry Relationships - Touches</td>
+</tr>
+<tr>
+<td><code>gUnion</code></td>
+<td>Geometry Union</td>
+</tr>
+<tr>
+<td><code>getScale</code></td>
+<td>RGEOS Utility Functions</td>
+</tr>
+<tr>
+<td><code>gpc.poly-class</code></td>
+<td>Class &quot;gpc.poly&quot;</td>
+</tr>
+<tr>
+<td><code>gpc.poly.nohole-class</code></td>
+<td>Class &quot;gpc.poly.nohole&quot;</td>
+</tr>
+<tr>
+<td><code>new-generics</code></td>
+<td>Generics/Methods for polygon objects</td>
+</tr>
+<tr>
+<td><code>poly_findInBoxGEOS</code></td>
+<td>Experimental Functions</td>
+</tr>
+<tr>
+<td><code>polyfile</code></td>
+<td>Read/Write polygon data</td>
+</tr>
+<tr>
+<td><code>polygonsLabel</code></td>
+<td>Compute optimal label positions for polygons</td>
+</tr>
+<tr>
+<td><code>readWKT</code></td>
+<td>RGEOS WKT Functions</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gcentroid">gCentroid</h2>
+<p>&#x91CD;&#x5FC3;&#x3092;&#x6C42;&#x3081;&#x308B;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>spgeom</li>
+<li>byid</li>
+<li>id</li>
+</ul>
+<pre><code class="lang-r">&gt; gCentroid(spgeom, byid = <span class="hljs-literal">FALSE</span>, id = <span class="hljs-literal">NULL</span>)
+</code></pre>
 
                     
                     </section>
@@ -1337,10 +1531,10 @@
         </div>
 
         
-        <a href="../report/xtable.html" class="navigation navigation-prev " aria-label="Previous page: xtable"><i class="fa fa-angle-left"></i></a>
+        <a href="../spatial/fields.html" class="navigation navigation-prev " aria-label="Previous page: fields"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../statistics/biotools.html" class="navigation navigation-next " aria-label="Next page: biotools"><i class="fa fa-angle-right"></i></a>
+        <a href="../spatial/sp.html" class="navigation navigation-next " aria-label="Next page: sp"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Statistics and Modeling | R Package Showcase</title>
+        <title>tm | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../statistics/biotools.html" />
+    <link rel="next" href="../data-analysis/vegan.html" />
     
     
-    <link rel="prev" href="../report/xtable.html" />
+    <link rel="prev" href="../data-analysis/Rphylopars.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="6" data-basepath=".." data-revision="Sat Jun 20 2015 23:21:07 GMT+0900 (JST)">
+    <div class="book" data-level="3.10" data-basepath=".." data-revision="Sat Jun 20 2015 23:21:07 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -349,7 +349,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.10" data-path="data-analysis/tm.html">
+        <li class="chapter active" data-level="3.10" data-path="data-analysis/tm.html">
             
                 
                     <a href="../data-analysis/tm.html">
@@ -651,7 +651,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6" data-path="statistics/index.html">
+        <li class="chapter " data-level="6" data-path="statistics/index.html">
             
                 
                     <a href="../statistics/index.html">
@@ -1318,15 +1318,254 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="statistics">statistics</h1>
+                        <h1 id="tm-text-mining-package">tm: Text Mining Package</h1>
+<p>&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30DE;&#x30A4;&#x30CB;&#x30F3;&#x30B0;</p>
+<p><a href="http://cran.rstudio.com/web/packages/tm/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/tm" alt=""></a></p>
 <ul>
-<li><a href="biotools.html"><code>biotools</code></a>: Tools for Biometry and Applied Statistics in Agricultural Science</li>
-<li><a href="DescTools.html"><code>DescTools</code></a>: Tools for Descriptive Statistics</li>
-<li><a href="gam.html"><code>gam</code></a>: Generalized Additive Models</li>
-<li><a href="MCMCpack.html"><code>MCMCpack</code></a>: Markov chain Monte Carlo (MCMC) Package</li>
-<li><a href="mgcv.html"><code>mgcv</code></a>: Mixed GAM Computation Vehicle with GCV/AIC/REML Smoothness Estimation</li>
-<li><a href="smatr.html"><code>smatr</code></a>: (Standardised) Major Axis Estimation and Testing Routines</li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/tm/index.html" target="_blank">http://cran.r-project.org/web/packages/tm/index.html</a></li>
+<li>URL: <a href="http://tm.r-forge.r-project.org/" target="_blank">http://tm.r-forge.r-project.org/</a></li>
 </ul>
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(tm)
+</code></pre>
+<pre><code>Loading required package: NLP
+
+Attaching package: &apos;NLP&apos;
+
+The following object is masked from &apos;package:ggplot2&apos;:
+
+    annotate
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.6</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>&#x95A2;&#x6570;&#x540D;</th>
+<th>&#x6982;&#x7565;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Corpus</code></td>
+<td>Corpora</td>
+</tr>
+<tr>
+<td><code>DataframeSource</code></td>
+<td>Data Frame Source</td>
+</tr>
+<tr>
+<td><code>DirSource</code></td>
+<td>Directory Source</td>
+</tr>
+<tr>
+<td><code>Docs</code></td>
+<td>Access Document IDs and Terms</td>
+</tr>
+<tr>
+<td><code>MC_tokenizer</code></td>
+<td>Tokenizers</td>
+</tr>
+<tr>
+<td><code>PCorpus</code></td>
+<td>Permanent Corpora</td>
+</tr>
+<tr>
+<td><code>PlainTextDocument</code></td>
+<td>Plain Text Documents</td>
+</tr>
+<tr>
+<td><code>Reader</code></td>
+<td>Readers</td>
+</tr>
+<tr>
+<td><code>Source</code></td>
+<td>Sources</td>
+</tr>
+<tr>
+<td><code>TermDocumentMatrix</code></td>
+<td>Term-Document Matrix</td>
+</tr>
+<tr>
+<td><code>TextDocument</code></td>
+<td>Text Documents</td>
+</tr>
+<tr>
+<td><code>URISource</code></td>
+<td>Uniform Resource Identifier Source</td>
+</tr>
+<tr>
+<td><code>VCorpus</code></td>
+<td>Volatile Corpora</td>
+</tr>
+<tr>
+<td><code>VectorSource</code></td>
+<td>Vector Source</td>
+</tr>
+<tr>
+<td><code>WeightFunction</code></td>
+<td>Weighting Function</td>
+</tr>
+<tr>
+<td><code>XMLSource</code></td>
+<td>XML Source</td>
+</tr>
+<tr>
+<td><code>XMLTextDocument</code></td>
+<td>XML Text Documents</td>
+</tr>
+<tr>
+<td><code>Zipf_plot</code></td>
+<td>Explore Corpus Term Frequency Characteristics</td>
+</tr>
+<tr>
+<td><code>acq</code></td>
+<td>50 Exemplary News Articles from the Reuters-21578 Data Set of Topic acq</td>
+</tr>
+<tr>
+<td><code>c.VCorpus</code></td>
+<td>Combine Corpora, Documents, Term-Document Matrices, and Term Frequency Vectors</td>
+</tr>
+<tr>
+<td><code>content_transformer</code></td>
+<td>Content Transformers</td>
+</tr>
+<tr>
+<td><code>crude</code></td>
+<td>20 Exemplary News Articles from the Reuters-21578 Data Set of Topic crude</td>
+</tr>
+<tr>
+<td><code>findAssocs</code></td>
+<td>Find Associations in a Term-Document Matrix</td>
+</tr>
+<tr>
+<td><code>findFreqTerms</code></td>
+<td>Find Frequent Terms</td>
+</tr>
+<tr>
+<td><code>getTokenizers</code></td>
+<td>Tokenizers</td>
+</tr>
+<tr>
+<td><code>getTransformations</code></td>
+<td>Transformations</td>
+</tr>
+<tr>
+<td><code>inspect</code></td>
+<td>Inspect Objects</td>
+</tr>
+<tr>
+<td><code>meta</code></td>
+<td>Metadata Management</td>
+</tr>
+<tr>
+<td><code>plot.TermDocumentMatrix</code></td>
+<td>Visualize a Term-Document Matrix</td>
+</tr>
+<tr>
+<td><code>readDOC</code></td>
+<td>Read In a MS Word Document</td>
+</tr>
+<tr>
+<td><code>readPDF</code></td>
+<td>Read In a PDF Document</td>
+</tr>
+<tr>
+<td><code>readPlain</code></td>
+<td>Read In a Text Document</td>
+</tr>
+<tr>
+<td><code>readRCV1</code></td>
+<td>Read In a Reuters Corpus Volume 1 Document</td>
+</tr>
+<tr>
+<td><code>readReut21578XML</code></td>
+<td>Read In a Reuters-21578 XML Document</td>
+</tr>
+<tr>
+<td><code>readTabular</code></td>
+<td>Read In a Text Document</td>
+</tr>
+<tr>
+<td><code>readXML</code></td>
+<td>Read In an XML Document</td>
+</tr>
+<tr>
+<td><code>read_dtm_Blei_et_al</code></td>
+<td>Read Document-Term Matrices</td>
+</tr>
+<tr>
+<td><code>removeNumbers</code></td>
+<td>Remove Numbers from a Text Document</td>
+</tr>
+<tr>
+<td><code>removePunctuation</code></td>
+<td>Remove Punctuation Marks from a Text Document</td>
+</tr>
+<tr>
+<td><code>removeSparseTerms</code></td>
+<td>Remove Sparse Terms from a Term-Document Matrix</td>
+</tr>
+<tr>
+<td><code>removeWords</code></td>
+<td>Remove Words from a Text Document</td>
+</tr>
+<tr>
+<td><code>stemCompletion</code></td>
+<td>Complete Stems</td>
+</tr>
+<tr>
+<td><code>stemDocument</code></td>
+<td>Stem Words</td>
+</tr>
+<tr>
+<td><code>stopwords</code></td>
+<td>Stopwords</td>
+</tr>
+<tr>
+<td><code>stripWhitespace</code></td>
+<td>Strip Whitespace from a Text Document</td>
+</tr>
+<tr>
+<td><code>termFreq</code></td>
+<td>Term Frequency Vector</td>
+</tr>
+<tr>
+<td><code>tm_filter</code></td>
+<td>Filter and Index Functions on Corpora</td>
+</tr>
+<tr>
+<td><code>tm_map</code></td>
+<td>Transformations on Corpora</td>
+</tr>
+<tr>
+<td><code>tm_reduce</code></td>
+<td>Combine Transformations</td>
+</tr>
+<tr>
+<td><code>tm_term_score</code></td>
+<td>Compute Score for Matching Terms</td>
+</tr>
+<tr>
+<td><code>weightBin</code></td>
+<td>Weight Binary</td>
+</tr>
+<tr>
+<td><code>weightSMART</code></td>
+<td>SMART Weightings</td>
+</tr>
+<tr>
+<td><code>weightTf</code></td>
+<td>Weight by Term Frequency</td>
+</tr>
+<tr>
+<td><code>weightTfIdf</code></td>
+<td>Weight by Term Frequency - Inverse Document Frequency</td>
+</tr>
+<tr>
+<td><code>writeCorpus</code></td>
+<td>Write a Corpus to Disk</td>
+</tr>
+</tbody>
+</table>
 
                     
                     </section>
@@ -1337,10 +1576,10 @@
         </div>
 
         
-        <a href="../report/xtable.html" class="navigation navigation-prev " aria-label="Previous page: xtable"><i class="fa fa-angle-left"></i></a>
+        <a href="../data-analysis/Rphylopars.html" class="navigation navigation-prev " aria-label="Previous page: Rphylopars"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../statistics/biotools.html" class="navigation navigation-next " aria-label="Next page: biotools"><i class="fa fa-angle-right"></i></a>
+        <a href="../data-analysis/vegan.html" class="navigation navigation-next " aria-label="Next page: vegan"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Statistics and Modeling | R Package Showcase</title>
+        <title>phylobase | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../statistics/biotools.html" />
+    <link rel="next" href="../data-analysis/phytools.html" />
     
     
-    <link rel="prev" href="../report/xtable.html" />
+    <link rel="prev" href="../data-analysis/popbio.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="6" data-basepath=".." data-revision="Sat Jun 20 2015 23:21:07 GMT+0900 (JST)">
+    <div class="book" data-level="3.7" data-basepath=".." data-revision="Sat Jun 20 2015 23:21:07 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -304,7 +304,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.7" data-path="data-analysis/phylobase.html">
+        <li class="chapter active" data-level="3.7" data-path="data-analysis/phylobase.html">
             
                 
                     <a href="../data-analysis/phylobase.html">
@@ -651,7 +651,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6" data-path="statistics/index.html">
+        <li class="chapter " data-level="6" data-path="statistics/index.html">
             
                 
                     <a href="../statistics/index.html">
@@ -1318,16 +1318,263 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="statistics">statistics</h1>
+                        <h1 id="phylobase-base-package-for-phylogenetic-structures-and-comparative-data">phylobase: Base package for phylogenetic structures and comparative data</h1>
+<p>&#x7CFB;&#x7D71;&#x6BD4;&#x8F03;&#x306E;&#x305F;&#x3081;&#x306E;&#x57FA;&#x672C;&#x7684;&#x306A;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;</p>
+<p><a href="http://cran.rstudio.com/web/packages/phylobase/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/phylobase" alt=""></a></p>
 <ul>
-<li><a href="biotools.html"><code>biotools</code></a>: Tools for Biometry and Applied Statistics in Agricultural Science</li>
-<li><a href="DescTools.html"><code>DescTools</code></a>: Tools for Descriptive Statistics</li>
-<li><a href="gam.html"><code>gam</code></a>: Generalized Additive Models</li>
-<li><a href="MCMCpack.html"><code>MCMCpack</code></a>: Markov chain Monte Carlo (MCMC) Package</li>
-<li><a href="mgcv.html"><code>mgcv</code></a>: Mixed GAM Computation Vehicle with GCV/AIC/REML Smoothness Estimation</li>
-<li><a href="smatr.html"><code>smatr</code></a>: (Standardised) Major Axis Estimation and Testing Routines</li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/phylobase/index.html" target="_blank">http://cran.r-project.org/web/packages/phylobase/index.html</a></li>
+<li>GitHub: <a href="https://github.com/fmichonneau/phylobase" target="_blank">https://github.com/fmichonneau/phylobase</a></li>
 </ul>
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(phylobase)
+</code></pre>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.6.8</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>&#x95A2;&#x6570;&#x540D;</th>
+<th>&#x6982;&#x7565;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>addData</code></td>
+<td>Adding data to a phylo4 or a phylo4d object</td>
+</tr>
+<tr>
+<td><code>as</code></td>
+<td>Converting between phylo4/phylo4d and other phylogenetic tree formats</td>
+</tr>
+<tr>
+<td><code>checkPhylo4</code></td>
+<td>Validity checking for phylo4 objects</td>
+</tr>
+<tr>
+<td><code>children</code></td>
+<td>tree traversal and utility functions</td>
+</tr>
+<tr>
+<td><code>extractTree</code></td>
+<td>Get tree from tree+data object</td>
+</tr>
+<tr>
+<td><code>formatData</code></td>
+<td>Format data for use in phylo4d objects</td>
+</tr>
+<tr>
+<td><code>geospiza</code></td>
+<td>Data from Darwin&apos;s finches</td>
+</tr>
+<tr>
+<td><code>getNode</code></td>
+<td>node and edge look-up functions</td>
+</tr>
+<tr>
+<td><code>hasNodeData</code></td>
+<td>Tests for presence of data associated with</td>
+</tr>
+<tr>
+<td><code>trees</code></td>
+<td>stored as phylo4d objects</td>
+</tr>
+<tr>
+<td><code>hasSingle</code></td>
+<td>Test trees for polytomies, inline nodes, or reticulation</td>
+</tr>
+<tr>
+<td><code>labels&lt;-</code></td>
+<td>Labels for phylo4/phylo4d objects</td>
+</tr>
+<tr>
+<td><code>multiPhylo-class</code></td>
+<td>multiPhylo4 and extended classes</td>
+</tr>
+<tr>
+<td><code>nData</code></td>
+<td>Retrieves the number of datasets in phylo4d objects</td>
+</tr>
+<tr>
+<td><code>nNodes</code></td>
+<td>Methods for S4 phylogeny classes</td>
+</tr>
+<tr>
+<td><code>owls4</code></td>
+<td>&apos;Owls&apos; data from ape</td>
+</tr>
+<tr>
+<td><code>pdata</code></td>
+<td>Constructor for pdata (phylogenetic data) class</td>
+</tr>
+<tr>
+<td><code>pdata-class</code></td>
+<td>Class &quot;pdata&quot;</td>
+</tr>
+<tr>
+<td><code>phylo4-class</code></td>
+<td>The phylo4 class</td>
+</tr>
+<tr>
+<td><code>phylo4-methods</code></td>
+<td>Create a phylogenetic tree</td>
+</tr>
+<tr>
+<td><code>phylo4d</code></td>
+<td>Combine a phylogenetic tree with data</td>
+</tr>
+<tr>
+<td><code>phylo4d-class</code></td>
+<td>phylo4d class</td>
+</tr>
+<tr>
+<td><code>phylo4vcov-class</code></td>
+<td>matrix classes for phylobase</td>
+</tr>
+<tr>
+<td><code>phyloXXYY</code></td>
+<td>Calculate node x and y coordinates</td>
+</tr>
+<tr>
+<td><code>phylobase-package</code></td>
+<td>Utilities and Tools for Phylogenetics</td>
+</tr>
+<tr>
+<td><code>phylobase.options</code></td>
+<td>Set or return options of phylobase</td>
+</tr>
+<tr>
+<td><code>phylobubbles</code></td>
+<td>Bubble plots for phylo4d objects</td>
+</tr>
+<tr>
+<td><code>phylog-class</code></td>
+<td>Class &quot;phylog&quot;</td>
+</tr>
+<tr>
+<td><code>plotOneTree</code></td>
+<td>Plot a phylo4 object</td>
+</tr>
+<tr>
+<td><code>print,phylo4-method</code></td>
+<td>Displaying phylo4 object</td>
+</tr>
+<tr>
+<td><code>printphylo4</code></td>
+<td>print a phylogeny</td>
+</tr>
+<tr>
+<td><code>readNexus</code></td>
+<td>Create a phylo4, phylo4d or data.frame object from a Nexus or a Newick file</td>
+</tr>
+<tr>
+<td><code>reorder-methods</code></td>
+<td>reordering trees within phylobase objects show,phylo4d-method Display methods for phylo4d objects</td>
+</tr>
+<tr>
+<td><code>subset-methods</code></td>
+<td>Methods for creating subsets of phylogenies</td>
+</tr>
+<tr>
+<td><code>tdata</code></td>
+<td>Retrieving or updating tip and node data in phylo4d objects</td>
+</tr>
+<tr>
+<td><code>tip.data.plot</code></td>
+<td>Plotting trees and associated data</td>
+</tr>
+<tr>
+<td><code>treePlot</code></td>
+<td>Phylogeny plotting</td>
+</tr>
+</tbody>
+</table>
+<h2 id="as">as</h2>
+<p>phylo&#x30AF;&#x30E9;&#x30B9;&#x7B49;&#x3078;&#x306E;&#x5909;&#x63DB;&#x3002;</p>
+<p>&#x5909;&#x63DB;&#x3067;&#x304D;&#x308B;&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x4F8B;&#xFF08;{phylobase}, {ape}, {ade4}&#xFF09;...<code>phylo4</code>, <code>phylo4d</code>, <code>phylo</code>, <code>multiPhylo</code>, <code>multiPhylo4</code>, <code>phylog</code>, <code>data.frame</code></p>
+<pre><code class="lang-r">&gt; trString &lt;- <span class="hljs-string">&quot;(((Strix_aluco:4.2,Asio_otus:4.2):3.1,Athene_noctua:7.3):6.3,Tyto_alba:13.5);&quot;</span>
+&gt; (tree.owls &lt;- ape::read.tree(text = trString))
+</code></pre>
+<pre><code>
+Phylogenetic tree with 4 tips and 3 internal nodes.
 
+Tip labels:
+[1] &quot;Strix_aluco&quot;   &quot;Asio_otus&quot;     &quot;Athene_noctua&quot; &quot;Tyto_alba&quot;    
+
+Rooted; includes branch lengths.
+</code></pre><pre><code class="lang-r">&gt; class(tree.owls)
+</code></pre>
+<pre><code>[1] &quot;phylo&quot;
+</code></pre><pre><code class="lang-r">&gt; as(object = tree.owls, Class = <span class="hljs-string">&quot;phylo4&quot;</span>) %&gt;% class()
+</code></pre>
+<pre><code>[1] &quot;phylo4&quot;
+attr(,&quot;package&quot;)
+[1] &quot;phylobase&quot;
+</code></pre><pre><code class="lang-r">&gt; as(object = tree.owls, Class = <span class="hljs-string">&quot;phylo4&quot;</span>) %&gt;% as(., <span class="hljs-string">&quot;phylo4d&quot;</span>) %&gt;% class()
+</code></pre>
+<pre><code>[1] &quot;phylo4d&quot;
+attr(,&quot;package&quot;)
+[1] &quot;phylobase&quot;
+</code></pre><pre><code class="lang-r">&gt; as(object = tree.owls, Class = <span class="hljs-string">&quot;phylo4&quot;</span>) %&gt;% as(., <span class="hljs-string">&quot;data.frame&quot;</span>) %&gt;% class()
+</code></pre>
+<pre><code>[1] &quot;data.frame&quot;
+</code></pre><h2 id="checkphylo4">checkPhylo4</h2>
+<p>phylo4&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x78BA;&#x8A8D;</p>
+<pre><code class="lang-r">&gt; trString &lt;- <span class="hljs-string">&quot;(((Strix_aluco:4.2,Asio_otus:4.2):3.1,Athene_noctua:7.3):6.3,Tyto_alba:13.5);&quot;</span>
+&gt; (tree.owls &lt;- ape::read.tree(text = trString))
+</code></pre>
+<pre><code>
+Phylogenetic tree with 4 tips and 3 internal nodes.
+
+Tip labels:
+[1] &quot;Strix_aluco&quot;   &quot;Asio_otus&quot;     &quot;Athene_noctua&quot; &quot;Tyto_alba&quot;    
+
+Rooted; includes branch lengths.
+</code></pre><pre><code class="lang-r">&gt; <span class="hljs-comment"># &#x5909;&#x63DB;&#x306B;&#x306F;`as()`&#x3092;&#x4F7F;&#x3046;</span>
+&gt; as(object = tree.owls, Class = <span class="hljs-string">&quot;phylo4&quot;</span>) %&gt;% checkPhylo4() <span class="hljs-comment"># checkTree(), checkPhylo4Data()</span>
+</code></pre>
+<pre><code>[1] TRUE
+</code></pre><h2 id="extracttree">extractTree</h2>
+<p>phylo4d&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#xFF08;&#x7CFB;&#x7D71;&#x6A39;&#x3068;&#x30C7;&#x30FC;&#x30BF;&#xFF09;&#x304B;&#x3089;&#x7CFB;&#x7D71;&#x6A39;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x62BD;&#x51FA;&#x3059;&#x308B;</p>
+<pre><code class="lang-r">&gt; tree.phylo &lt;- ape::read.tree(text = <span class="hljs-string">&quot;((a,b),c);&quot;</span>)
+&gt; tree &lt;- as(tree.phylo, <span class="hljs-string">&quot;phylo4&quot;</span>) <span class="hljs-comment"># phylo4 &#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306B;&#x5909;&#x63DB;&#xFF08;data&#x30B9;&#x30ED;&#x30C3;&#x30C8;&#x306A;&#x3057;&#xFF09;</span>
+&gt; tip.data &lt;- data.frame(size = c(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>), row.names = c(<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;b&quot;</span>, <span class="hljs-string">&quot;c&quot;</span>))
+&gt; (treedata &lt;- phylo4d(tree, tip.data)) <span class="hljs-comment"># phylo4&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#xFF08;data&#x30B9;&#x30ED;&#x30C3;&#x30C8;&#x306A;&#x3057;&#xFF09;&#x3068;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x7D50;&#x5408;</span>
+</code></pre>
+<pre><code>  label node ancestor edge.length node.type size
+1     a    1        5          NA       tip    1
+2     b    2        5          NA       tip    2
+3     c    3        4          NA       tip    3
+4  &lt;NA&gt;    4        0          NA      root   NA
+5  &lt;NA&gt;    5        4          NA  internal   NA
+</code></pre><pre><code class="lang-r">&gt; extractTree(treedata)
+</code></pre>
+<pre><code>  label node ancestor edge.length node.type
+1     a    1        5          NA       tip
+2     b    2        5          NA       tip
+3     c    3        4          NA       tip
+4  &lt;NA&gt;    4        0          NA      root
+5  &lt;NA&gt;    5        4          NA  internal
+</code></pre><h2 id="geospiza">geospiza</h2>
+<p>&#x30C0;&#x30FC;&#x30A6;&#x30A3;&#x30F3;&#x30D5;&#x30A3;&#x30F3;&#x30C1;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#xFF08;phylo4d&#x30AF;&#x30E9;&#x30B9;&#xFF09;</p>
+<pre><code class="lang-r">&gt; data(geospiza)
+&gt; class(geospiza)
+</code></pre>
+<pre><code>[1] &quot;phylo4d&quot;
+attr(,&quot;package&quot;)
+[1] &quot;phylobase&quot;
+</code></pre><pre><code class="lang-r">&gt; names(geospiza)
+</code></pre>
+<pre><code>[1] &quot;data&quot;        &quot;metadata&quot;    &quot;edge&quot;        &quot;edge.length&quot; &quot;label&quot;      
+[6] &quot;edge.label&quot;  &quot;order&quot;       &quot;annote&quot;
+</code></pre><pre><code class="lang-r">&gt; dplyr::glimpse(geospiza@data)
+</code></pre>
+<pre><code>Observations: 13
+Variables:
+$ wingL   (dbl) 4.132957, 4.244008, 4.404200, 4.349867, 4.261222, 4.22...
+$ tarsusL (dbl) 2.806514, 2.894717, 3.038950, 2.984200, 2.929033, 2.89...
+$ culmenL (dbl) 2.094971, 2.407025, 2.724667, 2.654400, 2.621789, 2.27...
+$ beakD   (dbl) 1.941157, 2.362658, 2.823767, 2.513800, 2.144700, 2.01...
+$ gonysW  (dbl) 1.845379, 2.221867, 2.675983, 2.360167, 2.036944, 1.92...
+</code></pre>
                     
                     </section>
                 
@@ -1337,10 +1584,10 @@
         </div>
 
         
-        <a href="../report/xtable.html" class="navigation navigation-prev " aria-label="Previous page: xtable"><i class="fa fa-angle-left"></i></a>
+        <a href="../data-analysis/popbio.html" class="navigation navigation-prev " aria-label="Previous page: popbio"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../statistics/biotools.html" class="navigation navigation-next " aria-label="Next page: biotools"><i class="fa fa-angle-right"></i></a>
+        <a href="../data-analysis/phytools.html" class="navigation navigation-next " aria-label="Next page: phytools"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
