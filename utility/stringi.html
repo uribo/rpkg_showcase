@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>ape | R Package Showcase</title>
+        <title>stringi | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../data-analysis/AUC.html" />
+    <link rel="next" href="../utility/stringr.html" />
     
     
-    <link rel="prev" href="../data-analysis/adephylo.html" />
+    <link rel="prev" href="../utility/statar.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="6.2" data-basepath=".." data-revision="Thu Sep 24 2015 18:02:37 GMT+0900 (JST)">
+    <div class="book" data-level="11.35" data-basepath=".." data-revision="Thu Sep 24 2015 18:02:37 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -577,7 +577,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.2" data-path="data-analysis/ape.html">
+        <li class="chapter " data-level="6.2" data-path="data-analysis/ape.html">
             
                 
                     <a href="../data-analysis/ape.html">
@@ -2264,7 +2264,7 @@
             
         </li>
     
-        <li class="chapter " data-level="11.35" data-path="utility/stringi.html">
+        <li class="chapter active" data-level="11.35" data-path="utility/stringi.html">
             
                 
                     <a href="../utility/stringi.html">
@@ -2805,26 +2805,16 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="ape-analyses-of-phylogenetics-and-evolution">ape: Analyses of Phylogenetics and Evolution</h1>
-<p>&#x7CFB;&#x7D71;&#x5B66;&#x3001;&#x9032;&#x5316;&#x5B66;&#x306E;&#x89E3;&#x6790;&#x30C4;&#x30FC;&#x30EB;</p>
-<p><a href="http://cran.rstudio.com/web/packages/ape/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/ape" alt=""></a></p>
+                        <h1 id="stringi-character-string-processing-facilities">stringi: Character String Processing Facilities</h1>
+<p>&#x6587;&#x5B57;&#x5217;&#x64CD;&#x4F5C;&#x306E;&#x305F;&#x3081;&#x306E;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;</p>
+<p><a href="http://cran.rstudio.com/web/packages/stringi/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/stringi" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/ape/index.html" target="_blank">http://cran.r-project.org/web/packages/ape/index.html</a></li>
-<li>URL: <a href="http://ape-package.ird.fr/" target="_blank">http://ape-package.ird.fr/</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/stringi/index.html" target="_blank">http://cran.r-project.org/web/packages/stringi/index.html</a></li>
+<li>GitHub: <a href="https://github.com/Rexamine/stringi" target="_blank">https://github.com/Rexamine/stringi</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(ape)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(stringi)
 </code></pre>
-<pre><code>
-Attaching package: &apos;ape&apos;
-
-The following object is masked from &apos;package:phylobase&apos;:
-
-    edges
-
-The following object is masked from &apos;package:Hmisc&apos;:
-
-    zoom
-</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 3.3</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.5.5</p>
 <hr>
 <table>
 <thead>
@@ -2835,752 +2825,389 @@ The following object is masked from &apos;package:Hmisc&apos;:
 </thead>
 <tbody>
 <tr>
-<td><code>CADM.global</code></td>
-<td>Congruence among distance matrices</td>
+<td><code>%s+%</code></td>
+<td>Concatenate Two Character Vectors</td>
 </tr>
 <tr>
-<td><code>DNAbin</code></td>
-<td>Manipulate DNA Sequences in Bit-Level Format</td>
+<td><code>%s&lt;%</code></td>
+<td>Compare Strings with or without Collation</td>
 </tr>
 <tr>
-<td><code>FastME</code></td>
-<td>Tree Estimation Based on the Minimum Evolution Algorithm</td>
+<td><code>stri_compare</code></td>
+<td>Compare Strings with or without Collation</td>
 </tr>
 <tr>
-<td><code>Initialize.corPhyl</code></td>
-<td>Initialize a &apos;corPhyl&apos; Structure Object</td>
+<td><code>stri_count</code></td>
+<td>Count the Number of Pattern Matches</td>
 </tr>
 <tr>
-<td><code>LTT</code></td>
-<td>Theoretical Lineage-Through Time Plots</td>
+<td><code>stri_count_boundaries</code></td>
+<td>Count the Number of Text Boundaries</td>
 </tr>
 <tr>
-<td><code>MPR</code></td>
-<td>Most Parsimonious Reconstruction</td>
+<td><code>stri_datetime_add</code></td>
+<td>[DRAFT API] Date and Time Arithmetic</td>
 </tr>
 <tr>
-<td><code>Moran.I</code></td>
-<td>Moran&apos;s I Autocorrelation Index</td>
+<td><code>stri_datetime_create</code></td>
+<td>[DRAFT API] Create a Date-Time Object</td>
 </tr>
 <tr>
-<td><code>SDM</code></td>
-<td>Construction of Consensus Distance Matrix With SDM</td>
+<td><code>stri_datetime_fields</code></td>
+<td>[DRAFT API] Get Values for Date and Time Fields</td>
 </tr>
 <tr>
-<td><code>ace</code></td>
-<td>Ancestral Character Estimation</td>
+<td><code>stri_datetime_format</code></td>
+<td>[DRAFT API] Date and Time Formatting and Parsing</td>
 </tr>
 <tr>
-<td><code>add.scale.bar</code></td>
-<td>Add a Scale Bar to a Phylogeny Plot</td>
+<td><code>stri_datetime_fstr</code></td>
+<td>[DRAFT API] Convert &apos;strptime&apos;-style Format Strings</td>
 </tr>
 <tr>
-<td><code>additive</code></td>
-<td>Incomplete Distance Matrix Filling</td>
+<td><code>stri_datetime_now</code></td>
+<td>[DRAFT API] Get Current Date and Time</td>
 </tr>
 <tr>
-<td><code>alex</code></td>
-<td>Alignment Explorer With Multiple Devices</td>
+<td><code>stri_datetime_symbols</code></td>
+<td>[DRAFT API] List Localizable Date-Time Formatting Data</td>
 </tr>
 <tr>
-<td><code>all.equal.phylo</code></td>
-<td>Global Comparison of two Phylogenies</td>
+<td><code>stri_detect</code></td>
+<td>Detect a Pattern Match</td>
 </tr>
 <tr>
-<td><code>ape-package</code></td>
-<td>Analyses of Phylogenetics and Evolution</td>
+<td><code>stri_dup</code></td>
+<td>Duplicate Strings</td>
 </tr>
 <tr>
-<td><code>as.alignment</code></td>
-<td>Conversion Among DNA Sequence Internal Formats</td>
+<td><code>stri_duplicated</code></td>
+<td>Determine Duplicated Elements</td>
 </tr>
 <tr>
-<td><code>as.bitsplits</code></td>
-<td>Split Frequencies and Conversion Among Split Classes</td>
+<td><code>stri_enc_detect</code></td>
+<td>[DRAFT API] Detect Character Set and Language</td>
 </tr>
 <tr>
-<td><code>as.matching</code></td>
-<td>Conversion Between Phylo and Matching Objects</td>
+<td><code>stri_enc_detect2</code></td>
+<td>[DRAFT API] Detect Locale-Sensitive Character Encoding</td>
 </tr>
 <tr>
-<td><code>as.phylo</code></td>
-<td>Conversion Among Tree and Network Objects</td>
+<td><code>stri_enc_fromutf32</code></td>
+<td>Convert From UTF-32</td>
 </tr>
 <tr>
-<td><code>as.phylo.formula</code></td>
-<td>Conversion from Taxonomy Variables to Phylogenetic Trees</td>
+<td><code>stri_enc_info</code></td>
+<td>Query a Character Encoding</td>
 </tr>
 <tr>
-<td><code>axisPhylo</code></td>
-<td>Axis on Side of Phylogeny</td>
+<td><code>stri_enc_isascii</code></td>
+<td>Check If a Data Stream Is Possibly in ASCII</td>
 </tr>
 <tr>
-<td><code>balance</code></td>
-<td>Balance of a Dichotomous Phylogenetic Tree</td>
+<td><code>stri_enc_isutf16be</code></td>
+<td>Check If a Data Stream Is Possibly in UTF16 or UTF32</td>
 </tr>
 <tr>
-<td><code>base.freq</code></td>
-<td>Base frequencies from DNA Sequences</td>
+<td><code>stri_enc_isutf8</code></td>
+<td>Check If a Data Stream Is Possibly in UTF-8</td>
 </tr>
 <tr>
-<td><code>bd.ext</code></td>
-<td>Extended Version of the Birth-Death Models to Estimate Speciation and Extinction Rates</td>
+<td><code>stri_enc_list</code></td>
+<td>List Known Character Encodings</td>
 </tr>
 <tr>
-<td><code>bd.time</code></td>
-<td>Time-Dependent Birth-Death Models</td>
+<td><code>stri_enc_mark</code></td>
+<td>Get Declared Encodings of Each String</td>
 </tr>
 <tr>
-<td><code>bind.tree</code></td>
-<td>Binds Trees</td>
+<td><code>stri_enc_set</code></td>
+<td>Set or Get Default Character Encoding in &apos;stringi&apos;</td>
 </tr>
 <tr>
-<td><code>bionj</code></td>
-<td>Tree Estimation Based on an Improved Version of the NJ Algorithm</td>
+<td><code>stri_enc_toascii</code></td>
+<td>Convert To ASCII</td>
 </tr>
 <tr>
-<td><code>bird.families</code></td>
-<td>Phylogeny of the Families of Birds From Sibley and Ahlquist</td>
+<td><code>stri_enc_tonative</code></td>
+<td>Convert Strings To Native Encoding</td>
 </tr>
 <tr>
-<td><code>bird.orders</code></td>
-<td>Phylogeny of the Orders of Birds From Sibley and Ahlquist</td>
+<td><code>stri_enc_toutf32</code></td>
+<td>Convert Strings To UTF-32</td>
 </tr>
 <tr>
-<td><code>birthdeath</code></td>
-<td>Estimation of Speciation and Extinction Rates With Birth-Death Models</td>
+<td><code>stri_enc_toutf8</code></td>
+<td>Convert Strings To UTF-8</td>
 </tr>
 <tr>
-<td><code>boot.phylo</code></td>
-<td>Tree Bipartition and Bootstrapping Phylogenies</td>
+<td><code>stri_encode</code></td>
+<td>Convert Strings Between Given Encodings</td>
 </tr>
 <tr>
-<td><code>branching.times</code></td>
-<td>Branching Times of a Phylogenetic Tree</td>
+<td><code>stri_escape_unicode</code></td>
+<td>Escape Unicode Code Points</td>
 </tr>
 <tr>
-<td><code>c.phylo</code></td>
-<td>Building Lists of Trees</td>
+<td><code>stri_extract_all</code></td>
+<td>Extract Occurrences of a Pattern</td>
 </tr>
 <tr>
-<td><code>carnivora</code></td>
-<td>Carnivora body sizes and life history traits</td>
+<td><code>stri_extract_all_boundaries</code></td>
+<td>Extract Text Between Text Boundaries</td>
 </tr>
 <tr>
-<td><code>cherry</code></td>
-<td>Number of Cherries and Null Models of Trees chiroptera Bat Phylogeny</td>
+<td><code>stri_flatten</code></td>
+<td>Flatten a String</td>
 </tr>
 <tr>
-<td><code>chronoMPL</code></td>
-<td>Molecular Dating With Mean Path Lengths</td>
+<td><code>stri_info</code></td>
+<td>Query Default Settings for &apos;stringi&apos;</td>
 </tr>
 <tr>
-<td><code>chronopl</code></td>
-<td>Molecular Dating With Penalized Likelihood</td>
+<td><code>stri_install_check</code></td>
+<td>Installation-Related Utilities [DEPRECATED]</td>
 </tr>
 <tr>
-<td><code>chronos</code></td>
-<td>Molecular Dating by Penalised Likelihood and Maximum Likelihood</td>
+<td><code>stri_isempty</code></td>
+<td>Determine if a String is of Length Zero</td>
 </tr>
 <tr>
-<td><code>clustal</code></td>
-<td>Multiple Sequence Alignment with External Applications</td>
+<td><code>stri_join</code></td>
+<td>Concatenate Character Vectors</td>
 </tr>
 <tr>
-<td><code>coalescent.intervals</code></td>
-<td>Coalescent Intervals</td>
+<td><code>stri_length</code></td>
+<td>Count the Number of Code Points</td>
 </tr>
 <tr>
-<td><code>collapse.singles</code></td>
-<td>Collapse Single Nodes</td>
+<td><code>stri_list2matrix</code></td>
+<td>Convert a List to a Character Matrix</td>
 </tr>
 <tr>
-<td><code>collapsed.intervals</code></td>
-<td>Collapsed Coalescent Intervals</td>
+<td><code>stri_locale_info</code></td>
+<td>Query Given Locale</td>
 </tr>
 <tr>
-<td><code>compar.cheverud</code></td>
-<td>Cheverud&apos;s Comparative Method</td>
+<td><code>stri_locale_list</code></td>
+<td>List Available Locales</td>
 </tr>
 <tr>
-<td><code>compar.gee</code></td>
-<td>Comparative Analysis with GEEs</td>
+<td><code>stri_locale_set</code></td>
+<td>Set or Get Default Locale in &apos;stringi&apos;</td>
 </tr>
 <tr>
-<td><code>compar.lynch</code></td>
-<td>Lynch&apos;s Comparative Method</td>
+<td><code>stri_locate_all</code></td>
+<td>Locate Occurrences of a Pattern</td>
 </tr>
 <tr>
-<td><code>compar.ou</code></td>
-<td>Ornstein-Uhlenbeck Model for Continuous Characters</td>
+<td><code>stri_locate_all_boundaries</code></td>
+<td>Locate Specific Text Boundaries</td>
 </tr>
 <tr>
-<td><code>compute.brlen</code></td>
-<td>Branch Lengths Computation</td>
+<td><code>stri_match_all</code></td>
+<td>Extract Regex Pattern Matches, Together with Capture Groups</td>
 </tr>
 <tr>
-<td><code>compute.brtime</code></td>
-<td>Compute and Set Branching Times</td>
+<td><code>stri_numbytes</code></td>
+<td>Count the Number of Bytes</td>
 </tr>
 <tr>
-<td><code>consensus</code></td>
-<td>Concensus Trees</td>
+<td><code>stri_opts_brkiter</code></td>
+<td>Generate a List with BreakIterator Settings</td>
 </tr>
 <tr>
-<td><code>cophenetic.phylo</code></td>
-<td>Pairwise Distances from a Phylogenetic Tree</td>
+<td><code>stri_opts_collator</code></td>
+<td>Generate a List with Collator Settings</td>
 </tr>
 <tr>
-<td><code>cophyloplot Plots</code></td>
-<td>two phylogenetic trees face to face with links between the tips.</td>
+<td><code>stri_opts_fixed</code></td>
+<td>Generate a List with Fixed Pattern Search Engine&apos;s Settings</td>
 </tr>
 <tr>
-<td><code>corBlomberg</code></td>
-<td>Blomberg et al.&apos;s Correlation Structure</td>
+<td><code>stri_opts_regex</code></td>
+<td>Generate a List with Regex Matcher Settings</td>
 </tr>
 <tr>
-<td><code>corBrownian</code></td>
-<td>Brownian Correlation Structure</td>
+<td><code>stri_order</code></td>
+<td>Ordering Permutation and Sorting</td>
 </tr>
 <tr>
-<td><code>corClasses</code></td>
-<td>Phylogenetic Correlation Structures</td>
+<td><code>stri_pad_both</code></td>
+<td>Pad (Center/Left/Right Align) a String</td>
 </tr>
 <tr>
-<td><code>corGrafen</code></td>
-<td>Grafen&apos;s (1989) Correlation Structure</td>
+<td><code>stri_rand_lipsum</code></td>
+<td>A Lorem Ipsum Generator</td>
 </tr>
 <tr>
-<td><code>corMartins</code></td>
-<td>Martins&apos;s (1997) Correlation Structure</td>
+<td><code>stri_rand_shuffle</code></td>
+<td>Randomly Shuffle Code Points in Each String</td>
 </tr>
 <tr>
-<td><code>corPagel</code></td>
-<td>Pagel&apos;s &quot;lambda&quot; Correlation Structure</td>
+<td><code>stri_rand_strings</code></td>
+<td>Generate Random Strings</td>
 </tr>
 <tr>
-<td><code>correlogram.formula</code></td>
-<td>Phylogenetic Correlogram</td>
+<td><code>stri_read_lines</code></td>
+<td>[DRAFT API] Read Text Lines from a Text File</td>
 </tr>
 <tr>
-<td><code>data.nex</code></td>
-<td>NEXUS Data Example</td>
+<td><code>stri_read_raw</code></td>
+<td>[DRAFT API] Read Whole Text File as Raw</td>
 </tr>
 <tr>
-<td><code>dbd</code></td>
-<td>Probability Density Under Birth-Death Models</td>
+<td><code>stri_replace_all</code></td>
+<td>Replace Occurrences of a Pattern</td>
 </tr>
 <tr>
-<td><code>def</code></td>
-<td>Definition of Vectors for Plotting or Annotating</td>
+<td><code>stri_replace_na</code></td>
+<td>Replace Missing Values in a Character Vector</td>
 </tr>
 <tr>
-<td><code>del.gaps</code></td>
-<td>Delete Alignment Gaps in DNA Sequences</td>
+<td><code>stri_reverse</code></td>
+<td>Reverse Each String</td>
 </tr>
 <tr>
-<td><code>delta.plot</code></td>
-<td>Delta Plots</td>
+<td><code>stri_split</code></td>
+<td>Split a String By Pattern Matches</td>
 </tr>
 <tr>
-<td><code>dist.dna</code></td>
-<td>Pairwise Distances from DNA Sequences</td>
+<td><code>stri_split_boundaries</code></td>
+<td>Split a String at Specific Text Boundaries</td>
 </tr>
 <tr>
-<td><code>dist.gene</code></td>
-<td>Pairwise Distances from Genetic Data</td>
+<td><code>stri_split_lines</code></td>
+<td>Split a String Into Text Lines</td>
 </tr>
 <tr>
-<td><code>dist.topo</code></td>
-<td>Topological Distances Between Two Trees</td>
+<td><code>stri_startswith</code></td>
+<td>Determine if the Start or End of a String Matches a Pattern</td>
 </tr>
 <tr>
-<td><code>diversi.gof</code></td>
-<td>Tests of Constant Diversification Rates</td>
+<td><code>stri_stats_general</code></td>
+<td>General Statistics for a Character Vector</td>
 </tr>
 <tr>
-<td><code>diversi.time</code></td>
-<td>Analysis of Diversification with Survival Models</td>
+<td><code>stri_stats_latex</code></td>
+<td>Statistics for a Character Vector Containing LaTeX Commands</td>
 </tr>
 <tr>
-<td><code>diversity.contrast.test</code></td>
-<td>Diversity Contrast Test</td>
+<td><code>stri_sub</code></td>
+<td>Extract a Substring From or Replace a Substring In a Character Vector</td>
 </tr>
 <tr>
-<td><code>drop.tip</code></td>
-<td>Remove Tips in a Phylogenetic Tree</td>
+<td><code>stri_subset</code></td>
+<td>Select Elements that Match a Given Pattern</td>
 </tr>
 <tr>
-<td><code>edges</code></td>
-<td>Draw Additional Edges on a Plotted Tree</td>
+<td><code>stri_timezone_get</code></td>
+<td>[DRAFT API] Set or Get Default Time Zone in &apos;stringi&apos;</td>
 </tr>
 <tr>
-<td><code>evonet</code></td>
-<td>Evolutionary Networks</td>
+<td><code>stri_timezone_info</code></td>
+<td>[DRAFT API] Query a Given Time Zone</td>
 </tr>
 <tr>
-<td><code>ewLasso</code></td>
-<td>Incomplete distances and edge weights of unrooted topology</td>
+<td><code>stri_timezone_list</code></td>
+<td>[DRAFT API] List Available Time Zone Identifiers</td>
 </tr>
 <tr>
-<td><code>gammaStat</code></td>
-<td>Gamma-Statistic of Pybus and Harvey</td>
+<td><code>stri_trans_char</code></td>
+<td>Translate Characters</td>
 </tr>
 <tr>
-<td><code>hivtree</code></td>
-<td>Phylogenetic Tree of 193 HIV-1 Sequences</td>
+<td><code>stri_trans_general</code></td>
+<td>General Text Transforms, Including Transliteration</td>
 </tr>
 <tr>
-<td><code>howmanytrees</code></td>
-<td>Calculate Numbers of Phylogenetic Trees</td>
+<td><code>stri_trans_list</code></td>
+<td>List Available Text Transforms and Transliterators</td>
 </tr>
 <tr>
-<td><code>identify.phylo</code></td>
-<td>Graphical Identification of Nodes and Tips</td>
+<td><code>stri_trans_nfc</code></td>
+<td>Perform or Check For Unicode Normalization</td>
 </tr>
 <tr>
-<td><code>image.DNAbin</code></td>
-<td>Plot of DNA Sequence Alignement</td>
+<td><code>stri_trans_tolower</code></td>
+<td>Transform String with Case Mapping</td>
 </tr>
 <tr>
-<td><code>is.binary.tree</code></td>
-<td>Test for Binary Tree</td>
+<td><code>stri_trim_both</code></td>
+<td>Trim Characters from the Left and/or Right Side of a String</td>
 </tr>
 <tr>
-<td><code>is.compatible</code></td>
-<td>Check Compatibility of Splits</td>
+<td><code>stri_unescape_unicode</code></td>
+<td>Unescape All Escape Sequences</td>
 </tr>
 <tr>
-<td><code>is.monophyletic</code></td>
-<td>Is Group Monophyletic</td>
+<td><code>stri_unique</code></td>
+<td>Extract Unique Elements</td>
 </tr>
 <tr>
-<td><code>is.ultrametric</code></td>
-<td>Test if a Tree is Ultrametric</td>
+<td><code>stri_width</code></td>
+<td>Determine the Width of Code Points</td>
 </tr>
 <tr>
-<td><code>kronoviz</code></td>
-<td>Plot Multiple Chronograms on the Same Scale</td>
+<td><code>stri_wrap</code></td>
+<td>Word Wrap Text to Format Paragraphs</td>
 </tr>
 <tr>
-<td><code>ladderize</code></td>
-<td>Ladderize a Tree</td>
+<td><code>stri_write_lines</code></td>
+<td>[DRAFT API] Write Text Lines to a Text File</td>
 </tr>
 <tr>
-<td><code>landplants</code></td>
-<td>Gene Tree of 36 Landplant rbcL Sequences</td>
+<td><code>stringi-arguments</code></td>
+<td>Passing Arguments to Functions in &apos;stringi&apos;</td>
 </tr>
 <tr>
-<td><code>lmorigin</code></td>
-<td>Multiple regression through the origin</td>
+<td><code>stringi-encoding</code></td>
+<td>Character Encodings and &apos;stringi&apos;</td>
 </tr>
 <tr>
-<td><code>ltt.plot</code></td>
-<td>Lineages Through Time Plot</td>
+<td><code>stringi-locale</code></td>
+<td>Locales and &apos;stringi&apos;</td>
 </tr>
 <tr>
-<td><code>makeLabel</code></td>
-<td>Label Management</td>
+<td><code>stringi-package</code></td>
+<td>THE String Processing Package</td>
 </tr>
 <tr>
-<td><code>makeNodeLabel</code></td>
-<td>Makes Node Labels</td>
+<td><code>stringi-search</code></td>
+<td>String Searching</td>
 </tr>
 <tr>
-<td><code>mantel.test</code></td>
-<td>Mantel Test for Similarity of Two Matrices</td>
+<td><code>stringi-search-boundaries</code></td>
+<td>Text Boundary Analysis in &apos;stringi&apos;</td>
 </tr>
 <tr>
-<td><code>mat3</code></td>
-<td>Three Matrices</td>
+<td><code>stringi-search-charclass</code></td>
+<td>Character Classes in &apos;stringi&apos;</td>
 </tr>
 <tr>
-<td><code>mat5M3ID</code></td>
-<td>Five Trees</td>
+<td><code>stringi-search-coll</code></td>
+<td>Locale-Sensitive Text Searching in &apos;stringi&apos;</td>
 </tr>
 <tr>
-<td><code>mat5Mrand</code></td>
-<td>Five Independent Trees</td>
+<td><code>stringi-search-fixed</code></td>
+<td>Locale-Insensitive Fixed Pattern Matching in &apos;stringi&apos;</td>
 </tr>
 <tr>
-<td><code>matexpo</code></td>
-<td>Matrix Exponential</td>
-</tr>
-<tr>
-<td><code>mcconwaysims.test</code></td>
-<td>McConway-Sims Test of Homogeneous Diversification</td>
-</tr>
-<tr>
-<td><code>mcmc.popsize</code></td>
-<td>Reversible Jump MCMC to Infer Demographic History</td>
-</tr>
-<tr>
-<td><code>mixedFontLabel</code></td>
-<td>Mixed Font Labels for Plotting</td>
-</tr>
-<tr>
-<td><code>mrca</code></td>
-<td>Find Most Recent Common Ancestors Between Pairs</td>
-</tr>
-<tr>
-<td><code>mst</code></td>
-<td>Minimum Spanning Tree</td>
-</tr>
-<tr>
-<td><code>multi2di</code></td>
-<td>Collapse and Resolve Multichotomies</td>
-</tr>
-<tr>
-<td><code>multiphylo</code></td>
-<td>Manipulating Lists of Trees</td>
-</tr>
-<tr>
-<td><code>mvr</code></td>
-<td>Minimum Variance Reduction</td>
-</tr>
-<tr>
-<td><code>nj</code></td>
-<td>Neighbor-Joining Tree Estimation</td>
-</tr>
-<tr>
-<td><code>njs</code></td>
-<td>Tree Reconstruction from Incomplete Distances</td>
-</tr>
-<tr>
-<td><code>With</code></td>
-<td>NJ<em> or bio-NJ</em></td>
-</tr>
-<tr>
-<td><code>node.depth</code></td>
-<td>Depth and Heights of Nodes and Tips</td>
-</tr>
-<tr>
-<td><code>nodelabels</code></td>
-<td>Labelling the Nodes, Tips, and Edges of a Tree</td>
-</tr>
-<tr>
-<td><code>nodepath</code></td>
-<td>Find Paths of Nodes</td>
-</tr>
-<tr>
-<td><code>opsin</code></td>
-<td>Gene Tree of 32 opsin Sequences</td>
-</tr>
-<tr>
-<td><code>parafit</code></td>
-<td>Test of host-parasite coevolution</td>
-</tr>
-<tr>
-<td><code>pcoa</code></td>
-<td>Principal Coordinate Analysis</td>
-</tr>
-<tr>
-<td><code>phydataplot</code></td>
-<td>Tree Annotation</td>
-</tr>
-<tr>
-<td><code>phymltest</code></td>
-<td>Fits a Bunch of Models with PhyML</td>
-</tr>
-<tr>
-<td><code>pic</code></td>
-<td>Phylogenetically Independent Contrasts</td>
-</tr>
-<tr>
-<td><code>pic.ortho</code></td>
-<td>Phylogenetically Independent Orthonormal Contrasts</td>
-</tr>
-<tr>
-<td><code>plot.correlogram</code></td>
-<td>Plot a Correlogram</td>
-</tr>
-<tr>
-<td><code>plot.phylo</code></td>
-<td>Plot Phylogenies</td>
-</tr>
-<tr>
-<td><code>plot.varcomp</code></td>
-<td>Plot Variance Components</td>
-</tr>
-<tr>
-<td><code>print.phylo</code></td>
-<td>Compact Display of a Phylogeny</td>
-</tr>
-<tr>
-<td><code>rTraitCont</code></td>
-<td>Continuous Character Simulation</td>
-</tr>
-<tr>
-<td><code>rTraitDisc</code></td>
-<td>Discrete Character Simulation</td>
-</tr>
-<tr>
-<td><code>rTraitMult</code></td>
-<td>Multivariate Character Simulation</td>
-</tr>
-<tr>
-<td><code>read.GenBank</code></td>
-<td>Read DNA Sequences from GenBank via Internet</td>
-</tr>
-<tr>
-<td><code>read.caic</code></td>
-<td>Read Tree File in CAIC Format</td>
-</tr>
-<tr>
-<td><code>read.dna</code></td>
-<td>Read DNA Sequences in a File</td>
-</tr>
-<tr>
-<td><code>read.nexus</code></td>
-<td>Read Tree File in Nexus Format</td>
-</tr>
-<tr>
-<td><code>read.nexus.data</code></td>
-<td>Read Character Data In NEXUS Format</td>
-</tr>
-<tr>
-<td><code>read.tree</code></td>
-<td>Read Tree File in Parenthetic Format</td>
-</tr>
-<tr>
-<td><code>reconstruct</code></td>
-<td>Continuous Ancestral Character Estimation</td>
-</tr>
-<tr>
-<td><code>reorder.phylo</code></td>
-<td>Internal Reordering of Trees</td>
-</tr>
-<tr>
-<td><code>richness.yule.test</code></td>
-<td>Test of Diversification-Shift With the Yule Process</td>
-</tr>
-<tr>
-<td><code>rlineage</code></td>
-<td>Tree Simulation Under the Time-Dependent Birth-Death Models</td>
-</tr>
-<tr>
-<td><code>root</code></td>
-<td>Roots Phylogenetic Trees</td>
-</tr>
-<tr>
-<td><code>rotate</code></td>
-<td>Swapping Sister Clades</td>
-</tr>
-<tr>
-<td><code>rtree</code></td>
-<td>Generates Random Trees</td>
-</tr>
-<tr>
-<td><code>rtt</code></td>
-<td>Root a Tree by Root-to-Tip Regression</td>
-</tr>
-<tr>
-<td><code>seg.sites</code></td>
-<td>Find Segregating Sites in DNA Sequences</td>
-</tr>
-<tr>
-<td><code>skyline</code></td>
-<td>Skyline Plot Estimate of Effective Population Size</td>
-</tr>
-<tr>
-<td><code>skylineplot</code></td>
-<td>Drawing Skyline Plot Graphs</td>
-</tr>
-<tr>
-<td><code>slowinskiguyer.test</code></td>
-<td>Slowinski-Guyer Test of Homogeneous Diversification</td>
-</tr>
-<tr>
-<td><code>speciesTree</code></td>
-<td>Species Tree Estimation</td>
-</tr>
-<tr>
-<td><code>stree</code></td>
-<td>Generates Systematic Regular Trees</td>
-</tr>
-<tr>
-<td><code>subtreeplot</code></td>
-<td>Zoom on a Portion of a Phylogeny by Successive Clicks</td>
-</tr>
-<tr>
-<td><code>subtrees</code></td>
-<td>All subtrees of a Phylogenetic Tree</td>
-</tr>
-<tr>
-<td><code>summary.phylo</code></td>
-<td>Print Summary of a Phylogeny</td>
-</tr>
-<tr>
-<td><code>treePop</code></td>
-<td>Tree Popping</td>
-</tr>
-<tr>
-<td><code>trex</code></td>
-<td>Tree Explorer With Multiple Devices</td>
-</tr>
-<tr>
-<td><code>triangMtd</code></td>
-<td>Tree Reconstruction Based on the Triangles Method</td>
-</tr>
-<tr>
-<td><code>unique.multiPhylo</code></td>
-<td>Revomes Duplicate Trees</td>
-</tr>
-<tr>
-<td><code>varCompPhylip</code></td>
-<td>Variance Components with Orthonormal Contrasts</td>
-</tr>
-<tr>
-<td><code>varcomp</code></td>
-<td>Compute Variance Component Estimates</td>
-</tr>
-<tr>
-<td><code>vcv</code></td>
-<td>Phylogenetic Variance-covariance or Correlation Matrix</td>
-</tr>
-<tr>
-<td><code>vcv2phylo</code></td>
-<td>Variance-Covariance Matrix to Tree</td>
-</tr>
-<tr>
-<td><code>weight.taxo</code></td>
-<td>Define Similarity Matrix</td>
-</tr>
-<tr>
-<td><code>where</code></td>
-<td>Find Patterns in DNA Sequences</td>
-</tr>
-<tr>
-<td><code>which.edge</code></td>
-<td>Identifies Edges of a Tree</td>
-</tr>
-<tr>
-<td><code>woodmouse</code></td>
-<td>Cytochrome b Gene Sequences of Woodmice</td>
-</tr>
-<tr>
-<td><code>write.dna</code></td>
-<td>Write DNA Sequences in a File</td>
-</tr>
-<tr>
-<td><code>write.nexus</code></td>
-<td>Write Tree File in Nexus Format</td>
-</tr>
-<tr>
-<td><code>write.nexus.data</code></td>
-<td>Write Character Data in NEXUS Format</td>
-</tr>
-<tr>
-<td><code>write.tree</code></td>
-<td>Write Tree File in Parenthetic Format</td>
-</tr>
-<tr>
-<td><code>yule</code></td>
-<td>Fits the Yule Model to a Phylogenetic Tree</td>
-</tr>
-<tr>
-<td><code>yule.cov</code></td>
-<td>Fits the Yule Model With Covariates</td>
-</tr>
-<tr>
-<td><code>yule.time</code></td>
-<td>Fits the Time-Dependent Yule Model</td>
-</tr>
-<tr>
-<td><code>zoom</code></td>
-<td>Zoom on a Portion of a Phylogeny</td>
+<td><code>stringi-search-regex</code></td>
+<td>Regular Expressions in &apos;stringi&apos;</td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h2 id="collapse-singles">collapse.singles</h2>
-<h2 id="pic">pic</h2>
-<p>&#x7CFB;&#x7D71;&#x72EC;&#x7ACB;&#x5BFE;&#x6BD4;&#x306E;&#x5B9F;&#x65BD;</p>
-<pre><code class="lang-r">&gt; tree.primates &lt;- c(<span class="hljs-string">&quot;((((Homo:0.21,Pongo:0.21):0.28,&quot;</span>,<span class="hljs-string">&quot;Macaca:0.49):0.13,Ateles:0.62):0.38,Galago:1.00);&quot;</span>) %&gt;%
-+   read.tree(text = .)
-&gt; X &lt;- c(<span class="hljs-number">4.09434</span>, <span class="hljs-number">3.61092</span>, <span class="hljs-number">2.37024</span>, <span class="hljs-number">2.02815</span>, -<span class="hljs-number">1.46968</span>)
-&gt; Y &lt;- c(<span class="hljs-number">4.74493</span>, <span class="hljs-number">3.33220</span>, <span class="hljs-number">3.36730</span>, <span class="hljs-number">2.89037</span>, <span class="hljs-number">2.30259</span>)
-&gt; names(X) &lt;- names(Y) &lt;- c(<span class="hljs-string">&quot;Homo&quot;</span>, <span class="hljs-string">&quot;Pongo&quot;</span>, <span class="hljs-string">&quot;Macaca&quot;</span>, <span class="hljs-string">&quot;Ateles&quot;</span>, <span class="hljs-string">&quot;Galago&quot;</span>)
-&gt; (pic.X &lt;- pic(X, tree.primates))
+<h2 id="stri-rand-lipsum">stri_rand_lipsum</h2>
+<pre><code class="lang-r">&gt; stri_rand_lipsum(nparagraphs = <span class="hljs-number">1</span>, start_lipsum = <span class="hljs-literal">TRUE</span>)
 </code></pre>
-<pre><code>        6         7         8         9 
-3.3583189 1.1929263 1.5847416 0.7459333
-</code></pre><pre><code class="lang-r">&gt; (pic.Y &lt;- pic(Y, tree.primates))
+<pre><code>[1] &quot;Lorem ipsum dolor sit amet, a quam sed, urna ex sit. Facilisi tellus erat vitae faucibus in, ante. Mi gravida maximus in nunc. Nulla ipsum per. Augue dolor nisi semper et mauris. Aliquam tortor tempus pretium eros vestibulum ex proin sed felis ut in. Maximus et scelerisque maecenas a mus nec magna curae nulla lectus mi habitant faucibus. Himenaeos, morbi velit. Quam gravida vivamus sit litora penatibus eu aenean et lacinia blandit. Suspendisse leo eu ligula nec imperdiet aenean sit finibus penatibus leo. Neque ut eu molestie vel enim porta integer magna consectetur. Est dictumst eget, adipiscing nam suspendisse sit? Faucibus varius in maecenas, nulla! Netus euismod arcu cras et risus et varius in a finibus. Suspendisse vel eget in sed. Sed malesuada inceptos curabitur suscipit egestas molestie fames velit.&quot;
+</code></pre><h2 id="stri-rand-strings">stri_rand_strings</h2>
+<pre><code class="lang-r">&gt; stri_rand_strings(n = <span class="hljs-number">10</span>, length = <span class="hljs-number">5</span>)
 </code></pre>
-<pre><code>        6         7         8         9 
-0.8970604 0.8678969 0.7176125 2.1798897
-</code></pre><pre><code class="lang-r">&gt; cor.test(pic.X, pic.Y)
-</code></pre>
-<pre><code>
-    Pearson&apos;s product-moment correlation
-
-data:  pic.X and pic.Y
-t = -0.85623, df = 2, p-value = 0.4821
-alternative hypothesis: true correlation is not equal to 0
-95 percent confidence interval:
- -0.9874751  0.8823934
-sample estimates:
-       cor 
--0.5179156
-</code></pre><h2 id="read-tree">read.tree</h2>
-<p>&#x7CFB;&#x7D71;&#x6A39;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x8AAD;&#x307F;&#x8FBC;&#x307F;</p>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(adephylo)
-&gt; data(<span class="hljs-string">&quot;ungulates&quot;</span>)
-&gt; read.tree(text = ungulates$tre) %&gt;%  {
-+   print(.)
-+   plot(.)
-+ }
-</code></pre>
-<pre><code>
-Phylogenetic tree with 18 tips and 13 internal nodes.
-
-Tip labels:
-    Antilocapra_americana, Gorgon_taurinus, Oryx_leucoryx, Taurotragus_livingstoni, Tautragus_oryx, Gazella_thompsoni, ...
-Node labels:
-    Root, W11, W10, W1, W2, W7, ...
-
-Rooted; no branch lengths.
-</code></pre><p><img src="../Figure/usage_read.tree-1.png" alt="plot of chunk usage_read.tree"> </p>
-<h2 id="rtree">rtree</h2>
-<p>&#x30E9;&#x30F3;&#x30C0;&#x30E0;&#x306A;&#x7CFB;&#x7D71;&#x6A39;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x751F;&#x6210;</p>
-<p><code>rtree</code>, <code>rcoal</code>, <code>rmtree</code></p>
-<h3 id="arguments">Arguments</h3>
-<ul>
-<li>n</li>
-<li>rooted</li>
-<li>tip.label</li>
-<li>br</li>
-<li>...</li>
-<li>N</li>
-</ul>
-<pre><code class="lang-r">&gt; rtree(n = <span class="hljs-number">20</span>)
-</code></pre>
-<pre><code>
-Phylogenetic tree with 20 tips and 19 internal nodes.
-
-Tip labels:
-    t19, t12, t9, t20, t3, t16, ...
-
-Rooted; includes branch lengths.
-</code></pre><h2 id="write-tree">write.tree</h2>
-<p>Newick&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x66F8;&#x304D;&#x51FA;&#x3057;</p>
-<pre><code class="lang-r">&gt; set.seed(<span class="hljs-number">100</span>)
-&gt; rtree(n = <span class="hljs-number">20</span>) %&gt;% 
-+   write.tree(phy = ., file = <span class="hljs-string">&quot;../inst/ape_write_tree.tre&quot;</span>)
-&gt; 
-&gt; read.tree(file = <span class="hljs-string">&quot;../inst/ape_write_tree.tre&quot;</span>) %&gt;% {
-+   print(.)
-+   is.binary.tree(.)
-+ }
-</code></pre>
-<pre><code>
-Phylogenetic tree with 20 tips and 19 internal nodes.
-
-Tip labels:
-    t6, t8, t14, t12, t4, t20, ...
-
-Rooted; includes branch lengths.
-</code></pre><pre><code>[1] TRUE
+<pre><code> [1] &quot;tTbrB&quot; &quot;pXbMo&quot; &quot;yr14M&quot; &quot;j5OuZ&quot; &quot;vZYvT&quot; &quot;kJSxU&quot; &quot;nb5T8&quot; &quot;dqaqL&quot;
+ [9] &quot;HlpEJ&quot; &quot;Hal9J&quot;
 </code></pre>
                     
                     </section>
@@ -3591,10 +3218,10 @@ Rooted; includes branch lengths.
         </div>
 
         
-        <a href="../data-analysis/adephylo.html" class="navigation navigation-prev " aria-label="Previous page: adephylo"><i class="fa fa-angle-left"></i></a>
+        <a href="../utility/statar.html" class="navigation navigation-prev " aria-label="Previous page: statar"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../data-analysis/AUC.html" class="navigation navigation-next " aria-label="Next page: AUC"><i class="fa fa-angle-right"></i></a>
+        <a href="../utility/stringr.html" class="navigation navigation-next " aria-label="Next page: stringr"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
