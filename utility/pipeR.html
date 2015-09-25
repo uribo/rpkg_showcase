@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>agricolae | R Package Showcase</title>
+        <title>pipeR | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../statistics/biotools.html" />
+    <link rel="next" href="../utility/random.html" />
     
     
-    <link rel="prev" href="../statistics/index.html" />
+    <link rel="prev" href="../utility/pforeach.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="10.1" data-basepath=".." data-revision="Fri Sep 25 2015 16:37:16 GMT+0900 (JST)">
+    <div class="book" data-level="11.23" data-basepath=".." data-revision="Fri Sep 25 2015 16:37:16 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -1561,7 +1561,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="10.1" data-path="statistics/agricolae.html">
+        <li class="chapter " data-level="10.1" data-path="statistics/agricolae.html">
             
                 
                     <a href="../statistics/agricolae.html">
@@ -2092,7 +2092,7 @@
             
         </li>
     
-        <li class="chapter " data-level="11.23" data-path="utility/pipeR.html">
+        <li class="chapter active" data-level="11.23" data-path="utility/pipeR.html">
             
                 
                     <a href="../utility/pipeR.html">
@@ -2821,17 +2821,17 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="agricolae-statistical-procedures-for-agricultural-research">agricolae: Statistical Procedures for Agricultural Research</h1>
-<p>&#x8FB2;&#x5B66;&#x306A;&#x3069;&#x3067;&#x7528;&#x3044;&#x3089;&#x308C;&#x308B;&#x7D71;&#x8A08;&#x7684;&#x624B;&#x6CD5;</p>
-<p><a href="http://cran.rstudio.com/web/packages/agricolae/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/agricolae" alt=""></a></p>
+                        <h1 id="piper-multi-paradigm-pipeline-implementation">pipeR: Multi-Paradigm Pipeline Implementation</h1>
+<p>&#x30D1;&#x30A4;&#x30D7;&#x51E6;&#x7406;</p>
+<p><a href="http://cran.rstudio.com/web/packages/pipeR/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/pipeR" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/agricolae/index.html" target="_blank">http://cran.r-project.org/web/packages/agricolae/index.html</a></li>
-<li>URL: <a href="http://tarwi.lamolina.edu.pe/~fmendiburu" target="_blank">http://tarwi.lamolina.edu.pe/~fmendiburu</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/pipeR/index.html" target="_blank">http://cran.r-project.org/web/packages/pipeR/index.html</a></li>
+<li>GitHub: <a href="https://github.com/renkun-ken/pipeR" target="_blank">https://github.com/renkun-ken/pipeR</a></li>
+<li>URL: <a href="http://renkun.me/pipeR" target="_blank">http://renkun.me/pipeR</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(agricolae)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(pipeR)
 </code></pre>
-<pre><code>Error: package or namespace load failed for &apos;agricolae&apos;
-</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.2.2</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.6.0.6</p>
 <hr>
 <table>
 <thead>
@@ -2842,495 +2842,68 @@
 </thead>
 <tbody>
 <tr>
-<td><code>AMMI</code></td>
-<td>AMMI Analysis</td>
+<td><code>%&gt;&gt;%</code></td>
+<td>Pipe an object forward</td>
 </tr>
 <tr>
-<td><code>AMMI.contour</code></td>
-<td>AMMI contour</td>
+<td><code>Pipe</code></td>
+<td>Create a Pipe object that stores a value and allows command chaining with &apos;$&apos;.</td>
 </tr>
 <tr>
-<td><code>BIB.test</code></td>
-<td>Finding the Variance Analysis of the Balanced Incomplete Block Design</td>
+<td><code>pipeR-package</code></td>
+<td>The pipeR package</td>
 </tr>
 <tr>
-<td><code>CIC</code></td>
-<td>Data for late blight of potatoes</td>
-</tr>
-<tr>
-<td><code>Chz2006</code></td>
-<td>Data amendment Carhuaz 2006</td>
-</tr>
-<tr>
-<td><code>ComasOxapampa</code></td>
-<td>Data AUDPC Comas - Oxapampa</td>
-</tr>
-<tr>
-<td><code>DAU.test</code></td>
-<td>Finding the Variance Analysis of the Augmented block Design</td>
-</tr>
-<tr>
-<td><code>DC</code></td>
-<td>Data for the analysis of carolina genetic design</td>
-</tr>
-<tr>
-<td><code>Glycoalkaloids</code></td>
-<td>Data Glycoalkaloids</td>
-</tr>
-<tr>
-<td><code>HSD.test</code></td>
-<td>Multiple comparisons: Tukey</td>
-</tr>
-<tr>
-<td><code>Hco2006</code></td>
-<td>Data amendment Huanuco 2006</td>
-</tr>
-<tr>
-<td><code>LSD.test</code></td>
-<td>Multiple comparisons, &quot;Least significant difference&quot; and Adjust P-values</td>
-</tr>
-<tr>
-<td><code>LxT</code></td>
-<td>Data Line by tester</td>
-</tr>
-<tr>
-<td><code>Median.test</code></td>
-<td>Median test. Multiple comparisons</td>
-</tr>
-<tr>
-<td><code>PBIB.test</code></td>
-<td>Analysis of the Partially Balanced Incomplete Block Design</td>
-</tr>
-<tr>
-<td><code>RioChillon</code></td>
-<td>Data and analysis Mother and baby trials</td>
-</tr>
-<tr>
-<td><code>SNK.test</code></td>
-<td>Student-Newman-Keuls (SNK)</td>
-</tr>
-<tr>
-<td><code>agricolae-package</code></td>
-<td>Statistical Procedures for Agricultural Research</td>
-</tr>
-<tr>
-<td><code>audpc</code></td>
-<td>Calculating the absolute or relative value of the AUDPC</td>
-</tr>
-<tr>
-<td><code>audps</code></td>
-<td>The Area Under the Disease Progress Stairs</td>
-</tr>
-<tr>
-<td><code>bar.err</code></td>
-<td>Plotting the standard error or standard deviance of a multiple comparison of means</td>
-</tr>
-<tr>
-<td><code>bar.group</code></td>
-<td>Plotting the multiple comparison of means</td>
-</tr>
-<tr>
-<td><code>carolina</code></td>
-<td>North Carolina Designs I, II and III</td>
-</tr>
-<tr>
-<td><code>clay</code></td>
-<td>Data of Ralstonia population in clay soil</td>
-</tr>
-<tr>
-<td><code>consensus</code></td>
-<td>consensus of clusters</td>
-</tr>
-<tr>
-<td><code>corn</code></td>
-<td>Data of corn</td>
-</tr>
-<tr>
-<td><code>correl</code></td>
-<td>Correlation Coefficient</td>
-</tr>
-<tr>
-<td><code>correlation</code></td>
-<td>Correlation analysis. Methods of Pearson, Spearman and Kendall</td>
-</tr>
-<tr>
-<td><code>cotton</code></td>
-<td>Data of cotton</td>
-</tr>
-<tr>
-<td><code>cv.model</code></td>
-<td>Coefficient of the experiment variation</td>
-</tr>
-<tr>
-<td><code>cv.similarity</code></td>
-<td>Coefficient of the similarity matrix variation</td>
-</tr>
-<tr>
-<td><code>delete.na</code></td>
-<td>Omitting the rows or columns with missing observations of a matrix (NA)</td>
-</tr>
-<tr>
-<td><code>design.ab</code></td>
-<td>Design of experiments for a factorial</td>
-</tr>
-<tr>
-<td><code>design.alpha</code></td>
-<td>Alpha design type (0,1)</td>
-</tr>
-<tr>
-<td><code>design.bib</code></td>
-<td>Randomized Balanced Incomplete Block Designs. BIB</td>
-</tr>
-<tr>
-<td><code>design.crd</code></td>
-<td>Completely Randomized Design</td>
-</tr>
-<tr>
-<td><code>design.cyclic</code></td>
-<td>Cyclic designs</td>
-</tr>
-<tr>
-<td><code>design.dau</code></td>
-<td>Augmented block design</td>
-</tr>
-<tr>
-<td><code>design.graeco</code></td>
-<td>Graeco - latin square design</td>
-</tr>
-<tr>
-<td><code>design.lattice</code></td>
-<td>Lattice designs</td>
-</tr>
-<tr>
-<td><code>design.lsd</code></td>
-<td>Latin Square Design</td>
-</tr>
-<tr>
-<td><code>design.rcbd</code></td>
-<td>Randomized Complete Block Design</td>
-</tr>
-<tr>
-<td><code>design.split</code></td>
-<td>Split Plot Design</td>
-</tr>
-<tr>
-<td><code>design.strip</code></td>
-<td>Strip Plot Design</td>
-</tr>
-<tr>
-<td><code>design.youden</code></td>
-<td>Incomplete Latin Square Design</td>
-</tr>
-<tr>
-<td><code>disease</code></td>
-<td>Data evaluation of the disease overtime</td>
-</tr>
-<tr>
-<td><code>duncan.test</code></td>
-<td>Duncan&apos;s new multiple range test</td>
-</tr>
-<tr>
-<td><code>durbin.test</code></td>
-<td>Durbin test and multiple comparison of treatments</td>
-</tr>
-<tr>
-<td><code>friedman</code></td>
-<td>Friedman test and multiple comparison of treatments</td>
-</tr>
-<tr>
-<td><code>frijol</code></td>
-<td>Data of frijol</td>
-</tr>
-<tr>
-<td><code>genxenv</code></td>
-<td>Data of potato yield in a different environment</td>
-</tr>
-<tr>
-<td><code>graph.freq</code></td>
-<td>Histogram</td>
-</tr>
-<tr>
-<td><code>grass</code></td>
-<td>Data for Friedman test</td>
-</tr>
-<tr>
-<td><code>greenhouse</code></td>
-<td>Data in greenhouse</td>
-</tr>
-<tr>
-<td><code>growth</code></td>
-<td>Data growth of trees</td>
-</tr>
-<tr>
-<td><code>haynes</code></td>
-<td>Data of AUDPC for nonparametrical stability analysis</td>
-</tr>
-<tr>
-<td><code>hcut</code></td>
-<td>Cut tree of consensus</td>
-</tr>
-<tr>
-<td><code>heterosis</code></td>
-<td>Data of potato, Heterosis</td>
-</tr>
-<tr>
-<td><code>hgroups</code></td>
-<td>groups of hclust</td>
-</tr>
-<tr>
-<td><code>huasahuasi</code></td>
-<td>Data: Rainfall thresholds as support for timing fungicide applications in the control of potato late blight in Peru</td>
-</tr>
-<tr>
-<td><code>index.AMMI</code></td>
-<td>AMMI index and yield stability</td>
-</tr>
-<tr>
-<td><code>index.bio</code></td>
-<td>Biodiversity Index</td>
-</tr>
-<tr>
-<td><code>index.smith</code></td>
-<td>Uniformity soil. Smith&apos;s Index of Soil Heterogeneity</td>
-</tr>
-<tr>
-<td><code>intervals.freq</code></td>
-<td>Class intervals</td>
-</tr>
-<tr>
-<td><code>join.freq</code></td>
-<td>Join class for histogram</td>
-</tr>
-<tr>
-<td><code>kendall</code></td>
-<td>Correlation of Kendall</td>
-</tr>
-<tr>
-<td><code>kruskal</code></td>
-<td>Kruskal Wallis test and multiple comparison of treatments.</td>
-</tr>
-<tr>
-<td><code>kurtosis</code></td>
-<td>Finding the Kurtosis coefficient</td>
-</tr>
-<tr>
-<td><code>lastC</code></td>
-<td>Setting the last character of a chain</td>
-</tr>
-<tr>
-<td><code>lateblight</code></td>
-<td>LATEBLIGHT - Simulator for potato late blight Version LB2004</td>
-</tr>
-<tr>
-<td><code>lineXtester</code></td>
-<td>Line x Tester Analysis</td>
-</tr>
-<tr>
-<td><code>markers</code></td>
-<td>Data of molecular markers</td>
-</tr>
-<tr>
-<td><code>melon</code></td>
-<td>Data of yield of melon in a Latin square experiment</td>
-</tr>
-<tr>
-<td><code>montecarlo</code></td>
-<td>Random generation by Montecarlo</td>
-</tr>
-<tr>
-<td><code>natives</code></td>
-<td>Data of native potato</td>
-</tr>
-<tr>
-<td><code>nonadditivity</code></td>
-<td>Nonadditivity model test</td>
-</tr>
-<tr>
-<td><code>normal.freq</code></td>
-<td>Normal curve on the histogram</td>
-</tr>
-<tr>
-<td><code>ogive.freq</code></td>
-<td>Plotting the ogive from a histogram</td>
-</tr>
-<tr>
-<td><code>order.group</code></td>
-<td>Ordering the treatments according to the multiple comparison</td>
-</tr>
-<tr>
-<td><code>order.stat</code></td>
-<td>Grouping the treatments averages in a comparison with a minimum value</td>
-</tr>
-<tr>
-<td><code>pamCIP</code></td>
-<td>Data Potato Wild</td>
-</tr>
-<tr>
-<td><code>paracsho</code></td>
-<td>Data of Paracsho biodiversity</td>
-</tr>
-<tr>
-<td><code>path.analysis</code></td>
-<td>Path Analysis</td>
-</tr>
-<tr>
-<td><code>plot.AMMI</code></td>
-<td>PLOT AMMI</td>
-</tr>
-<tr>
-<td><code>plot.graph.freq</code></td>
-<td>Histogram</td>
-</tr>
-<tr>
-<td><code>plots</code></td>
-<td>Data for an analysis in split-plot</td>
-</tr>
-<tr>
-<td><code>plrv</code></td>
-<td>Data clones from the PLRV population</td>
-</tr>
-<tr>
-<td><code>polygon.freq</code></td>
-<td>The polygon of frequency on the histogram</td>
-</tr>
-<tr>
-<td><code>potato</code></td>
-<td>Data of cutting</td>
-</tr>
-<tr>
-<td><code>ralstonia</code></td>
-<td>Data of assessment of the population in the</td>
-</tr>
-<tr>
-<td><code>soil</code></td>
-<td>R.solanacearum</td>
-</tr>
-<tr>
-<td><code>reg.homog</code></td>
-<td>Homologation of regressions</td>
-</tr>
-<tr>
-<td><code>resampling.cv</code></td>
-<td>Resampling to find the optimal number of markers</td>
-</tr>
-<tr>
-<td><code>resampling.model</code></td>
-<td>Resampling for linear models</td>
-</tr>
-<tr>
-<td><code>rice</code></td>
-<td>Data of Grain yield of rice variety IR8</td>
-</tr>
-<tr>
-<td><code>scheffe.test</code></td>
-<td>Multiple comparisons, scheffe</td>
-</tr>
-<tr>
-<td><code>similarity</code></td>
-<td>Matrix of similarity in binary data</td>
-</tr>
-<tr>
-<td><code>simulation.model</code></td>
-<td>Simulation of the linear model under normality</td>
-</tr>
-<tr>
-<td><code>sinRepAmmi</code></td>
-<td>Data for AMMI without repetition</td>
-</tr>
-<tr>
-<td><code>skewness</code></td>
-<td>Finding the skewness coefficient</td>
-</tr>
-<tr>
-<td><code>soil</code></td>
-<td>Data of soil analysis for 13 localities</td>
-</tr>
-<tr>
-<td><code>sp.plot</code></td>
-<td>Splip-Plot analysis</td>
-</tr>
-<tr>
-<td><code>ssp.plot</code></td>
-<td>Split-split-Plot analysis</td>
-</tr>
-<tr>
-<td><code>stability.nonpar</code></td>
-<td>Nonparametric stability analysis</td>
-</tr>
-<tr>
-<td><code>stability.par</code></td>
-<td>Stability analysis. SHUKLA&apos;S STABILITY VARIANCE AND KANG&apos;S</td>
-</tr>
-<tr>
-<td><code>stat.freq</code></td>
-<td>Descriptive measures of grouped data</td>
-</tr>
-<tr>
-<td><code>strip.plot</code></td>
-<td>Strip-Plot analysis</td>
-</tr>
-<tr>
-<td><code>sturges.freq</code></td>
-<td>Class intervals for a histogram, the rule of Sturges</td>
-</tr>
-<tr>
-<td><code>summary.graph.freq</code></td>
-<td>frequency Table of a Histogram</td>
-</tr>
-<tr>
-<td><code>sweetpotato</code></td>
-<td>Data of sweetpotato yield</td>
-</tr>
-<tr>
-<td><code>table.freq</code></td>
-<td>frequency Table of a Histogram</td>
-</tr>
-<tr>
-<td><code>tapply.stat</code></td>
-<td>Statistics of data grouped by factors</td>
-</tr>
-<tr>
-<td><code>vark</code></td>
-<td>Variance K, ties, Kendall</td>
-</tr>
-<tr>
-<td><code>waerden.test</code></td>
-<td>Multiple comparisons. The van der Waerden (Normal Scores)</td>
-</tr>
-<tr>
-<td><code>waller</code></td>
-<td>Computations of Bayesian t-values for multiple comparisons</td>
-</tr>
-<tr>
-<td><code>waller.test</code></td>
-<td>Multiple comparisons, Waller-Duncan</td>
-</tr>
-<tr>
-<td><code>weatherSeverity</code></td>
-<td>Weather and Severity</td>
-</tr>
-<tr>
-<td><code>wilt</code></td>
-<td>Data of Bacterial Wilt (AUDPC) and soil</td>
-</tr>
-<tr>
-<td><code>yacon</code></td>
-<td>Data Yacon</td>
-</tr>
-<tr>
-<td><code>zigzag</code></td>
-<td>order plot in serpentine</td>
+<td><code>pipeline</code></td>
+<td>Evaluate an expression pipeline</td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h2 id="hsd-test">HSD.test</h2>
-<h2 id="correlation">correlation</h2>
-<h2 id="delete-na">delete.na</h2>
-<h2 id="kendall">kendall</h2>
-<h2 id="kruskal">kruskal</h2>
-<h2 id="scheffe-test">scheffe.test</h2>
-
+<h2 id="pipe">Pipe</h2>
+<p><code>$</code>&#x3067;&#x9023;&#x9396;&#x3057;&#x3066;&#x3044;&#x304F;&#x30D1;&#x30A4;&#x30D7;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x751F;&#x6210;&#x3059;&#x308B;</p>
+<pre><code class="lang-r">&gt; Pipe(rnorm(<span class="hljs-number">100</span>))$mean()
+</code></pre>
+<pre><code>&lt;Pipe: numeric&gt;
+[1] -0.03378212
+</code></pre><pre><code class="lang-r">&gt; Pipe(rnorm(<span class="hljs-number">100</span>))$c(<span class="hljs-number">4</span>, <span class="hljs-number">5</span>) []
+</code></pre>
+<pre><code>  [1]  0.462392249 -0.670124511 -2.126407668  0.997879143  0.317176136
+  [6]  0.914143918 -1.096991697 -1.258533771  0.752769012 -0.666576206
+ [11] -0.622873461  2.417092835  0.229618911 -0.654367195 -0.073948906
+ [16]  0.019405512  0.039584004  0.063502091 -0.480403695  0.813702370
+ [21] -0.207940868 -2.076749425  0.603240212 -0.265335515  0.796357663
+ [26] -0.543130103 -0.860232657  0.278123406  1.417500954 -0.315422198
+ [31]  0.883822119  2.509952653  0.628361400  0.063246833  0.775627245
+ [36]  0.909109764 -0.439670404 -0.258399679 -0.660616732  0.307178153
+ [41]  0.217419708 -0.162985635 -0.118769587 -0.742923429  1.564626065
+ [46]  1.142350837 -1.529785833  0.273129604  0.770630979 -0.565028970
+ [51]  0.892485296  0.049421596 -1.329318544 -1.549763873 -1.932745501
+ [56]  0.491134662  0.134837732 -0.066096025  0.195789645  0.702846944
+ [61]  1.689454149  1.341059578  0.967063267  0.885502526  0.911808040
+ [66]  1.654363328 -0.407286063 -1.858570046 -1.000046815  0.210664471
+ [71]  0.614234288  1.522819629  0.974932034  1.366161828  0.575597797
+ [76] -0.889602155  1.566013254  0.230643547 -0.450427422 -0.688455759
+ [81]  0.033813960  0.138805611  0.297002682 -0.788285444  1.874167998
+ [86] -0.383841180  0.081998547  1.058003079 -1.238339730  0.177059095
+ [91] -0.981128571 -0.618397993 -0.072011402  1.127286593 -1.532291110
+ [96] -1.820020667 -0.003268389  2.205508815  0.256464317 -0.912808890
+[101]  4.000000000  5.000000000
+</code></pre><pre><code class="lang-r">&gt; p &lt;- Pipe(list(a = <span class="hljs-number">1</span>, b = <span class="hljs-number">2</span>))
+&gt; p[[<span class="hljs-string">&quot;a&quot;</span>]]
+</code></pre>
+<pre><code>&lt;Pipe: numeric&gt;
+[1] 1
+</code></pre><pre><code class="lang-r">&gt; p[[<span class="hljs-string">&quot;b&quot;</span>]]
+</code></pre>
+<pre><code>&lt;Pipe: numeric&gt;
+[1] 2
+</code></pre><pre><code class="lang-r">&gt; p[length(.)]
+</code></pre>
+<pre><code>&lt;Pipe: list&gt;
+$b
+[1] 2
+</code></pre>
                     
                     </section>
                 
@@ -3340,10 +2913,10 @@
         </div>
 
         
-        <a href="../statistics/index.html" class="navigation navigation-prev " aria-label="Previous page: Statistics and Modeling"><i class="fa fa-angle-left"></i></a>
+        <a href="../utility/pforeach.html" class="navigation navigation-prev " aria-label="Previous page: pforeach"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../statistics/biotools.html" class="navigation navigation-next " aria-label="Next page: biotools"><i class="fa fa-angle-right"></i></a>
+        <a href="../utility/random.html" class="navigation navigation-next " aria-label="Next page: random"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
