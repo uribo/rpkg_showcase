@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="12.6" data-basepath=".." data-revision="Mon Oct 12 2015 15:11:28 GMT+0900 (JST)">
+    <div class="book" data-level="12.6" data-basepath=".." data-revision="Mon Oct 12 2015 19:46:17 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -3085,13 +3085,7 @@
 </ul>
 <pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(rdrop2)
 </code></pre>
-<pre><code>
-Attaching package: &apos;rdrop2&apos;
-
-The following object is masked from &apos;package:igraph&apos;:
-
-    %&gt;%
-</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.7.0</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.7.0</p>
 <hr>
 <table>
 <thead>
@@ -3174,15 +3168,11 @@ The following object is masked from &apos;package:igraph&apos;:
 </code></pre>
 <h2 id="drop-auth">drop_auth</h2>
 <p>R&#x304B;&#x3089;Dropbox&#x3078;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3059;&#x308B;&#x8A8D;&#x8A3C;&#x3092;&#x304A;&#x3053;&#x306A;&#x3046;</p>
-<pre><code class="lang-r">&gt; drop_auth(new_user = <span class="hljs-literal">FALSE</span>, 
-+           key = <span class="hljs-string">&quot;mmhfsybffdom42w&quot;</span>, 
-+           secret = <span class="hljs-string">&quot;l8zeqqqgm1ne5z0&quot;</span>, 
-+           cache = <span class="hljs-literal">TRUE</span>)
-</code></pre>
 <h2 id="drop-copy">drop_copy</h2>
 <pre><code class="lang-r">&gt; drop_copy(from_path = <span class="hljs-literal">NULL</span>, to_path = <span class="hljs-literal">NULL</span>, root = <span class="hljs-string">&quot;auto&quot;</span>,
 +   verbose = <span class="hljs-literal">FALSE</span>, dtoken = get_dropbox_token())
 </code></pre>
+<h2 id="drop-get">drop_get</h2>
 <h2 id="drop-read-csv">drop_read_csv</h2>
 <pre><code class="lang-r">&gt; write.csv(mtcars, file = <span class="hljs-string">&quot;mtt.csv&quot;</span>)
 &gt; drop_upload(<span class="hljs-string">&quot;mtt.csv&quot;</span>)
