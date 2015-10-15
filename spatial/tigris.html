@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>ctv | R Package Showcase</title>
+        <title>tigris | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../development/devtools.html" />
+    <link rel="next" href="../spatial/tmap.html" />
     
     
-    <link rel="prev" href="../development/index.html" />
+    <link rel="prev" href="../spatial/spatstat.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="5.1" data-basepath=".." data-revision="Thu Oct 15 2015 21:39:36 GMT+0900 (JST)">
+    <div class="book" data-level="9.12" data-basepath=".." data-revision="Thu Oct 15 2015 21:39:36 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -451,7 +451,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="5.1" data-path="development/ctv.html">
+        <li class="chapter " data-level="5.1" data-path="development/ctv.html">
             
                 
                     <a href="../development/ctv.html">
@@ -1810,7 +1810,7 @@
             
         </li>
     
-        <li class="chapter " data-level="9.12" data-path="spatial/tigris.html">
+        <li class="chapter active" data-level="9.12" data-path="spatial/tigris.html">
             
                 
                     <a href="../spatial/tigris.html">
@@ -3151,15 +3151,15 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="ctv-cran-task-views">ctv: CRAN Task Views</h1>
-<p>CRAN&#x30BF;&#x30B9;&#x30AF;&#x30D3;&#x30E5;&#x30FC;</p>
-<p><a href="http://cran.rstudio.com/web/packages/ctv/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/ctv" alt=""></a></p>
+                        <h1 id="tigris-load-census-tiger-line-shapefiles-into-r">tigris: Load Census TIGER/Line Shapefiles into R</h1>
+<p><a href="http://cran.rstudio.com/web/packages/tigris/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/tigris" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/ctv/index.html" target="_blank">http://cran.r-project.org/web/packages/ctv/index.html</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/tigris/index.html" target="_blank">http://cran.r-project.org/web/packages/tigris/index.html</a></li>
+<li>GitHub: <a href="https://github.com/walkerke/tigris" target="_blank">https://github.com/walkerke/tigris</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(ctv)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(tigris)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.8.1</p>
+<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.1</p>
 <hr>
 <table>
 <thead>
@@ -3170,226 +3170,200 @@
 </thead>
 <tbody>
 <tr>
-<td><code>install.views</code></td>
-<td>CRAN Task Views: Installing/Updating/Downloading Packages</td>
+<td><code>alaska_native_regional_corporations</code></td>
+<td>Download an Alaska Native Regional Corporation shapefile into R.</td>
 </tr>
 <tr>
-<td><code>read.ctv</code></td>
-<td>CRAN Task Views: Tools for Maintainers</td>
+<td><code>area_water</code></td>
+<td>Download an area water shapefile into R</td>
+</tr>
+<tr>
+<td><code>block_groups</code></td>
+<td>Download a Census block groups shapefile into R, and optionally subset by county</td>
+</tr>
+<tr>
+<td><code>blocks</code></td>
+<td>Download a Census block shapefile into R</td>
+</tr>
+<tr>
+<td><code>coastline</code></td>
+<td>Download a shapefile of the US coastline into R</td>
+</tr>
+<tr>
+<td><code>combined_statistical_areas</code></td>
+<td>Download a combined statistical areas shapefile into R</td>
+</tr>
+<tr>
+<td><code>congressional_districts</code></td>
+<td>Download a congressional districts shapefile for the 114th Congress into R</td>
+</tr>
+<tr>
+<td><code>core_based_statistical_areas</code></td>
+<td>Download a core-based statistical area shapefile into R</td>
+</tr>
+<tr>
+<td><code>counties</code></td>
+<td>Download a US Counties shapefile into R, and optionally subset by state</td>
+</tr>
+<tr>
+<td><code>divisions</code></td>
+<td>Download a US Census divisions cartographic boundary shapefile into R</td>
+</tr>
+<tr>
+<td><code>filter_place</code></td>
+<td>Filter a &apos;places&apos; Spatial object for only those places matching the contents of the &apos;place&apos; vector.</td>
+</tr>
+<tr>
+<td><code>filter_state</code></td>
+<td>Filter a &apos;states&apos; Spatial object for only those states matching the contents of the &apos;state&apos; vector.</td>
+</tr>
+<tr>
+<td><code>fips_codes</code></td>
+<td>Dataset with FIPS codes for US states and counties</td>
+</tr>
+<tr>
+<td><code>geo_join</code></td>
+<td>Easily merge a data frame to a spatial data frame</td>
+</tr>
+<tr>
+<td><code>grep_place</code></td>
+<td>Find places matching a term in a &apos;places&apos; object</td>
+</tr>
+<tr>
+<td><code>grep_state</code></td>
+<td>Find states matching a term in a &apos;state&apos; object</td>
+</tr>
+<tr>
+<td><code>is_tigris</code></td>
+<td>Returns &apos;TRUE&apos; if &apos;obj&apos; has a &apos;tigris&apos; attribute</td>
+</tr>
+<tr>
+<td><code>landmarks</code></td>
+<td>Download a point or area landmarks shapefile into R</td>
+</tr>
+<tr>
+<td><code>linear_water</code></td>
+<td>Download an linear water shapefile into R</td>
+</tr>
+<tr>
+<td><code>list_counties</code></td>
+<td>Return a data frame of county names &amp; FIPS codes for a given state</td>
+</tr>
+<tr>
+<td><code>list_places</code></td>
+<td>Return a list of all the places in a &apos;places&apos; object</td>
+</tr>
+<tr>
+<td><code>list_states</code></td>
+<td>Return a list of all the states in a &apos;state&apos; object</td>
+</tr>
+<tr>
+<td><code>lookup_code</code></td>
+<td>Look up state and county codes</td>
+</tr>
+<tr>
+<td><code>metro_divisions</code></td>
+<td>Download a metropolitan divisions shapefile into R.</td>
+</tr>
+<tr>
+<td><code>military</code></td>
+<td>Download the Military Installation National Shapefile into R</td>
+</tr>
+<tr>
+<td><code>nation</code></td>
+<td>Download a US national boundary shapefile into R</td>
+</tr>
+<tr>
+<td><code>native_areas</code></td>
+<td>Download an American Indian / Alaska Native / Native Hawaiian Areas shapefile into R.</td>
+</tr>
+<tr>
+<td><code>new_england</code></td>
+<td>Download a New England City and Town Area shapefile into R</td>
+</tr>
+<tr>
+<td><code>places</code></td>
+<td>Download a Census-designated places shapefile into R</td>
+</tr>
+<tr>
+<td><code>primary_roads</code></td>
+<td>Download a national primary roads shapefile into R</td>
+</tr>
+<tr>
+<td><code>primary_secondary_roads</code></td>
+<td>Download a primary &amp; secondary roads shapefile into R</td>
+</tr>
+<tr>
+<td><code>pumas</code></td>
+<td>Download a Public Use Microdata Area (PUMA) shapefile into R</td>
+</tr>
+<tr>
+<td><code>rails</code></td>
+<td>Download a national rails shapefile into R</td>
+</tr>
+<tr>
+<td><code>rbind_tigris</code></td>
+<td>Row-bind &apos;tigris&apos; Spatial objects</td>
+</tr>
+<tr>
+<td><code>regions</code></td>
+<td>Download a US regions cartographic boundary shapefile into R</td>
+</tr>
+<tr>
+<td><code>roads</code></td>
+<td>Download a roads shapefile into R</td>
+</tr>
+<tr>
+<td><code>school_districts</code></td>
+<td>Download a school district shapefile into R</td>
+</tr>
+<tr>
+<td><code>state_legislative_districts</code></td>
+<td>Download a state legislative districts shapefile into R - upper or lower</td>
+</tr>
+<tr>
+<td><code>states</code></td>
+<td>Download shapefile for all states into R</td>
+</tr>
+<tr>
+<td><code>tigris</code></td>
+<td>Download and use U.S. Census TIGER shapefiles in R</td>
+</tr>
+<tr>
+<td><code>tigris-exports</code></td>
+<td>tigris exported operators</td>
+</tr>
+<tr>
+<td><code>tigris_type</code></td>
+<td>Get the type of &apos;tigris&apos; object &apos;obj&apos; is</td>
+</tr>
+<tr>
+<td><code>tracts</code></td>
+<td>Download a Census tracts shapefile into R, and optionally subset by county</td>
+</tr>
+<tr>
+<td><code>tribal_block_groups</code></td>
+<td>Download a Tribal block groups shapefile into R.</td>
+</tr>
+<tr>
+<td><code>tribal_census_tracts</code></td>
+<td>Download a Tribal Census tract shapefile into R.</td>
+</tr>
+<tr>
+<td><code>tribal_subdivisions_national</code></td>
+<td>Download an American Indian Tribal Subdivision National shapefile into R.</td>
+</tr>
+<tr>
+<td><code>urban_areas</code></td>
+<td>Download an urban areas shapefile into R</td>
+</tr>
+<tr>
+<td><code>zctas</code></td>
+<td>Download a Zip Code Tabulation Area (ZCTA) shapefile into R</td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h2 id="available-views">available.views</h2>
-<pre><code class="lang-r">&gt; available.views()
-</code></pre>
-<pre><code>
-CRAN Task Views
----------------
-Name: Bayesian
-Topic: Bayesian Inference
-Maintainer: Jong Hee Park
-Repository: https://cran.rstudio.com/
----------------
-Name: ChemPhys
-Topic: Chemometrics and Computational Physics
-Maintainer: Katharine Mullen
-Repository: https://cran.rstudio.com/
----------------
-Name: ClinicalTrials
-Topic: Clinical Trial Design, Monitoring, and Analysis
-Maintainer: Ed Zhang and Harry G. Zhang
-Repository: https://cran.rstudio.com/
----------------
-Name: Cluster
-Topic: Cluster Analysis &amp; Finite Mixture Models
-Maintainer: Friedrich Leisch and Bettina Gruen
-Repository: https://cran.rstudio.com/
----------------
-Name: DifferentialEquations
-Topic: Differential Equations
-Maintainer: Karline Soetaert and Thomas Petzoldt
-Repository: https://cran.rstudio.com/
----------------
-Name: Distributions
-Topic: Probability Distributions
-Maintainer: Christophe Dutang
-Repository: https://cran.rstudio.com/
----------------
-Name: Econometrics
-Topic: Econometrics
-Maintainer: Achim Zeileis
-Repository: https://cran.rstudio.com/
----------------
-Name: Environmetrics
-Topic: Analysis of Ecological and Environmental Data
-Maintainer: Gavin Simpson
-Repository: https://cran.rstudio.com/
----------------
-Name: ExperimentalDesign
-Topic: Design of Experiments (DoE) &amp; Analysis of Experimental Data
-Maintainer: Ulrike Groemping
-Repository: https://cran.rstudio.com/
----------------
-Name: Finance
-Topic: Empirical Finance
-Maintainer: Dirk Eddelbuettel
-Repository: https://cran.rstudio.com/
----------------
-Name: Genetics
-Topic: Statistical Genetics
-Maintainer: Giovanni Montana
-Repository: https://cran.rstudio.com/
----------------
-Name: Graphics
-Topic: Graphic Displays &amp; Dynamic Graphics &amp; Graphic Devices &amp; Visualization
-Maintainer: Nicholas Lewin-Koh
-Repository: https://cran.rstudio.com/
----------------
-Name: HighPerformanceComputing
-Topic: High-Performance and Parallel Computing with R
-Maintainer: Dirk Eddelbuettel
-Repository: https://cran.rstudio.com/
----------------
-Name: MachineLearning
-Topic: Machine Learning &amp; Statistical Learning
-Maintainer: Torsten Hothorn
-Repository: https://cran.rstudio.com/
----------------
-Name: MedicalImaging
-Topic: Medical Image Analysis
-Maintainer: Brandon Whitcher
-Repository: https://cran.rstudio.com/
----------------
-Name: MetaAnalysis
-Topic: Meta-Analysis
-Maintainer: Michael Dewey
-Repository: https://cran.rstudio.com/
----------------
-Name: Multivariate
-Topic: Multivariate Statistics
-Maintainer: Paul Hewson
-Repository: https://cran.rstudio.com/
----------------
-Name: NaturalLanguageProcessing
-Topic: Natural Language Processing
-Maintainer: Fridolin Wild, Knowledge Media Institute (KMi), The Open University, UK
-Repository: https://cran.rstudio.com/
----------------
-Name: NumericalMathematics
-Topic: Numerical Mathematics
-Maintainer: Hans W. Borchers
-Repository: https://cran.rstudio.com/
----------------
-Name: OfficialStatistics
-Topic: Official Statistics &amp; Survey Methodology
-Maintainer: Matthias Templ
-Repository: https://cran.rstudio.com/
----------------
-Name: Optimization
-Topic: Optimization and Mathematical Programming
-Maintainer: Stefan Theussl and Hans W. Borchers
-Repository: https://cran.rstudio.com/
----------------
-Name: Pharmacokinetics
-Topic: Analysis of Pharmacokinetic Data
-Maintainer: Suzette Blanchard
-Repository: https://cran.rstudio.com/
----------------
-Name: Phylogenetics
-Topic: Phylogenetics, Especially Comparative Methods
-Maintainer: Brian O&apos;Meara
-Repository: https://cran.rstudio.com/
----------------
-Name: Psychometrics
-Topic: Psychometric Models and Methods
-Maintainer: Patrick Mair
-Repository: https://cran.rstudio.com/
----------------
-Name: ReproducibleResearch
-Topic: Reproducible Research
-Maintainer: Max Kuhn
-Repository: https://cran.rstudio.com/
----------------
-Name: Robust
-Topic: Robust Statistical Methods
-Maintainer: Martin Maechler
-Repository: https://cran.rstudio.com/
----------------
-Name: SocialSciences
-Topic: Statistics for the Social Sciences
-Maintainer: John Fox
-Repository: https://cran.rstudio.com/
----------------
-Name: Spatial
-Topic: Analysis of Spatial Data
-Maintainer: Roger Bivand
-Repository: https://cran.rstudio.com/
----------------
-Name: SpatioTemporal
-Topic: Handling and Analyzing Spatio-Temporal Data
-Maintainer: Edzer Pebesma
-Repository: https://cran.rstudio.com/
----------------
-Name: Survival
-Topic: Survival Analysis
-Maintainer: Arthur Allignol and Aurelien Latouche
-Repository: https://cran.rstudio.com/
----------------
-Name: TimeSeries
-Topic: Time Series Analysis
-Maintainer: Rob J Hyndman
-Repository: https://cran.rstudio.com/
----------------
-Name: WebTechnologies
-Topic: Web Technologies and Services
-Maintainer: Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud
-Repository: https://cran.rstudio.com/
----------------
-Name: gR
-Topic: gRaphical Models in R
-Maintainer: Soren Hojsgaard
-Repository: https://cran.rstudio.com/
-</code></pre><h2 id="ctv2html">ctv2html</h2>
-<p>CTV&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;HTML&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x5909;&#x63DB;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; read.ctv(system.file(<span class="hljs-string">&quot;ctv&quot;</span>, <span class="hljs-string">&quot;Econometrics.ctv&quot;</span>, package = <span class="hljs-string">&quot;ctv&quot;</span>)) %&gt;% ctv2html()
-</code></pre>
-<h2 id="install-views">install.views</h2>
-<p>&#x5BFE;&#x8C61;&#x3068;&#x3057;&#x305F;CTV&#x306E;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; install.views(<span class="hljs-string">&quot;Econometrics&quot;</span>)
-</code></pre>
-<h2 id="read-ctv">read.ctv</h2>
-<p>CTV&#x5F62;&#x5F0F;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;</p>
-<pre><code class="lang-r">&gt; read.ctv(system.file(<span class="hljs-string">&quot;ctv&quot;</span>, <span class="hljs-string">&quot;Econometrics.ctv&quot;</span>, package = <span class="hljs-string">&quot;ctv&quot;</span>))
-</code></pre>
-<pre><code>
-CRAN Task View
---------------
-Name:       Econometrics
-Topic:      Computational Econometrics
-Maintainer: Achim Zeileis
-Contact:    Achim.Zeileis@R-project.org
-Version:    2014-12-18
-
-Packages:   AER*, aod, apt, bayesm, betareg, boot, bootstrap, CADFtest,
-            car*, CDNmoney, censReg, crch, dlm, dse, dyn, dynlm, Ecdat,
-            effects, erer, expsmooth, FinTS, fma, forecast, frontier,
-            fxregime, gam, gamlss, geepack, gmm, Hmisc, ineq, intReg, its,
-            LARF, lfe, LinRegInteractive, lme4, lmtest*, MASS, Matrix,
-            Mcomp, meboot, mFilter, mfx, mgcv, mhurdle, micEcon,
-            micEconAids, micEconCES, micEconSNQP, midasr, mlogit, mnlogit,
-            MNP, MSBVAR, mvProbit, nlme, nnet, nonnest2, np, ordinal,
-            partsm, pcse, phtt, plm*, pscl, pwt, pwt8, quantreg, reldist,
-            rms, RSGHB, sampleSelection, sandwich*, segmented, sem,
-            SemiParSampleSel, simpleboot, SparseM, spatialprobit, spdep,
-            sphet, splm, strucchange, survival, systemfit, timeSeries,
-            truncreg, tsDyn, tseries*, tsfa, urca*, vars, VGAM, Zelig,
-            zoo*
-            (* = core package)
-</code></pre><h2 id="update-views">update.views</h2>
-<p>&#x5BFE;&#x8C61;&#x306E;CTV&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x66F4;&#x65B0;&#x3092;&#x884C;&#x3046;</p>
-<pre><code class="lang-r">&gt; update.views(<span class="hljs-string">&quot;Econometrics&quot;</span>)
-</code></pre>
 
                     
                     </section>
@@ -3400,10 +3374,10 @@ Packages:   AER*, aod, apt, bayesm, betareg, boot, bootstrap, CADFtest,
         </div>
 
         
-        <a href="../development/index.html" class="navigation navigation-prev " aria-label="Previous page: Development"><i class="fa fa-angle-left"></i></a>
+        <a href="../spatial/spatstat.html" class="navigation navigation-prev " aria-label="Previous page: spatstat"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../development/devtools.html" class="navigation navigation-next " aria-label="Next page: devtools"><i class="fa fa-angle-right"></i></a>
+        <a href="../spatial/tmap.html" class="navigation navigation-next " aria-label="Next page: tmap"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

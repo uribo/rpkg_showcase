@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>ctv | R Package Showcase</title>
+        <title>treemap | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../development/devtools.html" />
+    <link rel="next" href="../graphics/viridis.html" />
     
     
-    <link rel="prev" href="../development/index.html" />
+    <link rel="prev" href="../graphics/rworldmap.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="5.1" data-basepath=".." data-revision="Thu Oct 15 2015 21:39:36 GMT+0900 (JST)">
+    <div class="book" data-level="7.19" data-basepath=".." data-revision="Thu Oct 15 2015 21:39:36 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -451,7 +451,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="5.1" data-path="development/ctv.html">
+        <li class="chapter " data-level="5.1" data-path="development/ctv.html">
             
                 
                     <a href="../development/ctv.html">
@@ -1423,7 +1423,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.19" data-path="graphics/treemap.html">
+        <li class="chapter active" data-level="7.19" data-path="graphics/treemap.html">
             
                 
                     <a href="../graphics/treemap.html">
@@ -3151,15 +3151,17 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="ctv-cran-task-views">ctv: CRAN Task Views</h1>
-<p>CRAN&#x30BF;&#x30B9;&#x30AF;&#x30D3;&#x30E5;&#x30FC;</p>
-<p><a href="http://cran.rstudio.com/web/packages/ctv/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/ctv" alt=""></a></p>
+                        <h1 id="treemap-treemap-visualization">treemap: Treemap Visualization</h1>
+<p>Treemap&#x306E;&#x53EF;&#x8996;&#x5316;</p>
+<p><a href="http://cran.rstudio.com/web/packages/treemap/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/treemap" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/ctv/index.html" target="_blank">http://cran.r-project.org/web/packages/ctv/index.html</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/treemap/index.html" target="_blank">http://cran.r-project.org/web/packages/treemap/index.html</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(ctv)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(treemap)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.8.1</p>
+<pre><code>Warning: replacing previous import by &apos;grid::arrow&apos; when loading &apos;treemap&apos;
+</code></pre><pre><code>Warning: replacing previous import by &apos;grid::unit&apos; when loading &apos;treemap&apos;
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 2.4</p>
 <hr>
 <table>
 <thead>
@@ -3170,226 +3172,48 @@
 </thead>
 <tbody>
 <tr>
-<td><code>install.views</code></td>
-<td>CRAN Task Views: Installing/Updating/Downloading Packages</td>
+<td><code>GNI2010</code></td>
+<td>GNI 2010 Data</td>
 </tr>
 <tr>
-<td><code>read.ctv</code></td>
-<td>CRAN Task Views: Tools for Maintainers</td>
+<td><code>business</code></td>
+<td>Fictitious Business Statistics Data</td>
+</tr>
+<tr>
+<td><code>itreemap</code></td>
+<td>Interactive user interface for treemap</td>
+</tr>
+<tr>
+<td><code>random.hierarchical.data</code></td>
+<td>Create random hierarchical data</td>
+</tr>
+<tr>
+<td><code>tmPlot</code></td>
+<td>Create a treemap (deprecated)</td>
+</tr>
+<tr>
+<td><code>treecolors</code></td>
+<td>Interactive tool to experiment with Tree Colors</td>
+</tr>
+<tr>
+<td><code>treegraph</code></td>
+<td>Create a tree graph</td>
+</tr>
+<tr>
+<td><code>treemap</code></td>
+<td>Create a treemap</td>
+</tr>
+<tr>
+<td><code>treemap-package</code></td>
+<td>Treemap package</td>
+</tr>
+<tr>
+<td><code>treepalette</code></td>
+<td>Obtain hierarchical color palettes (Tree Colors)</td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h2 id="available-views">available.views</h2>
-<pre><code class="lang-r">&gt; available.views()
-</code></pre>
-<pre><code>
-CRAN Task Views
----------------
-Name: Bayesian
-Topic: Bayesian Inference
-Maintainer: Jong Hee Park
-Repository: https://cran.rstudio.com/
----------------
-Name: ChemPhys
-Topic: Chemometrics and Computational Physics
-Maintainer: Katharine Mullen
-Repository: https://cran.rstudio.com/
----------------
-Name: ClinicalTrials
-Topic: Clinical Trial Design, Monitoring, and Analysis
-Maintainer: Ed Zhang and Harry G. Zhang
-Repository: https://cran.rstudio.com/
----------------
-Name: Cluster
-Topic: Cluster Analysis &amp; Finite Mixture Models
-Maintainer: Friedrich Leisch and Bettina Gruen
-Repository: https://cran.rstudio.com/
----------------
-Name: DifferentialEquations
-Topic: Differential Equations
-Maintainer: Karline Soetaert and Thomas Petzoldt
-Repository: https://cran.rstudio.com/
----------------
-Name: Distributions
-Topic: Probability Distributions
-Maintainer: Christophe Dutang
-Repository: https://cran.rstudio.com/
----------------
-Name: Econometrics
-Topic: Econometrics
-Maintainer: Achim Zeileis
-Repository: https://cran.rstudio.com/
----------------
-Name: Environmetrics
-Topic: Analysis of Ecological and Environmental Data
-Maintainer: Gavin Simpson
-Repository: https://cran.rstudio.com/
----------------
-Name: ExperimentalDesign
-Topic: Design of Experiments (DoE) &amp; Analysis of Experimental Data
-Maintainer: Ulrike Groemping
-Repository: https://cran.rstudio.com/
----------------
-Name: Finance
-Topic: Empirical Finance
-Maintainer: Dirk Eddelbuettel
-Repository: https://cran.rstudio.com/
----------------
-Name: Genetics
-Topic: Statistical Genetics
-Maintainer: Giovanni Montana
-Repository: https://cran.rstudio.com/
----------------
-Name: Graphics
-Topic: Graphic Displays &amp; Dynamic Graphics &amp; Graphic Devices &amp; Visualization
-Maintainer: Nicholas Lewin-Koh
-Repository: https://cran.rstudio.com/
----------------
-Name: HighPerformanceComputing
-Topic: High-Performance and Parallel Computing with R
-Maintainer: Dirk Eddelbuettel
-Repository: https://cran.rstudio.com/
----------------
-Name: MachineLearning
-Topic: Machine Learning &amp; Statistical Learning
-Maintainer: Torsten Hothorn
-Repository: https://cran.rstudio.com/
----------------
-Name: MedicalImaging
-Topic: Medical Image Analysis
-Maintainer: Brandon Whitcher
-Repository: https://cran.rstudio.com/
----------------
-Name: MetaAnalysis
-Topic: Meta-Analysis
-Maintainer: Michael Dewey
-Repository: https://cran.rstudio.com/
----------------
-Name: Multivariate
-Topic: Multivariate Statistics
-Maintainer: Paul Hewson
-Repository: https://cran.rstudio.com/
----------------
-Name: NaturalLanguageProcessing
-Topic: Natural Language Processing
-Maintainer: Fridolin Wild, Knowledge Media Institute (KMi), The Open University, UK
-Repository: https://cran.rstudio.com/
----------------
-Name: NumericalMathematics
-Topic: Numerical Mathematics
-Maintainer: Hans W. Borchers
-Repository: https://cran.rstudio.com/
----------------
-Name: OfficialStatistics
-Topic: Official Statistics &amp; Survey Methodology
-Maintainer: Matthias Templ
-Repository: https://cran.rstudio.com/
----------------
-Name: Optimization
-Topic: Optimization and Mathematical Programming
-Maintainer: Stefan Theussl and Hans W. Borchers
-Repository: https://cran.rstudio.com/
----------------
-Name: Pharmacokinetics
-Topic: Analysis of Pharmacokinetic Data
-Maintainer: Suzette Blanchard
-Repository: https://cran.rstudio.com/
----------------
-Name: Phylogenetics
-Topic: Phylogenetics, Especially Comparative Methods
-Maintainer: Brian O&apos;Meara
-Repository: https://cran.rstudio.com/
----------------
-Name: Psychometrics
-Topic: Psychometric Models and Methods
-Maintainer: Patrick Mair
-Repository: https://cran.rstudio.com/
----------------
-Name: ReproducibleResearch
-Topic: Reproducible Research
-Maintainer: Max Kuhn
-Repository: https://cran.rstudio.com/
----------------
-Name: Robust
-Topic: Robust Statistical Methods
-Maintainer: Martin Maechler
-Repository: https://cran.rstudio.com/
----------------
-Name: SocialSciences
-Topic: Statistics for the Social Sciences
-Maintainer: John Fox
-Repository: https://cran.rstudio.com/
----------------
-Name: Spatial
-Topic: Analysis of Spatial Data
-Maintainer: Roger Bivand
-Repository: https://cran.rstudio.com/
----------------
-Name: SpatioTemporal
-Topic: Handling and Analyzing Spatio-Temporal Data
-Maintainer: Edzer Pebesma
-Repository: https://cran.rstudio.com/
----------------
-Name: Survival
-Topic: Survival Analysis
-Maintainer: Arthur Allignol and Aurelien Latouche
-Repository: https://cran.rstudio.com/
----------------
-Name: TimeSeries
-Topic: Time Series Analysis
-Maintainer: Rob J Hyndman
-Repository: https://cran.rstudio.com/
----------------
-Name: WebTechnologies
-Topic: Web Technologies and Services
-Maintainer: Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud
-Repository: https://cran.rstudio.com/
----------------
-Name: gR
-Topic: gRaphical Models in R
-Maintainer: Soren Hojsgaard
-Repository: https://cran.rstudio.com/
-</code></pre><h2 id="ctv2html">ctv2html</h2>
-<p>CTV&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;HTML&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x5909;&#x63DB;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; read.ctv(system.file(<span class="hljs-string">&quot;ctv&quot;</span>, <span class="hljs-string">&quot;Econometrics.ctv&quot;</span>, package = <span class="hljs-string">&quot;ctv&quot;</span>)) %&gt;% ctv2html()
-</code></pre>
-<h2 id="install-views">install.views</h2>
-<p>&#x5BFE;&#x8C61;&#x3068;&#x3057;&#x305F;CTV&#x306E;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; install.views(<span class="hljs-string">&quot;Econometrics&quot;</span>)
-</code></pre>
-<h2 id="read-ctv">read.ctv</h2>
-<p>CTV&#x5F62;&#x5F0F;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;</p>
-<pre><code class="lang-r">&gt; read.ctv(system.file(<span class="hljs-string">&quot;ctv&quot;</span>, <span class="hljs-string">&quot;Econometrics.ctv&quot;</span>, package = <span class="hljs-string">&quot;ctv&quot;</span>))
-</code></pre>
-<pre><code>
-CRAN Task View
---------------
-Name:       Econometrics
-Topic:      Computational Econometrics
-Maintainer: Achim Zeileis
-Contact:    Achim.Zeileis@R-project.org
-Version:    2014-12-18
-
-Packages:   AER*, aod, apt, bayesm, betareg, boot, bootstrap, CADFtest,
-            car*, CDNmoney, censReg, crch, dlm, dse, dyn, dynlm, Ecdat,
-            effects, erer, expsmooth, FinTS, fma, forecast, frontier,
-            fxregime, gam, gamlss, geepack, gmm, Hmisc, ineq, intReg, its,
-            LARF, lfe, LinRegInteractive, lme4, lmtest*, MASS, Matrix,
-            Mcomp, meboot, mFilter, mfx, mgcv, mhurdle, micEcon,
-            micEconAids, micEconCES, micEconSNQP, midasr, mlogit, mnlogit,
-            MNP, MSBVAR, mvProbit, nlme, nnet, nonnest2, np, ordinal,
-            partsm, pcse, phtt, plm*, pscl, pwt, pwt8, quantreg, reldist,
-            rms, RSGHB, sampleSelection, sandwich*, segmented, sem,
-            SemiParSampleSel, simpleboot, SparseM, spatialprobit, spdep,
-            sphet, splm, strucchange, survival, systemfit, timeSeries,
-            truncreg, tsDyn, tseries*, tsfa, urca*, vars, VGAM, Zelig,
-            zoo*
-            (* = core package)
-</code></pre><h2 id="update-views">update.views</h2>
-<p>&#x5BFE;&#x8C61;&#x306E;CTV&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x66F4;&#x65B0;&#x3092;&#x884C;&#x3046;</p>
-<pre><code class="lang-r">&gt; update.views(<span class="hljs-string">&quot;Econometrics&quot;</span>)
-</code></pre>
 
                     
                     </section>
@@ -3400,10 +3224,10 @@ Packages:   AER*, aod, apt, bayesm, betareg, boot, bootstrap, CADFtest,
         </div>
 
         
-        <a href="../development/index.html" class="navigation navigation-prev " aria-label="Previous page: Development"><i class="fa fa-angle-left"></i></a>
+        <a href="../graphics/rworldmap.html" class="navigation navigation-prev " aria-label="Previous page: rworldmap"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../development/devtools.html" class="navigation navigation-next " aria-label="Next page: devtools"><i class="fa fa-angle-right"></i></a>
+        <a href="../graphics/viridis.html" class="navigation navigation-next " aria-label="Next page: viridis"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

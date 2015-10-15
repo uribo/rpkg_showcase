@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>ctv | R Package Showcase</title>
+        <title>raster | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../development/devtools.html" />
+    <link rel="next" href="../spatial/rgdal.html" />
     
     
-    <link rel="prev" href="../development/index.html" />
+    <link rel="prev" href="../spatial/maptools.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="5.1" data-basepath=".." data-revision="Thu Oct 15 2015 21:39:36 GMT+0900 (JST)">
+    <div class="book" data-level="9.6" data-basepath=".." data-revision="Thu Oct 15 2015 21:39:36 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -451,7 +451,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="5.1" data-path="development/ctv.html">
+        <li class="chapter " data-level="5.1" data-path="development/ctv.html">
             
                 
                     <a href="../development/ctv.html">
@@ -1720,7 +1720,7 @@
             
         </li>
     
-        <li class="chapter " data-level="9.6" data-path="spatial/raster.html">
+        <li class="chapter active" data-level="9.6" data-path="spatial/raster.html">
             
                 
                     <a href="../spatial/raster.html">
@@ -3151,15 +3151,26 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="ctv-cran-task-views">ctv: CRAN Task Views</h1>
-<p>CRAN&#x30BF;&#x30B9;&#x30AF;&#x30D3;&#x30E5;&#x30FC;</p>
-<p><a href="http://cran.rstudio.com/web/packages/ctv/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/ctv" alt=""></a></p>
+                        <h1 id="raster-geographic-data-analysis-and-modeling">raster: Geographic Data Analysis and Modeling</h1>
+<p>&#x5730;&#x7406;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x89E3;&#x6790;&#x3084;&#x30E2;&#x30C7;&#x30EA;&#x30F3;&#x30B0;</p>
+<p><a href="http://cran.rstudio.com/web/packages/raster/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/raster" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/ctv/index.html" target="_blank">http://cran.r-project.org/web/packages/ctv/index.html</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/raster/index.html" target="_blank">http://cran.r-project.org/web/packages/raster/index.html</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(ctv)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(raster)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.8.1</p>
+<pre><code>Loading required package: sp
+
+Attaching package: &apos;raster&apos;
+
+The following object is masked from &apos;package:dplyr&apos;:
+
+    select
+
+The following object is masked from &apos;package:magrittr&apos;:
+
+    extract
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 2.4.20</p>
 <hr>
 <table>
 <thead>
@@ -3170,226 +3181,752 @@
 </thead>
 <tbody>
 <tr>
-<td><code>install.views</code></td>
-<td>CRAN Task Views: Installing/Updating/Downloading Packages</td>
+<td><code>Arith-methods</code></td>
+<td>Arithmetic with Raster* objects</td>
 </tr>
 <tr>
-<td><code>read.ctv</code></td>
-<td>CRAN Task Views: Tools for Maintainers</td>
+<td><code>Compare-methods</code></td>
+<td>Compare Raster* objects</td>
+</tr>
+<tr>
+<td><code>Extent-class</code></td>
+<td>Class &quot;Extent&quot;</td>
+</tr>
+<tr>
+<td><code>Geary</code></td>
+<td>Spatial autocorrelation</td>
+</tr>
+<tr>
+<td><code>KML</code></td>
+<td>Write a KML or KMZ file</td>
+</tr>
+<tr>
+<td><code>Logic-methods</code></td>
+<td>Logical operators and functions</td>
+</tr>
+<tr>
+<td><code>Math-methods</code></td>
+<td>Mathematical functions</td>
+</tr>
+<tr>
+<td><code>NAvalue</code></td>
+<td>Set the NA value of a RasterLayer</td>
+</tr>
+<tr>
+<td><code>RGB</code></td>
+<td>Create a Red-Green-Blue Raster object</td>
+</tr>
+<tr>
+<td><code>Raster-class</code></td>
+<td>Raster* classes</td>
+</tr>
+<tr>
+<td><code>Summary-methods</code></td>
+<td>Summary methods</td>
+</tr>
+<tr>
+<td><code>Which</code></td>
+<td>Which cells are TRUE?</td>
+</tr>
+<tr>
+<td><code>[&lt;-,RasterLayer,RasterLayer,missing-method</code></td>
+<td>Replace cell values or layers of a Raster* object</td>
+</tr>
+<tr>
+<td><code>[[,Raster,ANY,ANY-method</code></td>
+<td>Indexing to extract values of a Raster* object</td>
+</tr>
+<tr>
+<td><code>addLayer</code></td>
+<td>Add or drop a layer</td>
+</tr>
+<tr>
+<td><code>adjacent</code></td>
+<td>Adjacent cells</td>
+</tr>
+<tr>
+<td><code>aggregate</code></td>
+<td>Aggregate raster cells or SpatialPolygons/Lines</td>
+</tr>
+<tr>
+<td><code>alignExtent</code></td>
+<td>Align an extent (object of class Extent)</td>
+</tr>
+<tr>
+<td><code>animate</code></td>
+<td>Animate layers of a Raster* object</td>
+</tr>
+<tr>
+<td><code>approxNA</code></td>
+<td>Estimate values for cell values that are &apos;NA&apos; by interpolating between layers</td>
+</tr>
+<tr>
+<td><code>area</code></td>
+<td>Size of cells</td>
+</tr>
+<tr>
+<td><code>as.data.frame</code></td>
+<td>Get a data.frame with raster cell values, or coerce SpatialPolygons, Lines, or Points to a data.frame</td>
+</tr>
+<tr>
+<td><code>as.logical,Raster-method</code></td>
+<td>Change values to logical</td>
+</tr>
+<tr>
+<td><code>as.matrix</code></td>
+<td>Get a matrix with raster cell values</td>
+</tr>
+<tr>
+<td><code>as.raster</code></td>
+<td>Coerce to a &apos;raster&apos; object</td>
+</tr>
+<tr>
+<td><code>atan2</code></td>
+<td>Two argument arc-tangent</td>
+</tr>
+<tr>
+<td><code>bandnr</code></td>
+<td>Number of bands</td>
+</tr>
+<tr>
+<td><code>barplot</code></td>
+<td>Bar plot of a RasterLayer</td>
+</tr>
+<tr>
+<td><code>beginCluster</code></td>
+<td>Use a multi-core cluster</td>
+</tr>
+<tr>
+<td><code>bind</code></td>
+<td>Bind Spatial* objects</td>
+</tr>
+<tr>
+<td><code>blockSize</code></td>
+<td>Block size for writing files</td>
+</tr>
+<tr>
+<td><code>boundaries</code></td>
+<td>boundaries (edges) detection</td>
+</tr>
+<tr>
+<td><code>boxplot</code></td>
+<td>Box plot of Raster objects</td>
+</tr>
+<tr>
+<td><code>brick</code></td>
+<td>Create a RasterBrick object</td>
+</tr>
+<tr>
+<td><code>buffer</code></td>
+<td>buffer</td>
+</tr>
+<tr>
+<td><code>calc</code></td>
+<td>Calculate</td>
+</tr>
+<tr>
+<td><code>cellFromRowCol</code></td>
+<td>Get cell, row, or column number</td>
+</tr>
+<tr>
+<td><code>cellStats</code></td>
+<td>Statistics across cells</td>
+</tr>
+<tr>
+<td><code>cellsFromExtent</code></td>
+<td>Cells from Extent</td>
+</tr>
+<tr>
+<td><code>clamp</code></td>
+<td>Clamp values</td>
+</tr>
+<tr>
+<td><code>clearValues</code></td>
+<td>Clear values</td>
+</tr>
+<tr>
+<td><code>click</code></td>
+<td>Query by clicking on a map</td>
+</tr>
+<tr>
+<td><code>clump</code></td>
+<td>Detect clumps</td>
+</tr>
+<tr>
+<td><code>colortable</code></td>
+<td>colortable</td>
+</tr>
+<tr>
+<td><code>compareCRS</code></td>
+<td>Partially compare two CRS objects</td>
+</tr>
+<tr>
+<td><code>compareRaster</code></td>
+<td>Compare Raster objects</td>
+</tr>
+<tr>
+<td><code>contour</code></td>
+<td>Contour plot</td>
+</tr>
+<tr>
+<td><code>corLocal</code></td>
+<td>Local correlation coefficient</td>
+</tr>
+<tr>
+<td><code>cover</code></td>
+<td>Replace NA values with values of other layers</td>
+</tr>
+<tr>
+<td><code>crop</code></td>
+<td>Crop</td>
+</tr>
+<tr>
+<td><code>crosstab</code></td>
+<td>Cross-tabulate</td>
+</tr>
+<tr>
+<td><code>cut</code></td>
+<td>Convert values to classes</td>
+</tr>
+<tr>
+<td><code>cv</code></td>
+<td>Coefficient of variation</td>
+</tr>
+<tr>
+<td><code>dataSize</code></td>
+<td>Raster file properties</td>
+</tr>
+<tr>
+<td><code>dataType</code></td>
+<td>Data type</td>
+</tr>
+<tr>
+<td><code>density</code></td>
+<td>Density plot</td>
+</tr>
+<tr>
+<td><code>dim</code></td>
+<td>Dimensions of a Raster* object</td>
+</tr>
+<tr>
+<td><code>direction</code></td>
+<td>Direction</td>
+</tr>
+<tr>
+<td><code>disaggregate</code></td>
+<td>Disaggregate</td>
+</tr>
+<tr>
+<td><code>distance</code></td>
+<td>Distance</td>
+</tr>
+<tr>
+<td><code>distanceFromPoints</code></td>
+<td>Distance from points</td>
+</tr>
+<tr>
+<td><code>drawExtent</code></td>
+<td>Create an Extent object by drawing on a map</td>
+</tr>
+<tr>
+<td><code>drawPoly</code></td>
+<td>Draw a line or polygon</td>
+</tr>
+<tr>
+<td><code>erase</code></td>
+<td>Erase parts of a Spatial* object</td>
+</tr>
+<tr>
+<td><code>extend</code></td>
+<td>Extend</td>
+</tr>
+<tr>
+<td><code>extension</code></td>
+<td>Filename extensions</td>
+</tr>
+<tr>
+<td><code>extent</code></td>
+<td>Extent</td>
+</tr>
+<tr>
+<td><code>extract</code></td>
+<td>Extract values from Raster objects</td>
+</tr>
+<tr>
+<td><code>filename</code></td>
+<td>Filename</td>
+</tr>
+<tr>
+<td><code>filledContour</code></td>
+<td>Filled contour plot</td>
+</tr>
+<tr>
+<td><code>flip</code></td>
+<td>Flip</td>
+</tr>
+<tr>
+<td><code>floor,Extent-method</code></td>
+<td>round Extent coordinates</td>
+</tr>
+<tr>
+<td><code>flowPath</code></td>
+<td>Flow path</td>
+</tr>
+<tr>
+<td><code>focal</code></td>
+<td>Focal values</td>
+</tr>
+<tr>
+<td><code>focalWeight</code></td>
+<td>Focal weights matrix</td>
+</tr>
+<tr>
+<td><code>freq</code></td>
+<td>Frequency table</td>
+</tr>
+<tr>
+<td><code>fromDisk</code></td>
+<td>Are values in memory and/or on disk?</td>
+</tr>
+<tr>
+<td><code>gain</code></td>
+<td>Gain and offset of values on file</td>
+</tr>
+<tr>
+<td><code>geom</code></td>
+<td>Get the coordinates of a vector type Spatial* object</td>
+</tr>
+<tr>
+<td><code>getData</code></td>
+<td>Get geographic data</td>
+</tr>
+<tr>
+<td><code>getValues</code></td>
+<td>Get raster cell values</td>
+</tr>
+<tr>
+<td><code>getValuesBlock</code></td>
+<td>Get a block of raster cell values</td>
+</tr>
+<tr>
+<td><code>getValuesFocal</code></td>
+<td>Get focal raster cell values</td>
+</tr>
+<tr>
+<td><code>getZ</code></td>
+<td>Get or set z-values</td>
+</tr>
+<tr>
+<td><code>gridDistance</code></td>
+<td>Distance on a grid</td>
+</tr>
+<tr>
+<td><code>hdr</code></td>
+<td>Header files</td>
+</tr>
+<tr>
+<td><code>head</code></td>
+<td>Show the head or tail of a Raster* object</td>
+</tr>
+<tr>
+<td><code>hillShade</code></td>
+<td>Hill shading</td>
+</tr>
+<tr>
+<td><code>hist</code></td>
+<td>Histogram</td>
+</tr>
+<tr>
+<td><code>image</code></td>
+<td>Image</td>
+</tr>
+<tr>
+<td><code>init</code></td>
+<td>Intitialize a Raster object with values</td>
+</tr>
+<tr>
+<td><code>interpolate</code></td>
+<td>Interpolate</td>
+</tr>
+<tr>
+<td><code>intersect</code></td>
+<td>Intersect</td>
+</tr>
+<tr>
+<td><code>is.factor</code></td>
+<td>Factors</td>
+</tr>
+<tr>
+<td><code>isLonLat</code></td>
+<td>Is this longitude/latitude data?</td>
+</tr>
+<tr>
+<td><code>layerStats</code></td>
+<td>Correlation and (weighted) covariance</td>
+</tr>
+<tr>
+<td><code>layerize</code></td>
+<td>Layerize</td>
+</tr>
+<tr>
+<td><code>localFun</code></td>
+<td>Local functions</td>
+</tr>
+<tr>
+<td><code>mask</code></td>
+<td>Mask values in a Raster object</td>
+</tr>
+<tr>
+<td><code>match</code></td>
+<td>Value matching for Raster* objects</td>
+</tr>
+<tr>
+<td><code>merge</code></td>
+<td>Merge Raster* objects</td>
+</tr>
+<tr>
+<td><code>metadata</code></td>
+<td>Metadata</td>
+</tr>
+<tr>
+<td><code>minValue</code></td>
+<td>Minimum and maximum values</td>
+</tr>
+<tr>
+<td><code>modal</code></td>
+<td>modal value</td>
+</tr>
+<tr>
+<td><code>mosaic</code></td>
+<td>Merge Raster* objects using a function for overlapping areas</td>
+</tr>
+<tr>
+<td><code>movingFun</code></td>
+<td>Moving functions</td>
+</tr>
+<tr>
+<td><code>names</code></td>
+<td>Names of raster layers</td>
+</tr>
+<tr>
+<td><code>ncell</code></td>
+<td>Number or rows, columns, and cells of a Raster* object</td>
+</tr>
+<tr>
+<td><code>nlayers</code></td>
+<td>Number of layers</td>
+</tr>
+<tr>
+<td><code>origin</code></td>
+<td>Origin</td>
+</tr>
+<tr>
+<td><code>overlay</code></td>
+<td>Overlay Raster objects</td>
+</tr>
+<tr>
+<td><code>pairs</code></td>
+<td>Pairs plot (matrix of scatterplots)</td>
+</tr>
+<tr>
+<td><code>persp</code></td>
+<td>Perspective plot</td>
+</tr>
+<tr>
+<td><code>plot</code></td>
+<td>Plot a Raster* object</td>
+</tr>
+<tr>
+<td><code>plotRGB</code></td>
+<td>Red-Green-Blue plot of a multi-layered Raster object</td>
+</tr>
+<tr>
+<td><code>pointDistance</code></td>
+<td>Distance between points</td>
+</tr>
+<tr>
+<td><code>predict</code></td>
+<td>Spatial model predictions</td>
+</tr>
+<tr>
+<td><code>projectRaster</code></td>
+<td>Project a Raster object</td>
+</tr>
+<tr>
+<td><code>projection</code></td>
+<td>Get or set a coordinate reference system (projection)</td>
+</tr>
+<tr>
+<td><code>quantile</code></td>
+<td>Raster quantiles</td>
+</tr>
+<tr>
+<td><code>raster</code></td>
+<td>Create a RasterLayer object</td>
+</tr>
+<tr>
+<td><code>raster-package</code></td>
+<td>Overview of the functions in the raster package</td>
+</tr>
+<tr>
+<td><code>rasterFromCells</code></td>
+<td>Subset a raster by cell numbers</td>
+</tr>
+<tr>
+<td><code>rasterFromXYZ</code></td>
+<td>Create a Raster* object from x, y, z values</td>
+</tr>
+<tr>
+<td><code>rasterOptions</code></td>
+<td>Global options for the raster package</td>
+</tr>
+<tr>
+<td><code>rasterTmpFile</code></td>
+<td>Temporary files</td>
+</tr>
+<tr>
+<td><code>rasterToContour</code></td>
+<td>Raster to contour lines conversion</td>
+</tr>
+<tr>
+<td><code>rasterToPoints</code></td>
+<td>Raster to points conversion</td>
+</tr>
+<tr>
+<td><code>rasterToPolygons</code></td>
+<td>Raster to polygons conversion</td>
+</tr>
+<tr>
+<td><code>rasterize</code></td>
+<td>Rasterize points, lines, or polygons</td>
+</tr>
+<tr>
+<td><code>readAll</code></td>
+<td>Read values from disk</td>
+</tr>
+<tr>
+<td><code>readIniFile</code></td>
+<td>Read a .ini file</td>
+</tr>
+<tr>
+<td><code>readStart</code></td>
+<td>Helper functions for programming</td>
+</tr>
+<tr>
+<td><code>reclassify</code></td>
+<td>Reclassify</td>
+</tr>
+<tr>
+<td><code>rectify</code></td>
+<td>rectify a Raster object</td>
+</tr>
+<tr>
+<td><code>resample</code></td>
+<td>Resample a Raster object</td>
+</tr>
+<tr>
+<td><code>rotate</code></td>
+<td>Rotate</td>
+</tr>
+<tr>
+<td><code>rotated</code></td>
+<td>Do the raster cells have a rotation?</td>
+</tr>
+<tr>
+<td><code>round,RasterLayer-method</code></td>
+<td>Integer values</td>
+</tr>
+<tr>
+<td><code>rowFromCell</code></td>
+<td>Row or column number from a cell number</td>
+</tr>
+<tr>
+<td><code>rowSums</code></td>
+<td>rowSum and colSum for Raster objects</td>
+</tr>
+<tr>
+<td><code>sampleInt</code></td>
+<td>Sample integer values</td>
+</tr>
+<tr>
+<td><code>sampleRandom</code></td>
+<td>Random sample</td>
+</tr>
+<tr>
+<td><code>sampleRegular</code></td>
+<td>Regular sample</td>
+</tr>
+<tr>
+<td><code>sampleStratified</code></td>
+<td>Stratified random sample</td>
+</tr>
+<tr>
+<td><code>scale</code></td>
+<td>Scale values</td>
+</tr>
+<tr>
+<td><code>scalebar</code></td>
+<td>scalebar</td>
+</tr>
+<tr>
+<td><code>select</code></td>
+<td>Geometric subsetting</td>
+</tr>
+<tr>
+<td><code>setExtent</code></td>
+<td>Set the extent of a RasterLayer</td>
+</tr>
+<tr>
+<td><code>setMinMax</code></td>
+<td>Compute min and max values</td>
+</tr>
+<tr>
+<td><code>setValues</code></td>
+<td>Set values of a Raster object</td>
+</tr>
+<tr>
+<td><code>shapefile</code></td>
+<td>Read or write a shapefile</td>
+</tr>
+<tr>
+<td><code>shift</code></td>
+<td>Shift</td>
+</tr>
+<tr>
+<td><code>slopeAspect</code></td>
+<td>Slope and aspect</td>
+</tr>
+<tr>
+<td><code>spLines</code></td>
+<td>Create SpatialLines<em> or SpatialPolygons</em></td>
+</tr>
+<tr>
+<td><code>spplot</code></td>
+<td>Use spplot to plot a Raster* object</td>
+</tr>
+<tr>
+<td><code>stack</code></td>
+<td>Create a RasterStack object</td>
+</tr>
+<tr>
+<td><code>stackApply</code></td>
+<td>Apply a function on subsets of a RasterStack or RasterBrick</td>
+</tr>
+<tr>
+<td><code>stackSave</code></td>
+<td>Save or open a RasterStack file</td>
+</tr>
+<tr>
+<td><code>stackSelect</code></td>
+<td>Select cell values from a multi-layer Raster* object</td>
+</tr>
+<tr>
+<td><code>stretch</code></td>
+<td>Stretch</td>
+</tr>
+<tr>
+<td><code>subs</code></td>
+<td>Substitute values in a Raster* object</td>
+</tr>
+<tr>
+<td><code>subset</code></td>
+<td>Subset layers in a Raster* object</td>
+</tr>
+<tr>
+<td><code>summary,RasterLayer-method</code></td>
+<td>Summary</td>
+</tr>
+<tr>
+<td><code>symdif</code></td>
+<td>Symetrical difference</td>
+</tr>
+<tr>
+<td><code>t</code></td>
+<td>Transpose</td>
+</tr>
+<tr>
+<td><code>terrain</code></td>
+<td>Terrain characteristics</td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td>Add labels to a map</td>
+</tr>
+<tr>
+<td><code>trim</code></td>
+<td>Trim</td>
+</tr>
+<tr>
+<td><code>union</code></td>
+<td>Union Extent or SpatialPolygons* objects</td>
+</tr>
+<tr>
+<td><code>unique</code></td>
+<td>Unique values</td>
+</tr>
+<tr>
+<td><code>unstack</code></td>
+<td>Unstack</td>
+</tr>
+<tr>
+<td><code>update</code></td>
+<td>Update raster cells of files (on disk)</td>
+</tr>
+<tr>
+<td><code>validCell</code></td>
+<td>Validity of a cell, column or row number</td>
+</tr>
+<tr>
+<td><code>validNames</code></td>
+<td>Create valid names</td>
+</tr>
+<tr>
+<td><code>weighted.mean</code></td>
+<td>Weighted mean of rasters</td>
+</tr>
+<tr>
+<td><code>which.min</code></td>
+<td>Where is the min or max value?</td>
+</tr>
+<tr>
+<td><code>writeFormats</code></td>
+<td>File types for writing</td>
+</tr>
+<tr>
+<td><code>writeRaster</code></td>
+<td>Write raster data to a file</td>
+</tr>
+<tr>
+<td><code>writeValues</code></td>
+<td>Write values to a file</td>
+</tr>
+<tr>
+<td><code>xmin</code></td>
+<td>Coordinates of the Extent of a Raster object</td>
+</tr>
+<tr>
+<td><code>xres</code></td>
+<td>Resolution</td>
+</tr>
+<tr>
+<td><code>xyFromCell</code></td>
+<td>Coordinates from a row, column or cell number</td>
+</tr>
+<tr>
+<td><code>zApply</code></td>
+<td>z (time) apply</td>
+</tr>
+<tr>
+<td><code>zonal</code></td>
+<td>Zonal statistics</td>
+</tr>
+<tr>
+<td><code>zoom</code></td>
+<td>Zoom in on a map</td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h2 id="available-views">available.views</h2>
-<pre><code class="lang-r">&gt; available.views()
-</code></pre>
-<pre><code>
-CRAN Task Views
----------------
-Name: Bayesian
-Topic: Bayesian Inference
-Maintainer: Jong Hee Park
-Repository: https://cran.rstudio.com/
----------------
-Name: ChemPhys
-Topic: Chemometrics and Computational Physics
-Maintainer: Katharine Mullen
-Repository: https://cran.rstudio.com/
----------------
-Name: ClinicalTrials
-Topic: Clinical Trial Design, Monitoring, and Analysis
-Maintainer: Ed Zhang and Harry G. Zhang
-Repository: https://cran.rstudio.com/
----------------
-Name: Cluster
-Topic: Cluster Analysis &amp; Finite Mixture Models
-Maintainer: Friedrich Leisch and Bettina Gruen
-Repository: https://cran.rstudio.com/
----------------
-Name: DifferentialEquations
-Topic: Differential Equations
-Maintainer: Karline Soetaert and Thomas Petzoldt
-Repository: https://cran.rstudio.com/
----------------
-Name: Distributions
-Topic: Probability Distributions
-Maintainer: Christophe Dutang
-Repository: https://cran.rstudio.com/
----------------
-Name: Econometrics
-Topic: Econometrics
-Maintainer: Achim Zeileis
-Repository: https://cran.rstudio.com/
----------------
-Name: Environmetrics
-Topic: Analysis of Ecological and Environmental Data
-Maintainer: Gavin Simpson
-Repository: https://cran.rstudio.com/
----------------
-Name: ExperimentalDesign
-Topic: Design of Experiments (DoE) &amp; Analysis of Experimental Data
-Maintainer: Ulrike Groemping
-Repository: https://cran.rstudio.com/
----------------
-Name: Finance
-Topic: Empirical Finance
-Maintainer: Dirk Eddelbuettel
-Repository: https://cran.rstudio.com/
----------------
-Name: Genetics
-Topic: Statistical Genetics
-Maintainer: Giovanni Montana
-Repository: https://cran.rstudio.com/
----------------
-Name: Graphics
-Topic: Graphic Displays &amp; Dynamic Graphics &amp; Graphic Devices &amp; Visualization
-Maintainer: Nicholas Lewin-Koh
-Repository: https://cran.rstudio.com/
----------------
-Name: HighPerformanceComputing
-Topic: High-Performance and Parallel Computing with R
-Maintainer: Dirk Eddelbuettel
-Repository: https://cran.rstudio.com/
----------------
-Name: MachineLearning
-Topic: Machine Learning &amp; Statistical Learning
-Maintainer: Torsten Hothorn
-Repository: https://cran.rstudio.com/
----------------
-Name: MedicalImaging
-Topic: Medical Image Analysis
-Maintainer: Brandon Whitcher
-Repository: https://cran.rstudio.com/
----------------
-Name: MetaAnalysis
-Topic: Meta-Analysis
-Maintainer: Michael Dewey
-Repository: https://cran.rstudio.com/
----------------
-Name: Multivariate
-Topic: Multivariate Statistics
-Maintainer: Paul Hewson
-Repository: https://cran.rstudio.com/
----------------
-Name: NaturalLanguageProcessing
-Topic: Natural Language Processing
-Maintainer: Fridolin Wild, Knowledge Media Institute (KMi), The Open University, UK
-Repository: https://cran.rstudio.com/
----------------
-Name: NumericalMathematics
-Topic: Numerical Mathematics
-Maintainer: Hans W. Borchers
-Repository: https://cran.rstudio.com/
----------------
-Name: OfficialStatistics
-Topic: Official Statistics &amp; Survey Methodology
-Maintainer: Matthias Templ
-Repository: https://cran.rstudio.com/
----------------
-Name: Optimization
-Topic: Optimization and Mathematical Programming
-Maintainer: Stefan Theussl and Hans W. Borchers
-Repository: https://cran.rstudio.com/
----------------
-Name: Pharmacokinetics
-Topic: Analysis of Pharmacokinetic Data
-Maintainer: Suzette Blanchard
-Repository: https://cran.rstudio.com/
----------------
-Name: Phylogenetics
-Topic: Phylogenetics, Especially Comparative Methods
-Maintainer: Brian O&apos;Meara
-Repository: https://cran.rstudio.com/
----------------
-Name: Psychometrics
-Topic: Psychometric Models and Methods
-Maintainer: Patrick Mair
-Repository: https://cran.rstudio.com/
----------------
-Name: ReproducibleResearch
-Topic: Reproducible Research
-Maintainer: Max Kuhn
-Repository: https://cran.rstudio.com/
----------------
-Name: Robust
-Topic: Robust Statistical Methods
-Maintainer: Martin Maechler
-Repository: https://cran.rstudio.com/
----------------
-Name: SocialSciences
-Topic: Statistics for the Social Sciences
-Maintainer: John Fox
-Repository: https://cran.rstudio.com/
----------------
-Name: Spatial
-Topic: Analysis of Spatial Data
-Maintainer: Roger Bivand
-Repository: https://cran.rstudio.com/
----------------
-Name: SpatioTemporal
-Topic: Handling and Analyzing Spatio-Temporal Data
-Maintainer: Edzer Pebesma
-Repository: https://cran.rstudio.com/
----------------
-Name: Survival
-Topic: Survival Analysis
-Maintainer: Arthur Allignol and Aurelien Latouche
-Repository: https://cran.rstudio.com/
----------------
-Name: TimeSeries
-Topic: Time Series Analysis
-Maintainer: Rob J Hyndman
-Repository: https://cran.rstudio.com/
----------------
-Name: WebTechnologies
-Topic: Web Technologies and Services
-Maintainer: Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud
-Repository: https://cran.rstudio.com/
----------------
-Name: gR
-Topic: gRaphical Models in R
-Maintainer: Soren Hojsgaard
-Repository: https://cran.rstudio.com/
-</code></pre><h2 id="ctv2html">ctv2html</h2>
-<p>CTV&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;HTML&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x5909;&#x63DB;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; read.ctv(system.file(<span class="hljs-string">&quot;ctv&quot;</span>, <span class="hljs-string">&quot;Econometrics.ctv&quot;</span>, package = <span class="hljs-string">&quot;ctv&quot;</span>)) %&gt;% ctv2html()
-</code></pre>
-<h2 id="install-views">install.views</h2>
-<p>&#x5BFE;&#x8C61;&#x3068;&#x3057;&#x305F;CTV&#x306E;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;</p>
-<pre><code class="lang-r">&gt; install.views(<span class="hljs-string">&quot;Econometrics&quot;</span>)
-</code></pre>
-<h2 id="read-ctv">read.ctv</h2>
-<p>CTV&#x5F62;&#x5F0F;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;</p>
-<pre><code class="lang-r">&gt; read.ctv(system.file(<span class="hljs-string">&quot;ctv&quot;</span>, <span class="hljs-string">&quot;Econometrics.ctv&quot;</span>, package = <span class="hljs-string">&quot;ctv&quot;</span>))
-</code></pre>
-<pre><code>
-CRAN Task View
---------------
-Name:       Econometrics
-Topic:      Computational Econometrics
-Maintainer: Achim Zeileis
-Contact:    Achim.Zeileis@R-project.org
-Version:    2014-12-18
-
-Packages:   AER*, aod, apt, bayesm, betareg, boot, bootstrap, CADFtest,
-            car*, CDNmoney, censReg, crch, dlm, dse, dyn, dynlm, Ecdat,
-            effects, erer, expsmooth, FinTS, fma, forecast, frontier,
-            fxregime, gam, gamlss, geepack, gmm, Hmisc, ineq, intReg, its,
-            LARF, lfe, LinRegInteractive, lme4, lmtest*, MASS, Matrix,
-            Mcomp, meboot, mFilter, mfx, mgcv, mhurdle, micEcon,
-            micEconAids, micEconCES, micEconSNQP, midasr, mlogit, mnlogit,
-            MNP, MSBVAR, mvProbit, nlme, nnet, nonnest2, np, ordinal,
-            partsm, pcse, phtt, plm*, pscl, pwt, pwt8, quantreg, reldist,
-            rms, RSGHB, sampleSelection, sandwich*, segmented, sem,
-            SemiParSampleSel, simpleboot, SparseM, spatialprobit, spdep,
-            sphet, splm, strucchange, survival, systemfit, timeSeries,
-            truncreg, tsDyn, tseries*, tsfa, urca*, vars, VGAM, Zelig,
-            zoo*
-            (* = core package)
-</code></pre><h2 id="update-views">update.views</h2>
-<p>&#x5BFE;&#x8C61;&#x306E;CTV&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x66F4;&#x65B0;&#x3092;&#x884C;&#x3046;</p>
-<pre><code class="lang-r">&gt; update.views(<span class="hljs-string">&quot;Econometrics&quot;</span>)
-</code></pre>
 
                     
                     </section>
@@ -3400,10 +3937,10 @@ Packages:   AER*, aod, apt, bayesm, betareg, boot, bootstrap, CADFtest,
         </div>
 
         
-        <a href="../development/index.html" class="navigation navigation-prev " aria-label="Previous page: Development"><i class="fa fa-angle-left"></i></a>
+        <a href="../spatial/maptools.html" class="navigation navigation-prev " aria-label="Previous page: maptools"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../development/devtools.html" class="navigation navigation-next " aria-label="Next page: devtools"><i class="fa fa-angle-right"></i></a>
+        <a href="../spatial/rgdal.html" class="navigation navigation-next " aria-label="Next page: rgdal"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

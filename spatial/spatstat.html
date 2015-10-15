@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>vegan | R Package Showcase</title>
+        <title>spatstat | R Package Showcase</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../data-analysis/VIM.html" />
+    <link rel="next" href="../spatial/tigris.html" />
     
     
-    <link rel="prev" href="../data-analysis/tm.html" />
+    <link rel="prev" href="../spatial/sp.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="6.34" data-basepath=".." data-revision="Thu Oct 15 2015 21:39:36 GMT+0900 (JST)">
+    <div class="book" data-level="9.11" data-basepath=".." data-revision="Thu Oct 15 2015 21:39:36 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -1087,7 +1087,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.34" data-path="data-analysis/vegan.html">
+        <li class="chapter " data-level="6.34" data-path="data-analysis/vegan.html">
             
                 
                     <a href="../data-analysis/vegan.html">
@@ -1795,7 +1795,7 @@
             
         </li>
     
-        <li class="chapter " data-level="9.11" data-path="spatial/spatstat.html">
+        <li class="chapter active" data-level="9.11" data-path="spatial/spatstat.html">
             
                 
                     <a href="../spatial/spatstat.html">
@@ -3151,26 +3151,38 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="vegan-community-ecology-package">vegan: Community Ecology Package</h1>
-<p>&#x7FA4;&#x96C6;&#x751F;&#x614B;&#x5B66;&#x306E;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;</p>
-<p><a href="http://cran.rstudio.com/web/packages/vegan/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/vegan" alt=""></a></p>
+                        <h1 id="spatstat-spatial-point-pattern-analysis-model-fitting-simulation-tests">spatstat: Spatial Point Pattern Analysis, Model-Fitting, Simulation, Tests</h1>
+<p>&#x7A7A;&#x9593;&#x89E3;&#x6790;</p>
+<p><a href="http://cran.rstudio.com/web/packages/spatstat/index.html" target="_blank"><img src="http://www.r-pkg.org/badges/version/spatstat" alt=""></a></p>
 <ul>
-<li>CRAN: <a href="http://cran.r-project.org/web/packages/vegan/index.html" target="_blank">http://cran.r-project.org/web/packages/vegan/index.html</a></li>
+<li>CRAN: <a href="http://cran.r-project.org/web/packages/spatstat/index.html" target="_blank">http://cran.r-project.org/web/packages/spatstat/index.html</a></li>
+<li>GitHub: <a href="https://github.com/spatstat/spatstat" target="_blank">https://github.com/spatstat/spatstat</a></li>
+<li>URL: <a href="http://www.spatstat.org" target="_blank">http://www.spatstat.org</a></li>
 </ul>
-<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(vegan)
+<pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(spatstat)
 </code></pre>
-<pre><code>Loading required package: permute
+<pre><code>Loading required package: nlme
 
-Attaching package: &apos;permute&apos;
+Attaching package: &apos;nlme&apos;
 
-The following object is masked from &apos;package:devtools&apos;:
+The following object is masked from &apos;package:raster&apos;:
 
-    check
+    getData
 
-This is vegan 2.3-1
-</code></pre><pre><code class="lang-r">&gt; data(<span class="hljs-string">&quot;BCI&quot;</span>)
-</code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 2.3.1</p>
+The following object is masked from &apos;package:dplyr&apos;:
+
+    collapse
+
+
+spatstat 1.43-0       (nickname: &apos;Mixed Effects&apos;) 
+For an introduction to spatstat, type &apos;beginner&apos;
+
+Attaching package: &apos;spatstat&apos;
+
+The following objects are masked from &apos;package:raster&apos;:
+
+    area, rotate, shift
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.43.0</p>
 <hr>
 <table>
 <thead>
@@ -3181,458 +3193,3835 @@ This is vegan 2.3-1
 </thead>
 <tbody>
 <tr>
-<td><code>BCI</code></td>
-<td>Barro Colorado Island Tree Counts</td>
+<td><code>AreaInter</code></td>
+<td>The Area Interaction Point Process Model</td>
 </tr>
 <tr>
-<td><code>CCorA</code></td>
-<td>Canonical Correlation Analysis</td>
+<td><code>BadGey</code></td>
+<td>Hybrid Geyer Point Process Model</td>
 </tr>
 <tr>
-<td><code>MDSrotate</code></td>
-<td>Rotate First MDS Dimension Parallel to an External Variable</td>
+<td><code>CDF</code></td>
+<td>Cumulative Distribution Function From Kernel Density Estimate</td>
 </tr>
 <tr>
-<td><code>MOStest</code></td>
-<td>Mitchell-Olds &amp; Shaw Test for the Location of Quadratic Extreme</td>
+<td><code>Concom</code></td>
+<td>The Connected Component Process Model</td>
 </tr>
 <tr>
-<td><code>RsquareAdj</code></td>
-<td>Adjusted R-square</td>
+<td><code>DiggleGatesStibbard</code></td>
+<td>Diggle-Gates-Stibbard Point Process Model</td>
 </tr>
 <tr>
-<td><code>SSarrhenius</code></td>
-<td>Self-Starting nls Species-Area Models</td>
+<td><code>DiggleGratton</code></td>
+<td>Diggle-Gratton model</td>
 </tr>
 <tr>
-<td><code>add1.cca</code></td>
-<td>Add or Drop Single Terms to a Constrained Ordination Model</td>
+<td><code>Emark</code></td>
+<td>Diagnostics for random marking</td>
 </tr>
 <tr>
-<td><code>adipart</code></td>
-<td>Additive Diversity Partitioning and Hierarchical Null Model Testing</td>
+<td><code>F3est</code></td>
+<td>Empty Space Function of a Three-Dimensional Point Pattern</td>
 </tr>
 <tr>
-<td><code>adonis</code></td>
-<td>Permutational Multivariate Analysis of Variance Using Distance Matrices</td>
+<td><code>Fest</code></td>
+<td>Estimate the Empty Space Function or its Hazard Rate</td>
 </tr>
 <tr>
-<td><code>anosim</code></td>
-<td>Analysis of Similarities</td>
+<td><code>Fiksel</code></td>
+<td>The Fiksel Interaction</td>
 </tr>
 <tr>
-<td><code>anova.cca</code></td>
-<td>Permutation Test for Constrained Correspondence Analysis, Redundancy Analysis and Constrained Analysis of P rincipal Coordinates</td>
+<td><code>Finhom</code></td>
+<td>Inhomogeneous Empty Space Function</td>
 </tr>
 <tr>
-<td><code>as.mlm.cca</code></td>
-<td>Refit Constrained Ordination as a Multiple Response Linear Model</td>
+<td><code>Frame</code></td>
+<td>Extract or Change the Containing Rectangle of a Spatial Object</td>
 </tr>
 <tr>
-<td><code>beals</code></td>
-<td>Beals Smoothing and Degree of Absence betadisper  Multivariate homogeneity of groups dispersions (variances)</td>
+<td><code>G3est</code></td>
+<td>Nearest Neighbour Distance Distribution Function of a Three-Dimensional Point Pattern</td>
 </tr>
 <tr>
-<td><code>betadiver</code></td>
-<td>Indices of beta Diversity</td>
+<td><code>Gcom</code></td>
+<td>Model Compensator of Nearest Neighbour Function</td>
 </tr>
 <tr>
-<td><code>bgdispersal</code></td>
-<td>Coefficients of Biogeographical Dispersal Direction</td>
+<td><code>Gcross</code></td>
+<td>Multitype Nearest Neighbour Distance Function (i-to-j)</td>
 </tr>
 <tr>
-<td><code>bioenv</code></td>
-<td>Best Subset of Environmental Variables with Maximum (Rank) Correlation with Community Dissimilarities</td>
+<td><code>Gdot</code></td>
+<td>Multitype Nearest Neighbour Distance Function (i-to-any)</td>
 </tr>
 <tr>
-<td><code>biplot.rda</code></td>
-<td>PCA biplot</td>
+<td><code>Gest</code></td>
+<td>Nearest Neighbour Distance Function G</td>
 </tr>
 <tr>
-<td><code>capscale</code></td>
-<td>[Partial] Constrained Analysis of Principal Coordinates or distance-based RDA</td>
+<td><code>Geyer</code></td>
+<td>Geyer&apos;s Saturation Point Process Model</td>
 </tr>
 <tr>
-<td><code>cascadeKM</code></td>
-<td>K-means partitioning using a range of values of K</td>
+<td><code>Gfox</code></td>
+<td>Foxall&apos;s Distance Functions</td>
 </tr>
 <tr>
-<td><code>cca</code></td>
-<td>[Partial] [Constrained] Correspondence Analysis and Redundancy Analysis</td>
+<td><code>Ginhom</code></td>
+<td>Inhomogeneous Nearest Neighbour Function</td>
 </tr>
 <tr>
-<td><code>cca.object</code></td>
-<td>Result Object from Constrained Ordination with cca, rda or capscale</td>
+<td><code>Gmulti</code></td>
+<td>Marked Nearest Neighbour Distance Function</td>
 </tr>
 <tr>
-<td><code>clamtest</code></td>
-<td>Multinomial Species Classification Method (CLAM)</td>
+<td><code>Gres</code></td>
+<td>Residual G Function</td>
 </tr>
 <tr>
-<td><code>commsim</code></td>
-<td>Create a Object for Null Model Algorithms</td>
+<td><code>Hardcore</code></td>
+<td>The Hard Core Point Process Model</td>
 </tr>
 <tr>
-<td><code>contribdiv</code></td>
-<td>Contribution Diversity Approach</td>
+<td><code>Hest</code></td>
+<td>Spherical Contact Distribution Function</td>
 </tr>
 <tr>
-<td><code>decorana</code></td>
-<td>Detrended Correspondence Analysis and Basic Reciprocal Averaging</td>
+<td><code>HierHard</code></td>
+<td>The Hierarchical Hard Core Point Process Model</td>
 </tr>
 <tr>
-<td><code>decostand</code></td>
-<td>Standardization Methods for Community Ecology</td>
+<td><code>HierStrauss</code></td>
+<td>The Hierarchical Strauss Point Process Model</td>
 </tr>
 <tr>
-<td><code>designdist</code></td>
-<td>Design your own Dissimilarities</td>
+<td><code>HierStraussHard</code></td>
+<td>The Hierarchical Strauss Hard Core Point Process Model</td>
 </tr>
 <tr>
-<td><code>deviance.cca</code></td>
-<td>Statistics Resembling Deviance and AIC for Constrained Ordination</td>
+<td><code>Hybrid</code></td>
+<td>Hybrid Interaction Point Process Model</td>
 </tr>
 <tr>
-<td><code>dispindmorisita</code></td>
-<td>Morisita index of intraspecific aggregation</td>
+<td><code>Iest</code></td>
+<td>Estimate the I-function</td>
 </tr>
 <tr>
-<td><code>dispweight</code></td>
-<td>Dispersion-based weighting of species counts</td>
+<td><code>Jcross</code></td>
+<td>Multitype J Function (i-to-j)</td>
 </tr>
 <tr>
-<td><code>distconnected</code></td>
-<td>Connectedness of Dissimilarities diversity Ecological Diversity Indices and Rarefaction Species Richness</td>
+<td><code>Jdot</code></td>
+<td>Multitype J Function (i-to-any)</td>
 </tr>
 <tr>
-<td><code>dune</code></td>
-<td>Vegetation and Environment in Dutch Dune Meadows.</td>
+<td><code>Jest</code></td>
+<td>Estimate the J-function</td>
 </tr>
 <tr>
-<td><code>dune.taxon</code></td>
-<td>Taxonomic Classification and Phylogeny of Dune Meadow Species</td>
+<td><code>Jinhom</code></td>
+<td>Inhomogeneous J-function</td>
 </tr>
 <tr>
-<td><code>eigenvals</code></td>
-<td>Extract Eigenvalues from an Ordination Object</td>
+<td><code>Jmulti</code></td>
+<td>Marked J Function</td>
 </tr>
 <tr>
-<td><code>envfit</code></td>
-<td>Fits an Environmental Vector or Factor onto an Ordination</td>
+<td><code>K3est</code></td>
+<td>K-function of a Three-Dimensional Point Pattern</td>
 </tr>
 <tr>
-<td><code>eventstar</code></td>
-<td>Scale Parameter at the Minimum of the Tsallis Evenness Profile</td>
+<td><code>Kcom</code></td>
+<td>Model Compensator of K Function</td>
 </tr>
 <tr>
-<td><code>fisherfit</code></td>
-<td>Fit Fisher&apos;s Logseries and Preston&apos;s Lognormal Model to Abundance Data</td>
+<td><code>Kcross</code></td>
+<td>Multitype K Function (Cross-type)</td>
 </tr>
 <tr>
-<td><code>goodness.cca</code></td>
-<td>Diagnostic Tools for [Constrained] Ordination (CCA, RDA, DCA, CA, PCA)</td>
+<td><code>Kcross.inhom</code></td>
+<td>Inhomogeneous Cross K Function</td>
 </tr>
 <tr>
-<td><code>goodness.metaMDS</code></td>
-<td>Goodness of Fit and Shepard Plot for Nonmetric Multidimensional Scaling</td>
+<td><code>Kdot</code></td>
+<td>Multitype K Function (i-to-any)</td>
 </tr>
 <tr>
-<td><code>humpfit</code></td>
-<td>No-interaction Model for Hump-backed Species Richness vs. Biomass</td>
+<td><code>Kdot.inhom</code></td>
+<td>Inhomogeneous Multitype K Dot Function</td>
 </tr>
 <tr>
-<td><code>indpower</code></td>
-<td>Indicator Power of Species</td>
+<td><code>Kest</code></td>
+<td>K-function</td>
 </tr>
 <tr>
-<td><code>isomap</code></td>
-<td>Isometric Feature Mapping Ordination</td>
+<td><code>Kest.fft</code></td>
+<td>K-function using FFT</td>
 </tr>
 <tr>
-<td><code>kendall.global</code></td>
-<td>Kendall coefficient of concordance</td>
+<td><code>Kinhom</code></td>
+<td>Inhomogeneous K-function</td>
 </tr>
 <tr>
-<td><code>linestack</code></td>
-<td>Plots One-dimensional Diagrams without Overwriting Labels</td>
+<td><code>Kmark</code></td>
+<td>Mark-Weighted K Function</td>
 </tr>
 <tr>
-<td><code>make.cepnames</code></td>
-<td>Abbreviates a Botanical or Zoological Latin Name into an Eight-character Name</td>
+<td><code>Kmeasure</code></td>
+<td>Reduced Second Moment Measure</td>
 </tr>
 <tr>
-<td><code>mantel</code></td>
-<td>Mantel and Partial Mantel Tests for Dissimilarity Matrices</td>
+<td><code>Kmodel</code></td>
+<td>K Function or Pair Correlation Function of a Point Process Model</td>
 </tr>
 <tr>
-<td><code>mantel.correlog</code></td>
-<td>Mantel Correlogram</td>
+<td><code>Kmodel.dppm</code></td>
+<td>K-function or Pair Correlation Function of a Determinantal Point Process Model</td>
 </tr>
 <tr>
-<td><code>metaMDS</code></td>
-<td>Nonmetric Multidimensional Scaling with Stable Solution from Random Starts, Axis Scaling and Species Scores</td>
+<td><code>Kmodel.kppm</code></td>
+<td>K Function or Pair Correlation Function of Cluster Model or Cox model</td>
 </tr>
 <tr>
-<td><code>mite</code></td>
-<td>Oribatid Mite Data with Explanatory Variables</td>
+<td><code>Kmodel.ppm</code></td>
+<td>K Function or Pair Correlation Function of Gibbs Point Process model</td>
 </tr>
 <tr>
-<td><code>model.matrix.cca</code></td>
-<td>Reconstruct Model Frame and Model Matrices of Constrained Ordination</td>
+<td><code>Kmulti</code></td>
+<td>Marked K-Function</td>
 </tr>
 <tr>
-<td><code>monoMDS</code></td>
-<td>Global and Local Non-metric Multidimensional Scaling and Linear and Hybrid Scaling</td>
+<td><code>Kmulti.inhom</code></td>
+<td>Inhomogeneous Marked K-Function</td>
 </tr>
 <tr>
-<td><code>mrpp</code></td>
-<td>Multi Response Permutation Procedure and Mean Dissimilarity Matrix</td>
+<td><code>Kovesi</code></td>
+<td>Colour Sequences with Uniform Perceptual Contrast</td>
 </tr>
 <tr>
-<td><code>mso</code></td>
-<td>Functions for performing and displaying a spatial partitioning of cca or rda results</td>
+<td><code>Kres</code></td>
+<td>Residual K Function</td>
 </tr>
 <tr>
-<td><code>multipart</code></td>
-<td>Multiplicative Diversity Partitioning</td>
+<td><code>Kscaled</code></td>
+<td>Locally Scaled K-function</td>
 </tr>
 <tr>
-<td><code>nestedtemp</code></td>
-<td>Nestedness Indices for Communities of Islands or Patches</td>
+<td><code>Ksector</code></td>
+<td>Sector K-function</td>
 </tr>
 <tr>
-<td><code>nobs.adonis</code></td>
-<td>Extract the Number of Observations from a vegan Fit.</td>
+<td><code>LambertW</code></td>
+<td>Lambert&apos;s W Function</td>
 </tr>
 <tr>
-<td><code>nullmodel</code></td>
-<td>Null Model and Simulation</td>
+<td><code>Lcross</code></td>
+<td>Multitype L-function (cross-type)</td>
 </tr>
 <tr>
-<td><code>oecosimu</code></td>
-<td>Evaluate Statistics with Null Models of Biological Communities</td>
+<td><code>Lcross.inhom</code></td>
+<td>Inhomogeneous Cross Type L Function</td>
 </tr>
 <tr>
-<td><code>ordiarrows</code></td>
-<td>Add Arrows and Line Segments to Ordination Diagrams</td>
+<td><code>Ldot Multitype</code></td>
+<td>L-function (i-to-any)</td>
 </tr>
 <tr>
-<td><code>ordihull</code></td>
-<td>Display Groups or Factor Levels in Ordination Diagrams</td>
+<td><code>Ldot.inhom</code></td>
+<td>Inhomogeneous Multitype L Dot Function</td>
 </tr>
 <tr>
-<td><code>ordilabel</code></td>
-<td>Add Text on Non-transparent Label to an Ordination Plot.</td>
+<td><code>LennardJones</code></td>
+<td>The Lennard-Jones Potential</td>
 </tr>
 <tr>
-<td><code>ordiplot</code></td>
-<td>Alternative plot and identify Functions for Ordination</td>
+<td><code>Lest</code></td>
+<td>L-function</td>
 </tr>
 <tr>
-<td><code>ordipointlabel</code></td>
-<td>Ordination Plots with Points and Optimized Locations for Text</td>
+<td><code>Linhom</code></td>
+<td>L-function</td>
 </tr>
 <tr>
-<td><code>ordiresids</code></td>
-<td>Plots of Residuals and Fitted Values for Constrained Ordination</td>
+<td><code>Math.im</code></td>
+<td>S3 Group Generic methods for images</td>
 </tr>
 <tr>
-<td><code>ordistep</code></td>
-<td>Choose a Model by Permutation Tests in Constrained Ordination</td>
+<td><code>Math.linim</code></td>
+<td>S3 Group Generic Methods for Images on a Linear Network</td>
 </tr>
 <tr>
-<td><code>ordisurf</code></td>
-<td>Fit and Plot Smooth Surfaces of Variables on Ordination.</td>
+<td><code>MultiHard</code></td>
+<td>The Multitype Hard Core Point Process Model</td>
 </tr>
 <tr>
-<td><code>orditkplot</code></td>
-<td>Ordination Plot with Movable Labels</td>
+<td><code>MultiStrauss</code></td>
+<td>The Multitype Strauss Point Process Model</td>
 </tr>
 <tr>
-<td><code>orditorp</code></td>
-<td>Add Text or Points to Ordination Plots</td>
+<td><code>MultiStraussHard</code></td>
+<td>The Multitype/Hard Core Strauss Point Process Model</td>
 </tr>
 <tr>
-<td><code>ordixyplot</code></td>
-<td>Trellis (Lattice) Plots for Ordination</td>
+<td><code>Ord</code></td>
+<td>Generic Ord Interaction model</td>
 </tr>
 <tr>
-<td><code>pcnm</code></td>
-<td>Principal Coordinates of Neighbourhood Matrix</td>
+<td><code>OrdThresh</code></td>
+<td>Ord&apos;s Interaction model</td>
 </tr>
 <tr>
-<td><code>permatfull</code></td>
-<td>Matrix Permutation Algorithms for Presence-Absence and Count Data</td>
+<td><code>PPversion</code></td>
+<td>Transform a Function into its P-P or Q-Q Version</td>
 </tr>
 <tr>
-<td><code>permustats</code></td>
-<td>Extract, Analyse and Display Permutation Results</td>
+<td><code>PairPiece</code></td>
+<td>The Piecewise Constant Pairwise Interaction Point Process Model</td>
 </tr>
 <tr>
-<td><code>permutations</code></td>
-<td>Permutation tests in Vegan</td>
+<td><code>Pairwise</code></td>
+<td>Generic Pairwise Interaction model</td>
 </tr>
 <tr>
-<td><code>permutest.betadisper</code></td>
-<td>Permutation test of multivariate homogeneity of groups dispersions (variances)</td>
+<td><code>Penttinen</code></td>
+<td>Penttinen Interaction</td>
 </tr>
 <tr>
-<td><code>plot.cca</code></td>
-<td>Plot or Extract Results of Constrained Correspondence Analysis or Redundancy Analysis</td>
+<td><code>Poisson</code></td>
+<td>Poisson Point Process Model</td>
 </tr>
 <tr>
-<td><code>prc</code></td>
-<td>Principal Response Curves for Treatments with Repeated Observations</td>
+<td><code>SatPiece</code></td>
+<td>Piecewise Constant Saturated Pairwise Interaction Point Process Model</td>
 </tr>
 <tr>
-<td><code>predict.cca</code></td>
-<td>Prediction Tools for [Constrained] Ordination (CCA, RDA, DCA, CA, PCA)</td>
+<td><code>Saturated</code></td>
+<td>Saturated Pairwise Interaction model</td>
 </tr>
 <tr>
-<td><code>procrustes</code></td>
-<td>Procrustes Rotation of Two Configurations and PROTEST</td>
+<td><code>Smooth</code></td>
+<td>Spatial smoothing of data</td>
 </tr>
 <tr>
-<td><code>pyrifos</code></td>
-<td>Response of Aquatic Invertebrates to Insecticide Treatment</td>
+<td><code>Smooth.fv</code></td>
+<td>Apply Smoothing to Function Values</td>
 </tr>
 <tr>
-<td><code>radfit</code></td>
-<td>Rank - Abundance or Dominance / Diversity Models</td>
+<td><code>Smooth.msr</code></td>
+<td>Smooth a Signed or Vector-Valued Measure</td>
 </tr>
 <tr>
-<td><code>rankindex</code></td>
-<td>Compares Dissimilarity Indices for Gradient Detection</td>
+<td><code>Smooth.ppp</code></td>
+<td>Spatial smoothing of observations at irregular points</td>
 </tr>
 <tr>
-<td><code>raupcrick</code></td>
-<td>Raup-Crick Dissimilarity with Unequal Sampling Densities of Species</td>
+<td><code>Smoothfun.ppp</code></td>
+<td>Smooth Interpolation of Marks as a Spatial Function </td>
 </tr>
 <tr>
-<td><code>read.cep</code></td>
-<td>Reads a CEP (Canoco) data file</td>
+<td><code>Softcore</code></td>
+<td>The Soft Core Point Process Model</td>
 </tr>
 <tr>
-<td><code>renyi</code></td>
-<td>Renyi and Hill Diversities and Corresponding Accumulation Curves</td>
+<td><code>Strauss</code></td>
+<td>The Strauss Point Process Model</td>
 </tr>
 <tr>
-<td><code>reorder.hclust</code></td>
-<td>Reorder a Hierarchical Clustering Tree</td>
+<td><code>StraussHard</code></td>
+<td>The Strauss / Hard Core Point Process Model</td>
 </tr>
 <tr>
-<td><code>scores</code></td>
-<td>Get Species or Site Scores from an Ordination</td>
+<td><code>Triplets</code></td>
+<td>The Triplet Point Process Model</td>
 </tr>
 <tr>
-<td><code>screeplot.cca</code></td>
-<td>Screeplots for Ordination Results and Broken Stick Distributions</td>
+<td><code>Tstat</code></td>
+<td>Third order summary statistic</td>
 </tr>
 <tr>
-<td><code>simper</code></td>
-<td>Similarity Percentages</td>
+<td><code>Window</code></td>
+<td>Extract or Change the Window of a Spatial Object</td>
 </tr>
 <tr>
-<td><code>simulate.rda</code></td>
-<td>Simulate Responses with Gaussian Error or Permuted Residuals for Constrained Ordination</td>
+<td><code>Window.ppm</code></td>
+<td>Extract Window of Spatial Object</td>
 </tr>
 <tr>
-<td><code>sipoo</code></td>
-<td>Birds in the Archipelago of Sipoo (Sibbo)</td>
+<td><code>[.anylist</code></td>
+<td>Extract or Replace Subset of a List of Things</td>
 </tr>
 <tr>
-<td><code>spantree</code></td>
-<td>Minimum Spanning Tree</td>
+<td><code>[.fasp</code></td>
+<td>Extract Subset of Function Array</td>
 </tr>
 <tr>
-<td><code>specaccum</code></td>
-<td>Species Accumulation Curves</td>
+<td><code>[.fv</code></td>
+<td>Extract or Replace Subset of Function Values</td>
 </tr>
 <tr>
-<td><code>specpool</code></td>
-<td>Extrapolated Species Richness in a Species Pool</td>
+<td><code>[.hyperframe</code></td>
+<td>Extract or Replace Subset of Hyperframe</td>
 </tr>
 <tr>
-<td><code>stepacross</code></td>
-<td>Stepacross as Flexible Shortest Paths or Extended Dissimilarities</td>
+<td><code>[.im</code></td>
+<td>Extract Subset of Image</td>
 </tr>
 <tr>
-<td><code>stressplot.wcmdscale</code></td>
-<td>Display Ordination Distances Against Observed Distances in Eigenvector Ordinations</td>
+<td><code>[.influence.ppm</code></td>
+<td>Extract Subset of Influence Object</td>
 </tr>
 <tr>
-<td><code>taxondive</code></td>
-<td>Indices of Taxonomic Diversity and Distinctness</td>
+<td><code>[.layered</code></td>
+<td>Extract or Replace Subset of a Layered Object</td>
 </tr>
 <tr>
-<td><code>tolerance</code></td>
-<td>Species tolerances and sample heterogeneities</td>
+<td><code>[.leverage.ppm</code></td>
+<td>Extract Subset of Leverage Object</td>
 </tr>
 <tr>
-<td><code>treedive</code></td>
-<td>Functional Diversity and Community Distances from Species Trees</td>
+<td><code>[.linnet</code></td>
+<td>Extract Subset of Linear Network</td>
 </tr>
 <tr>
-<td><code>tsallis</code></td>
-<td>Tsallis Diversity and Corresponding Accumulation Curves</td>
+<td><code>[.lpp</code></td>
+<td>Extract Subset of Point Pattern on Linear Network</td>
 </tr>
 <tr>
-<td><code>varespec</code></td>
-<td>Vegetation and environment in lichen pastures</td>
+<td><code>[.msr</code></td>
+<td>Extract Subset of Signed or Vector Measure</td>
 </tr>
 <tr>
-<td><code>varpart</code></td>
-<td>Partition the Variation of Community Matrix by 2, 3, or 4 Explanatory Matrices</td>
+<td><code>[.owin</code></td>
+<td>Extract Subset of Window</td>
 </tr>
 <tr>
-<td><code>vegan-deprecated</code></td>
-<td>Deprecated Functions in vegan package</td>
+<td><code>[.ppp</code></td>
+<td>Extract or Replace Subset of Point Pattern</td>
 </tr>
 <tr>
-<td><code>vegan-package</code></td>
-<td>Community Ecology Package: Ordination, Diversity and Dissimilarities</td>
+<td><code>[.ppx</code></td>
+<td>Extract Subset of Multidimensional Point Pattern</td>
 </tr>
 <tr>
-<td><code>vegandocs</code></td>
-<td>Display Package Documentation</td>
+<td><code>[.psp</code></td>
+<td>Extract Subset of Line Segment Pattern</td>
 </tr>
 <tr>
-<td><code>vegdist</code></td>
-<td>Dissimilarity Indices for Community Ecologists</td>
+<td><code>[.quad</code></td>
+<td>Subset of Quadrature Scheme</td>
 </tr>
 <tr>
-<td><code>vegemite</code></td>
-<td>Display Compact Ordered Community Tables</td>
+<td><code>[.solist</code></td>
+<td>Extract or Replace Subset of a List of Spatial Objest</td>
 </tr>
 <tr>
-<td><code>wascores</code></td>
-<td>Weighted Averages Scores for Species</td>
+<td><code>[.splitppp</code></td>
+<td>Extract or Replace Sub-Patterns</td>
 </tr>
 <tr>
-<td><code>wcmdscale</code></td>
-<td>Weighted Classical (Metric) Multidimensional Scaling</td>
+<td><code>[.tess</code></td>
+<td>Extract or Replace Subset of Tessellation</td>
+</tr>
+<tr>
+<td><code>[&lt;-.im</code></td>
+<td>Reset Values in Subset of Image</td>
+</tr>
+<tr>
+<td><code>[&lt;-.listof</code></td>
+<td>Extract or Replace Subset of a List of Things</td>
+</tr>
+<tr>
+<td><code>adaptive.density</code></td>
+<td>Intensity Estimate of Point Pattern Using Tessellation</td>
+</tr>
+<tr>
+<td><code>add.texture</code></td>
+<td>Fill Plot With Texture</td>
+</tr>
+<tr>
+<td><code>addvar</code></td>
+<td>Added Variable Plot for Point Process Model</td>
+</tr>
+<tr>
+<td><code>affine</code></td>
+<td>Apply Affine Transformation</td>
+</tr>
+<tr>
+<td><code>affine.im</code></td>
+<td>Apply Affine Transformation To Pixel Image</td>
+</tr>
+<tr>
+<td><code>affine.linnet</code></td>
+<td>Apply Geometrical Transformations to a Linear Network</td>
+</tr>
+<tr>
+<td><code>affine.lpp</code></td>
+<td>Apply Geometrical Transformations to Point Pattern on a Linear Network</td>
+</tr>
+<tr>
+<td><code>affine.owin</code></td>
+<td>Apply Affine Transformation To Window</td>
+</tr>
+<tr>
+<td><code>affine.ppp</code></td>
+<td>Apply Affine Transformation To Point Pattern</td>
+</tr>
+<tr>
+<td><code>affine.psp</code></td>
+<td>Apply Affine Transformation To Line Segment Pattern</td>
+</tr>
+<tr>
+<td><code>affine.tess</code></td>
+<td>Apply Geometrical Transformation To Tessellation</td>
+</tr>
+<tr>
+<td><code>allstats</code></td>
+<td>Calculate four standard summary functions of a point pattern.</td>
+</tr>
+<tr>
+<td><code>alltypes</code></td>
+<td>Calculate Summary Statistic for All Types in a Multitype Point Pattern</td>
+</tr>
+<tr>
+<td><code>amacrine</code></td>
+<td>Hughes&apos; Amacrine Cell Data</td>
+</tr>
+<tr>
+<td><code>anemones</code></td>
+<td>Beadlet Anemones Data</td>
+</tr>
+<tr>
+<td><code>angles.psp</code></td>
+<td>Orientation Angles of Line Segments</td>
+</tr>
+<tr>
+<td><code>anova.lppm</code></td>
+<td>ANOVA for Fitted Point Process Models on Linear Network</td>
+</tr>
+<tr>
+<td><code>anova.mppm</code></td>
+<td>ANOVA for Fitted Multiple Point Process Models</td>
+</tr>
+<tr>
+<td><code>anova.ppm</code></td>
+<td>ANOVA for Fitted Point Process Models</td>
+</tr>
+<tr>
+<td><code>anova.slrm</code></td>
+<td>Analysis of Deviance for Spatial Logistic Regression Models</td>
+</tr>
+<tr>
+<td><code>ants</code></td>
+<td>Harkness-Isham ants&apos; nests data</td>
+</tr>
+<tr>
+<td><code>anylist</code></td>
+<td>List of Objects</td>
+</tr>
+<tr>
+<td><code>append.psp</code></td>
+<td>Combine Two Line Segment Patterns</td>
+</tr>
+<tr>
+<td><code>applynbd</code></td>
+<td>Apply Function to Every Neighbourhood in a Point Pattern</td>
+</tr>
+<tr>
+<td><code>area.owin</code></td>
+<td>Area of a Window</td>
+</tr>
+<tr>
+<td><code>areaGain</code></td>
+<td>Difference of Disc Areas</td>
+</tr>
+<tr>
+<td><code>areaLoss</code></td>
+<td>Difference of Disc Areas</td>
+</tr>
+<tr>
+<td><code>as.box3</code></td>
+<td>Convert Data to Three-Dimensional Box</td>
+</tr>
+<tr>
+<td><code>as.boxx</code></td>
+<td>Convert Data to Multi-Dimensional Box</td>
+</tr>
+<tr>
+<td><code>as.data.frame.hyperframe</code></td>
+<td>Coerce Hyperframe to Data Frame</td>
+</tr>
+<tr>
+<td><code>as.data.frame.im</code></td>
+<td>Convert Pixel Image to Data Frame</td>
+</tr>
+<tr>
+<td><code>as.data.frame.owin</code></td>
+<td>Convert Window to Data Frame</td>
+</tr>
+<tr>
+<td><code>as.data.frame.ppp</code></td>
+<td>Coerce Point Pattern to a Data Frame</td>
+</tr>
+<tr>
+<td><code>as.data.frame.psp</code></td>
+<td>Coerce Line Segment Pattern to a Data Frame</td>
+</tr>
+<tr>
+<td><code>as.function.fv</code></td>
+<td>Convert Function Value Table to Function</td>
+</tr>
+<tr>
+<td><code>as.function.im</code></td>
+<td>Convert Pixel Image to Function of Coordinates</td>
+</tr>
+<tr>
+<td><code>as.fv</code></td>
+<td>Convert Data To Class fv</td>
+</tr>
+<tr>
+<td><code>as.hyperframe</code></td>
+<td>Convert Data to Hyperframe</td>
+</tr>
+<tr>
+<td><code>as.hyperframe.ppx</code></td>
+<td>Extract coordinates and marks of multidimensional point pattern</td>
+</tr>
+<tr>
+<td><code>as.im</code></td>
+<td>Convert to Pixel Image</td>
+</tr>
+<tr>
+<td><code>as.interact</code></td>
+<td>Extract Interaction Structure</td>
+</tr>
+<tr>
+<td><code>as.layered</code></td>
+<td>Convert Data To Layered Object</td>
+</tr>
+<tr>
+<td><code>as.linim</code></td>
+<td>Convert to Pixel Image on Linear Network</td>
+</tr>
+<tr>
+<td><code>as.linnet.linim</code></td>
+<td>Extract Linear Network from Data on a Linear Network</td>
+</tr>
+<tr>
+<td><code>as.linnet.psp</code></td>
+<td>Convert Line Segment Pattern to Linear Network</td>
+</tr>
+<tr>
+<td><code>as.lpp</code></td>
+<td>Convert Data to a Point Pattern on a Linear Network</td>
+</tr>
+<tr>
+<td><code>as.mask</code></td>
+<td>Pixel Image Approximation of a Window</td>
+</tr>
+<tr>
+<td><code>as.mask.psp</code></td>
+<td>Convert Line Segment Pattern to Binary Pixel Mask</td>
+</tr>
+<tr>
+<td><code>as.matrix.im</code></td>
+<td>Convert Pixel Image to Matrix or Array</td>
+</tr>
+<tr>
+<td><code>as.matrix.owin</code></td>
+<td>Convert Pixel Image to Matrix</td>
+</tr>
+<tr>
+<td><code>as.owin</code></td>
+<td>Convert Data To Class owin</td>
+</tr>
+<tr>
+<td><code>as.polygonal</code></td>
+<td>Convert a Window to a Polygonal Window</td>
+</tr>
+<tr>
+<td><code>as.ppm</code></td>
+<td>Extract Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>as.ppp</code></td>
+<td>Convert Data To Class ppp</td>
+</tr>
+<tr>
+<td><code>as.psp</code></td>
+<td>Convert Data To Class psp</td>
+</tr>
+<tr>
+<td><code>as.rectangle</code></td>
+<td>Window Frame</td>
+</tr>
+<tr>
+<td><code>as.solist</code></td>
+<td>Convert List of Two-Dimensional Spatial Objects</td>
+</tr>
+<tr>
+<td><code>as.tess</code></td>
+<td>Convert Data To Tessellation</td>
+</tr>
+<tr>
+<td><code>auc</code></td>
+<td>Area Under ROC Curve</td>
+</tr>
+<tr>
+<td><code>austates</code></td>
+<td>Australian States and Mainland Territories</td>
+</tr>
+<tr>
+<td><code>bdist.pixels</code></td>
+<td>Distance to Boundary of Window</td>
+</tr>
+<tr>
+<td><code>bdist.points</code></td>
+<td>Distance to Boundary of Window</td>
+</tr>
+<tr>
+<td><code>bdist.tiles</code></td>
+<td>Distance to Boundary of Window</td>
+</tr>
+<tr>
+<td><code>bdspots</code></td>
+<td>Breakdown Spots in Microelectronic Materials</td>
+</tr>
+<tr>
+<td><code>beachcolours</code></td>
+<td>Create Colour Scheme for a Range of Numbers</td>
+</tr>
+<tr>
+<td><code>beginner</code></td>
+<td>Print Introduction For Beginners</td>
+</tr>
+<tr>
+<td><code>begins</code></td>
+<td>Check Start of Character String</td>
+</tr>
+<tr>
+<td><code>bei</code></td>
+<td>Tropical rain forest trees</td>
+</tr>
+<tr>
+<td><code>berman.test</code></td>
+<td>Berman&apos;s Tests for Point Process Model</td>
+</tr>
+<tr>
+<td><code>betacells</code></td>
+<td>Beta Ganglion Cells in Cat Retina</td>
+</tr>
+<tr>
+<td><code>bind.fv</code></td>
+<td>Combine Function Value Tables</td>
+</tr>
+<tr>
+<td><code>blur</code></td>
+<td>Apply Gaussian Blur to a Pixel Image</td>
+</tr>
+<tr>
+<td><code>border</code></td>
+<td>Border Region of a Window</td>
+</tr>
+<tr>
+<td><code>bounding.box.xy</code></td>
+<td>Convex Hull of Points</td>
+</tr>
+<tr>
+<td><code>boundingbox</code></td>
+<td>Bounding Box of a Window, Image, or Point Pattern</td>
+</tr>
+<tr>
+<td><code>box3</code></td>
+<td>Three-Dimensional Box</td>
+</tr>
+<tr>
+<td><code>boxx</code></td>
+<td>Multi-Dimensional Box</td>
+</tr>
+<tr>
+<td><code>bramblecanes</code></td>
+<td>Hutchings&apos; Bramble Canes data</td>
+</tr>
+<tr>
+<td><code>branchlabelfun</code></td>
+<td>Tree Branch Membership Labelling Function</td>
+</tr>
+<tr>
+<td><code>bronzefilter</code></td>
+<td>Bronze gradient filter data</td>
+</tr>
+<tr>
+<td><code>bw.diggle</code></td>
+<td>Cross Validated Bandwidth Selection for Kernel Density</td>
+</tr>
+<tr>
+<td><code>bw.frac</code></td>
+<td>Bandwidth Selection Based on Window Geometry</td>
+</tr>
+<tr>
+<td><code>bw.ppl</code></td>
+<td>Likelihood Cross Validation Bandwidth Selection for Kernel Density</td>
+</tr>
+<tr>
+<td><code>bw.relrisk</code></td>
+<td>Cross Validated Bandwidth Selection for Relative Risk Estimation</td>
+</tr>
+<tr>
+<td><code>bw.scott</code></td>
+<td>Scott&apos;s Rule for Bandwidth Selection for Kernel Density</td>
+</tr>
+<tr>
+<td><code>bw.smoothppp</code></td>
+<td>Cross Validated Bandwidth Selection for Spatial Smoothing</td>
+</tr>
+<tr>
+<td><code>bw.stoyan</code></td>
+<td>Stoyan&apos;s Rule of Thumb for Bandwidth Selection</td>
+</tr>
+<tr>
+<td><code>by.im</code></td>
+<td>Apply Function to Image Broken Down by Factor</td>
+</tr>
+<tr>
+<td><code>by.ppp</code></td>
+<td>Apply a Function to a Point Pattern Broken Down by Factor</td>
+</tr>
+<tr>
+<td><code>cauchy.estK</code></td>
+<td>Fit the Neyman-Scott cluster process with Cauchy kernel</td>
+</tr>
+<tr>
+<td><code>cauchy.estpcf</code></td>
+<td>Fit the Neyman-Scott cluster process with Cauchy kernel</td>
+</tr>
+<tr>
+<td><code>cbind.hyperframe</code></td>
+<td>Combine Hyperframes by Rows or by Columns</td>
+</tr>
+<tr>
+<td><code>cdf.test</code></td>
+<td>Spatial Distribution Test for Point Pattern or Point Process Model</td>
+</tr>
+<tr>
+<td><code>cdf.test.mppm</code></td>
+<td>Spatial Distribution Test for Multiple Point Process Model</td>
+</tr>
+<tr>
+<td><code>cells</code></td>
+<td>Biological Cells Point Pattern</td>
+</tr>
+<tr>
+<td><code>centroid.owin</code></td>
+<td>Centroid of a window</td>
+</tr>
+<tr>
+<td><code>chicago</code></td>
+<td>Chicago Street Crime Data</td>
+</tr>
+<tr>
+<td><code>chop.tess</code></td>
+<td>Subdivide a Window or Tessellation using a Set of Lines</td>
+</tr>
+<tr>
+<td><code>chorley</code></td>
+<td>Chorley-Ribble Cancer Data</td>
+</tr>
+<tr>
+<td><code>circdensity</code></td>
+<td>Density Estimation for Circular Data</td>
+</tr>
+<tr>
+<td><code>circumradius</code></td>
+<td>Circumradius of a Window</td>
+</tr>
+<tr>
+<td><code>clarkevans</code></td>
+<td>Clark and Evans Aggregation Index</td>
+</tr>
+<tr>
+<td><code>clarkevans.test</code></td>
+<td>Clark and Evans Test</td>
+</tr>
+<tr>
+<td><code>clickbox</code></td>
+<td>Interactively Define a Rectangle</td>
+</tr>
+<tr>
+<td><code>clickdist</code></td>
+<td>Interactively Measure Distance</td>
+</tr>
+<tr>
+<td><code>clickjoin</code></td>
+<td>Interactively join vertices on a plot</td>
+</tr>
+<tr>
+<td><code>clickpoly</code></td>
+<td>Interactively Define a Polygon</td>
+</tr>
+<tr>
+<td><code>clickppp</code></td>
+<td>Interactively Add Points</td>
+</tr>
+<tr>
+<td><code>clip.infline</code></td>
+<td>Intersect Infinite Straight Lines with a Window</td>
+</tr>
+<tr>
+<td><code>clmfires</code></td>
+<td>Castilla-La Mancha Forest Fires</td>
+</tr>
+<tr>
+<td><code>closepairs</code></td>
+<td>Close Pairs of Points</td>
+</tr>
+<tr>
+<td><code>closepairs.pp3</code></td>
+<td>Close Pairs of Points in 3 Dimensions</td>
+</tr>
+<tr>
+<td><code>closing</code></td>
+<td>Morphological Closing</td>
+</tr>
+<tr>
+<td><code>clusterfield</code></td>
+<td>Field of clusters</td>
+</tr>
+<tr>
+<td><code>clusterfit</code></td>
+<td>Fit Cluster or Cox Point Process Model via Minimum Contrast</td>
+</tr>
+<tr>
+<td><code>clusterkernel</code></td>
+<td>Extract Cluster Offspring Kernel</td>
+</tr>
+<tr>
+<td><code>clusterradius</code></td>
+<td>Compute or Extract Effective Range of Cluster Kernel</td>
+</tr>
+<tr>
+<td><code>clusterset</code></td>
+<td>Allard-Fraley Estimator of Cluster Feature</td>
+</tr>
+<tr>
+<td><code>coef.mppm</code></td>
+<td>Coefficients of Point Process Model Fitted to Multiple Point Patterns</td>
+</tr>
+<tr>
+<td><code>coef.ppm</code></td>
+<td>Coefficients of Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>coef.slrm</code></td>
+<td>Coefficients of Fitted Spatial Logistic Regression Model</td>
+</tr>
+<tr>
+<td><code>collapse.fv</code></td>
+<td>Collapse Several Function Tables into One</td>
+</tr>
+<tr>
+<td><code>colourmap</code></td>
+<td>Colour Lookup Tables</td>
+</tr>
+<tr>
+<td><code>colourtools</code></td>
+<td>Convert and Compare Colours in Different Formats</td>
+</tr>
+<tr>
+<td><code>commonGrid</code></td>
+<td>Determine A Common Spatial Domain And Pixel Resolution</td>
+</tr>
+<tr>
+<td><code>compareFit</code></td>
+<td>Residual Diagnostics for Multiple Fitted Models</td>
+</tr>
+<tr>
+<td><code>compatible</code></td>
+<td>Test Whether Objects Are Compatible</td>
+</tr>
+<tr>
+<td><code>compatible.fasp</code></td>
+<td>Test Whether Function Arrays Are Compatible</td>
+</tr>
+<tr>
+<td><code>compatible.fv</code></td>
+<td>Test Whether Function Objects Are Compatible</td>
+</tr>
+<tr>
+<td><code>compatible.im</code></td>
+<td>Test Whether Pixel Images Are Compatible</td>
+</tr>
+<tr>
+<td><code>complement.owin</code></td>
+<td>Take Complement of a Window</td>
+</tr>
+<tr>
+<td><code>concatxy</code></td>
+<td>Concatenate x,y Coordinate Vectors</td>
+</tr>
+<tr>
+<td><code>connected</code></td>
+<td>Connected components</td>
+</tr>
+<tr>
+<td><code>connected.ppp</code></td>
+<td>Connected components of a point pattern</td>
+</tr>
+<tr>
+<td><code>contour.im</code></td>
+<td>Contour plot of pixel image</td>
+</tr>
+<tr>
+<td><code>contour.imlist</code></td>
+<td>Array of Contour Plots</td>
+</tr>
+<tr>
+<td><code>convexhull</code></td>
+<td>Convex Hull</td>
+</tr>
+<tr>
+<td><code>convexhull.xy</code></td>
+<td>Convex Hull of Points</td>
+</tr>
+<tr>
+<td><code>convolve.im</code></td>
+<td>Convolution of Pixel Images</td>
+</tr>
+<tr>
+<td><code>coords</code></td>
+<td>Extract or Change Coordinates of a Spatial or Spatiotemporal Point Pattern</td>
+</tr>
+<tr>
+<td><code>copper</code></td>
+<td>Berman-Huntington points and lines data</td>
+</tr>
+<tr>
+<td><code>copyExampleFiles</code></td>
+<td>Copy Data Files for Example</td>
+</tr>
+<tr>
+<td><code>corners</code></td>
+<td>Corners of a rectangle</td>
+</tr>
+<tr>
+<td><code>crossdist</code></td>
+<td>Pairwise distances</td>
+</tr>
+<tr>
+<td><code>crossdist.default</code></td>
+<td>Pairwise distances between two different sets of points</td>
+</tr>
+<tr>
+<td><code>crossdist.lpp</code></td>
+<td>Pairwise distances between two point patterns on a linear network</td>
+</tr>
+<tr>
+<td><code>crossdist.pp3</code></td>
+<td>Pairwise distances between two different three-dimensional point patterns</td>
+</tr>
+<tr>
+<td><code>crossdist.ppp</code></td>
+<td>Pairwise distances between two different point patterns</td>
+</tr>
+<tr>
+<td><code>crossdist.ppx</code></td>
+<td>Pairwise Distances Between Two Different Multi-Dimensional Point Patterns</td>
+</tr>
+<tr>
+<td><code>crossdist.psp</code></td>
+<td>Pairwise distances between two different line segment patterns</td>
+</tr>
+<tr>
+<td><code>crossing.psp</code></td>
+<td>Crossing Points of Two Line Segment Patterns</td>
+</tr>
+<tr>
+<td><code>cut.im</code></td>
+<td>Convert Pixel Image from Numeric to Factor</td>
+</tr>
+<tr>
+<td><code>cut.ppp</code></td>
+<td>Classify Points in a Point Pattern</td>
+</tr>
+<tr>
+<td><code>data.ppm</code></td>
+<td>Extract Original Data from a Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>dclf.progress</code></td>
+<td>Progress Plot of Test of Spatial Pattern</td>
+</tr>
+<tr>
+<td><code>dclf.sigtrace</code></td>
+<td>Significance Trace of Cressie-Loosmore-Ford or Maximum Absolute Deviation Test</td>
+</tr>
+<tr>
+<td><code>dclf.test</code></td>
+<td>Diggle-Cressie-Loosmore-Ford and Maximum Absolute Deviation Tests</td>
+</tr>
+<tr>
+<td><code>default.dummy</code></td>
+<td>Generate a Default Pattern of Dummy Points</td>
+</tr>
+<tr>
+<td><code>default.expand</code></td>
+<td>Default Expansion Rule for Simulation of Model</td>
+</tr>
+<tr>
+<td><code>default.rmhcontrol</code></td>
+<td>Set Default Control Parameters for Metropolis-Hastings Algorithm.</td>
+</tr>
+<tr>
+<td><code>delaunay</code></td>
+<td>Delaunay Triangulation of Point Pattern</td>
+</tr>
+<tr>
+<td><code>delaunayDistance</code></td>
+<td>Distance on Delaunay Triangulation</td>
+</tr>
+<tr>
+<td><code>delaunayNetwork</code></td>
+<td>Linear Network of Delaunay Triangulation or Dirichlet Tessellation</td>
+</tr>
+<tr>
+<td><code>deletebranch</code></td>
+<td>Delete or Extract a Branch of a Tree</td>
+</tr>
+<tr>
+<td><code>deltametric</code></td>
+<td>Delta Metric</td>
+</tr>
+<tr>
+<td><code>demohyper</code></td>
+<td>Demonstration Example of Hyperframe of Spatial Data</td>
+</tr>
+<tr>
+<td><code>demopat</code></td>
+<td>Artificial Data Point Pattern</td>
+</tr>
+<tr>
+<td><code>dendrite</code></td>
+<td>Dendritic Spines Data</td>
+</tr>
+<tr>
+<td><code>density.lpp</code></td>
+<td>Kernel Estimate of Intensity on a Linear Network</td>
+</tr>
+<tr>
+<td><code>density.ppp</code></td>
+<td>Kernel Smoothed Intensity of Point Pattern</td>
+</tr>
+<tr>
+<td><code>density.psp</code></td>
+<td>Kernel Smoothing of Line Segment Pattern</td>
+</tr>
+<tr>
+<td><code>density.splitppp</code></td>
+<td>Kernel Smoothed Intensity of Split Point Pattern</td>
+</tr>
+<tr>
+<td><code>deriv.fv</code></td>
+<td>Calculate Derivative of Function Values</td>
+</tr>
+<tr>
+<td><code>detpointprocfamilyfun</code></td>
+<td>Construct a New Determinantal Point Process Model Family Function</td>
+</tr>
+<tr>
+<td><code>dfbetas.ppm</code></td>
+<td>Parameter influence measure</td>
+</tr>
+<tr>
+<td><code>dg.envelope</code></td>
+<td>Global Envelopes for Dao-Genton Test</td>
+</tr>
+<tr>
+<td><code>dg.progress</code></td>
+<td>Progress Plot of Dao-Genton Test of Spatial Pattern</td>
+</tr>
+<tr>
+<td><code>dg.sigtrace</code></td>
+<td>Significance Trace of Dao-Genton Test</td>
+</tr>
+<tr>
+<td><code>dg.test</code></td>
+<td>Dao-Genton Adjusted Goodness-Of-Fit Test</td>
+</tr>
+<tr>
+<td><code>diagnose.ppm</code></td>
+<td>Diagnostic Plots for Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>diameter</code></td>
+<td>Diameter of an Object</td>
+</tr>
+<tr>
+<td><code>diameter.box3</code></td>
+<td>Geometrical Calculations for Three-Dimensional Box</td>
+</tr>
+<tr>
+<td><code>diameter.boxx</code></td>
+<td>Geometrical Calculations for Multi-Dimensional Box</td>
+</tr>
+<tr>
+<td><code>diameter.linnet</code></td>
+<td>Circumradius and Diameter of a Linear Network</td>
+</tr>
+<tr>
+<td><code>diameter.owin</code></td>
+<td>Diameter of a Window</td>
+</tr>
+<tr>
+<td><code>dilated.areas</code></td>
+<td>Areas of Morphological Dilations</td>
+</tr>
+<tr>
+<td><code>dilation</code></td>
+<td>Morphological Dilation</td>
+</tr>
+<tr>
+<td><code>dim.detpointprocfamily</code></td>
+<td>Dimension of Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>dirichlet</code></td>
+<td>Dirichlet Tessellation of Point Pattern</td>
+</tr>
+<tr>
+<td><code>dirichletAreas</code></td>
+<td>Compute Areas of Tiles in Dirichlet Tessellation</td>
+</tr>
+<tr>
+<td><code>dirichletVertices</code></td>
+<td>Vertices and Edges of Dirichlet Tessellation</td>
+</tr>
+<tr>
+<td><code>dirichletWeights</code></td>
+<td>Compute Quadrature Weights Based on Dirichlet Tessellation</td>
+</tr>
+<tr>
+<td><code>disc</code></td>
+<td>Circular Window</td>
+</tr>
+<tr>
+<td><code>discpartarea</code></td>
+<td>Area of Part of Disc</td>
+</tr>
+<tr>
+<td><code>discretise</code></td>
+<td>Safely Convert Point Pattern Window to Binary Mask</td>
+</tr>
+<tr>
+<td><code>discs</code></td>
+<td>Union of Discs</td>
+</tr>
+<tr>
+<td><code>distcdf</code></td>
+<td>Distribution Function of Interpoint Distance</td>
+</tr>
+<tr>
+<td><code>distfun</code></td>
+<td>Distance Map as a Function</td>
+</tr>
+<tr>
+<td><code>distfun.lpp</code></td>
+<td>Distance Map on Linear Network</td>
+</tr>
+<tr>
+<td><code>distmap</code></td>
+<td>Distance Map</td>
+</tr>
+<tr>
+<td><code>distmap.owin</code></td>
+<td>Distance Map of Window</td>
+</tr>
+<tr>
+<td><code>distmap.ppp</code></td>
+<td>Distance Map of Point Pattern</td>
+</tr>
+<tr>
+<td><code>distmap.psp</code></td>
+<td>Distance Map of Line Segment Pattern</td>
+</tr>
+<tr>
+<td><code>dkernel</code></td>
+<td>Kernel distributions and random generation</td>
+</tr>
+<tr>
+<td><code>dmixpois</code></td>
+<td>Mixed Poisson Distribution</td>
+</tr>
+<tr>
+<td><code>domain</code></td>
+<td>Extract the Domain of any Spatial Object</td>
+</tr>
+<tr>
+<td><code>dppBessel</code></td>
+<td>Bessel Type Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>dppCauchy</code></td>
+<td>Generalized Cauchy Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>dppGauss</code></td>
+<td>Gaussian Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>dppMatern</code></td>
+<td>Whittle-Matern Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>dppPowerExp</code></td>
+<td>Power Exponential Spectral Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>dppapproxkernel</code></td>
+<td>Approximate Determinantal Point Process Kernel</td>
+</tr>
+<tr>
+<td><code>dppapproxpcf</code></td>
+<td>Approximate Pair Correlation Function of Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>dppeigen</code></td>
+<td>Internal function calculating eig and index</td>
+</tr>
+<tr>
+<td><code>dppkernel</code></td>
+<td>Extract Kernel from Determinantal Point Process Model Object</td>
+</tr>
+<tr>
+<td><code>dppm</code></td>
+<td>Fit Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>dppparbounds</code></td>
+<td>Parameter Bound for a Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>dppspecden</code></td>
+<td>Extract Spectral Density from Determinantal Point Process Model Object</td>
+</tr>
+<tr>
+<td><code>dppspecdenrange</code></td>
+<td>Range of Spectral Density of a Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>dummify</code></td>
+<td>Convert Data to Numeric Values by Constructing Dummy Variables</td>
+</tr>
+<tr>
+<td><code>dummy.ppm</code></td>
+<td>Extract Dummy Points Used to Fit a Point Process Model</td>
+</tr>
+<tr>
+<td><code>duplicated.ppp</code></td>
+<td>Determine Duplicated Points in a Spatial Point Pattern</td>
+</tr>
+<tr>
+<td><code>edge.Ripley</code></td>
+<td>Ripley&apos;s Isotropic Edge Correction</td>
+</tr>
+<tr>
+<td><code>edge.Trans</code></td>
+<td>Translation Edge Correction</td>
+</tr>
+<tr>
+<td><code>edges</code></td>
+<td>Extract Boundary Edges of a Window.</td>
+</tr>
+<tr>
+<td><code>edges2triangles</code></td>
+<td>List Triangles in a Graph</td>
+</tr>
+<tr>
+<td><code>edges2vees</code></td>
+<td>List Dihedral Triples in a Graph</td>
+</tr>
+<tr>
+<td><code>edit.hyperframe</code></td>
+<td>Invoke Text Editor on Hyperframe</td>
+</tr>
+<tr>
+<td><code>edit.ppp</code></td>
+<td>Invoke Text Editor on Spatial Data</td>
+</tr>
+<tr>
+<td><code>eem</code></td>
+<td>Exponential Energy Marks</td>
+</tr>
+<tr>
+<td><code>effectfun</code></td>
+<td>Compute Fitted Effect of a Spatial Covariate in a Point Process Model</td>
+</tr>
+<tr>
+<td><code>ellipse</code></td>
+<td>Elliptical Window.</td>
+</tr>
+<tr>
+<td><code>emend</code></td>
+<td>Force Model to be Valid</td>
+</tr>
+<tr>
+<td><code>emend.ppm</code></td>
+<td>Force Point Process Model to be Valid</td>
+</tr>
+<tr>
+<td><code>endpoints.psp</code></td>
+<td>Endpoints of Line Segment Pattern</td>
+</tr>
+<tr>
+<td><code>envelope</code></td>
+<td>Simulation Envelopes of Summary Function</td>
+</tr>
+<tr>
+<td><code>envelope.envelope</code></td>
+<td>Recompute Envelopes</td>
+</tr>
+<tr>
+<td><code>envelope.lpp</code></td>
+<td>Envelope for Point Patterns on Linear Network</td>
+</tr>
+<tr>
+<td><code>envelope.pp3</code></td>
+<td>Simulation Envelopes of Summary Function for 3D Point Pattern</td>
+</tr>
+<tr>
+<td><code>eroded.areas</code></td>
+<td>Areas of Morphological Erosions</td>
+</tr>
+<tr>
+<td><code>erosion</code></td>
+<td>Morphological Erosion</td>
+</tr>
+<tr>
+<td><code>eval.fasp</code></td>
+<td>Evaluate Expression Involving Function Arrays</td>
+</tr>
+<tr>
+<td><code>eval.fv</code></td>
+<td>Evaluate Expression Involving Functions</td>
+</tr>
+<tr>
+<td><code>eval.im</code></td>
+<td>Evaluate Expression Involving Pixel Images</td>
+</tr>
+<tr>
+<td><code>eval.linim</code></td>
+<td>Evaluate Expression Involving Pixel Images on Linear Network</td>
+</tr>
+<tr>
+<td><code>ewcdf</code></td>
+<td>Weighted Empirical Cumulative Distribution Function</td>
+</tr>
+<tr>
+<td><code>exactMPLEstrauss</code></td>
+<td>Exact Maximum Pseudolikelihood Estimate for Stationary Strauss Process</td>
+</tr>
+<tr>
+<td><code>expand.owin</code></td>
+<td>Apply Expansion Rule</td>
+</tr>
+<tr>
+<td><code>fardist</code></td>
+<td>Farthest Distance to Boundary of Window</td>
+</tr>
+<tr>
+<td><code>fasp.object</code></td>
+<td>Function Arrays for Spatial Patterns</td>
+</tr>
+<tr>
+<td><code>finpines</code></td>
+<td>Pine saplings in Finland.</td>
+</tr>
+<tr>
+<td><code>fitin.ppm</code></td>
+<td>Extract the Interaction from a Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>fitted.lppm</code></td>
+<td>Fitted Intensity for Point Process on Linear Network</td>
+</tr>
+<tr>
+<td><code>fitted.mppm</code></td>
+<td>Fitted Conditional Intensity for Multiple Point Process Model</td>
+</tr>
+<tr>
+<td><code>fitted.ppm</code></td>
+<td>Fitted Conditional Intensity for Point Process Model</td>
+</tr>
+<tr>
+<td><code>fitted.slrm</code></td>
+<td>Fitted Probabilities for Spatial Logistic Regression</td>
+</tr>
+<tr>
+<td><code>fixef.mppm</code></td>
+<td>Extract Fixed Effects from Point Process Model</td>
+</tr>
+<tr>
+<td><code>flipxy</code></td>
+<td>Exchange X and Y Coordinates</td>
+</tr>
+<tr>
+<td><code>flu</code></td>
+<td>Influenza Virus Proteins</td>
+</tr>
+<tr>
+<td><code>foo</code></td>
+<td>Foo is Not a Real Name</td>
+</tr>
+<tr>
+<td><code>formula.fv</code></td>
+<td>Extract or Change the Plot Formula for a Function Value Table</td>
+</tr>
+<tr>
+<td><code>formula.ppm</code></td>
+<td>Model Formulae for Gibbs Point Process Models</td>
+</tr>
+<tr>
+<td><code>fourierbasis</code></td>
+<td>Fourier Basis Functions</td>
+</tr>
+<tr>
+<td><code>fryplot</code></td>
+<td>Fry Plot of Point Pattern</td>
+</tr>
+<tr>
+<td><code>funxy</code></td>
+<td>Spatial Function Class</td>
+</tr>
+<tr>
+<td><code>fv</code></td>
+<td>Create a Function Value Table</td>
+</tr>
+<tr>
+<td><code>fv.object</code></td>
+<td>Function Value Table</td>
+</tr>
+<tr>
+<td><code>fvnames</code></td>
+<td>Abbreviations for Groups of Columns in Function Value Table</td>
+</tr>
+<tr>
+<td><code>ganglia</code></td>
+<td>Beta Ganglion Cells in Cat Retina, Old Version</td>
+</tr>
+<tr>
+<td><code>gauss.hermite</code></td>
+<td>Gauss-Hermite Quadrature Approximation to Expectation for Normal Distribution</td>
+</tr>
+<tr>
+<td><code>gordon</code></td>
+<td>People in Gordon Square</td>
+</tr>
+<tr>
+<td><code>gorillas</code></td>
+<td>Gorilla Nesting Sites</td>
+</tr>
+<tr>
+<td><code>gridcentres</code></td>
+<td>Rectangular grid of points</td>
+</tr>
+<tr>
+<td><code>gridweights</code></td>
+<td>Compute Quadrature Weights Based on Grid Counts</td>
+</tr>
+<tr>
+<td><code>grow.rectangle</code></td>
+<td>Add margins to rectangle</td>
+</tr>
+<tr>
+<td><code>hamster</code></td>
+<td>Aherne&apos;s hamster tumour data</td>
+</tr>
+<tr>
+<td><code>harmonic</code></td>
+<td>Basis for Harmonic Functions</td>
+</tr>
+<tr>
+<td><code>harmonise</code></td>
+<td>Make Objects Compatible</td>
+</tr>
+<tr>
+<td><code>harmonise.fv</code></td>
+<td>Make Function Tables Compatible</td>
+</tr>
+<tr>
+<td><code>harmonise.im</code></td>
+<td>Make Pixel Images Compatible</td>
+</tr>
+<tr>
+<td><code>harmonise.owin</code></td>
+<td>Make Windows Compatible</td>
+</tr>
+<tr>
+<td><code>heather</code></td>
+<td>Diggle&apos;s Heather Data</td>
+</tr>
+<tr>
+<td><code>hextess</code></td>
+<td>Hexagonal Grid or Tessellation</td>
+</tr>
+<tr>
+<td><code>hierpair.family</code></td>
+<td>Hierarchical Pairwise Interaction Process Family</td>
+</tr>
+<tr>
+<td><code>hist.im</code></td>
+<td>Histogram of Pixel Values in an Image</td>
+</tr>
+<tr>
+<td><code>hopskel</code></td>
+<td>Hopkins-Skellam Test</td>
+</tr>
+<tr>
+<td><code>humberside</code></td>
+<td>Humberside Data on Childhood Leukaemia and Lymphoma</td>
+</tr>
+<tr>
+<td><code>hybrid.family</code></td>
+<td>Hybrid Interaction Family</td>
+</tr>
+<tr>
+<td><code>hyperframe</code></td>
+<td>Hyper Data Frame</td>
+</tr>
+<tr>
+<td><code>hyytiala</code></td>
+<td>Scots pines and other trees at Hyytiala</td>
+</tr>
+<tr>
+<td><code>identify.ppp</code></td>
+<td>Identify Points in a Point Pattern</td>
+</tr>
+<tr>
+<td><code>identify.psp</code></td>
+<td>Identify Segments in a Line Segment Pattern</td>
+</tr>
+<tr>
+<td><code>idw</code></td>
+<td>Inverse-distance weighted smoothing of observations at irregular points</td>
+</tr>
+<tr>
+<td><code>im</code></td>
+<td>Create a Pixel Image Object</td>
+</tr>
+<tr>
+<td><code>im.apply</code></td>
+<td>Apply Function Pixelwise to List of Images</td>
+</tr>
+<tr>
+<td><code>im.object</code></td>
+<td>Class of Images</td>
+</tr>
+<tr>
+<td><code>imcov</code></td>
+<td>Spatial Covariance of a Pixel Image</td>
+</tr>
+<tr>
+<td><code>improve.kppm</code></td>
+<td>Improve Intensity Estimate of Fitted Cluster Point Process Model</td>
+</tr>
+<tr>
+<td><code>incircle</code></td>
+<td>Find Largest Circle Inside Window</td>
+</tr>
+<tr>
+<td><code>increment.fv</code></td>
+<td>Increments of a Function</td>
+</tr>
+<tr>
+<td><code>infline</code></td>
+<td>Infinite Straight Lines</td>
+</tr>
+<tr>
+<td><code>influence.ppm</code></td>
+<td>Influence Measure for Spatial Point Process Model</td>
+</tr>
+<tr>
+<td><code>inforder.family</code></td>
+<td>Infinite Order Interaction Family</td>
+</tr>
+<tr>
+<td><code>inside.owin</code></td>
+<td>Test Whether Points Are Inside A Window</td>
+</tr>
+<tr>
+<td><code>integral.im</code></td>
+<td>Integral of a Pixel Image</td>
+</tr>
+<tr>
+<td><code>integral.linim</code></td>
+<td>Integral on a Linear Network</td>
+</tr>
+<tr>
+<td><code>integral.msr</code></td>
+<td>Integral of a Measure</td>
+</tr>
+<tr>
+<td><code>intensity</code></td>
+<td>Intensity of a Dataset or a Model</td>
+</tr>
+<tr>
+<td><code>intensity.dppm</code></td>
+<td>Intensity of Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>intensity.lpp</code></td>
+<td>Empirical Intensity of Point Pattern on Linear Network</td>
+</tr>
+<tr>
+<td><code>intensity.ppm</code></td>
+<td>Intensity of Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>intensity.ppp</code></td>
+<td>Empirical Intensity of Point Pattern</td>
+</tr>
+<tr>
+<td><code>intensity.ppx</code></td>
+<td>Intensity of a Multidimensional Space-Time Point Pattern</td>
+</tr>
+<tr>
+<td><code>intensity.quadratcount</code></td>
+<td>Intensity Estimates Using Quadrat Counts</td>
+</tr>
+<tr>
+<td><code>interp.colourmap</code></td>
+<td>Interpolate smoothly between specified colours</td>
+</tr>
+<tr>
+<td><code>interp.im</code></td>
+<td>Interpolate a Pixel Image</td>
+</tr>
+<tr>
+<td><code>intersect.owin</code></td>
+<td>Intersection, Union or Set Subtraction of Windows</td>
+</tr>
+<tr>
+<td><code>intersect.tess</code></td>
+<td>Intersection of Two Tessellations</td>
+</tr>
+<tr>
+<td><code>invoke.symbolmap</code></td>
+<td>Plot Data Using Graphics Symbol Map</td>
+</tr>
+<tr>
+<td><code>iplot</code></td>
+<td>Point and Click Interface for Displaying Spatial Data</td>
+</tr>
+<tr>
+<td><code>ippm</code></td>
+<td>Fit Point Process Model Involving Irregular Trend Parameters</td>
+</tr>
+<tr>
+<td><code>is.convex</code></td>
+<td>Test Whether a Window is Convex</td>
+</tr>
+<tr>
+<td><code>is.dppm</code></td>
+<td>Recognise Fitted Determinantal Point Process Models</td>
+</tr>
+<tr>
+<td><code>is.empty</code></td>
+<td>Test Whether An Object Is Empty</td>
+</tr>
+<tr>
+<td><code>is.hybrid</code></td>
+<td>Test Whether Object is a Hybrid</td>
+</tr>
+<tr>
+<td><code>is.im</code></td>
+<td>Test Whether An Object Is A Pixel Image</td>
+</tr>
+<tr>
+<td><code>is.lpp</code></td>
+<td>Test Whether An Object Is A Point Pattern on a Linear Network</td>
+</tr>
+<tr>
+<td><code>is.marked</code></td>
+<td>Test Whether Marks Are Present</td>
+</tr>
+<tr>
+<td><code>is.marked.ppm</code></td>
+<td>Test Whether A Point Process Model is Marked</td>
+</tr>
+<tr>
+<td><code>is.marked.ppp</code></td>
+<td>Test Whether A Point Pattern is Marked</td>
+</tr>
+<tr>
+<td><code>is.multitype</code></td>
+<td>Test whether Object is Multitype</td>
+</tr>
+<tr>
+<td><code>is.multitype.ppm</code></td>
+<td>Test Whether A Point Process Model is Multitype</td>
+</tr>
+<tr>
+<td><code>is.multitype.ppp</code></td>
+<td>Test Whether A Point Pattern is Multitype</td>
+</tr>
+<tr>
+<td><code>is.owin</code></td>
+<td>Test Whether An Object Is A Window</td>
+</tr>
+<tr>
+<td><code>is.ppm</code></td>
+<td>Test Whether An Object Is A Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>is.ppp</code></td>
+<td>Test Whether An Object Is A Point Pattern</td>
+</tr>
+<tr>
+<td><code>is.rectangle</code></td>
+<td>Determine Type of Window</td>
+</tr>
+<tr>
+<td><code>is.stationary</code></td>
+<td>Recognise Stationary and Poisson Point Process Models</td>
+</tr>
+<tr>
+<td><code>is.subset.owin</code></td>
+<td>Determine Whether One Window is Contained In Another</td>
+</tr>
+<tr>
+<td><code>istat</code></td>
+<td>Point and Click Interface for Exploratory Analysis of Point Pattern</td>
+</tr>
+<tr>
+<td><code>japanesepines</code></td>
+<td>Japanese Pines Point Pattern</td>
+</tr>
+<tr>
+<td><code>kaplan.meier</code></td>
+<td>Kaplan-Meier Estimator using Histogram Data</td>
+</tr>
+<tr>
+<td><code>kernel.factor</code></td>
+<td>Scale factor for density kernel</td>
+</tr>
+<tr>
+<td><code>km.rs</code></td>
+<td>Kaplan-Meier and Reduced Sample Estimator using Histograms</td>
+</tr>
+<tr>
+<td><code>kppm</code></td>
+<td>Fit Cluster or Cox Point Process Model</td>
+</tr>
+<tr>
+<td><code>kstest</code></td>
+<td>Outdated Functions</td>
+</tr>
+<tr>
+<td><code>lansing</code></td>
+<td>Lansing Woods Point Pattern</td>
+</tr>
+<tr>
+<td><code>latest.news</code></td>
+<td>Print News About Latest Version of Package</td>
+</tr>
+<tr>
+<td><code>layered</code></td>
+<td>Create List of Plotting Layers</td>
+</tr>
+<tr>
+<td><code>layerplotargs</code></td>
+<td>Extract or Replace the Plot Arguments of a Layered Object</td>
+</tr>
+<tr>
+<td><code>layout.boxes</code></td>
+<td>Generate a Row or Column Arrangement of Rectangles.</td>
+</tr>
+<tr>
+<td><code>lengths.psp</code></td>
+<td>Lengths of Line Segments</td>
+</tr>
+<tr>
+<td><code>letterR</code></td>
+<td>Window in Shape of Letter R</td>
+</tr>
+<tr>
+<td><code>levelset</code></td>
+<td>Level Set of a Pixel Image</td>
+</tr>
+<tr>
+<td><code>leverage.ppm</code></td>
+<td>Leverage Measure for Spatial Point Process Model</td>
+</tr>
+<tr>
+<td><code>lgcp.estK</code></td>
+<td>Fit a Log-Gaussian Cox Point Process by Minimum Contrast</td>
+</tr>
+<tr>
+<td><code>lgcp.estpcf</code></td>
+<td>Fit a Log-Gaussian Cox Point Process by Minimum Contrast</td>
+</tr>
+<tr>
+<td><code>linearK</code></td>
+<td>Linear K Function</td>
+</tr>
+<tr>
+<td><code>linearKcross</code></td>
+<td>Multitype K Function (Cross-type) for Linear Point Pattern</td>
+</tr>
+<tr>
+<td><code>linearKcross.inhom</code></td>
+<td>Inhomogeneous multitype K Function (Cross-type) for Linear Point Pattern</td>
+</tr>
+<tr>
+<td><code>linearKdot</code></td>
+<td>Multitype K Function (Dot-type) for Linear Point Pattern</td>
+</tr>
+<tr>
+<td><code>linearKdot.inhom</code></td>
+<td>Inhomogeneous multitype K Function (Dot-type) for Linear Point Pattern</td>
+</tr>
+<tr>
+<td><code>linearKinhom</code></td>
+<td>Inhomogeneous Linear K Function</td>
+</tr>
+<tr>
+<td><code>lineardisc</code></td>
+<td>Compute Disc of Given Radius in Linear Network</td>
+</tr>
+<tr>
+<td><code>linearmarkconnect</code></td>
+<td>Mark Connection Function for Multitype Point Pattern on Linear Network</td>
+</tr>
+<tr>
+<td><code>linearmarkequal</code></td>
+<td>Mark Connection Function for Multitype Point Pattern on Linear Network</td>
+</tr>
+<tr>
+<td><code>linearpcf</code></td>
+<td>Linear Pair Correlation Function</td>
+</tr>
+<tr>
+<td><code>linearpcfcross</code></td>
+<td>Multitype Pair Correlation Function (Cross-type) for Linear Point Pattern</td>
+</tr>
+<tr>
+<td><code>linearpcfcross.inhom</code></td>
+<td>Inhomogeneous Multitype Pair Correlation Function (Cross-type) for Linear Point Pattern</td>
+</tr>
+<tr>
+<td><code>linearpcfdot</code></td>
+<td>Multitype Pair Correlation Function (Dot-type) for Linear Point Pattern</td>
+</tr>
+<tr>
+<td><code>linearpcfdot.inhom</code></td>
+<td>Inhomogeneous Multitype Pair Correlation Function (Dot-type) for Linear Point Pattern</td>
+</tr>
+<tr>
+<td><code>linearpcfinhom</code></td>
+<td>Inhomogeneous Linear Pair Correlation Function</td>
+</tr>
+<tr>
+<td><code>linfun</code></td>
+<td>Function on a Linear Network</td>
+</tr>
+<tr>
+<td><code>linim</code></td>
+<td>Create Pixel Image on Linear Network</td>
+</tr>
+<tr>
+<td><code>linnet</code></td>
+<td>Create a Linear Network</td>
+</tr>
+<tr>
+<td><code>localK</code></td>
+<td>Neighbourhood density function</td>
+</tr>
+<tr>
+<td><code>localKinhom</code></td>
+<td>Inhomogeneous Neighbourhood Density Function</td>
+</tr>
+<tr>
+<td><code>localpcf</code></td>
+<td>Local pair correlation function</td>
+</tr>
+<tr>
+<td><code>logLik.dppm</code></td>
+<td>Log Likelihood and AIC for Fitted Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>logLik.kppm</code></td>
+<td>Log Likelihood and AIC for Fitted Cox or Cluster Point Process Model</td>
+</tr>
+<tr>
+<td><code>logLik.mppm</code></td>
+<td>Log Likelihood for Poisson Point Process Model</td>
+</tr>
+<tr>
+<td><code>logLik.ppm</code></td>
+<td>Log Likelihood and AIC for Point Process Model</td>
+</tr>
+<tr>
+<td><code>logLik.slrm</code></td>
+<td>Loglikelihood of Spatial Logistic Regression</td>
+</tr>
+<tr>
+<td><code>lohboot</code></td>
+<td>Bootstrap Confidence Bands for Summary Function</td>
+</tr>
+<tr>
+<td><code>longleaf</code></td>
+<td>Longleaf Pines Point Pattern</td>
+</tr>
+<tr>
+<td><code>lpp</code></td>
+<td>Create Point Pattern on Linear Network</td>
+</tr>
+<tr>
+<td><code>lppm</code></td>
+<td>Fit Point Process Model to Point Pattern on Linear Network</td>
+</tr>
+<tr>
+<td><code>lurking</code></td>
+<td>Lurking variable plot</td>
+</tr>
+<tr>
+<td><code>lut</code></td>
+<td>Lookup Tables</td>
+</tr>
+<tr>
+<td><code>markconnect</code></td>
+<td>Mark Connection Function</td>
+</tr>
+<tr>
+<td><code>markcorr</code></td>
+<td>Mark Correlation Function</td>
+</tr>
+<tr>
+<td><code>markcrosscorr</code></td>
+<td>Mark Cross-Correlation Function</td>
+</tr>
+<tr>
+<td><code>marks</code></td>
+<td>Marks of a Point Pattern</td>
+</tr>
+<tr>
+<td><code>marks.psp</code></td>
+<td>Marks of a Line Segment Pattern</td>
+</tr>
+<tr>
+<td><code>marks.tess</code></td>
+<td>Marks of a Tessellation</td>
+</tr>
+<tr>
+<td><code>markstat</code></td>
+<td>Summarise Marks in Every Neighbourhood in a Point Pattern</td>
+</tr>
+<tr>
+<td><code>marktable</code></td>
+<td>Tabulate Marks in Neighbourhood of Every Point in a Point Pattern</td>
+</tr>
+<tr>
+<td><code>markvario</code></td>
+<td>Mark Variogram</td>
+</tr>
+<tr>
+<td><code>matchingdist</code></td>
+<td>Distance for a Point Pattern Matching</td>
+</tr>
+<tr>
+<td><code>matclust.estK</code></td>
+<td>Fit the Matern Cluster Point Process by Minimum Contrast</td>
+</tr>
+<tr>
+<td><code>matclust.estpcf</code></td>
+<td>Fit the Matern Cluster Point Process by Minimum Contrast Using Pair Correlation</td>
+</tr>
+<tr>
+<td><code>maxnndist</code></td>
+<td>Compute Minimum or Maximum Nearest-Neighbour Distance</td>
+</tr>
+<tr>
+<td><code>mean.im</code></td>
+<td>Maximum, Minimum, Mean, Median, Range or Sum of Pixel Values in an Image</td>
+</tr>
+<tr>
+<td><code>mergeLevels</code></td>
+<td>Merge Levels of a Factor</td>
+</tr>
+<tr>
+<td><code>methods.box3</code></td>
+<td>Methods for Three-Dimensional Box</td>
+</tr>
+<tr>
+<td><code>methods.boxx</code></td>
+<td>Methods for Multi-Dimensional Box</td>
+</tr>
+<tr>
+<td><code>methods.dppm</code></td>
+<td>Methods for Determinantal Point Process Models</td>
+</tr>
+<tr>
+<td><code>methods.fii</code></td>
+<td>Methods for Fitted Interactions</td>
+</tr>
+<tr>
+<td><code>methods.funxy</code></td>
+<td>Methods for Spatial Functions</td>
+</tr>
+<tr>
+<td><code>methods.kppm</code></td>
+<td>Methods for Cluster Point Process Models</td>
+</tr>
+<tr>
+<td><code>methods.layered</code></td>
+<td>Methods for Layered Objects</td>
+</tr>
+<tr>
+<td><code>methods.linfun</code></td>
+<td>Methods for Functions on Linear Network</td>
+</tr>
+<tr>
+<td><code>methods.linim</code></td>
+<td>Methods for Images on a Linear Network</td>
+</tr>
+<tr>
+<td><code>methods.linnet</code></td>
+<td>Methods for Linear Networks</td>
+</tr>
+<tr>
+<td><code>methods.lpp</code></td>
+<td>Methods for Point Patterns on a Linear Network</td>
+</tr>
+<tr>
+<td><code>methods.lppm</code></td>
+<td>Methods for Fitted Point Process Models on a Linear Network</td>
+</tr>
+<tr>
+<td><code>methods.objsurf</code></td>
+<td>Methods for Objective Function Surfaces</td>
+</tr>
+<tr>
+<td><code>methods.pp3</code></td>
+<td>Methods for three-dimensional point patterns</td>
+</tr>
+<tr>
+<td><code>methods.ppx</code></td>
+<td>Methods for Multidimensional Space-Time Point Patterns</td>
+</tr>
+<tr>
+<td><code>methods.rho2hat</code></td>
+<td>Methods for Intensity Functions of Two Spatial Covariates</td>
+</tr>
+<tr>
+<td><code>methods.rhohat</code></td>
+<td>Methods for Intensity Functions of Spatial Covariate</td>
+</tr>
+<tr>
+<td><code>methods.slrm</code></td>
+<td>Methods for Spatial Logistic Regression Models</td>
+</tr>
+<tr>
+<td><code>methods.units</code></td>
+<td>Methods for Units</td>
+</tr>
+<tr>
+<td><code>midpoints.psp</code></td>
+<td>Midpoints of Line Segment Pattern</td>
+</tr>
+<tr>
+<td><code>mincontrast</code></td>
+<td>Method of Minimum Contrast</td>
+</tr>
+<tr>
+<td><code>miplot</code></td>
+<td>Morisita Index Plot</td>
+</tr>
+<tr>
+<td><code>model.depends</code></td>
+<td>Identify Covariates Involved in each Model Term</td>
+</tr>
+<tr>
+<td><code>model.frame.ppm</code></td>
+<td>Extract the Variables in a Point Process Model</td>
+</tr>
+<tr>
+<td><code>model.images</code></td>
+<td>Compute Images of Constructed Covariates</td>
+</tr>
+<tr>
+<td><code>model.matrix.ppm</code></td>
+<td>Extract Design Matrix from Point Process Model</td>
+</tr>
+<tr>
+<td><code>model.matrix.slrm</code></td>
+<td>Extract Design Matrix from Spatial Logistic Regression Model</td>
+</tr>
+<tr>
+<td><code>mppm</code></td>
+<td>Fit Point Process Model to Several Point Patterns</td>
+</tr>
+<tr>
+<td><code>msr</code></td>
+<td>Signed or Vector-Valued Measure</td>
+</tr>
+<tr>
+<td><code>mucosa</code></td>
+<td>Cells in Gastric Mucosa</td>
+</tr>
+<tr>
+<td><code>multiplicity.ppp</code></td>
+<td>Count Multiplicity of Duplicate Points</td>
+</tr>
+<tr>
+<td><code>murchison</code></td>
+<td>Murchison gold deposits</td>
+</tr>
+<tr>
+<td><code>nbfires</code></td>
+<td>Point Patterns of New Brunswick Forest Fires</td>
+</tr>
+<tr>
+<td><code>nearest.raster.point</code></td>
+<td>Find Pixel Nearest to a Given Point</td>
+</tr>
+<tr>
+<td><code>nearestsegment</code></td>
+<td>Find Line Segment Nearest to Each Point</td>
+</tr>
+<tr>
+<td><code>nestsplit</code></td>
+<td>Nested Split</td>
+</tr>
+<tr>
+<td><code>nnclean</code></td>
+<td>Nearest Neighbour Clutter Removal</td>
+</tr>
+<tr>
+<td><code>nncorr</code></td>
+<td>Nearest-Neighbour Correlation Indices of Marked Point Pattern</td>
+</tr>
+<tr>
+<td><code>nncross</code></td>
+<td>Nearest Neighbours Between Two Patterns</td>
+</tr>
+<tr>
+<td><code>nncross.lpp</code></td>
+<td>Nearest Neighbours on a Linear Network</td>
+</tr>
+<tr>
+<td><code>nncross.pp3</code></td>
+<td>Nearest Neighbours Between Two Patterns in 3D</td>
+</tr>
+<tr>
+<td><code>nndensity.ppp</code></td>
+<td>Estimate Intensity of Point Pattern Using Nearest Neighbour Distances</td>
+</tr>
+<tr>
+<td><code>nndist</code></td>
+<td>Nearest neighbour distances</td>
+</tr>
+<tr>
+<td><code>nndist.lpp</code></td>
+<td>Nearest neighbour distances on a linear network</td>
+</tr>
+<tr>
+<td><code>nndist.pp3</code></td>
+<td>Nearest neighbour distances in three dimensions</td>
+</tr>
+<tr>
+<td><code>nndist.ppx</code></td>
+<td>Nearest Neighbour Distances in Any Dimensions</td>
+</tr>
+<tr>
+<td><code>nndist.psp</code></td>
+<td>Nearest neighbour distances between line segments</td>
+</tr>
+<tr>
+<td><code>nnfun</code></td>
+<td>Nearest Neighbour Index Map as a Function</td>
+</tr>
+<tr>
+<td><code>nnfun.lpp</code></td>
+<td>Nearest Neighbour Map on Linear Network</td>
+</tr>
+<tr>
+<td><code>nnmap</code></td>
+<td>K-th Nearest Point Map</td>
+</tr>
+<tr>
+<td><code>nnmark</code></td>
+<td>Mark of Nearest Neighbour</td>
+</tr>
+<tr>
+<td><code>nnorient</code></td>
+<td>Nearest Neighbour Orientation Distribution</td>
+</tr>
+<tr>
+<td><code>nnwhich</code></td>
+<td>Nearest neighbour</td>
+</tr>
+<tr>
+<td><code>nnwhich.lpp</code></td>
+<td>Identify Nearest Neighbours on a Linear Network</td>
+</tr>
+<tr>
+<td><code>nnwhich.pp3</code></td>
+<td>Nearest neighbours in three dimensions</td>
+</tr>
+<tr>
+<td><code>nnwhich.ppx</code></td>
+<td>Nearest Neighbours in Any Dimensions</td>
+</tr>
+<tr>
+<td><code>npfun</code></td>
+<td>Dummy Function Returns Number of Points</td>
+</tr>
+<tr>
+<td><code>npoints</code></td>
+<td>Number of Points in a Point Pattern</td>
+</tr>
+<tr>
+<td><code>nsegments</code></td>
+<td>Number of Line Segments in a Line Segment Pattern</td>
+</tr>
+<tr>
+<td><code>nztrees</code></td>
+<td>New Zealand Trees Point Pattern</td>
+</tr>
+<tr>
+<td><code>objsurf</code></td>
+<td>Objective Function Surface</td>
+</tr>
+<tr>
+<td><code>opening</code></td>
+<td>Morphological Opening</td>
+</tr>
+<tr>
+<td><code>ord.family</code></td>
+<td>Ord Interaction Process Family</td>
+</tr>
+<tr>
+<td><code>osteo</code></td>
+<td>Osteocyte Lacunae Data: Replicated Three-Dimensional Point Patterns</td>
+</tr>
+<tr>
+<td><code>overlap.owin</code></td>
+<td>Compute Area of Overlap</td>
+</tr>
+<tr>
+<td><code>owin</code></td>
+<td>Create a Window</td>
+</tr>
+<tr>
+<td><code>owin.object</code></td>
+<td>Class owin</td>
+</tr>
+<tr>
+<td><code>padimage</code></td>
+<td>Pad the Border of a Pixel Image</td>
+</tr>
+<tr>
+<td><code>pairdist</code></td>
+<td>Pairwise distances</td>
+</tr>
+<tr>
+<td><code>pairdist.default</code></td>
+<td>Pairwise distances</td>
+</tr>
+<tr>
+<td><code>pairdist.lpp</code></td>
+<td>Pairwise shortest-path distances between points on a linear network</td>
+</tr>
+<tr>
+<td><code>pairdist.pp3</code></td>
+<td>Pairwise distances in Three Dimensions</td>
+</tr>
+<tr>
+<td><code>pairdist.ppp</code></td>
+<td>Pairwise distances</td>
+</tr>
+<tr>
+<td><code>pairdist.ppx</code></td>
+<td>Pairwise Distances in Any Dimensions</td>
+</tr>
+<tr>
+<td><code>pairdist.psp</code></td>
+<td>Pairwise distances between line segments</td>
+</tr>
+<tr>
+<td><code>pairorient</code></td>
+<td>Point Pair Orientation Distribution</td>
+</tr>
+<tr>
+<td><code>pairs.im</code></td>
+<td>Scatterplot Matrix for Pixel Images</td>
+</tr>
+<tr>
+<td><code>pairsat.family</code></td>
+<td>Saturated Pairwise Interaction Point Process Family</td>
+</tr>
+<tr>
+<td><code>pairwise.family</code></td>
+<td>Pairwise Interaction Process Family</td>
+</tr>
+<tr>
+<td><code>panel.contour</code></td>
+<td>Panel Plots using Colour Image or Contour Lines</td>
+</tr>
+<tr>
+<td><code>paracou</code></td>
+<td>Kimboto trees at Paracou, French Guiana</td>
+</tr>
+<tr>
+<td><code>parameters</code></td>
+<td>Extract Model Parameters in Understandable Form</td>
+</tr>
+<tr>
+<td><code>parres</code></td>
+<td>Partial Residuals for Point Process Model</td>
+</tr>
+<tr>
+<td><code>pcf</code></td>
+<td>Pair Correlation Function</td>
+</tr>
+<tr>
+<td><code>pcf.fasp</code></td>
+<td>Pair Correlation Function obtained from array of K functions</td>
+</tr>
+<tr>
+<td><code>pcf.fv</code></td>
+<td>Pair Correlation Function obtained from K Function</td>
+</tr>
+<tr>
+<td><code>pcf.ppp</code></td>
+<td>Pair Correlation Function of Point Pattern</td>
+</tr>
+<tr>
+<td><code>pcf3est</code></td>
+<td>Pair Correlation Function of a Three-Dimensional Point Pattern</td>
+</tr>
+<tr>
+<td><code>pcfcross</code></td>
+<td>Multitype pair correlation function (cross-type)</td>
+</tr>
+<tr>
+<td><code>pcfcross.inhom</code></td>
+<td>Inhomogeneous Multitype Pair Correlation Function (Cross-Type)</td>
+</tr>
+<tr>
+<td><code>pcfdot</code></td>
+<td>Multitype pair correlation function (i-to-any)</td>
+</tr>
+<tr>
+<td><code>pcfdot.inhom</code></td>
+<td>Inhomogeneous Multitype Pair Correlation Function (Type-i-To-Any-Type)</td>
+</tr>
+<tr>
+<td><code>pcfinhom</code></td>
+<td>Inhomogeneous Pair Correlation Function</td>
+</tr>
+<tr>
+<td><code>pcfmulti</code></td>
+<td>Marked pair correlation function</td>
+</tr>
+<tr>
+<td><code>perimeter</code></td>
+<td>Perimeter Length of Window</td>
+</tr>
+<tr>
+<td><code>periodify</code></td>
+<td>Make Periodic Copies of a Spatial Pattern</td>
+</tr>
+<tr>
+<td><code>persp.im</code></td>
+<td>Perspective Plot of Pixel Image</td>
+</tr>
+<tr>
+<td><code>perspPoints</code></td>
+<td>Draw Points or Lines on a Surface Viewed in Perspective</td>
+</tr>
+<tr>
+<td><code>pixelcentres</code></td>
+<td>Extract Pixel Centres as Point Pattern</td>
+</tr>
+<tr>
+<td><code>pixellate</code></td>
+<td>Convert Spatial Object to Pixel Image</td>
+</tr>
+<tr>
+<td><code>pixellate.owin</code></td>
+<td>Convert Window to Pixel Image</td>
+</tr>
+<tr>
+<td><code>pixellate.ppp</code></td>
+<td>Convert Point Pattern to Pixel Image</td>
+</tr>
+<tr>
+<td><code>pixellate.psp</code></td>
+<td>Convert Line Segment Pattern to Pixel Image</td>
+</tr>
+<tr>
+<td><code>pixelquad</code></td>
+<td>Quadrature Scheme Based on Pixel Grid</td>
+</tr>
+<tr>
+<td><code>plot.anylist</code></td>
+<td>Plot a List of Things</td>
+</tr>
+<tr>
+<td><code>plot.bermantest</code></td>
+<td>Plot Result of Berman Test</td>
+</tr>
+<tr>
+<td><code>plot.cdftest</code></td>
+<td>Plot a Spatial Distribution Test</td>
+</tr>
+<tr>
+<td><code>plot.colourmap</code></td>
+<td>Plot a Colour Map</td>
+</tr>
+<tr>
+<td><code>plot.dppm</code></td>
+<td>Plot a fitted determinantal point process</td>
+</tr>
+<tr>
+<td><code>plot.envelope</code></td>
+<td>Plot a Simulation Envelope</td>
+</tr>
+<tr>
+<td><code>plot.fasp</code></td>
+<td>Plot a Function Array</td>
+</tr>
+<tr>
+<td><code>plot.fv</code></td>
+<td>Plot Function Values</td>
+</tr>
+<tr>
+<td><code>plot.hyperframe</code></td>
+<td>Plot Entries in a Hyperframe</td>
+</tr>
+<tr>
+<td><code>plot.im</code></td>
+<td>Plot a Pixel Image</td>
+</tr>
+<tr>
+<td><code>plot.imlist</code></td>
+<td>Plot a List of Images</td>
+</tr>
+<tr>
+<td><code>plot.influence.ppm</code></td>
+<td>Plot Influence Measure</td>
+</tr>
+<tr>
+<td><code>plot.kppm</code></td>
+<td>Plot a fitted cluster point process</td>
+</tr>
+<tr>
+<td><code>plot.layered</code></td>
+<td>Layered Plot</td>
+</tr>
+<tr>
+<td><code>plot.leverage.ppm</code></td>
+<td>Plot Leverage Function</td>
+</tr>
+<tr>
+<td><code>plot.linim</code></td>
+<td>Plot Pixel Image on Linear Network</td>
+</tr>
+<tr>
+<td><code>plot.linnet</code></td>
+<td>Plot a linear network</td>
+</tr>
+<tr>
+<td><code>plot.listof</code></td>
+<td>Plot a List of Things</td>
+</tr>
+<tr>
+<td><code>plot.lpp</code></td>
+<td>Plot Point Pattern on Linear Network</td>
+</tr>
+<tr>
+<td><code>plot.lppm</code></td>
+<td>Plot a Fitted Point Process Model on a Linear Network</td>
+</tr>
+<tr>
+<td><code>plot.mppm</code></td>
+<td>plot a Fitted Multiple Point Process Model</td>
+</tr>
+<tr>
+<td><code>plot.msr</code></td>
+<td>Plot a Signed or Vector-Valued Measure</td>
+</tr>
+<tr>
+<td><code>plot.onearrow</code></td>
+<td>Plot an Arrow</td>
+</tr>
+<tr>
+<td><code>plot.owin</code></td>
+<td>Plot a Spatial Window</td>
+</tr>
+<tr>
+<td><code>plot.plotppm</code></td>
+<td>Plot a plotppm Object Created by plot.ppm</td>
+</tr>
+<tr>
+<td><code>plot.pp3</code></td>
+<td>Plot a Three-Dimensional Point Pattern</td>
+</tr>
+<tr>
+<td><code>plot.ppm</code></td>
+<td>plot a Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>plot.ppp</code></td>
+<td>plot a Spatial Point Pattern</td>
+</tr>
+<tr>
+<td><code>plot.psp</code></td>
+<td>plot a Spatial Line Segment Pattern</td>
+</tr>
+<tr>
+<td><code>plot.quad</code></td>
+<td>Plot a Spatial Quadrature Scheme</td>
+</tr>
+<tr>
+<td><code>plot.quadratcount</code></td>
+<td>Plot Quadrat Counts</td>
+</tr>
+<tr>
+<td><code>plot.quadrattest</code></td>
+<td>Display the result of a quadrat counting test.</td>
+</tr>
+<tr>
+<td><code>plot.scan.test</code></td>
+<td>Plot Result of Scan Test</td>
+</tr>
+<tr>
+<td><code>plot.slrm</code></td>
+<td>Plot a Fitted Spatial Logistic Regression</td>
+</tr>
+<tr>
+<td><code>plot.solist</code></td>
+<td>Plot a List of Spatial Objects</td>
+</tr>
+<tr>
+<td><code>plot.splitppp</code></td>
+<td>Plot a List of Point Patterns</td>
+</tr>
+<tr>
+<td><code>plot.symbolmap</code></td>
+<td>Plot a Graphics Symbol Map</td>
+</tr>
+<tr>
+<td><code>plot.tess</code></td>
+<td>Plot a tessellation</td>
+</tr>
+<tr>
+<td><code>plot.textstring</code></td>
+<td>Plot a Text String</td>
+</tr>
+<tr>
+<td>`plot.texturemap</td>
+<td>Plot a Texture Map</td>
+</tr>
+<tr>
+<td><code>plot.yardstick</code></td>
+<td>Plot a Yardstick or Scale Bar</td>
+</tr>
+<tr>
+<td><code>pointsOnLines</code></td>
+<td>Place Points Evenly Along Specified Lines</td>
+</tr>
+<tr>
+<td><code>ponderosa</code></td>
+<td>Ponderosa Pine Tree Point Pattern</td>
+</tr>
+<tr>
+<td><code>pool</code></td>
+<td>Pool Data</td>
+</tr>
+<tr>
+<td><code>pool.anylist</code></td>
+<td>Pool Data from a List of Objects</td>
+</tr>
+<tr>
+<td><code>pool.envelope</code></td>
+<td>Pool Data from Several Envelopes</td>
+</tr>
+<tr>
+<td><code>pool.fasp</code></td>
+<td>Pool Data from Several Function Arrays</td>
+</tr>
+<tr>
+<td><code>pool.fv</code></td>
+<td>Pool Several Functions</td>
+</tr>
+<tr>
+<td><code>pool.quadrattest</code></td>
+<td>Pool Several Quadrat Tests</td>
+</tr>
+<tr>
+<td><code>pool.rat</code></td>
+<td>Pool Data from Several Ratio Objects</td>
+</tr>
+<tr>
+<td><code>pp3</code></td>
+<td>Three Dimensional Point Pattern</td>
+</tr>
+<tr>
+<td><code>ppm</code></td>
+<td>Fit Point Process Model to Data</td>
+</tr>
+<tr>
+<td><code>ppm.object</code></td>
+<td>Class of Fitted Point Process Models</td>
+</tr>
+<tr>
+<td><code>ppm.ppp</code></td>
+<td>Fit Point Process Model to Point Pattern Data</td>
+</tr>
+<tr>
+<td><code>ppp</code></td>
+<td>Create a Point Pattern</td>
+</tr>
+<tr>
+<td><code>ppp.object</code></td>
+<td>Class of Point Patterns</td>
+</tr>
+<tr>
+<td><code>pppdist</code></td>
+<td>Distance Between Two Point Patterns</td>
+</tr>
+<tr>
+<td><code>pppmatching</code></td>
+<td>Create a Point Matching</td>
+</tr>
+<tr>
+<td><code>pppmatching.object</code></td>
+<td>Class of Point Matchings</td>
+</tr>
+<tr>
+<td><code>ppx Multidimensional</code></td>
+<td>Space-Time Point Pattern</td>
+</tr>
+<tr>
+<td><code>predict.dppm</code></td>
+<td>Prediction from a Fitted Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>predict.kppm</code></td>
+<td>Prediction from a Fitted Cluster Point Process Model</td>
+</tr>
+<tr>
+<td><code>predict.lppm</code></td>
+<td>Predict Point Process Model on Linear Network</td>
+</tr>
+<tr>
+<td><code>predict.mppm</code></td>
+<td>Prediction for Fitted Multiple Point Process Model</td>
+</tr>
+<tr>
+<td><code>predict.ppm</code></td>
+<td>Prediction from a Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>predict.slrm</code></td>
+<td>Predicted or Fitted Values from Spatial Logistic Regression</td>
+</tr>
+<tr>
+<td><code>print.im</code></td>
+<td>Print Brief Details of an Image</td>
+</tr>
+<tr>
+<td><code>print.owin</code></td>
+<td>Print Brief Details of a Spatial Window</td>
+</tr>
+<tr>
+<td><code>print.ppm</code></td>
+<td>Print a Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>print.ppp</code></td>
+<td>Print Brief Details of a Point Pattern Dataset</td>
+</tr>
+<tr>
+<td><code>print.psp</code></td>
+<td>Print Brief Details of a Line Segment Pattern Dataset</td>
+</tr>
+<tr>
+<td><code>print.quad</code></td>
+<td>Print a Quadrature Scheme</td>
+</tr>
+<tr>
+<td><code>profilepl</code></td>
+<td>Profile Maximum Pseudolikelihood or AIC</td>
+</tr>
+<tr>
+<td><code>progressreport</code></td>
+<td>Print Progress Reports</td>
+</tr>
+<tr>
+<td><code>project2segment</code></td>
+<td>Move Point To Nearest Line</td>
+</tr>
+<tr>
+<td><code>project2set</code></td>
+<td>Find Nearest Point in a Region</td>
+</tr>
+<tr>
+<td><code>psp</code></td>
+<td>Create a Line Segment Pattern</td>
+</tr>
+<tr>
+<td><code>psp.object</code></td>
+<td>Class of Line Segment Patterns</td>
+</tr>
+<tr>
+<td><code>psst</code></td>
+<td>Pseudoscore Diagnostic For Fitted Model against General Alternative</td>
+</tr>
+<tr>
+<td><code>psstA</code></td>
+<td>Pseudoscore Diagnostic For Fitted Model against Area-Interaction Alternative</td>
+</tr>
+<tr>
+<td><code>psstG</code></td>
+<td>Pseudoscore Diagnostic For Fitted Model against Saturation Alternative</td>
+</tr>
+<tr>
+<td><code>pyramidal</code></td>
+<td>Pyramidal Neurons in Cingulate Cortex</td>
+</tr>
+<tr>
+<td><code>qqplot.ppm</code></td>
+<td>Q-Q Plot of Residuals from Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>quad.object</code></td>
+<td>Class of Quadrature Schemes</td>
+</tr>
+<tr>
+<td><code>quad.ppm</code></td>
+<td>Extract Quadrature Scheme Used to Fit a Point Process Model</td>
+</tr>
+<tr>
+<td><code>quadrat.test</code></td>
+<td>Dispersion Test for Spatial Point Pattern Based on Quadrat Counts</td>
+</tr>
+<tr>
+<td><code>quadrat.test.mppm</code></td>
+<td>Chi-Squared Test for Multiple Point Process Model Based on Quadrat Counts</td>
+</tr>
+<tr>
+<td><code>quadrat.test.splitppp</code></td>
+<td>Dispersion Test of CSR for Split Point Pattern Based on Quadrat Counts</td>
+</tr>
+<tr>
+<td><code>quadratcount</code></td>
+<td>Quadrat counting for a point pattern</td>
+</tr>
+<tr>
+<td><code>quadratresample</code></td>
+<td>Resample a Point Pattern by Resampling Quadrats</td>
+</tr>
+<tr>
+<td><code>quadrats</code></td>
+<td>Divide Region into Quadrats</td>
+</tr>
+<tr>
+<td><code>quadscheme</code></td>
+<td>Generate a Quadrature Scheme from a Point Pattern</td>
+</tr>
+<tr>
+<td><code>quadscheme.logi</code></td>
+<td>Generate a Logistic Regression Quadrature Scheme from a Point Pattern</td>
+</tr>
+<tr>
+<td><code>quantess</code></td>
+<td>Quantile Tessellation</td>
+</tr>
+<tr>
+<td><code>quantile.density</code></td>
+<td>Quantiles of a Density Estimate</td>
+</tr>
+<tr>
+<td><code>quantile.ewcdf</code></td>
+<td>Quantiles of Weighted Empirical Cumulative Distribution Function</td>
+</tr>
+<tr>
+<td><code>quantile.im</code></td>
+<td>Sample Quantiles of Pixel Image</td>
+</tr>
+<tr>
+<td><code>quasirandom</code></td>
+<td>Quasirandom Patterns</td>
+</tr>
+<tr>
+<td><code>rCauchy</code></td>
+<td>Simulate Neyman-Scott Point Process with Cauchy cluster kernel</td>
+</tr>
+<tr>
+<td><code>rDGS</code></td>
+<td>Perfect Simulation of the Diggle-Gates-Stibbard Process</td>
+</tr>
+<tr>
+<td><code>rDiggleGratton</code></td>
+<td>Perfect Simulation of the Diggle-Gratton Process</td>
+</tr>
+<tr>
+<td><code>rGaussPoisson</code></td>
+<td>Simulate Gauss-Poisson Process</td>
+</tr>
+<tr>
+<td><code>rHardcore</code></td>
+<td>Perfect Simulation of the Hardcore Process</td>
+</tr>
+<tr>
+<td><code>rLGCP</code></td>
+<td>Simulate Log-Gaussian Cox Process</td>
+</tr>
+<tr>
+<td><code>rMatClust</code></td>
+<td>Simulate Matern Cluster Process</td>
+</tr>
+<tr>
+<td><code>rMaternI</code></td>
+<td>Simulate Matern Model I</td>
+</tr>
+<tr>
+<td><code>rMaternII</code></td>
+<td>Simulate Matern Model II</td>
+</tr>
+<tr>
+<td><code>rMosaicField</code></td>
+<td>Mosaic Random Field</td>
+</tr>
+<tr>
+<td><code>rMosaicSet</code></td>
+<td>Mosaic Random Set</td>
+</tr>
+<tr>
+<td><code>rNeymanScott</code></td>
+<td>Simulate Neyman-Scott Process</td>
+</tr>
+<tr>
+<td><code>rPoissonCluster</code></td>
+<td>Simulate Poisson Cluster Process</td>
+</tr>
+<tr>
+<td><code>rQuasi</code></td>
+<td>Generate Quasirandom Point Pattern in Given Window</td>
+</tr>
+<tr>
+<td><code>rSSI</code></td>
+<td>Simulate Simple Sequential Inhibition</td>
+</tr>
+<tr>
+<td><code>rStrauss</code></td>
+<td>Perfect Simulation of the Strauss Process</td>
+</tr>
+<tr>
+<td><code>rStraussHard</code></td>
+<td>Perfect Simulation of the Strauss-Hardcore Process</td>
+</tr>
+<tr>
+<td><code>rThomas</code></td>
+<td>Simulate Thomas Process</td>
+</tr>
+<tr>
+<td><code>rVarGamma</code></td>
+<td>Simulate Neyman-Scott Point Process with Variance Gamma cluster kernel</td>
+</tr>
+<tr>
+<td><code>ranef.mppm</code></td>
+<td>Extract Random Effects from Point Process Model</td>
+</tr>
+<tr>
+<td><code>range.fv</code></td>
+<td>Range of Function Values</td>
+</tr>
+<tr>
+<td><code>raster.x</code></td>
+<td>Cartesian Coordinates for a Pixel Raster</td>
+</tr>
+<tr>
+<td><code>rat</code></td>
+<td>Ratio object</td>
+</tr>
+<tr>
+<td><code>rcell</code></td>
+<td>Simulate Baddeley-Silverman Cell Process</td>
+</tr>
+<tr>
+<td><code>rcellnumber</code></td>
+<td>Generate Random Numbers of Points for Cell Process</td>
+</tr>
+<tr>
+<td><code>rdpp</code></td>
+<td>Simulation of a Determinantal Point Process</td>
+</tr>
+<tr>
+<td><code>reach</code></td>
+<td>Interaction Distance of a Point Process</td>
+</tr>
+<tr>
+<td><code>reach.dppm</code></td>
+<td>Range of Interaction for a Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>reduced.sample</code></td>
+<td>Reduced Sample Estimator using Histogram Data</td>
+</tr>
+<tr>
+<td><code>redwood</code></td>
+<td>California Redwoods Point Pattern (Ripley&apos;s Subset)</td>
+</tr>
+<tr>
+<td><code>redwoodfull</code></td>
+<td>California Redwoods Point Pattern (Entire Dataset)</td>
+</tr>
+<tr>
+<td><code>reflect</code></td>
+<td>Reflect In Origin</td>
+</tr>
+<tr>
+<td><code>relevel.im</code></td>
+<td>Reorder Levels of a Factor-Valued Image or Pattern</td>
+</tr>
+<tr>
+<td><code>reload.or.compute</code></td>
+<td>Compute Unless Previously Saved</td>
+</tr>
+<tr>
+<td><code>relrisk</code></td>
+<td>Estimate of Spatially-Varying Relative Risk</td>
+</tr>
+<tr>
+<td><code>relrisk.ppm</code></td>
+<td>Parametric Estimate of Spatially-Varying Relative Risk</td>
+</tr>
+<tr>
+<td><code>relrisk.ppp</code></td>
+<td>Nonparametric Estimate of Spatially-Varying Relative Risk</td>
+</tr>
+<tr>
+<td><code>rescale</code></td>
+<td>Convert dataset to another unit of length</td>
+</tr>
+<tr>
+<td><code>rescale.im</code></td>
+<td>Convert Pixel Image to Another Unit of Length</td>
+</tr>
+<tr>
+<td><code>rescale.owin</code></td>
+<td>Convert Window to Another Unit of Length</td>
+</tr>
+<tr>
+<td><code>rescale.ppp</code></td>
+<td>Convert Point Pattern to Another Unit of Length</td>
+</tr>
+<tr>
+<td><code>rescale.psp</code></td>
+<td>Convert Line Segment Pattern to Another Unit of Length</td>
+</tr>
+<tr>
+<td><code>rescue.rectangle</code></td>
+<td>Convert Window Back To Rectangle</td>
+</tr>
+<tr>
+<td><code>residuals.dppm</code></td>
+<td>Residuals for Fitted Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>residuals.kppm</code></td>
+<td>Residuals for Fitted Cox or Cluster Point Process Model</td>
+</tr>
+<tr>
+<td><code>residuals.mppm</code></td>
+<td>Residuals for Point Process Model Fitted to Multiple Point Patterns</td>
+</tr>
+<tr>
+<td><code>residuals.ppm</code></td>
+<td>Residuals for Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>residualspaper</code></td>
+<td>Data and Code From JRSS Discussion Paper on Residuals</td>
+</tr>
+<tr>
+<td><code>rgbim</code></td>
+<td>Create Colour-Valued Pixel Image</td>
+</tr>
+<tr>
+<td><code>rho2hat</code></td>
+<td>Smoothed Relative Density of Pairs of Covariate Values</td>
+</tr>
+<tr>
+<td><code>rhohat</code></td>
+<td>Smoothing Estimate of Covariate Transformation</td>
+</tr>
+<tr>
+<td><code>ripras</code></td>
+<td>Estimate window from points alone</td>
+</tr>
+<tr>
+<td><code>rjitter</code></td>
+<td>Random Perturbation of a Point Pattern</td>
+</tr>
+<tr>
+<td><code>rknn</code></td>
+<td>Theoretical Distribution of Nearest Neighbour Distance</td>
+</tr>
+<tr>
+<td><code>rlabel</code></td>
+<td>Random Re-Labelling of Point Pattern</td>
+</tr>
+<tr>
+<td><code>rlinegrid</code></td>
+<td>Generate grid of parallel lines with random displacement</td>
+</tr>
+<tr>
+<td><code>rmh</code></td>
+<td>Simulate point patterns using the Metropolis-Hastings algorithm.</td>
+</tr>
+<tr>
+<td><code>rmh.default</code></td>
+<td>Simulate Point Process Models using the Metropolis-Hastings Algorithm.</td>
+</tr>
+<tr>
+<td><code>rmh.ppm</code></td>
+<td>Simulate from a Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>rmhcontrol</code></td>
+<td>Set Control Parameters for Metropolis-Hastings Algorithm.</td>
+</tr>
+<tr>
+<td><code>rmhexpand</code></td>
+<td>Specify Simulation Window or Expansion Rule</td>
+</tr>
+<tr>
+<td><code>rmhmodel</code></td>
+<td>Define Point Process Model for Metropolis-Hastings Simulation.</td>
+</tr>
+<tr>
+<td><code>rmhmodel.default</code></td>
+<td>Build Point Process Model for Metropolis-Hastings Simulation.</td>
+</tr>
+<tr>
+<td><code>rmhmodel.list</code></td>
+<td>Define Point Process Model for Metropolis-Hastings Simulation.</td>
+</tr>
+<tr>
+<td><code>rmhmodel.ppm</code></td>
+<td>Interpret Fitted Model for Metropolis-Hastings Simulation.</td>
+</tr>
+<tr>
+<td><code>rmhstart</code></td>
+<td>Determine Initial State for Metropolis-Hastings Simulation.</td>
+</tr>
+<tr>
+<td><code>rmpoint</code></td>
+<td>Generate N Random Multitype Points</td>
+</tr>
+<tr>
+<td><code>rmpoispp</code></td>
+<td>Generate Multitype Poisson Point Pattern</td>
+</tr>
+<tr>
+<td><code>rnoise</code></td>
+<td>Random Pixel Noise</td>
+</tr>
+<tr>
+<td><code>roc</code></td>
+<td>Receiver Operating Characteristic</td>
+</tr>
+<tr>
+<td><code>rose</code></td>
+<td>Rose Diagram</td>
+</tr>
+<tr>
+<td><code>rotate</code></td>
+<td>Rotate</td>
+</tr>
+<tr>
+<td><code>rotate.im</code></td>
+<td>Rotate a Pixel Image</td>
+</tr>
+<tr>
+<td><code>rotate.owin</code></td>
+<td>Rotate a Window</td>
+</tr>
+<tr>
+<td><code>rotate.ppp</code></td>
+<td>Rotate a Point Pattern</td>
+</tr>
+<tr>
+<td><code>rotate.psp</code></td>
+<td>Rotate a Line Segment Pattern</td>
+</tr>
+<tr>
+<td><code>rotmean</code></td>
+<td>Rotational Average of a Pixel Image</td>
+</tr>
+<tr>
+<td><code>round.ppp</code></td>
+<td>Apply Numerical Rounding to Spatial Coordinates</td>
+</tr>
+<tr>
+<td><code>rounding</code></td>
+<td>Detect Numerical Rounding</td>
+</tr>
+<tr>
+<td><code>rpoint</code></td>
+<td>Generate N Random Points</td>
+</tr>
+<tr>
+<td><code>rpoisline</code></td>
+<td>Generate Poisson Random Line Process</td>
+</tr>
+<tr>
+<td><code>rpoislinetess</code></td>
+<td>Poisson Line Tessellation</td>
+</tr>
+<tr>
+<td><code>rpoislpp</code></td>
+<td>Poisson Point Process on a Linear Network</td>
+</tr>
+<tr>
+<td><code>rpoispp</code></td>
+<td>Generate Poisson Point Pattern</td>
+</tr>
+<tr>
+<td><code>rpoispp3</code></td>
+<td>Generate Poisson Point Pattern in Three Dimensions</td>
+</tr>
+<tr>
+<td><code>rpoisppOnLines</code></td>
+<td>Generate Poisson Point Pattern on Line Segments</td>
+</tr>
+<tr>
+<td><code>rpoisppx</code></td>
+<td>Generate Poisson Point Pattern in Any Dimensions</td>
+</tr>
+<tr>
+<td><code>rshift</code></td>
+<td>Random Shift</td>
+</tr>
+<tr>
+<td><code>rshift.ppp</code></td>
+<td>Randomly Shift a Point Pattern</td>
+</tr>
+<tr>
+<td><code>rshift.psp</code></td>
+<td>Randomly Shift a Line Segment Pattern</td>
+</tr>
+<tr>
+<td><code>rshift.splitppp</code></td>
+<td>Randomly Shift a List of Point Patterns</td>
+</tr>
+<tr>
+<td><code>rstrat</code></td>
+<td>Simulate Stratified Random Point Pattern</td>
+</tr>
+<tr>
+<td><code>rsyst</code></td>
+<td>Simulate systematic random point pattern</td>
+</tr>
+<tr>
+<td><code>rtemper</code></td>
+<td>Simulated Annealing or Simulated Tempering for Gibbs Point Processes</td>
+</tr>
+<tr>
+<td><code>rthin</code></td>
+<td>Random Thinning</td>
+</tr>
+<tr>
+<td><code>run.simplepanel</code></td>
+<td>Run Point-and-Click Interface</td>
+</tr>
+<tr>
+<td><code>runifdisc</code></td>
+<td>Generate N Uniform Random Points in a Disc</td>
+</tr>
+<tr>
+<td><code>runiflpp</code></td>
+<td>Uniform Random Points on a Linear Network</td>
+</tr>
+<tr>
+<td><code>runifpoint</code></td>
+<td>Generate N Uniform Random Points</td>
+</tr>
+<tr>
+<td><code>runifpoint3</code></td>
+<td>Generate N Uniform Random Points in Three Dimensions</td>
+</tr>
+<tr>
+<td><code>runifpointOnLines</code></td>
+<td>Generate N Uniform Random Points On Line Segments</td>
+</tr>
+<tr>
+<td><code>runifpointx</code></td>
+<td>Generate N Uniform Random Points in Any Dimensions</td>
+</tr>
+<tr>
+<td><code>scalardilate</code></td>
+<td>Apply Scalar Dilation</td>
+</tr>
+<tr>
+<td><code>scaletointerval</code></td>
+<td>Rescale Data to Lie Between Specified Limits</td>
+</tr>
+<tr>
+<td><code>scan.test</code></td>
+<td>Spatial Scan Test</td>
+</tr>
+<tr>
+<td><code>scanLRTS</code></td>
+<td>Likelihood Ratio Test Statistic for Scan Test</td>
+</tr>
+<tr>
+<td><code>scanpp</code></td>
+<td>Read Point Pattern From Data File</td>
+</tr>
+<tr>
+<td><code>segregation.test</code></td>
+<td>Test of Spatial Segregation of Types</td>
+</tr>
+<tr>
+<td><code>selfcrossing.psp</code></td>
+<td>Crossing Points in a Line Segment Pattern</td>
+</tr>
+<tr>
+<td><code>selfcut.psp</code></td>
+<td>Cut Line Segments Where They Intersect</td>
+</tr>
+<tr>
+<td><code>sessionLibs</code></td>
+<td>Print Names and Version Numbers of Libraries Loaded</td>
+</tr>
+<tr>
+<td><code>setcov</code></td>
+<td>Set Covariance of a Window</td>
+</tr>
+<tr>
+<td><code>shapley</code></td>
+<td>Galaxies in the Shapley Supercluster</td>
+</tr>
+<tr>
+<td><code>sharpen</code></td>
+<td>Data Sharpening of Point Pattern</td>
+</tr>
+<tr>
+<td><code>shift</code></td>
+<td>Apply Vector Translation</td>
+</tr>
+<tr>
+<td><code>shift.im</code></td>
+<td>Apply Vector Translation To Pixel Image</td>
+</tr>
+<tr>
+<td><code>shift.owin</code></td>
+<td>Apply Vector Translation To Window</td>
+</tr>
+<tr>
+<td><code>shift.ppp</code></td>
+<td>Apply Vector Translation To Point Pattern</td>
+</tr>
+<tr>
+<td><code>shift.psp</code></td>
+<td>Apply Vector Translation To Line Segment Pattern</td>
+</tr>
+<tr>
+<td><code>sidelengths.owin</code></td>
+<td>Side Lengths of Enclosing Rectangle of a Window</td>
+</tr>
+<tr>
+<td><code>simba</code></td>
+<td>Simulated data from a two-group experiment with replication within each group.</td>
+</tr>
+<tr>
+<td><code>simdat</code></td>
+<td>Simulated Point Pattern</td>
+</tr>
+<tr>
+<td><code>simplenet</code></td>
+<td>Simple Example of Linear Network</td>
+</tr>
+<tr>
+<td><code>simplepanel</code></td>
+<td>Simple Point-and-Click Interface Panels</td>
+</tr>
+<tr>
+<td><code>simplify.owin</code></td>
+<td>Approximate a Polygon by a Simpler Polygon</td>
+</tr>
+<tr>
+<td><code>simulate.dppm</code></td>
+<td>Simulation of Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>simulate.kppm</code></td>
+<td>Simulate a Fitted Cluster Point Process Model</td>
+</tr>
+<tr>
+<td><code>simulate.lppm</code></td>
+<td>Simulate a Fitted Point Process Model on a Linear Network</td>
+</tr>
+<tr>
+<td><code>simulate.ppm</code></td>
+<td>Simulate a Fitted Gibbs Point Process Model</td>
+</tr>
+<tr>
+<td><code>simulate.slrm</code></td>
+<td>Simulate a Fitted Spatial Logistic Regression Model</td>
+</tr>
+<tr>
+<td><code>slrm</code></td>
+<td>Spatial Logistic Regression</td>
+</tr>
+<tr>
+<td><code>solapply</code></td>
+<td>Apply a Function Over a List and Obtain a List of Objects</td>
+</tr>
+<tr>
+<td><code>solist</code></td>
+<td>List of Two-Dimensional Spatial Objects</td>
+</tr>
+<tr>
+<td><code>solutionset</code></td>
+<td>Evaluate Logical Expression Involving Pixel Images and Return Region Where Expression is True</td>
+</tr>
+<tr>
+<td><code>spatdim</code></td>
+<td>Spatial Dimension of a Dataset</td>
+</tr>
+<tr>
+<td><code>spatialcdf</code></td>
+<td>Spatial Cumulative Distribution Function</td>
+</tr>
+<tr>
+<td><code>spatstat-package</code></td>
+<td>The Spatstat Package</td>
+</tr>
+<tr>
+<td><code>spatstat.options</code></td>
+<td>Internal Options in Spatstat Package</td>
+</tr>
+<tr>
+<td><code>spiders</code></td>
+<td>Spider Webs on Mortar Lines of a Brick Wall</td>
+</tr>
+<tr>
+<td><code>split.hyperframe</code></td>
+<td>Divide Hyperframe Into Subsets and Reassemble</td>
+</tr>
+<tr>
+<td><code>split.im</code></td>
+<td>Divide Image Into Sub-images</td>
+</tr>
+<tr>
+<td><code>split.ppp</code></td>
+<td>Divide Point Pattern into Sub-patterns</td>
+</tr>
+<tr>
+<td><code>split.ppx</code></td>
+<td>Divide Multidimensional Point Pattern into Sub-patterns</td>
+</tr>
+<tr>
+<td><code>spokes</code></td>
+<td>Spokes pattern of dummy points</td>
+</tr>
+<tr>
+<td><code>sporophores</code></td>
+<td>Sporophores Data</td>
+</tr>
+<tr>
+<td><code>spruces</code></td>
+<td>Spruces Point Pattern</td>
+</tr>
+<tr>
+<td><code>square</code></td>
+<td>Square Window</td>
+</tr>
+<tr>
+<td><code>stieltjes</code></td>
+<td>Compute Integral of Function Against Cumulative Distribution</td>
+</tr>
+<tr>
+<td><code>stienen</code></td>
+<td>Stienen Diagram</td>
+</tr>
+<tr>
+<td><code>stratrand</code></td>
+<td>Stratified random point pattern</td>
+</tr>
+<tr>
+<td><code>studpermu.test</code></td>
+<td>Studentised Permutation Test</td>
+</tr>
+<tr>
+<td><code>subfits</code></td>
+<td>Extract List of Individual Point Process Models</td>
+</tr>
+<tr>
+<td><code>subset.hyperframe</code></td>
+<td>Subset of Hyperframe Satisfying A Condition</td>
+</tr>
+<tr>
+<td><code>subset.ppp</code></td>
+<td>Subset of Point Pattern Satisfying A Condition</td>
+</tr>
+<tr>
+<td><code>suffstat</code></td>
+<td>Sufficient Statistic of Point Process Model</td>
+</tr>
+<tr>
+<td><code>summary.anylist</code></td>
+<td>Summary of a List of Things</td>
+</tr>
+<tr>
+<td><code>summary.im</code></td>
+<td>Summarizing a Pixel Image</td>
+</tr>
+<tr>
+<td><code>summary.kppm</code></td>
+<td>Summarizing a Fitted Cox or Cluster Point Process Model</td>
+</tr>
+<tr>
+<td><code>summary.listof</code></td>
+<td>Summary of a List of Things</td>
+</tr>
+<tr>
+<td><code>summary.owin</code></td>
+<td>Summary of a Spatial Window</td>
+</tr>
+<tr>
+<td><code>summary.ppm</code></td>
+<td>Summarizing a Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>summary.ppp</code></td>
+<td>Summary of a Point Pattern Dataset</td>
+</tr>
+<tr>
+<td><code>summary.psp</code></td>
+<td>Summary of a Line Segment Pattern Dataset</td>
+</tr>
+<tr>
+<td><code>summary.quad</code></td>
+<td>Summarizing a Quadrature Scheme</td>
+</tr>
+<tr>
+<td><code>summary.solist</code></td>
+<td>Summary of a List of Spatial Objects</td>
+</tr>
+<tr>
+<td><code>summary.splitppp</code></td>
+<td>Summary of a Split Point Pattern</td>
+</tr>
+<tr>
+<td><code>sumouter</code></td>
+<td>Compute Quadratic Forms</td>
+</tr>
+<tr>
+<td><code>superimpose</code></td>
+<td>Superimpose Several Geometric Patterns</td>
+</tr>
+<tr>
+<td><code>superimpose.lpp</code></td>
+<td>Superimpose Several Point Patterns on Linear Network</td>
+</tr>
+<tr>
+<td><code>swedishpines</code></td>
+<td>Swedish Pines Point Pattern</td>
+</tr>
+<tr>
+<td><code>symbolmap</code></td>
+<td>Graphics Symbol Map</td>
+</tr>
+<tr>
+<td><code>tess</code></td>
+<td>Create a Tessellation</td>
+</tr>
+<tr>
+<td><code>texturemap</code></td>
+<td>Texture Map</td>
+</tr>
+<tr>
+<td><code>textureplot</code></td>
+<td>Plot Image or Tessellation Using Texture Fill</td>
+</tr>
+<tr>
+<td><code>thomas.estK</code></td>
+<td>Fit the Thomas Point Process by Minimum Contrast</td>
+</tr>
+<tr>
+<td><code>thomas.estpcf</code></td>
+<td>Fit the Thomas Point Process by Minimum Contrast</td>
+</tr>
+<tr>
+<td><code>tile.areas</code></td>
+<td>Compute Areas of Tiles in a Tessellation</td>
+</tr>
+<tr>
+<td><code>tilenames</code></td>
+<td>Names of Tiles in a Tessellation</td>
+</tr>
+<tr>
+<td><code>tiles</code></td>
+<td>Extract List of Tiles in a Tessellation</td>
+</tr>
+<tr>
+<td><code>timed</code></td>
+<td>Record the Computation Time</td>
+</tr>
+<tr>
+<td><code>transect.im</code></td>
+<td>Pixel Values Along a Transect</td>
+</tr>
+<tr>
+<td><code>transmat</code></td>
+<td>Convert Pixel Array Between Different Conventions</td>
+</tr>
+<tr>
+<td><code>treebranchlabels</code></td>
+<td>Label Vertices of a Tree by Branch Membership</td>
+</tr>
+<tr>
+<td><code>treeprune</code></td>
+<td>Prune Tree to Given Level</td>
+</tr>
+<tr>
+<td><code>triangulate.owin</code></td>
+<td>Decompose Window into Triangles</td>
+</tr>
+<tr>
+<td><code>trim.rectangle</code></td>
+<td>Cut margins from rectangle</td>
+</tr>
+<tr>
+<td><code>triplet.family</code></td>
+<td>Triplet Interaction Family</td>
+</tr>
+<tr>
+<td><code>tweak.colourmap</code></td>
+<td>Change Colour Values in a Colour Map</td>
+</tr>
+<tr>
+<td><code>union.quad</code></td>
+<td>Union of Data and Dummy Points</td>
+</tr>
+<tr>
+<td><code>unique.ppp</code></td>
+<td>Extract Unique Points from a Spatial Point Pattern</td>
+</tr>
+<tr>
+<td><code>unitname</code></td>
+<td>Name for Unit of Length</td>
+</tr>
+<tr>
+<td><code>unmark</code></td>
+<td>Remove Marks</td>
+</tr>
+<tr>
+<td><code>unnormdensity</code></td>
+<td>Weighted kernel smoother</td>
+</tr>
+<tr>
+<td><code>update.detpointprocfamily</code></td>
+<td>Set Parameter Values in a Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>update.kppm</code></td>
+<td>Update a Fitted Cluster Point Process Model</td>
+</tr>
+<tr>
+<td><code>update.ppm</code></td>
+<td>Update a Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>update.rmhcontrol</code></td>
+<td>Update Control Parameters of Metropolis-Hastings Algorithm</td>
+</tr>
+<tr>
+<td><code>update.symbolmap</code></td>
+<td>Update a Graphics Symbol Map.</td>
+</tr>
+<tr>
+<td><code>urkiola</code></td>
+<td>Urkiola Woods Point Pattern</td>
+</tr>
+<tr>
+<td><code>valid</code></td>
+<td>Check Whether Point Process Model is Valid</td>
+</tr>
+<tr>
+<td><code>valid.detpointprocfamily</code></td>
+<td>Check Validity of a Determinantal Point Process Model</td>
+</tr>
+<tr>
+<td><code>valid.ppm</code></td>
+<td>Check Whether Point Process Model is Valid</td>
+</tr>
+<tr>
+<td><code>varblock</code></td>
+<td>Estimate Variance of Summary Statistic by Subdivision</td>
+</tr>
+<tr>
+<td><code>vargamma.estK</code></td>
+<td>Fit the Neyman-Scott Cluster Point Process with</td>
+</tr>
+<tr>
+<td><code>Variance</code></td>
+<td>Gamma kernel</td>
+</tr>
+<tr>
+<td><code>vargamma.estpcf</code></td>
+<td>Fit the Neyman-Scott Cluster Point Process with Variance Gamma kernel</td>
+</tr>
+<tr>
+<td><code>vcov.kppm</code></td>
+<td>Variance-Covariance Matrix for a Fitted Cluster Point Process Model</td>
+</tr>
+<tr>
+<td><code>vcov.mppm</code></td>
+<td>Calculate Variance-Covariance Matrix for Fitted Multiple Point Process Model</td>
+</tr>
+<tr>
+<td><code>vcov.ppm</code></td>
+<td>Variance-Covariance Matrix for a Fitted Point Process Model</td>
+</tr>
+<tr>
+<td><code>vcov.slrm</code></td>
+<td>Variance-Covariance Matrix for a Fitted Spatial Logistic Regression</td>
+</tr>
+<tr>
+<td><code>vertices</code></td>
+<td>Vertices of a Window</td>
+</tr>
+<tr>
+<td><code>vesicles</code></td>
+<td>Vesicles Data</td>
+</tr>
+<tr>
+<td><code>volume</code></td>
+<td>Volume of an Object</td>
+</tr>
+<tr>
+<td><code>waka</code></td>
+<td>Trees in Waka national park</td>
+</tr>
+<tr>
+<td><code>waterstriders</code></td>
+<td>Waterstriders data. Three independent replications of a point pattern formed by insects.</td>
+</tr>
+<tr>
+<td><code>whist</code></td>
+<td>Weighted Histogram</td>
+</tr>
+<tr>
+<td><code>will.expand</code></td>
+<td>Test Expansion Rule</td>
+</tr>
+<tr>
+<td><code>with.fv</code></td>
+<td>Evaluate an Expression in a Function Table</td>
+</tr>
+<tr>
+<td><code>with.hyperframe</code></td>
+<td>Evaluate an Expression in Each Row of a Hyperframe</td>
+</tr>
+<tr>
+<td><code>with.msr</code></td>
+<td>Evaluate Expression Involving Components of a Measure</td>
+</tr>
+<tr>
+<td><code>yardstick</code></td>
+<td>Text, Arrow or Scale Bar in a Diagram</td>
+</tr>
+<tr>
+<td><code>zapsmall.im</code></td>
+<td>Rounding of Pixel Values</td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h2 id="bci">BCI</h2>
-<h2 id="make-cepnames">make.cepnames</h2>
-<p>&#x5B66;&#x540D;&#x3092;&#x7701;&#x7565;&#x3059;&#x308B;&#x969B;&#x306B;&#x4FBF;&#x5229;&#x3002;</p>
-<pre><code class="lang-r">&gt; make.cepnames(c(<span class="hljs-string">&quot;Aa maderoi&quot;</span>, <span class="hljs-string">&quot;Poa sp.&quot;</span>, <span class="hljs-string">&quot;Cladina rangiferina&quot;</span>, <span class="hljs-string">&quot;Cladonia cornuta&quot;</span>, <span class="hljs-string">&quot;Cladonia cornuta var. groenlandica&quot;</span>, <span class="hljs-string">&quot;Cladonia rangiformis&quot;</span>, <span class="hljs-string">&quot;Bryoerythrophyllum&quot;</span>))
+<h2 id="auc">auc</h2>
+<h2 id="bei">bei</h2>
+<h2 id="cells">cells</h2>
+<h2 id="chorley">chorley</h2>
+<pre><code class="lang-r">&gt; data(<span class="hljs-string">&quot;chorley&quot;</span>)
+&gt; chorley %&gt;% {
++   print(class(.))
++   str(., max.level = <span class="hljs-number">2</span>)
++ }
 </code></pre>
-<pre><code>[1] &quot;Aamade&quot;     &quot;Poasp&quot;      &quot;Cladrang&quot;   &quot;Cladcorn&quot;   &quot;Cladgroe&quot;  
-[6] &quot;Cladrang.1&quot; &quot;Bryrythr&quot;
-</code></pre><pre><code class="lang-r">&gt; data(<span class="hljs-string">&quot;BCI&quot;</span>)
-&gt; colnames(BCI) &lt;- make.cepnames(colnames(BCI))
+<pre><code>[1] &quot;ppp&quot;
+List of 6
+ $ window    :List of 5
+  ..$ type  : chr &quot;polygonal&quot;
+  ..$ xrange: num [1:2] 343 366
+  ..$ yrange: num [1:2] 410 432
+  ..$ bdry  :List of 1
+  ..$ units :List of 3
+  .. ..- attr(*, &quot;class&quot;)= chr &quot;units&quot;
+  ..- attr(*, &quot;class&quot;)= chr &quot;owin&quot;
+ $ n         : int 1036
+ $ x         : num [1:1036] 353 353 349 353 353 ...
+ $ y         : num [1:1036] 428 422 418 421 422 ...
+ $ markformat: chr &quot;vector&quot;
+ $ marks     : Factor w/ 2 levels &quot;larynx&quot;,&quot;lung&quot;: 1 1 1 1 1 1 1 1 1 1 ...
+ - attr(*, &quot;class&quot;)= chr &quot;ppp&quot;
+</code></pre><h2 id="finpines">finpines</h2>
+<h2 id="hextess">hextess</h2>
+<pre><code class="lang-r">&gt; W &lt;- Window(chorley)
+&gt; s &lt;- <span class="hljs-number">0.7</span>
+&gt; plot(hextess(W, s))
 </code></pre>
-<h2 id="radfit">radfit</h2>
-<h2 id="renyi">renyi</h2>
-<h2 id="simper">simper</h2>
-<h2 id="specaccum">specaccum</h2>
-<h2 id="tolerance">tolerance</h2>
-<h2 id="treedive">treedive</h2>
-<h2 id="tsallis">tsallis</h2>
-<h2 id="vegemite">vegemite</h2>
+<h2 id="is-empty">is.empty</h2>
+<h2 id="japanesepines">japanesepines</h2>
+<h2 id="longleaf">longleaf</h2>
+<h2 id="mergelevels">mergeLevels</h2>
+<h2 id="mppm">mppm</h2>
+<h2 id="owin">owin</h2>
+<p>owin&#x30AF;&#x30E9;&#x30B9;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x4F5C;&#x6210;</p>
+<h2 id="plot-textstring">plot.textstring</h2>
+<pre><code class="lang-r">&gt; W &lt;- Window(humberside)
+&gt; te &lt;- textstring(centroid.owin(W), txt = remoji::sub_emoji(<span class="hljs-string">&quot;&#x5BFF;&#x53F8;&#x98DF;&#x3079;&#x305F;&#x3044; :sushi:&quot;</span>), cex=<span class="hljs-number">2.5</span>)
+&gt; plot(layered(W, te), main=<span class="hljs-string">&quot;&quot;</span>)
+</code></pre>
+<h2 id="plot-texturemap">plot.texturemap</h2>
+<h2 id="ppp">ppp</h2>
+<p>&#x70B9;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x306E;&#x751F;&#x6210;</p>
+<pre><code class="lang-r">&gt; x &lt;- runif(<span class="hljs-number">20</span>)
+&gt; y &lt;- runif(<span class="hljs-number">20</span>)
+&gt; ppp(x, y, c(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>), c(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>))<span class="hljs-comment"># %&gt;% hextess(s = 0.7) %&gt;% plot()</span>
+</code></pre>
+<pre><code>Planar point pattern: 20 points
+window: rectangle = [0, 1] x [0, 1] units
+</code></pre><h2 id="slrm">slrm</h2>
+<h2 id="spiders">spiders</h2>
+<h2 id="spruces">spruces</h2>
+<h2 id="swedishpines">swedishpines</h2>
+<h2 id="urkiola">urkiola</h2>
+<h2 id="waka">waka</h2>
+<h2 id="waterstriders">waterstriders</h2>
+<h2 id="whist">whist</h2>
+<pre><code class="lang-r">&gt; <span class="hljs-comment"># http://ito-hi.blog.so-net.ne.jp/2012-02-14</span>
+&gt; set.seed(<span class="hljs-number">123</span>)
+&gt; 
+&gt; n &lt;- <span class="hljs-number">24</span>
+&gt; x &lt;- rnorm(n, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+&gt; y &lt;- rnorm(n, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+&gt; xy &lt;- cbind(x, y)
+&gt; s &lt;- SpatialPoints(xy)
+&gt; coords &lt;- coordinates(xy)
+&gt; 
+&gt; plot(xy)
+&gt; <span class="hljs-comment">#x y&#x5EA7;&#x6A19;&#x4E0A;&#x306B;&#x3077;&#x308D;&#x3063;&#x3068;</span>
+&gt; text(x, y, <span class="hljs-number">1</span>:n, pos = <span class="hljs-number">1</span>)
+</code></pre>
 
                     
                     </section>
@@ -3643,10 +7032,10 @@ This is vegan 2.3-1
         </div>
 
         
-        <a href="../data-analysis/tm.html" class="navigation navigation-prev " aria-label="Previous page: tm"><i class="fa fa-angle-left"></i></a>
+        <a href="../spatial/sp.html" class="navigation navigation-prev " aria-label="Previous page: sp"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../data-analysis/VIM.html" class="navigation navigation-next " aria-label="Next page: VIM"><i class="fa fa-angle-right"></i></a>
+        <a href="../spatial/tigris.html" class="navigation navigation-next " aria-label="Next page: tigris"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
