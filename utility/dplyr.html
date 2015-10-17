@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="11.5" data-basepath=".." data-revision="Thu Oct 15 2015 21:39:36 GMT+0900 (JST)">
+    <div class="book" data-level="11.5" data-basepath=".." data-revision="Sat Oct 17 2015 21:15:25 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -334,13 +334,28 @@
             
         </li>
     
-        <li class="chapter " data-level="3.7" data-path="dataset/historydata.html">
+        <li class="chapter " data-level="3.7" data-path="dataset/HistData.html">
+            
+                
+                    <a href="../dataset/HistData.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        HistData
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="dataset/historydata.html">
             
                 
                     <a href="../dataset/historydata.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>3.7.</b>
+                            <b>3.8.</b>
                         
                         historydata
                     </a>
@@ -2722,13 +2737,20 @@
             
         </li>
     
-        <li class="chapter " data-level="11.45" data-path="utility/unixtools.html">
+        <li class="chapter " data-level="11.45" data-path="utility/timeDatem.html">
+            
+            <span><b>11.45.</b> timeDate</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.46" data-path="utility/unixtools.html">
             
                 
                     <a href="../utility/unixtools.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>11.45.</b>
+                            <b>11.46.</b>
                         
                         unixtools
                     </a>
@@ -2737,13 +2759,13 @@
             
         </li>
     
-        <li class="chapter " data-level="11.46" data-path="utility/utils.html">
+        <li class="chapter " data-level="11.47" data-path="utility/utils.html">
             
                 
                     <a href="../utility/utils.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>11.46.</b>
+                            <b>11.47.</b>
                         
                         utils
                     </a>
@@ -2752,13 +2774,13 @@
             
         </li>
     
-        <li class="chapter " data-level="11.47" data-path="utility/WriteXLS.html">
+        <li class="chapter " data-level="11.48" data-path="utility/WriteXLS.html">
             
                 
                     <a href="../utility/WriteXLS.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>11.47.</b>
+                            <b>11.48.</b>
                         
                         WriteXLS
                     </a>
@@ -3160,7 +3182,22 @@
 </ul>
 <pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(dplyr)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.4.3.9000</p>
+<pre><code>
+Attaching package: &apos;dplyr&apos;
+
+The following objects are masked from &apos;package:plyr&apos;:
+
+    arrange, count, desc, failwith, id, mutate, rename, summarise,
+    summarize
+
+The following objects are masked from &apos;package:stats&apos;:
+
+    filter, lag
+
+The following objects are masked from &apos;package:base&apos;:
+
+    intersect, setdiff, setequal, union
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.4.3.9000</p>
 <hr>
 <table>
 <thead>
@@ -3468,19 +3505,19 @@ Variables not shown: gear (dbl), carb (dbl)
 </code></pre>
 <pre><code>Source: local data frame [500 x 3]
 
-       x         y     z
-   (int)     (dbl) (int)
-1      1 0.5085476   500
-2      2 0.9216942   499
-3      3 0.3368160   498
-4      4 0.9078116   497
-5      5 0.5556615   496
-6      6 0.3087369   495
-7      7 0.1013847   494
-8      8 0.1383003   493
-9      9 0.6243127   492
-10    10 0.2967834   491
-..   ...       ...   ...
+       x          y     z
+   (int)      (dbl) (int)
+1      1 0.40336511   500
+2      2 0.15773909   499
+3      3 0.40863710   498
+4      4 0.01486798   497
+5      5 0.75072990   496
+6      6 0.90557960   495
+7      7 0.72102855   494
+8      8 0.54190705   493
+9      9 0.11060149   492
+10    10 0.14752652   491
+..   ...        ...   ...
 </code></pre><h2 id="between">between</h2>
 <p>&#x6307;&#x5B9A;&#x3057;&#x305F;&#x7BC4;&#x56F2;&#x5185;&#x306B;&#x6570;&#x5024;&#x304C;&#x3042;&#x308B;&#x304B;&#x8A55;&#x4FA1;&#x3059;&#x308B;</p>
 <pre><code class="lang-r">&gt; x &lt;- seq(<span class="hljs-number">1</span>:<span class="hljs-number">10</span>)
@@ -3530,16 +3567,16 @@ Variables not shown: gear (dbl), carb (dbl)
 
             x          y
         (dbl)      (dbl)
-1  0.14576686 0.29153372
-2  0.84921298 1.69842595
-3  0.27989516 0.55979033
-4  0.08394074 0.16788148
-5  0.01482925 0.02965849
-6  0.37867178 0.75734356
-7  0.05787012 0.11574024
-8  0.28090703 0.56181405
-9  0.84536822 1.69073644
-10 0.81251794 1.62503588
+1  0.31469615 0.62939231
+2  0.81491088 1.62982177
+3  0.72967302 1.45934603
+4  0.20843286 0.41686571
+5  0.51372204 1.02744407
+6  0.35937385 0.71874771
+7  0.03869868 0.07739736
+8  0.85094231 1.70188462
+9  0.31780125 0.63560250
+10 0.55667351 1.11334701
 </code></pre><h2 id="desc">desc</h2>
 <pre><code class="lang-r">&gt; desc(<span class="hljs-number">1</span>:<span class="hljs-number">10</span>)
 </code></pre>
@@ -3607,7 +3644,53 @@ Levels: 4 6 8
 <ul>
 <li><code>inner_join</code>... </li>
 </ul>
-<h2 id="n">n</h2>
+<h2 id="lead-lag-lead-lag">lead-lag / lead / lag</h2>
+<p>&#x4E0E;&#x3048;&#x305F;&#x5024;&#x3088;&#x308A;&#x524D;&#x3084;&#x5F8C;&#x308D;&#x306E;&#x5024;&#x3092;&#x51FA;&#x529B;&#x3059;&#x308B;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>x... &#x30D9;&#x30AF;&#x30BF;&#x30FC;</li>
+<li>n</li>
+<li>default</li>
+<li>order_by</li>
+</ul>
+<pre><code class="lang-r">&gt; lead(<span class="hljs-number">1</span>:<span class="hljs-number">10</span>, n = <span class="hljs-number">1</span>)
+</code></pre>
+<pre><code> [1]  2  3  4  5  6  7  8  9 10 NA
+</code></pre><pre><code class="lang-r">&gt; lag(<span class="hljs-number">1</span>:<span class="hljs-number">10</span>, n = <span class="hljs-number">4</span>)
+</code></pre>
+<pre><code> [1] NA NA NA NA  1  2  3  4  5  6
+</code></pre><pre><code class="lang-r">&gt; set.seed(<span class="hljs-number">71</span>)
+&gt; x &lt;- runif(<span class="hljs-number">5</span>)
+&gt; cbind(ahead = lead(x), x, behind = lag(x))
+</code></pre>
+<pre><code>         ahead         x    behind
+[1,] 0.5551039 0.3329281        NA
+[2,] 0.3273700 0.5551039 0.3329281
+[3,] 0.2116670 0.3273700 0.5551039
+[4,] 0.3161214 0.2116670 0.3273700
+[5,]        NA 0.3161214 0.2116670
+</code></pre><pre><code class="lang-r">&gt; <span class="hljs-comment"># http://stackoverflow.com/questions/33147714/return-value-of-next-occurrence-based-on-multiple-columns</span>
+&gt; <span class="hljs-keyword">library</span>(readr)
+&gt; <span class="hljs-keyword">library</span>(dplyr)
+&gt; read_delim(<span class="hljs-string">&quot;Firm Time Date
++ A 08:00 1/1
++ B 09:00 1/1
++ A 09:30 1/1
++ B 10:00 1/1&quot;</span>, 
++ delim = <span class="hljs-string">&quot; &quot;</span>) %&gt;% 
++   group_by(Firm, Date) %&gt;% 
++   mutate(NextTime = lead(as.character(Time), default = <span class="hljs-string">&quot;16:30&quot;</span>))
+</code></pre>
+<pre><code>Source: local data frame [4 x 4]
+Groups: Firm, Date [2]
+
+   Firm  Time  Date NextTime
+  (chr) (chr) (chr)    (chr)
+1     A 08:00   1/1    09:30
+2     B 09:00   1/1    10:00
+3     A 09:30   1/1    16:30
+4     B 10:00   1/1    16:30
+</code></pre><h2 id="n">n</h2>
 <p>&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x5185;&#x3067;&#x306E;&#x89B3;&#x6E2C;&#x5024;&#x3092;&#x6570;&#x3048;&#x308B;</p>
 <pre><code class="lang-r">&gt; data(<span class="hljs-string">&quot;flights&quot;</span>, package = <span class="hljs-string">&quot;nycflights13&quot;</span>)
 &gt; flights %&gt;% 
@@ -3619,11 +3702,11 @@ Levels: 4 6 8
 
   carrier carriers
     (chr)    (int)
-1      UA    58665
-2      9E    18460
-3      HA      342
-4      AA    32729
-5      YV      601
+1      YV      601
+2      MQ    26397
+3      US    20536
+4      DL    48110
+5      EV    54173
 </code></pre><h2 id="nth-first-last">nth / first / last</h2>
 <pre><code class="lang-r">&gt; x &lt;- <span class="hljs-number">1</span>:<span class="hljs-number">10</span>
 &gt; nth(x, <span class="hljs-number">4</span>)
@@ -3646,12 +3729,12 @@ Levels: 4 6 8
 </ul>
 <pre><code class="lang-r">&gt; sample_n(mtcars, <span class="hljs-number">5</span>)
 </code></pre>
-<pre><code>                  mpg cyl  disp  hp drat   wt  qsec vs am gear carb
-Datsun 710       22.8   4 108.0  93 3.85 2.32 18.61  1  1    4    1
-Merc 230         22.8   4 140.8  95 3.92 3.15 22.90  1  0    4    2
-Maserati Bora    15.0   8 301.0 335 3.54 3.57 14.60  0  1    5    8
-Dodge Challenger 15.5   8 318.0 150 2.76 3.52 16.87  0  0    3    2
-Valiant          18.1   6 225.0 105 2.76 3.46 20.22  1  0    3    1
+<pre><code>                   mpg cyl disp  hp drat    wt  qsec vs am gear carb
+Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+Camaro Z28        13.3   8  350 245 3.73 3.840 15.41  0  0    3    4
+Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+AMC Javelin       15.2   8  304 150 3.15 3.435 17.30  0  0    3    2
+Maserati Bora     15.0   8  301 335 3.54 3.570 14.60  0  1    5    8
 </code></pre><h2 id="slice">slice</h2>
 <p>&#x4EFB;&#x610F;&#x306E;&#x884C;&#x3092;&#x62BD;&#x51FA;&#x3059;&#x308B;</p>
 <pre><code class="lang-r">&gt; slice(mtcars, <span class="hljs-number">1L</span>)
@@ -3690,7 +3773,8 @@ Valiant          18.1   6 225.0 105 2.76 3.46 20.22  1  0    3    1
 +   data.table::as.data.table(.) %&gt;% class() %&gt;% print()
 + }
 </code></pre>
-<pre><code>[1] &quot;tbl_dt&quot;     &quot;tbl&quot;        &quot;data.table&quot; &quot;data.frame&quot;
+<pre><code>Loading required namespace: data.table
+</code></pre><pre><code>[1] &quot;tbl_dt&quot;     &quot;tbl&quot;        &quot;data.table&quot; &quot;data.frame&quot;
 [1] &quot;data.table&quot; &quot;data.frame&quot;
 </code></pre><h2 id="tbl-df">tbl_df</h2>
 <p>&#x30C7;&#x30FC;&#x30BF;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x751F;&#x6210;</p>

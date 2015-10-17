@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="11.1" data-basepath=".." data-revision="Thu Oct 15 2015 21:39:36 GMT+0900 (JST)">
+    <div class="book" data-level="11.1" data-basepath=".." data-revision="Sat Oct 17 2015 21:15:25 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -334,13 +334,28 @@
             
         </li>
     
-        <li class="chapter " data-level="3.7" data-path="dataset/historydata.html">
+        <li class="chapter " data-level="3.7" data-path="dataset/HistData.html">
+            
+                
+                    <a href="../dataset/HistData.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        HistData
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="dataset/historydata.html">
             
                 
                     <a href="../dataset/historydata.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>3.7.</b>
+                            <b>3.8.</b>
                         
                         historydata
                     </a>
@@ -2722,13 +2737,20 @@
             
         </li>
     
-        <li class="chapter " data-level="11.45" data-path="utility/unixtools.html">
+        <li class="chapter " data-level="11.45" data-path="utility/timeDatem.html">
+            
+            <span><b>11.45.</b> timeDate</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.46" data-path="utility/unixtools.html">
             
                 
                     <a href="../utility/unixtools.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>11.45.</b>
+                            <b>11.46.</b>
                         
                         unixtools
                     </a>
@@ -2737,13 +2759,13 @@
             
         </li>
     
-        <li class="chapter " data-level="11.46" data-path="utility/utils.html">
+        <li class="chapter " data-level="11.47" data-path="utility/utils.html">
             
                 
                     <a href="../utility/utils.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>11.46.</b>
+                            <b>11.47.</b>
                         
                         utils
                     </a>
@@ -2752,13 +2774,13 @@
             
         </li>
     
-        <li class="chapter " data-level="11.47" data-path="utility/WriteXLS.html">
+        <li class="chapter " data-level="11.48" data-path="utility/WriteXLS.html">
             
                 
                     <a href="../utility/WriteXLS.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>11.47.</b>
+                            <b>11.48.</b>
                         
                         WriteXLS
                     </a>
@@ -4787,7 +4809,72 @@
 </tbody>
 </table>
 <hr>
-<h2 id="na">NA</h2>
+<h2 id="dates">Dates</h2>
+<p>&#x65E5;&#x4ED8;&#x30AF;&#x30E9;&#x30B9;&#x3002;&#x6642;&#x523B;&#x306B;&#x95A2;&#x3059;&#x308B;&#x60C5;&#x5831;&#x306F;&#x6301;&#x305F;&#x306A;&#x3044;</p>
+<pre><code class="lang-r">&gt; (today &lt;- Sys.Date())
+</code></pre>
+<pre><code>[1] &quot;2015-10-17&quot;
+</code></pre><pre><code class="lang-r">&gt; format(today, <span class="hljs-string">&quot;%Y-%m-%d&quot;</span>)
+</code></pre>
+<pre><code>[1] &quot;2015-10-17&quot;
+</code></pre><pre><code class="lang-r">&gt; weekdays(today)
+</code></pre>
+<pre><code>[1] &quot;Saturday&quot;
+</code></pre><pre><code class="lang-r">&gt; months(today)
+</code></pre>
+<pre><code>[1] &quot;October&quot;
+</code></pre><h2 id="datetimeclasses">DateTimeClasses</h2>
+<p>&#x65E5;&#x4ED8;&#x30FB;&#x6642;&#x9593;&#x30AF;&#x30E9;&#x30B9;&#x3002;POSIXct&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306F;1970-01-01&#x304B;&#x3089;&#x306E;&#x7D4C;&#x904E;&#x6642;&#x9593;&#xFF08;&#x79D2;&#x3001;UNIX&#x6642;&#x9593;&#xFF09;&#x3001;as.POSIXlt&#x30AF;&#x30E9;&#x30B9;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306F;&#x3001;&#x5404;&#x8981;&#x7D20;&#x306B;&#x3064;&#x3044;&#x3066;&#x30EA;&#x30B9;&#x30C8;&#x5F62;&#x5F0F;&#x3067;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x6301;&#x3064;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>x, objext</li>
+<li>digits</li>
+<li>...</li>
+<li>time</li>
+<li>time1, time2</li>
+<li>z</li>
+<li>lop</li>
+</ul>
+<pre><code class="lang-r">&gt; (z &lt;- Sys.time())
+</code></pre>
+<pre><code>[1] &quot;2015-10-17 21:15:18 JST&quot;
+</code></pre><pre><code class="lang-r">&gt; class(z)
+</code></pre>
+<pre><code>[1] &quot;POSIXct&quot; &quot;POSIXt&quot;
+</code></pre><pre><code class="lang-r">&gt; Sys.time() - <span class="hljs-number">3600</span> <span class="hljs-comment"># &#xFF11;&#x6642;&#x9593;&#x524D;</span>
+</code></pre>
+<pre><code>[1] &quot;2015-10-17 20:15:18 JST&quot;
+</code></pre><pre><code class="lang-r">&gt; as.POSIXlt(Sys.time(), <span class="hljs-string">&quot;GMT&quot;</span>) %&gt;% {
++   print(class(.))
++   .
++ }
+</code></pre>
+<pre><code>[1] &quot;POSIXlt&quot; &quot;POSIXt&quot;
+</code></pre><pre><code>[1] &quot;2015-10-17 12:15:18 GMT&quot;
+</code></pre><pre><code class="lang-r">&gt; as.Date(<span class="hljs-string">&quot;1970-01-01&quot;</span>) %&gt;% unclass()
+</code></pre>
+<pre><code>[1] 0
+</code></pre><pre><code class="lang-r">&gt; Sys.time() %&gt;% as.POSIXlt() %&gt;% unclass() %&gt;% {
++   print(names(.))
++   str(.)
++ }
+</code></pre>
+<pre><code> [1] &quot;sec&quot;    &quot;min&quot;    &quot;hour&quot;   &quot;mday&quot;   &quot;mon&quot;    &quot;year&quot;   &quot;wday&quot;  
+ [8] &quot;yday&quot;   &quot;isdst&quot;  &quot;zone&quot;   &quot;gmtoff&quot;
+List of 11
+ $ sec   : num 18.4
+ $ min   : int 15
+ $ hour  : int 21
+ $ mday  : int 17
+ $ mon   : int 9
+ $ year  : int 115
+ $ wday  : int 6
+ $ yday  : int 289
+ $ isdst : int 0
+ $ zone  : chr &quot;JST&quot;
+ $ gmtoff: int 32400
+ - attr(*, &quot;tzone&quot;)= chr [1:3] &quot;&quot; &quot;JST&quot; &quot;JDT&quot;
+</code></pre><h2 id="na">NA</h2>
 <p>&#x6B20;&#x640D;&#x5024;&#x306E;&#x6271;&#x3044;&#x306B;&#x95A2;&#x3059;&#x308B;&#x95A2;&#x6570;</p>
 <h3 id="arguments">Arguments</h3>
 <ul>
@@ -4812,7 +4899,8 @@
 </code></pre><pre><code class="lang-r">&gt; all.equal(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
 </code></pre>
 <pre><code>[1] &quot;Mean relative difference: 1&quot;
-</code></pre><h2 id="connections-file-url-gzfile-bzfile-xzfile-unz-pipe-fifo-socketconnection-open-close-flush-isopen-isincomplete">connections: file / url / gzfile / bzfile / xzfile / unz / pipe / fifo / socketConnection / open / close / flush / isOpen / isIncomplete</h2>
+</code></pre><h3 id="class-unclass">class / unclass</h3>
+<h2 id="connections-file-url-gzfile-bzfile-xzfile-unz-pipe-fifo-socketconnection-open-close-flush-isopen-isincomplete">connections: file / url / gzfile / bzfile / xzfile / unz / pipe / fifo / socketConnection / open / close / flush / isOpen / isIncomplete</h2>
 <p>&#x63A5;&#x7D9A;&#x64CD;&#x4F5C;&#x306E;&#x95A2;&#x6570;</p>
 <h2 id="cut">cut</h2>
 <p>&#x6570;&#x5024;&#x3092;&#x56E0;&#x5B50;&#x306B;&#x5909;&#x63DB;</p>
@@ -4821,7 +4909,7 @@
 </code></pre>
 <pre><code>
 (-6,-5] (-5,-4] (-4,-3] (-3,-2] (-2,-1]  (-1,0]   (0,1]   (1,2]   (2,3] 
-      0       0       0       3      21      35      35       4       2 
+      0       0       0       0      18      27      34      17       4 
   (3,4]   (4,5]   (5,6] 
       0       0       0
 </code></pre><pre><code class="lang-r">&gt; <span class="hljs-comment"># http://stackoverflow.com/questions/33139720/count-and-aggregate-date-in-r</span>
@@ -4882,11 +4970,56 @@
 </code></pre><pre><code class="lang-r">&gt; x[!duplicated(x)] <span class="hljs-comment"># &#x91CD;&#x8907;&#x3057;&#x3066;&#x3044;&#x308B;&#x8981;&#x7D20;&#x3092;&#x53D6;&#x308A;&#x9664;&#x304F;</span>
 </code></pre>
 <pre><code> [1]  9 10 11 12 13 14 15 16 17 18 19 20  1  2  3  4  5  6  7  0  8
+</code></pre><h2 id="exists">exists</h2>
+<p>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x304C;&#x5B58;&#x5728;&#x3059;&#x308B;&#x304B;&#x3092;&#x78BA;&#x8A8D;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>x</li>
+<li>where</li>
+<li>envir</li>
+<li>frame</li>
+<li>mod</li>
+<li>inherits</li>
+<li>ifnotfound</li>
+</ul>
+<pre><code class="lang-r">&gt; exists(<span class="hljs-string">&quot;x&quot;</span>)
+</code></pre>
+<pre><code>[1] TRUE
+</code></pre><pre><code class="lang-r">&gt; x &lt;- letters
+&gt; exists(<span class="hljs-string">&quot;x&quot;</span>)
+</code></pre>
+<pre><code>[1] TRUE
 </code></pre><h2 id="file-show">file.show</h2>
 <p>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;</p>
 <pre><code class="lang-r">&gt; file.show(file.path(R.home(<span class="hljs-string">&quot;doc&quot;</span>), <span class="hljs-string">&quot;COPYRIGHTS&quot;</span>))
 </code></pre>
-<h2 id="iconv">iconv</h2>
+<h2 id="format">format</h2>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>x</li>
+<li>trim</li>
+<li>digits</li>
+<li>nsmall</li>
+<li>justify</li>
+<li>width</li>
+<li>na.encode</li>
+<li>scientific</li>
+<li>...</li>
+<li>big.mark, big.interval, small.mark, small.interval, decimal.mark, zero.print, drop0trailing</li>
+</ul>
+<pre><code class="lang-r">&gt; format(<span class="hljs-number">1</span>:<span class="hljs-number">10</span>, trim = <span class="hljs-literal">TRUE</span>)
+</code></pre>
+<pre><code> [1] &quot;1&quot;  &quot;2&quot;  &quot;3&quot;  &quot;4&quot;  &quot;5&quot;  &quot;6&quot;  &quot;7&quot;  &quot;8&quot;  &quot;9&quot;  &quot;10&quot;
+</code></pre><pre><code class="lang-r">&gt; format(<span class="hljs-number">13.7</span>, nsmall = <span class="hljs-number">3</span>)
+</code></pre>
+<pre><code>[1] &quot;13.700&quot;
+</code></pre><pre><code class="lang-r">&gt; format(c(<span class="hljs-number">6.0</span>, <span class="hljs-number">13.1</span>), digits = <span class="hljs-number">2</span>)
+</code></pre>
+<pre><code>[1] &quot; 6&quot; &quot;13&quot;
+</code></pre><pre><code class="lang-r">&gt; format(Sys.Date(), <span class="hljs-string">&quot;%Y-%m-%d&quot;</span>)
+</code></pre>
+<pre><code>[1] &quot;2015-10-17&quot;
+</code></pre><h2 id="iconv">iconv</h2>
 <p>&#x6587;&#x5B57;&#x5217;&#x306E;&#x30A8;&#x30F3;&#x30B3;&#x30FC;&#x30C7;&#x30A3;&#x30F3;&#x30B0;</p>
 <pre><code class="lang-r">&gt; x &lt;- <span class="hljs-string">&quot;fa\xE7ile&quot;</span>
 &gt; Encoding(x) &lt;- <span class="hljs-string">&quot;latin1&quot;</span>
@@ -4941,8 +5074,15 @@
 <pre><code>[1] 0 0 0 0 0 0 0
 </code></pre><pre><code class="lang-r">&gt; rep(<span class="hljs-number">0</span>, <span class="hljs-number">7</span>) %&gt;% jitter(., amount = <span class="hljs-number">1</span>)
 </code></pre>
-<pre><code>[1]  0.76665234 -0.54982443  0.05353946  0.75415510  0.93969340  0.03904874
-[7]  0.37663552
+<pre><code>[1]  0.4484186 -0.0197777 -0.1566062  0.9927003  0.1197616  0.8968911
+[7]  0.8458628
+</code></pre><h2 id="ls">ls</h2>
+<p>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x4E00;&#x89A7;&#x3092;&#x8FD4;&#x3059;</p>
+<p>ref) <code>remove()</code></p>
+<pre><code class="lang-r">&gt; x &lt;- <span class="hljs-string">&quot;aaa&quot;</span>
+&gt; ls()
+</code></pre>
+<pre><code>[1] &quot;today&quot; &quot;x&quot;     &quot;xx&quot;    &quot;z&quot;     &quot;Z&quot;
 </code></pre><h2 id="make-unique">make.unique</h2>
 <p>&#x6587;&#x5B57;&#x5217;&#x3092;&#x30E6;&#x30CB;&#x30FC;&#x30AF;&#x306A;&#x5F62;&#x306B;&#x3059;&#x308B;</p>
 <pre><code class="lang-r">&gt; c(<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;a&quot;</span>) %&gt;% make.unique()
@@ -4967,6 +5107,23 @@
 <pre><code class="lang-r">&gt; mode(<span class="hljs-number">2</span>)
 </code></pre>
 <pre><code>[1] &quot;numeric&quot;
+</code></pre><h2 id="paste-paste0">paste / paste0</h2>
+<p>&#x6587;&#x5B57;&#x5217;&#x306E;&#x7D50;&#x5408;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>...</li>
+<li>sep</li>
+<li>collapse</li>
+</ul>
+<pre><code class="lang-r">&gt; paste(<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;b&quot;</span>, sep = <span class="hljs-string">&quot;:&quot;</span>)
+</code></pre>
+<pre><code>[1] &quot;a:b&quot;
+</code></pre><pre><code class="lang-r">&gt; paste(<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;b&quot;</span>, se = <span class="hljs-string">&quot;:&quot;</span>)
+</code></pre>
+<pre><code>[1] &quot;a b :&quot;
+</code></pre><pre><code class="lang-r">&gt; paste0(<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;b&quot;</span>)
+</code></pre>
+<pre><code>[1] &quot;ab&quot;
 </code></pre><h2 id="pretty">pretty</h2>
 <h3 id="arguments">Arguments</h3>
 <ul>
@@ -4989,7 +5146,7 @@
 &gt; proc.time() - ptm
 </code></pre>
 <pre><code>   user  system elapsed 
-  0.009   0.001   0.010
+  0.008   0.000   0.008
 </code></pre><h2 id="readbin-writebin">readBin / writeBin</h2>
 <p>&#x30D0;&#x30A4;&#x30CA;&#x30EA;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x5909;&#x63DB;&#x3002;&#x30B3;&#x30CD;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x304B;&#x3089;&#x30D0;&#x30A4;&#x30CA;&#x30EA;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3093;&#x3060;&#x308A;&#x3001;&#x30D0;&#x30A4;&#x30CA;&#x30EA;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x66F8;&#x304D;&#x51FA;&#x3057;&#x305F;&#x308A;&#x3002;</p>
 <h3 id="arguments">Arguments</h3>
@@ -5017,12 +5174,48 @@
 &gt; writeBin(x, zz, size = <span class="hljs-number">1</span>)
 &gt; close(zz)
 </code></pre>
-<h2 id="stopinfo">stopinfo</h2>
+<h2 id="remove-rm">remove / rm</h2>
+<p>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x524A;&#x9664;&#x3059;&#x308B;</p>
+<pre><code class="lang-r">&gt; x &lt;- letters[<span class="hljs-number">1</span>:<span class="hljs-number">4</span>]
+&gt; ls()
+</code></pre>
+<pre><code>[1] &quot;i&quot;      &quot;myplot&quot; &quot;ptm&quot;    &quot;today&quot;  &quot;x&quot;      &quot;xx&quot;     &quot;z&quot;      &quot;Z&quot;
+</code></pre><pre><code class="lang-r">&gt; remove(x)
+&gt; ls()
+</code></pre>
+<pre><code>[1] &quot;i&quot;      &quot;myplot&quot; &quot;ptm&quot;    &quot;today&quot;  &quot;xx&quot;     &quot;z&quot;      &quot;Z&quot;
+</code></pre><h2 id="sample">sample</h2>
+<h2 id="seq">seq</h2>
+<p>&#x9023;&#x7D9A;&#x5024;&#xFF08;&#x30B7;&#x30FC;&#x30AF;&#x30A8;&#x30F3;&#x30B9;&#xFF09;&#x306E;&#x751F;&#x6210;</p>
+<pre><code class="lang-r">&gt; seq(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>) <span class="hljs-comment"># 1:10 &#x3068;&#x540C;&#x3058;</span>
+</code></pre>
+<pre><code> [1]  1  2  3  4  5  6  7  8  9 10
+</code></pre><pre><code class="lang-r">&gt; LETTERS[seq( from = <span class="hljs-number">1</span>, to = <span class="hljs-number">10</span> )]
+</code></pre>
+<pre><code> [1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot; &quot;F&quot; &quot;G&quot; &quot;H&quot; &quot;I&quot; &quot;J&quot;
+</code></pre><pre><code class="lang-r">&gt; seq(from = as.Date(<span class="hljs-string">&quot;2000/1/1&quot;</span>), to = as.Date(<span class="hljs-string">&quot;2015/1/1&quot;</span>), by = <span class="hljs-string">&quot;years&quot;</span>) %&gt;% 
++   sample(size = <span class="hljs-number">10</span>, replace = <span class="hljs-literal">FALSE</span>)
+</code></pre>
+<pre><code> [1] &quot;2011-01-01&quot; &quot;2000-01-01&quot; &quot;2006-01-01&quot; &quot;2015-01-01&quot; &quot;2013-01-01&quot;
+ [6] &quot;2001-01-01&quot; &quot;2005-01-01&quot; &quot;2007-01-01&quot; &quot;2002-01-01&quot; &quot;2004-01-01&quot;
+</code></pre><h2 id="stopinfo">stopinfo</h2>
 <p>&#x5F15;&#x6570;&#x306B;&#x4E0E;&#x3048;&#x305F;&#x5024;&#x304C;&#x7B49;&#x3057;&#x304F;&#x306A;&#x3044;&#x5834;&#x5408;&#x306B;&#x51E6;&#x7406;&#x3092;&#x505C;&#x6B62;&#x3059;&#x308B;</p>
 <pre><code class="lang-r">&gt; stopifnot(<span class="hljs-number">1</span> == <span class="hljs-number">1</span>)
 &gt; stopifnot(<span class="hljs-number">1</span> == <span class="hljs-number">2</span>)
 </code></pre>
 <pre><code>Error: 1 == 2 is not TRUE
+</code></pre><h2 id="strptime">strptime</h2>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>x</li>
+<li>tz</li>
+<li>format</li>
+<li>...</li>
+<li>usetz</li>
+</ul>
+<pre><code class="lang-r">&gt; (z &lt;- strptime(x = <span class="hljs-string">&quot;10/10/15 20:31:16.683&quot;</span>, format = <span class="hljs-string">&quot;%d/%m/%y %H:%M:%OS&quot;</span>))
+</code></pre>
+<pre><code>[1] &quot;2015-10-10 20:31:16 JST&quot;
 </code></pre><h2 id="substitute">substitute</h2>
 <h3 id="arguments">Arguments</h3>
 <ul>
@@ -5066,7 +5259,7 @@
 <pre><code class="lang-r">&gt; system.time(<span class="hljs-keyword">for</span>(i <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>:<span class="hljs-number">100</span>) mad(runif(<span class="hljs-number">1000</span>)))
 </code></pre>
 <pre><code>   user  system elapsed 
-  0.014   0.001   0.015
+  0.013   0.001   0.014
 </code></pre><h2 id="tempdir-tempfile">tempdir / tempfile</h2>
 <p>&#x4E00;&#x6642;&#x7684;&#x306A;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x3001;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3002;&#x4E00;&#x6642;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306F;&#x30BB;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x7D42;&#x4E86;&#x6642;&#x306B;&#x524A;&#x9664;&#x3055;&#x308C;&#x308B;&#x3002;</p>
 <h3 id="arguments">Arguments</h3>
@@ -5106,7 +5299,7 @@ function (url)
 {
     .Call(.rs.routines$rs_browseURL, url)
 }
-&lt;environment: 0x109bf9ee8&gt;
+&lt;environment: 0x10b912238&gt;
 
 [[4]]
 [1] TRUE
@@ -5127,7 +5320,7 @@ function (action)
         }
     }
 }
-&lt;environment: 0x102e62438&gt;
+&lt;environment: 0x1020ac238&gt;
 
 [[6]]
 function (code) 
@@ -5136,7 +5329,7 @@ function (code)
     on.exit(.rs.restorePreviousPath(), add = TRUE)
     force(code)
 }
-&lt;environment: 0x102e62438&gt;
+&lt;environment: 0x1020ac238&gt;
 </code></pre><pre><code class="lang-r">&gt; unlist(Titanic)
 </code></pre>
 <pre><code>, , Age = Child, Survived = No
@@ -5211,9 +5404,8 @@ multiple of the number of rows [3]
 multiple of the number of rows [3]
 </code></pre><pre><code class="lang-r">&gt; warnings()
 </code></pre>
-<pre><code>Warning messages:
-1: Removed 359 rows containing non-finite values (stat_smooth).
-2: Removed 359 rows containing missing values (geom_point).
+<pre><code>Warning message:
+In data(Zea) : data set &#x2018;Zea&#x2019; not found
 </code></pre><pre><code class="lang-r">&gt; options(ow)
 </code></pre>
 <h2 id="with">with</h2>

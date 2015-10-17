@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="11.16" data-basepath=".." data-revision="Thu Oct 15 2015 21:39:36 GMT+0900 (JST)">
+    <div class="book" data-level="11.16" data-basepath=".." data-revision="Sat Oct 17 2015 21:15:25 GMT+0900 (JST)">
     
 
 <div class="book-summary">
@@ -334,13 +334,28 @@
             
         </li>
     
-        <li class="chapter " data-level="3.7" data-path="dataset/historydata.html">
+        <li class="chapter " data-level="3.7" data-path="dataset/HistData.html">
+            
+                
+                    <a href="../dataset/HistData.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        HistData
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="dataset/historydata.html">
             
                 
                     <a href="../dataset/historydata.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>3.7.</b>
+                            <b>3.8.</b>
                         
                         historydata
                     </a>
@@ -2722,13 +2737,20 @@
             
         </li>
     
-        <li class="chapter " data-level="11.45" data-path="utility/unixtools.html">
+        <li class="chapter " data-level="11.45" data-path="utility/timeDatem.html">
+            
+            <span><b>11.45.</b> timeDate</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.46" data-path="utility/unixtools.html">
             
                 
                     <a href="../utility/unixtools.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>11.45.</b>
+                            <b>11.46.</b>
                         
                         unixtools
                     </a>
@@ -2737,13 +2759,13 @@
             
         </li>
     
-        <li class="chapter " data-level="11.46" data-path="utility/utils.html">
+        <li class="chapter " data-level="11.47" data-path="utility/utils.html">
             
                 
                     <a href="../utility/utils.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>11.46.</b>
+                            <b>11.47.</b>
                         
                         utils
                     </a>
@@ -2752,13 +2774,13 @@
             
         </li>
     
-        <li class="chapter " data-level="11.47" data-path="utility/WriteXLS.html">
+        <li class="chapter " data-level="11.48" data-path="utility/WriteXLS.html">
             
                 
                     <a href="../utility/WriteXLS.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>11.47.</b>
+                            <b>11.48.</b>
                         
                         WriteXLS
                     </a>
@@ -3160,7 +3182,13 @@
 </ul>
 <pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(lubridate)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.3.3</p>
+<pre><code>
+Attaching package: &apos;lubridate&apos;
+
+The following object is masked from &apos;package:plyr&apos;:
+
+    here
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 1.3.3</p>
 <hr>
 <table>
 <thead>
@@ -3501,16 +3529,103 @@
 </tbody>
 </table>
 <hr>
-<h2 id="dminutes">dminutes</h2>
+<h2 id="dateupdate">DateUpdate</h2>
+<p>&#x65E5;&#x6642;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x66F4;&#x65B0;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>object</li>
+<li>years</li>
+<li>months</li>
+<li>ydays</li>
+<li>wdays</li>
+<li>mdays</li>
+<li>days</li>
+<li>hours</li>
+<li>minutes</li>
+<li>seconds</li>
+<li>tsz</li>
+<li>...</li>
+</ul>
+<pre><code class="lang-r">&gt; (x &lt;- now())
+</code></pre>
+<pre><code>[1] &quot;2015-10-17 21:15:20 JST&quot;
+</code></pre><pre><code class="lang-r">&gt; update(x, year = <span class="hljs-number">2010</span>, month = <span class="hljs-number">1</span>, mday = <span class="hljs-number">1</span>)
+</code></pre>
+<pre><code>[1] &quot;2010-01-01 21:15:20 JST&quot;
+</code></pre><pre><code class="lang-r">&gt; update(x, month = <span class="hljs-number">1</span>, mday = <span class="hljs-number">1</span>)
+</code></pre>
+<pre><code>[1] &quot;2015-01-01 21:15:20 JST&quot;
+</code></pre><h2 id="am">am</h2>
+<p>&#x5348;&#x524D;&#x3068;&#x5348;&#x5F8C;&#x306E;&#x6642;&#x9593;&#x5224;&#x5B9A;</p>
+<pre><code class="lang-r">&gt; am(x)
+</code></pre>
+<pre><code>[1] FALSE
+</code></pre><pre><code class="lang-r">&gt; pm(x)
+</code></pre>
+<pre><code>[1] TRUE
+</code></pre><h2 id="ceiling-date">ceiling_date</h2>
+<p>&#x65E5;&#x6642;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x4E38;&#x3081;&#x8FBC;&#x307F;&#x3002;&#x4E38;&#x3081;&#x8FBC;&#x307F;&#x306E;&#x5224;&#x5B9A;&#x306F;&#x4E0B;&#x4F4D;&#x5358;&#x4F4D;&#x306B;&#x3088;&#x3063;&#x3066;&#x6C7A;&#x307E;&#x308B;&#x3002;</p>
+<p>ref) <code>floor_date</code></p>
+<pre><code class="lang-r">&gt; (x &lt;- now())
+</code></pre>
+<pre><code>[1] &quot;2015-10-17 21:15:20 JST&quot;
+</code></pre><pre><code class="lang-r">&gt; ceiling_date(x, <span class="hljs-string">&quot;second&quot;</span>)
+</code></pre>
+<pre><code>[1] &quot;2015-10-17 21:15:21 JST&quot;
+</code></pre><pre><code class="lang-r">&gt; ceiling_date(x, <span class="hljs-string">&quot;hour&quot;</span>)
+</code></pre>
+<pre><code>[1] &quot;2015-10-17 22:00:00 JST&quot;
+</code></pre><pre><code class="lang-r">&gt; ceiling_date(x, <span class="hljs-string">&quot;year&quot;</span>)
+</code></pre>
+<pre><code>[1] &quot;2016-01-01 JST&quot;
+</code></pre><h2 id="date-decimal">date_decimal</h2>
+<p>ref) <code>decimal_date()</code></p>
+<pre><code class="lang-r">&gt; date &lt;- ymd(<span class="hljs-string">&quot;2015-10-10&quot;</span>)
+&gt; decimal_date(date) %&gt;% date_decimal()
+</code></pre>
+<pre><code>[1] &quot;2015-10-09 23:59:59 UTC&quot;
+</code></pre><h2 id="decimal-date">decimal_date</h2>
+<p>&#x65E5;&#x4ED8;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x9023;&#x7D9A;&#x5024;&#x306B;&#x5909;&#x63DB;</p>
+<p>ref) <code>date_decimal()</code></p>
+<pre><code class="lang-r">&gt; date &lt;- ymd(<span class="hljs-string">&quot;2015-10-10&quot;</span>)
+&gt; decimal_date(date)
+</code></pre>
+<pre><code>[1] 2015.773
+</code></pre><h2 id="dminutes">dminutes</h2>
 <p>&#x5206;&#x3092;&#x79D2;&#x8868;&#x793A;&#x306B;&#x5909;&#x63DB;</p>
 <pre><code class="lang-r">&gt; dminutes(<span class="hljs-number">2</span>)
 </code></pre>
 <pre><code>[1] &quot;120s (~2 minutes)&quot;
+</code></pre><h2 id="floor-date">floor_date</h2>
+<p>&#x65E5;&#x6642;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x4E38;&#x3081;&#x8FBC;&#x307F;</p>
+<pre><code class="lang-r">&gt; (x &lt;- now())
+</code></pre>
+<pre><code>[1] &quot;2015-10-17 21:15:20 JST&quot;
+</code></pre><pre><code class="lang-r">&gt; floor_date(x, <span class="hljs-string">&quot;second&quot;</span>)
+</code></pre>
+<pre><code>[1] &quot;2015-10-17 21:15:20 JST&quot;
+</code></pre><pre><code class="lang-r">&gt; floor_date(x, <span class="hljs-string">&quot;minute&quot;</span>)
+</code></pre>
+<pre><code>[1] &quot;2015-10-17 21:15:00 JST&quot;
+</code></pre><pre><code class="lang-r">&gt; floor_date(x, <span class="hljs-string">&quot;day&quot;</span>)
+</code></pre>
+<pre><code>[1] &quot;2015-10-17 JST&quot;
+</code></pre><pre><code class="lang-r">&gt; floor_date(x, <span class="hljs-string">&quot;year&quot;</span>)
+</code></pre>
+<pre><code>[1] &quot;2015-01-01 JST&quot;
+</code></pre><h2 id="force-tz">force_tz</h2>
+<p>&#x30BF;&#x30A4;&#x30E0;&#x30BE;&#x30FC;&#x30F3;&#x306E;&#x5F37;&#x5236;&#x5909;&#x63DB;</p>
+<pre><code class="lang-r">&gt; (x &lt;- now(tzone = <span class="hljs-string">&quot;Asia/Tokyo&quot;</span>))
+</code></pre>
+<pre><code>[1] &quot;2015-10-17 21:15:20 JST&quot;
+</code></pre><pre><code class="lang-r">&gt; force_tz(x, tzone = <span class="hljs-string">&quot;GMT&quot;</span>)
+</code></pre>
+<pre><code>[1] &quot;2015-10-17 21:15:20 GMT&quot;
 </code></pre><h2 id="here">here</h2>
 <p>&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x30BF;&#x30A4;&#x30E0;&#x30BE;&#x30FC;&#x30F3;&#x306E;&#x73FE;&#x5728;&#x6642;&#x523B;&#x3092;&#x8868;&#x793A;</p>
 <pre><code class="lang-r">&gt; here()
 </code></pre>
-<pre><code>[1] &quot;2015-09-01 01:38:43 JST&quot;
+<pre><code>[1] &quot;2015-10-17 21:15:20 JST&quot;
 </code></pre><h2 id="int-overlaps">int_overlaps</h2>
 <p>&#xFF12;&#x3064;&#x306E;&#x671F;&#x9593;&#x306B;&#x91CD;&#x306A;&#x308A;&#x304C;&#x3042;&#x308B;&#x304B;&#x78BA;&#x304B;&#x3081;&#x308B;</p>
 <pre><code class="lang-r">&gt; int1 &lt;- new_interval(ymd(<span class="hljs-string">&quot;2001-01-01&quot;</span>), ymd(<span class="hljs-string">&quot;2002-01-01&quot;</span>))
@@ -3541,13 +3656,13 @@
 </code></pre><h2 id="month">month</h2>
 <pre><code class="lang-r">&gt; month(today(), label = <span class="hljs-literal">TRUE</span>, abbr = <span class="hljs-literal">FALSE</span>)
 </code></pre>
-<pre><code>[1] September
+<pre><code>[1] October
 12 Levels: January &lt; February &lt; March &lt; April &lt; May &lt; June &lt; ... &lt; December
 </code></pre><h2 id="new-interval">new_interval</h2>
 <pre><code class="lang-r">&gt; dob &lt;- ymd(<span class="hljs-number">19891126</span>)
 &gt; new_interval(start = dob, end = today())
 </code></pre>
-<pre><code>[1] 1989-11-26 UTC--2015-09-01 UTC
+<pre><code>[1] 1989-11-26 UTC--2015-10-17 UTC
 </code></pre><pre><code class="lang-r">&gt; new_interval(dob, today(), tzone = <span class="hljs-string">&quot;Asia/Tokyo&quot;</span>) / years(<span class="hljs-number">1</span>)
 </code></pre>
 <pre><code>Remainder cannot be expressed as fraction of a period.
@@ -3557,10 +3672,10 @@
 <p>&#x73FE;&#x5728;&#x6642;&#x523B;&#x3092;&#x53D6;&#x5F97;</p>
 <pre><code class="lang-r">&gt; now()
 </code></pre>
-<pre><code>[1] &quot;2015-09-01 01:38:43 JST&quot;
+<pre><code>[1] &quot;2015-10-17 21:15:20 JST&quot;
 </code></pre><pre><code class="lang-r">&gt; now(tzone = olson_time_zones()[<span class="hljs-number">10</span>])
 </code></pre>
-<pre><code>[1] &quot;2015-08-31 18:38:43 CAT&quot;
+<pre><code>[1] &quot;2015-10-17 14:15:20 CAT&quot;
 </code></pre><h2 id="olson-time-zones">olson_time_zones</h2>
 <p>&#x30AA;&#x30EB;&#x30BD;&#x30F3;&#x6642;&#x9593;&#x5E2F;&#x306E;&#x4E00;&#x89A7;&#x3092;&#x8868;&#x793A;</p>
 <pre><code class="lang-r">&gt; str(olson_time_zones())
@@ -3571,20 +3686,25 @@
 <pre><code class="lang-r">&gt; origin
 </code></pre>
 <pre><code>[1] &quot;1970-01-01 UTC&quot;
+</code></pre><h2 id="rollback">rollback</h2>
+<p>&#x524D;&#x6708;&#x306E;&#x6700;&#x7D42;&#x65E5;&#x306B;&#x3059;&#x308B;</p>
+<pre><code class="lang-r">&gt; rollback(x)
+</code></pre>
+<pre><code>[1] &quot;2009-07-31&quot;
 </code></pre><h2 id="today">today</h2>
 <p>&#x4ECA;&#x65E5;&#x306E;&#x65E5;&#x4ED8;</p>
 <pre><code class="lang-r">&gt; today()
 </code></pre>
-<pre><code>[1] &quot;2015-09-01&quot;
+<pre><code>[1] &quot;2015-10-17&quot;
 </code></pre><h2 id="wday">wday</h2>
 <pre><code class="lang-r">&gt; wday(today(), label = <span class="hljs-literal">TRUE</span>, abbr = <span class="hljs-literal">FALSE</span>)
 </code></pre>
-<pre><code>[1] Tuesday
+<pre><code>[1] Saturday
 7 Levels: Sunday &lt; Monday &lt; Tuesday &lt; Wednesday &lt; Thursday &lt; ... &lt; Saturday
 </code></pre><h2 id="week">week</h2>
 <pre><code class="lang-r">&gt; week(today())
 </code></pre>
-<pre><code>[1] 35
+<pre><code>[1] 42
 </code></pre><h2 id="ymd">ymd</h2>
 <p>&#x95A2;&#x6570;&#x540D;&#x3092;&#x5165;&#x308C;&#x66FF;&#x3048;&#x3066;&#x5E74;&#x6708;&#x65E5;&#x3092;&#x8868;&#x793A;&#x3002;y... &#x5E74;&#x3001;m... &#x6708;, d... &#x65E5;&#x3002;</p>
 <pre><code class="lang-r">&gt; ymd(<span class="hljs-string">&quot;20150901&quot;</span>)
