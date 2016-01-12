@@ -25,10 +25,6 @@
         
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
-        
-    
-        
         <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
         
     
@@ -53,7 +49,7 @@
         data-chapter-title="gistr"
         data-filepath="web/gistr.md"
         data-basepath=".."
-        data-revision="Sat Jan 09 2016 04:39:34 GMT+0900 (JST)"
+        data-revision="Tue Jan 12 2016 18:43:21 GMT+0900 (JST)"
         data-innerlanguage="">
     
 
@@ -2121,14 +2117,29 @@
             
         </li>
     
-        <li class="chapter " data-level="7.27" data-path="graphics/treemap.html">
+        <li class="chapter " data-level="7.27" data-path="graphics/tableplot.html">
+            
+                
+                    <a href="../graphics/tableplot.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.27.</b>
+                        
+                        tableplot
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.28" data-path="graphics/treemap.html">
             
                 
                     <a href="../graphics/treemap.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>7.27.</b>
+                            <b>7.28.</b>
                         
                         treemap
                     </a>
@@ -2136,14 +2147,14 @@
             
         </li>
     
-        <li class="chapter " data-level="7.28" data-path="graphics/VennDiagram.html">
+        <li class="chapter " data-level="7.29" data-path="graphics/VennDiagram.html">
             
                 
                     <a href="../graphics/VennDiagram.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>7.28.</b>
+                            <b>7.29.</b>
                         
                         VennDiagram
                     </a>
@@ -2151,14 +2162,14 @@
             
         </li>
     
-        <li class="chapter " data-level="7.29" data-path="graphics/venneuler.html">
+        <li class="chapter " data-level="7.30" data-path="graphics/venneuler.html">
             
                 
                     <a href="../graphics/venneuler.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>7.29.</b>
+                            <b>7.30.</b>
                         
                         venneuler
                     </a>
@@ -2166,14 +2177,14 @@
             
         </li>
     
-        <li class="chapter " data-level="7.30" data-path="graphics/viridis.html">
+        <li class="chapter " data-level="7.31" data-path="graphics/viridis.html">
             
                 
                     <a href="../graphics/viridis.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>7.30.</b>
+                            <b>7.31.</b>
                         
                         viridis
                     </a>
@@ -4393,7 +4404,13 @@
 </ul>
 <pre><code class="lang-r">&gt; <span class="hljs-keyword">library</span>(gistr)
 </code></pre>
-<p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.3.6</p>
+<pre><code>
+Attaching package: &apos;gistr&apos;
+
+The following objects are masked from &apos;package:stats&apos;:
+
+    embed, update
+</code></pre><p>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;: 0.3.6</p>
 <hr>
 <table>
 <thead>
@@ -4494,11 +4511,179 @@
 </tbody>
 </table>
 <hr>
-<h2 id="gistauth">gist_auth</h2>
+<h2 id="gist--asgist">gist / as.gist</h2>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>id</li>
+<li>...</li>
+<li>x</li>
+</ul>
+<pre><code class="lang-r">&gt; gist(<span class="hljs-string">&quot;5f1a1011ea368e1c833e&quot;</span>)
+</code></pre>
+<pre><code>&lt;gist&gt;5f1a1011ea368e1c833e
+  URL: https://gist.github.com/5f1a1011ea368e1c833e
+  Description: String initialization notes
+  Public: TRUE
+  Created/Edited: 2016-01-08T20:19:30Z / 2016-01-08T20:19:31Z
+  Files: FromCString.swift, NSString.swift, UnicodeScalar.swift
+  Truncated?: FALSE, FALSE, FALSE
+</code></pre><h2 id="gistauth">gist_auth</h2>
 <p>GitHub&#x3078;&#x306E;&#x8A8D;&#x8A3C;</p>
 <pre><code class="lang-r">&gt; gist_auth()
 </code></pre>
+<h2 id="gistcreate">gist_create</h2>
+<p>gist&#x306E;&#x4F5C;&#x6210;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>files</li>
+<li>description</li>
+<li>public</li>
+<li>browse</li>
+<li>code... </li>
+<li>filename</li>
+<li>knit</li>
+<li>knitopts, renderopts</li>
+<li>include_source</li>
+<li>imgur_inject</li>
+<li>rmarkdown</li>
+<li>...</li>
+</ul>
+<pre><code class="lang-r">&gt; gist_create(code = {<span class="hljs-string">&apos;
++ x &lt;- letters
++ numbers &lt;- runif(8)
++ numbers
++ &apos;</span>},
++ knit = <span class="hljs-literal">TRUE</span>,
++ public = <span class="hljs-literal">FALSE</span>)
+</code></pre>
+<h2 id="gists">gists</h2>
+<p>gist&#x306B;&#x6295;&#x7A3F;&#x3055;&#x308C;&#x305F;&#x3082;&#x306E;&#x306E;&#x60C5;&#x5831;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;</p>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li>what... &#x5BFE;&#x8C61;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3002;<strong><code>public</code></strong>, <code>minepublic</code>, <code>mineall</code>&#x3042;&#x308B;&#x3044;&#x306F;<code>starred</code></li>
+<li>since</li>
+<li>page</li>
+<li>per_page... &#x53D6;&#x5F97;&#x4EF6;&#x6570;</li>
+<li>...</li>
+</ul>
+<pre><code class="lang-r">&gt; gists(what = <span class="hljs-string">&quot;minepublic&quot;</span>, per_page = <span class="hljs-number">2</span>)
+</code></pre>
+<pre><code>[[1]]
+&lt;gist&gt;091b629b113efdf4df9b
+  URL: https://gist.github.com/091b629b113efdf4df9b
+  Description: README.Rmd template
+  Public: FALSE
+  Created/Edited: 2016-01-10T15:03:27Z / 2016-01-10T15:03:27Z
+  Files: README.Rmd, run_code.R
+  Truncated?: FALSE, FALSE
 
+[[2]]
+&lt;gist&gt;0a53fb9635186fe9e4d2
+  URL: https://gist.github.com/0a53fb9635186fe9e4d2
+  Description: slackr current configure
+  Public: TRUE
+  Created/Edited: 2016-01-10T01:15:11Z / 2016-01-10T01:15:12Z
+  Files: slackr_config.r
+  Truncated?: FALSE
+</code></pre><pre><code class="lang-r">&gt; gists(waht = <span class="hljs-string">&quot;starred&quot;</span>, per_page = <span class="hljs-number">2</span>)
+</code></pre>
+<pre><code>[[1]]
+&lt;gist&gt;cbee96ac762f37ae50cb
+  URL: https://gist.github.com/cbee96ac762f37ae50cb
+  Description: Bootstrap Customizer Config
+  Public: TRUE
+  Created/Edited: 2016-01-12T09:09:43Z / 2016-01-12T09:09:43Z
+  Files: config.json
+  Truncated?: FALSE
+
+[[2]]
+&lt;gist&gt;f5afb42a286daa9437bf
+  URL: https://gist.github.com/f5afb42a286daa9437bf
+  Description: Bootstrap Customizer Config
+  Public: TRUE
+  Created/Edited: 2016-01-12T09:09:43Z / 2016-01-12T09:09:43Z
+  Files: config.json
+  Truncated?: FALSE
+</code></pre><h2 id="tabl">tabl</h2>
+<pre><code class="lang-r">&gt; gist(<span class="hljs-string">&quot;5f1a1011ea368e1c833e&quot;</span>) %&gt;% tabl() %&gt;% {
++   str(.) %&gt;% print()
++   class(.)
++ }
+</code></pre>
+<pre><code>List of 3
+ $ data   :Classes &apos;tbl_df&apos;, &apos;tbl&apos; and &apos;data.frame&apos;:    3 obs. of  38 variables:
+  ..$ id                       : chr [1:3] &quot;5f1a1011ea368e1c833e&quot; &quot;5f1a1011ea368e1c833e&quot; &quot;5f1a1011ea368e1c833e&quot;
+  ..$ url                      : chr [1:3] &quot;https://api.github.com/gists/5f1a1011ea368e1c833e&quot; &quot;https://api.github.com/gists/5f1a1011ea368e1c833e&quot; &quot;https://api.github.com/gists/5f1a1011ea368e1c833e&quot;
+  ..$ forks_url                : chr [1:3] &quot;https://api.github.com/gists/5f1a1011ea368e1c833e/forks&quot; &quot;https://api.github.com/gists/5f1a1011ea368e1c833e/forks&quot; &quot;https://api.github.com/gists/5f1a1011ea368e1c833e/forks&quot;
+  ..$ commits_url              : chr [1:3] &quot;https://api.github.com/gists/5f1a1011ea368e1c833e/commits&quot; &quot;https://api.github.com/gists/5f1a1011ea368e1c833e/commits&quot; &quot;https://api.github.com/gists/5f1a1011ea368e1c833e/commits&quot;
+  ..$ git_pull_url             : chr [1:3] &quot;https://gist.github.com/5f1a1011ea368e1c833e.git&quot; &quot;https://gist.github.com/5f1a1011ea368e1c833e.git&quot; &quot;https://gist.github.com/5f1a1011ea368e1c833e.git&quot;
+  ..$ git_push_url             : chr [1:3] &quot;https://gist.github.com/5f1a1011ea368e1c833e.git&quot; &quot;https://gist.github.com/5f1a1011ea368e1c833e.git&quot; &quot;https://gist.github.com/5f1a1011ea368e1c833e.git&quot;
+  ..$ html_url                 : chr [1:3] &quot;https://gist.github.com/5f1a1011ea368e1c833e&quot; &quot;https://gist.github.com/5f1a1011ea368e1c833e&quot; &quot;https://gist.github.com/5f1a1011ea368e1c833e&quot;
+  ..$ public                   : chr [1:3] &quot;TRUE&quot; &quot;TRUE&quot; &quot;TRUE&quot;
+  ..$ created_at               : chr [1:3] &quot;2016-01-08T20:19:30Z&quot; &quot;2016-01-08T20:19:30Z&quot; &quot;2016-01-08T20:19:30Z&quot;
+  ..$ updated_at               : chr [1:3] &quot;2016-01-08T20:19:31Z&quot; &quot;2016-01-08T20:19:31Z&quot; &quot;2016-01-08T20:19:31Z&quot;
+  ..$ description              : chr [1:3] &quot;String initialization notes&quot; &quot;String initialization notes&quot; &quot;String initialization notes&quot;
+  ..$ comments                 : chr [1:3] &quot;0&quot; &quot;0&quot; &quot;0&quot;
+  ..$ user                     : chr [1:3] NA NA NA
+  ..$ comments_url             : chr [1:3] &quot;https://api.github.com/gists/5f1a1011ea368e1c833e/comments&quot; &quot;https://api.github.com/gists/5f1a1011ea368e1c833e/comments&quot; &quot;https://api.github.com/gists/5f1a1011ea368e1c833e/comments&quot;
+  ..$ files_filename           : chr [1:3] &quot;FromCString.swift&quot; &quot;NSString.swift&quot; &quot;UnicodeScalar.swift&quot;
+  ..$ files_type               : chr [1:3] &quot;text/plain&quot; &quot;text/plain&quot; &quot;text/plain&quot;
+  ..$ files_language           : chr [1:3] &quot;Swift&quot; &quot;Swift&quot; &quot;Swift&quot;
+  ..$ files_raw_url            : chr [1:3] &quot;https://gist.githubusercontent.com/zwaldowski/5f1a1011ea368e1c833e/raw/6ee7728251a69753c9080a0b414b5050cdca6c08/FromCString.swi&quot;| __truncated__ &quot;https://gist.githubusercontent.com/zwaldowski/5f1a1011ea368e1c833e/raw/ec9e01a662df3490926e13bd43a68ca6b1999df3/NSString.swift&quot; &quot;https://gist.githubusercontent.com/zwaldowski/5f1a1011ea368e1c833e/raw/8ed98a461d34b2c20a64879b0fad1727eebc073f/UnicodeScalar.s&quot;| __truncated__
+  ..$ files_size               : chr [1:3] &quot;196&quot; &quot;411&quot; &quot;740&quot;
+  ..$ files_truncated          : chr [1:3] &quot;FALSE&quot; &quot;FALSE&quot; &quot;FALSE&quot;
+  ..$ files_content            : chr [1:3] &quot;// The gold standard, at least at present\nlet utf8Buffer: UnsafeBufferPointer&lt;CChar&gt; = ...\nvar arrayVersion = Array(utf8Buffe&quot;| __truncated__ &quot;let utf8Buffer: UnsafeBufferPointer&lt;UInt8&gt; = ...\n\n// Crossing the NSString bridge performs slower than you&apos;d like\nlet nsStri&quot;| __truncated__ &quot;let utf8Buffer: UnsafeBufferPointer&lt;UInt8&gt; = ...\nlet codePointCount = ... // assume this comes from UTF16.measure(_:input:repa&quot;| __truncated__
+  ..$ owner_login              : chr [1:3] &quot;zwaldowski&quot; &quot;zwaldowski&quot; &quot;zwaldowski&quot;
+  ..$ owner_id                 : chr [1:3] &quot;170812&quot; &quot;170812&quot; &quot;170812&quot;
+  ..$ owner_avatar_url         : chr [1:3] &quot;https://avatars.githubusercontent.com/u/170812?v=3&quot; &quot;https://avatars.githubusercontent.com/u/170812?v=3&quot; &quot;https://avatars.githubusercontent.com/u/170812?v=3&quot;
+  ..$ owner_gravatar_id        : chr [1:3] &quot;&quot; &quot;&quot; &quot;&quot;
+  ..$ owner_url                : chr [1:3] &quot;https://api.github.com/users/zwaldowski&quot; &quot;https://api.github.com/users/zwaldowski&quot; &quot;https://api.github.com/users/zwaldowski&quot;
+  ..$ owner_html_url           : chr [1:3] &quot;https://github.com/zwaldowski&quot; &quot;https://github.com/zwaldowski&quot; &quot;https://github.com/zwaldowski&quot;
+  ..$ owner_followers_url      : chr [1:3] &quot;https://api.github.com/users/zwaldowski/followers&quot; &quot;https://api.github.com/users/zwaldowski/followers&quot; &quot;https://api.github.com/users/zwaldowski/followers&quot;
+  ..$ owner_following_url      : chr [1:3] &quot;https://api.github.com/users/zwaldowski/following{/other_user}&quot; &quot;https://api.github.com/users/zwaldowski/following{/other_user}&quot; &quot;https://api.github.com/users/zwaldowski/following{/other_user}&quot;
+  ..$ owner_gists_url          : chr [1:3] &quot;https://api.github.com/users/zwaldowski/gists{/gist_id}&quot; &quot;https://api.github.com/users/zwaldowski/gists{/gist_id}&quot; &quot;https://api.github.com/users/zwaldowski/gists{/gist_id}&quot;
+  ..$ owner_starred_url        : chr [1:3] &quot;https://api.github.com/users/zwaldowski/starred{/owner}{/repo}&quot; &quot;https://api.github.com/users/zwaldowski/starred{/owner}{/repo}&quot; &quot;https://api.github.com/users/zwaldowski/starred{/owner}{/repo}&quot;
+  ..$ owner_subscriptions_url  : chr [1:3] &quot;https://api.github.com/users/zwaldowski/subscriptions&quot; &quot;https://api.github.com/users/zwaldowski/subscriptions&quot; &quot;https://api.github.com/users/zwaldowski/subscriptions&quot;
+  ..$ owner_organizations_url  : chr [1:3] &quot;https://api.github.com/users/zwaldowski/orgs&quot; &quot;https://api.github.com/users/zwaldowski/orgs&quot; &quot;https://api.github.com/users/zwaldowski/orgs&quot;
+  ..$ owner_repos_url          : chr [1:3] &quot;https://api.github.com/users/zwaldowski/repos&quot; &quot;https://api.github.com/users/zwaldowski/repos&quot; &quot;https://api.github.com/users/zwaldowski/repos&quot;
+  ..$ owner_events_url         : chr [1:3] &quot;https://api.github.com/users/zwaldowski/events{/privacy}&quot; &quot;https://api.github.com/users/zwaldowski/events{/privacy}&quot; &quot;https://api.github.com/users/zwaldowski/events{/privacy}&quot;
+  ..$ owner_received_events_url: chr [1:3] &quot;https://api.github.com/users/zwaldowski/received_events&quot; &quot;https://api.github.com/users/zwaldowski/received_events&quot; &quot;https://api.github.com/users/zwaldowski/received_events&quot;
+  ..$ owner_type               : chr [1:3] &quot;User&quot; &quot;User&quot; &quot;User&quot;
+  ..$ owner_site_admin         : chr [1:3] &quot;FALSE&quot; &quot;FALSE&quot; &quot;FALSE&quot;
+ $ forks  : NULL
+ $ history:Classes &apos;tbl_df&apos;, &apos;tbl&apos; and &apos;data.frame&apos;:    1 obs. of  23 variables:
+  ..$ history_user.login              : chr &quot;zwaldowski&quot;
+  ..$ history_user.id                 : int 170812
+  ..$ history_user.avatar_url         : chr &quot;https://avatars.githubusercontent.com/u/170812?v=3&quot;
+  ..$ history_user.gravatar_id        : chr &quot;&quot;
+  ..$ history_user.url                : chr &quot;https://api.github.com/users/zwaldowski&quot;
+  ..$ history_user.html_url           : chr &quot;https://github.com/zwaldowski&quot;
+  ..$ history_user.followers_url      : chr &quot;https://api.github.com/users/zwaldowski/followers&quot;
+  ..$ history_user.following_url      : chr &quot;https://api.github.com/users/zwaldowski/following{/other_user}&quot;
+  ..$ history_user.gists_url          : chr &quot;https://api.github.com/users/zwaldowski/gists{/gist_id}&quot;
+  ..$ history_user.starred_url        : chr &quot;https://api.github.com/users/zwaldowski/starred{/owner}{/repo}&quot;
+  ..$ history_user.subscriptions_url  : chr &quot;https://api.github.com/users/zwaldowski/subscriptions&quot;
+  ..$ history_user.organizations_url  : chr &quot;https://api.github.com/users/zwaldowski/orgs&quot;
+  ..$ history_user.repos_url          : chr &quot;https://api.github.com/users/zwaldowski/repos&quot;
+  ..$ history_user.events_url         : chr &quot;https://api.github.com/users/zwaldowski/events{/privacy}&quot;
+  ..$ history_user.received_events_url: chr &quot;https://api.github.com/users/zwaldowski/received_events&quot;
+  ..$ history_user.type               : chr &quot;User&quot;
+  ..$ history_user.site_admin         : logi FALSE
+  ..$ history_version                 : chr &quot;3373b24383a4ba812d1bc3425ce3565d4c8161df&quot;
+  ..$ history_committed_at            : chr &quot;2016-01-08T20:19:30Z&quot;
+  ..$ history_change_status.total     : int 25
+  ..$ history_change_status.additions : int 25
+  ..$ history_change_status.deletions : int 0
+  ..$ history_url                     : chr &quot;https://api.github.com/gists/5f1a1011ea368e1c833e/3373b24383a4ba812d1bc3425ce3565d4c8161df&quot;
+NULL
+</code></pre><pre><code>[1] &quot;list&quot;
+</code></pre><h2 id="ratelimit">rate_limit</h2>
+<pre><code class="lang-r">&gt; rate_limit()
+</code></pre>
+<pre><code>Rate limit: 5000
+Remaining:  4990
+Resets in:  58 minutes
+</code></pre>
                     
                     </section>
                 
@@ -4520,14 +4705,6 @@
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
-    
-
-    
     <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
     
 
@@ -4537,7 +4714,7 @@
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    var config = {"fontSettings":{"theme":"default","size":2},"search":{"maxIndexSize":100000},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
     gitbook.start(config);
 });
 </script>

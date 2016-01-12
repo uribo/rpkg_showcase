@@ -12,10 +12,6 @@
 > library(nadiv)
 ```
 
-```
-Loading required package: Matrix
-```
-
 バージョン: 2.14.1
 
 -----
@@ -59,3 +55,8 @@ Loading required package: Matrix
 | `sm2list` | Converts a sparse matrix into a three column format. |
 | `varTrans` | Transforms ASReml-R gamma variances to component scale |
 | `warcolak` | Pedigree and phenotypic values for a mythical population of Warcolaks |
+
+-----
+
+## warcolak
+
