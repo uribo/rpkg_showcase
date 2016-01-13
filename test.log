@@ -1,23 +1,12 @@
-Wed Oct  7 02:22:30 2015  Opening test.log 
-Wed Oct  7 02:23:07 2015  message 
-Wed Oct  7 02:23:07 2015  Closing test.log flags = 0 
--------
-R version 3.2.2 (2015-08-14)
-Platform: x86_64-apple-darwin13.4.0 (64-bit)
-Running under: OS X 10.11 (El Capitan)
-
-locale:
-[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
-
-attached base packages:
-[1] stats     graphics  grDevices utils     datasets  methods   base     
-
-other attached packages:
- [1] luzlogr_0.1.0.9000 daff_0.1.4         tm_0.6-2           NLP_0.1-8          readr_0.1.1.9000   ggplot2_1.0.1.9003
- [7] pipeR_0.6.0.6      magrittr_1.5       knitr_1.11.2       devtools_1.9.1    
-
-loaded via a namespace (and not attached):
- [1] Rcpp_0.12.1       rstudioapi_0.3.1  munsell_0.4.2     colorspace_1.2-6  R6_2.1.1          stringr_1.0.0     httr_1.0.0       
- [8] plyr_1.8.3        SUmisc_0.0.0.9000 tools_3.2.2       parallel_3.2.2    grid_3.2.2        gtable_0.1.2      cowsay_0.3.2.9500
-[15] fortunes_1.5-2    assertthat_0.1    digest_0.6.8      RJSONIO_1.3-0     curl_0.9.3        memoise_0.2.1     DYM_0.1.1        
-[22] slam_0.1-32       V8_0.6            stringi_0.5-5     scales_0.3.0      jsonlite_0.9.17  
+2016-01-13 14:02:39.913 - INFO - Activating logging to test.log
+2016-01-13 14:03:04.031 - INFO - Activating logging to console
+2016-01-13 14:03:08.258 - INFO - 記録するメッセージ
+2016-01-13 14:03:08.560 - CRITICAL - GLM()という関数はない。正しくはglm()
+2016-01-13 14:03:14.262 - SIMPLEWARNING - 2
+2016-01-13 17:36:45.392 - SIMPLEMESSAGE - Building R markdown files...
+2016-01-13 17:37:53.245 - SIMPLEMESSAGE -   processing file: references.Rmd
+2016-01-13 17:37:53.261 - SIMPLEMESSAGE - output file: references.md
+2016-01-13 17:37:56.398 - SIMPLEMESSAGE - Building R markdown files...
+2016-01-13 17:37:56.410 - SIMPLEMESSAGE -   processing file: references.Rmd
+2016-01-13 17:37:56.435 - SIMPLEMESSAGE - output file: references.md
+2016-01-13 17:37:56.438 - SIMPLEMESSAGE - R Markdown files successfully built!

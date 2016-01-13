@@ -1,0 +1,4 @@
+[ 2016-01-13 17:37:53 ] INFO An Info Message 
+[ 2016-01-13 17:37:53 ] WARN A Warning Message 
+[ 2016-01-13 17:37:53 ] ERROR An Error Message 
+[ 2016-01-13 17:37:53 ] FATAL A Fatal Error Message 
