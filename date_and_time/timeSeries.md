@@ -102,6 +102,17 @@
 
 ## readSeries
 
+### Arguments
+
+- file
+- FinCenter
+- header
+- format
+- sep
+- zone
+- ...
+
+
 
 
 ## window
