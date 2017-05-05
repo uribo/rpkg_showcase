@@ -1,0 +1,27 @@
+[general] 
+creator=R package 'raster' 
+created= 2011-11-12 14:48:14 
+[georeference] 
+nrows= 336 
+ncols= 600 
+xmin= -18.3 
+ymin= 27.5 
+xmax= -13.3 
+ymax= 30.3 
+projection= +proj=longlat +ellps=WGS84 
+[data] 
+datatype= INT2S 
+byteorder= little 
+nbands= 1 
+bandorder= BIL 
+categorical= FALSE 
+minvalue= -6 
+maxvalue= 3470 
+nodatavalue= -9999 
+[legend] 
+legendtype=  
+values=  
+color=  
+[description] 
+layername= ESP2_msk_alt 
+history=  
